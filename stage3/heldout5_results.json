@@ -1,0 +1,336 @@
+{
+ "v1.3": {
+  "n": 23,
+  "correct": 11,
+  "rows": [
+   {
+    "kind": "node",
+    "text": "The lymph node status is reported as positive.",
+    "expected": true,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "node",
+    "text": "Regional lymph node status was found to be positive.",
+    "expected": true,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "node",
+    "text": "Metastatic carcinoma is identified in the regional lymph nodes.",
+    "expected": true,
+    "got": true,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Two lymph nodes are involved by metastatic adenocarcinoma.",
+    "expected": true,
+    "got": true,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "There is involvement of several regional lymph nodes.",
+    "expected": true,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "node",
+    "text": "No malignant cells are seen in the lymph nodes sampled.",
+    "expected": false,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "node",
+    "text": "None of the examined lymph nodes contain tumour.",
+    "expected": false,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "node",
+    "text": "The regional lymph nodes show no metastatic carcinoma.",
+    "expected": false,
+    "got": false,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Lymph node status is reported as negative.",
+    "expected": false,
+    "got": false,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "No lymph nodes were submitted for examination.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Lymph nodes are not included in this sample.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Lymphovascular invasion is present.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour penetrates the serosa.",
+    "expected": 4,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "pT",
+    "text": "Carcinoma involves the serosal layer.",
+    "expected": 4,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour extends to the serosa.",
+    "expected": 4,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour grows into the wall of the small bowel.",
+    "expected": 4,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "pT",
+    "text": "The carcinoma directly invades the urinary bladder.",
+    "expected": 4,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "pT",
+    "text": "Invasion is limited to the muscularis propria.",
+    "expected": 2,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour is confined to the muscularis propria.",
+    "expected": 2,
+    "got": null,
+    "pass": false
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour infiltrates the subserosa.",
+    "expected": 3,
+    "got": 3,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour extends into the subserosal tissue but does not reach the serosa.",
+    "expected": 3,
+    "got": 3,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "Chronic serosal inflammation is present.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour reaches the serosal surface.",
+    "expected": 4,
+    "got": 4,
+    "pass": true
+   }
+  ]
+ },
+ "v1.4": {
+  "n": 23,
+  "correct": 23,
+  "rows": [
+   {
+    "kind": "node",
+    "text": "The lymph node status is reported as positive.",
+    "expected": true,
+    "got": true,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Regional lymph node status was found to be positive.",
+    "expected": true,
+    "got": true,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Metastatic carcinoma is identified in the regional lymph nodes.",
+    "expected": true,
+    "got": true,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Two lymph nodes are involved by metastatic adenocarcinoma.",
+    "expected": true,
+    "got": true,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "There is involvement of several regional lymph nodes.",
+    "expected": true,
+    "got": true,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "No malignant cells are seen in the lymph nodes sampled.",
+    "expected": false,
+    "got": false,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "None of the examined lymph nodes contain tumour.",
+    "expected": false,
+    "got": false,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "The regional lymph nodes show no metastatic carcinoma.",
+    "expected": false,
+    "got": false,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Lymph node status is reported as negative.",
+    "expected": false,
+    "got": false,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "No lymph nodes were submitted for examination.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Lymph nodes are not included in this sample.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "node",
+    "text": "Lymphovascular invasion is present.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour penetrates the serosa.",
+    "expected": 4,
+    "got": 4,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "Carcinoma involves the serosal layer.",
+    "expected": 4,
+    "got": 4,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour extends to the serosa.",
+    "expected": 4,
+    "got": 4,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour grows into the wall of the small bowel.",
+    "expected": 4,
+    "got": 4,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The carcinoma directly invades the urinary bladder.",
+    "expected": 4,
+    "got": 4,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "Invasion is limited to the muscularis propria.",
+    "expected": 2,
+    "got": 2,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour is confined to the muscularis propria.",
+    "expected": 2,
+    "got": 2,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour infiltrates the subserosa.",
+    "expected": 3,
+    "got": 3,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour extends into the subserosal tissue but does not reach the serosa.",
+    "expected": 3,
+    "got": 3,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "Chronic serosal inflammation is present.",
+    "expected": null,
+    "got": null,
+    "pass": true
+   },
+   {
+    "kind": "pT",
+    "text": "The tumour reaches the serosal surface.",
+    "expected": 4,
+    "got": 4,
+    "pass": true
+   }
+  ]
+ }
+}

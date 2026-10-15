@@ -1,0 +1,150 @@
+{
+ "rule": "mean paired val gain >= 0.03 and positive on all seeds [42, 43, 44]",
+ "test_split_evaluated": false,
+ "runs": {
+  "baseline": [
+   {
+    "seed": 42,
+    "best_epoch": 12,
+    "val": 0.564,
+    "train": 0.979,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   },
+   {
+    "seed": 43,
+    "best_epoch": 10,
+    "val": 0.561,
+    "train": 0.948,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   },
+   {
+    "seed": 44,
+    "best_epoch": 6,
+    "val": 0.649,
+    "train": 0.938,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   }
+  ],
+  "dropout0.6": [
+   {
+    "seed": 42,
+    "best_epoch": 12,
+    "val": 0.564,
+    "train": 0.977,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   },
+   {
+    "seed": 43,
+    "best_epoch": 15,
+    "val": 0.552,
+    "train": 0.977,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   },
+   {
+    "seed": 44,
+    "best_epoch": 6,
+    "val": 0.624,
+    "train": 0.936,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   }
+  ],
+  "hidden128": [
+   {
+    "seed": 42,
+    "best_epoch": 14,
+    "val": 0.554,
+    "train": 0.986,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   },
+   {
+    "seed": 43,
+    "best_epoch": 3,
+    "val": 0.601,
+    "train": 0.745,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   },
+   {
+    "seed": 44,
+    "best_epoch": 9,
+    "val": 0.647,
+    "train": 0.948,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   }
+  ],
+  "wd0.05": [
+   {
+    "seed": 42,
+    "best_epoch": 12,
+    "val": 0.562,
+    "train": 0.979,
+    "recovered_from_log": "overnight.log of 26 Sep 00:04; printed to 3 decimals; run crashed at run 11 (file handles), numbers unaffected"
+   },
+   {
+    "seed": 43,
+    "best_epoch": 10,
+    "val": 0.5498511904761905,
+    "train": 0.9468529941967921
+   },
+   {
+    "seed": 44,
+    "best_epoch": 6,
+    "val": 0.6271397279344069,
+    "train": 0.9390531484204938
+   }
+  ]
+ },
+ "summary": {
+  "baseline": {
+   "val_mean": 0.5913333333333334,
+   "train_mean": 0.9550000000000001,
+   "gap_mean": 0.3636666666666666,
+   "paired_gain_mean": 0.0,
+   "wins_all_seeds": false
+  },
+  "dropout0.6": {
+   "val_mean": 0.5800000000000001,
+   "train_mean": 0.9633333333333334,
+   "gap_mean": 0.3833333333333333,
+   "paired_gain_mean": -0.011333333333333343,
+   "wins_all_seeds": false
+  },
+  "hidden128": {
+   "val_mean": 0.6006666666666667,
+   "train_mean": 0.8929999999999999,
+   "gap_mean": 0.2923333333333333,
+   "paired_gain_mean": 0.009333333333333341,
+   "wins_all_seeds": false
+  },
+  "wd0.05": {
+   "val_mean": 0.5796636394701992,
+   "train_mean": 0.954968714205762,
+   "gap_mean": 0.37530507473556285,
+   "paired_gain_mean": -0.011669693863134212,
+   "wins_all_seeds": false
+  }
+ },
+ "qualifying": {},
+ "choice": "baseline",
+ "choice_change": {},
+ "choice_flags": "",
+ "smoke": false,
+ "provenance": {
+  "finished_at": "2026-09-26T00:49:11+05:30",
+  "git_commit": "d753325",
+  "git_dirty_code": true,
+  "git_dirty_files": [
+   ".gitignore",
+   "THESIS_LOG.md",
+   "stage1/crossval.py",
+   "stage1/reg_sweep.py",
+   "stage1/run_overnight.sh",
+   "stage1/test_run_paths.py",
+   "stage1/train_stage1.py",
+   "stage2/export_predictions.py",
+   "stage2/inputs/"
+  ],
+  "host": "Labibas-MacBook-Air.local",
+  "torch": "2.14.0",
+  "device": "mps"
+ }
+}

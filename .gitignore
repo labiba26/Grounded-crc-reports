@@ -1,0 +1,78 @@
+# Allowlist .gitignore: ignore everything by default, then re-include exactly what
+# belongs in the repository. This keeps the 42 GB of UNI2-h features, the pathology
+# report PDFs and the extracted report text out of version control by construction
+# rather than by remembering to exclude each one.
+
+*
+
+# directories must be re-included to be descended into
+!*/
+
+# ---- re-included content ----
+!.gitignore
+!LICENSE
+!README.md
+!THESIS_LOG.md
+!SERVER_SETUP.md
+!requirements.txt
+!run_train.slurm
+!*.py
+!metadata.csv
+!dataset_manifests_final/*.json
+!dataset_manifests_final/*.txt
+!stage1/*.py
+!stage1/structured_labels.json
+!stage1/results_stage1.json
+!stage1/results_shuffled*.json
+!stage1/gdc_agreement.json
+!stage1/sensitivity_a6gc.json
+!stage3/*.json
+!external/*.csv
+!external/*.tsv
+!external/*.py
+!external/*.json
+!stage1/external_cptac_results.json
+!stage1/external_cptac_logits.json
+!stage1/reg_sweep.json
+!stage1/crossval_results.json
+!stage1/crossval_logits.json
+!stage1/calibration.json
+!stage1/*.sh
+!stage2/*.sh
+!stage2/inputs/*.json
+!gold_labels/*.xlsx
+!gold_labels/GUIDE.md
+!gold_labels/CHEAT_SHEET.md
+!gold_labels/PRACTICE_ANSWERS.md
+!gold_labels/gold_*.json
+!checker_validation/GUIDE.md
+!gdc_clinical_coad_read.tsv
+!report_text/summary.txt
+!report_text/reports_needing_ocr.json
+
+# ---- never, under any circumstance ----
+.venv/
+__pycache__/
+*.h5
+*.tar.gz
+*.zip
+*.pdf
+*.pptx
+*.pt
+TCGA_Reports.csv
+report_text/report_text_by_file.json
+tcga_report_text/
+reports/
+ppts/
+UNI2_h_features/
+.DS_Store
+*_smoke.json
+
+# Office lock files (a sheet open in Excel)
+~$*
+
+# ---- human annotation: never public while labelling is open ----
+gold_labels/gold_labels_A*.xlsx
+gold_labels/sample_key.json
+gold_labels/llm_annotator/
+checker_validation/*key*

@@ -1,0 +1,272 @@
+{
+ "v1.2": {
+  "n": 14,
+  "correct": 5,
+  "rows": [
+   {
+    "text": "Mucinous adenocarcinoma (model confidence 40%).",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "Histologic type: mucinous adenocarcinoma (model confidence 45%), although this is uncertain.",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "The tumour is a mucinous adenocarcinoma; model confidence is 38%, so this is uncertain.",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "Mucinous adenocarcinoma, moderately differentiated (confidence 30%).",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "Moderately differentiated (model confidence 45%) mucinous adenocarcinoma.",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "Mucinous adenocarcinoma, with a probability of 42%.",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "Mucinous adenocarcinoma (40% confidence).",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "Mucinous adenocarcinoma, grade 2 (model confidence 20%), invading the muscularis propria (pT2).",
+    "expected": "mucinous",
+    "got": "adenocarcinoma",
+    "pass": false
+   },
+   {
+    "text": "Adenocarcinoma with a mucinous component (30%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (mucin 30% of tumour).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, extracellular mucin 80%.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Adenocarcinoma, not of mucinous type (model confidence 91%).",
+    "expected": "adenocarcinoma",
+    "got": "mucinous",
+    "pass": false
+   },
+   {
+    "text": "Adenocarcinoma (model confidence 85%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (model confidence 75%).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   }
+  ]
+ },
+ "v1.3": {
+  "n": 14,
+  "correct": 14,
+  "rows": [
+   {
+    "text": "Mucinous adenocarcinoma (model confidence 40%).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Histologic type: mucinous adenocarcinoma (model confidence 45%), although this is uncertain.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "The tumour is a mucinous adenocarcinoma; model confidence is 38%, so this is uncertain.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, moderately differentiated (confidence 30%).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Moderately differentiated (model confidence 45%) mucinous adenocarcinoma.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, with a probability of 42%.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (40% confidence).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, grade 2 (model confidence 20%), invading the muscularis propria (pT2).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Adenocarcinoma with a mucinous component (30%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (mucin 30% of tumour).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, extracellular mucin 80%.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Adenocarcinoma, not of mucinous type (model confidence 91%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Adenocarcinoma (model confidence 85%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (model confidence 75%).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   }
+  ]
+ },
+ "v1.4": {
+  "n": 14,
+  "correct": 14,
+  "rows": [
+   {
+    "text": "Mucinous adenocarcinoma (model confidence 40%).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Histologic type: mucinous adenocarcinoma (model confidence 45%), although this is uncertain.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "The tumour is a mucinous adenocarcinoma; model confidence is 38%, so this is uncertain.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, moderately differentiated (confidence 30%).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Moderately differentiated (model confidence 45%) mucinous adenocarcinoma.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, with a probability of 42%.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (40% confidence).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, grade 2 (model confidence 20%), invading the muscularis propria (pT2).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Adenocarcinoma with a mucinous component (30%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (mucin 30% of tumour).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma, extracellular mucin 80%.",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   },
+   {
+    "text": "Adenocarcinoma, not of mucinous type (model confidence 91%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Adenocarcinoma (model confidence 85%).",
+    "expected": "adenocarcinoma",
+    "got": "adenocarcinoma",
+    "pass": true
+   },
+   {
+    "text": "Mucinous adenocarcinoma (model confidence 75%).",
+    "expected": "mucinous",
+    "got": "mucinous",
+    "pass": true
+   }
+  ]
+ }
+}

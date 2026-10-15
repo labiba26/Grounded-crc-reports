@@ -1,0 +1,380 @@
+{
+ "reports_fully_right": 7,
+ "n_reports": 12,
+ "verdicts_right": 65,
+ "n_verdicts": 72,
+ "cases": [
+  {
+   "id": "H01",
+   "text": "Sections show a moderately differentiated adenocarcinoma infiltrating through the muscularis propria into the subserosal fat (pT3). Based on the model, regional lymph node involvement is considered unlikely.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "disagreements": []
+  },
+  {
+   "id": "H02",
+   "text": "Final diagnosis: Colon, resection - invasive adenocarcinoma, intermediate grade (G2), pT3. Nodes: negative (0/12). Margins: negative.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [
+     "margins",
+     "node_count"
+    ],
+    "overclaim": true
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "omitted"
+    },
+    "unsupported": [
+     "margins",
+     "node_count"
+    ],
+    "overclaim": false
+   },
+   "disagreements": [
+    {
+     "item": "field node_status",
+     "checker": "omitted",
+     "human": "correct"
+    },
+    {
+     "item": "overclaim",
+     "checker": false,
+     "human": true
+    }
+   ]
+  },
+  {
+   "id": "H03",
+   "text": "The tumour is a well-to-moderately differentiated adenocarcinoma, pT3, with no lymph node metastases identified.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": true
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": true
+   },
+   "disagreements": []
+  },
+  {
+   "id": "H04",
+   "text": "Moderately differentiated adenocarcinoma of the rectum invading perirectal fat (pT3), with lymphovascular invasion and 2 of 18 lymph nodes positive (pN1a). Circumferential margin clear. MMR proficient.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "contradicted"
+    },
+    "unsupported": [
+     "lymphovascular_invasion",
+     "margins",
+     "msi_mmr",
+     "node_count",
+     "pn_category",
+     "tumour_site"
+    ],
+    "overclaim": true
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "contradicted"
+    },
+    "unsupported": [
+     "lymphovascular_invasion",
+     "margins",
+     "msi_mmr",
+     "node_count",
+     "pn_category",
+     "tumour_site"
+    ],
+    "overclaim": true
+   },
+   "disagreements": []
+  },
+  {
+   "id": "H05",
+   "text": "Adenocarcinoma, G2, pT3. Lymph nodes were not submitted; nodal status cannot be assessed.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "omitted"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "omitted"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "disagreements": []
+  },
+  {
+   "id": "H06",
+   "text": "Low-grade adenocarcinoma, pT3, estimated node-negative.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "omitted",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "omitted",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "disagreements": []
+  },
+  {
+   "id": "H07",
+   "text": "Invasive carcinoma with mucinous features (approximately 30%), moderately differentiated, pT3; the predicted nodal status is negative.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "omitted",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "disagreements": [
+    {
+     "item": "field histologic_type",
+     "checker": "omitted",
+     "human": "correct"
+    }
+   ]
+  },
+  {
+   "id": "H08",
+   "text": "Moderately differentiated adenocarcinoma, pT3 N0 (predicted).",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [
+     "pn_category"
+    ],
+    "overclaim": false
+   },
+   "disagreements": [
+    {
+     "item": "unsupported",
+     "checker": [
+      "pn_category"
+     ],
+     "human": []
+    }
+   ]
+  },
+  {
+   "id": "H09",
+   "text": "Adenocarcinoma, grade 2 of 3, pT3. Model estimate: node negative.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "disagreements": []
+  },
+  {
+   "id": "H10",
+   "text": "Adenocarcinoma (moderately differentiated). Tumour invades through the muscularis propria into pericolorectal tissues. Nodal status: likely negative.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "omitted",
+     "node_status": "correct"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "disagreements": [
+    {
+     "item": "field pt_stage",
+     "checker": "omitted",
+     "human": "correct"
+    }
+   ]
+  },
+  {
+   "id": "H11",
+   "text": "Adenocarcinoma, G2, pT3. The model predicts node-negative status; however, extramural venous invasion is present.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [
+     "lymphovascular_invasion"
+    ],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [
+     "lymphovascular_invasion"
+    ],
+    "overclaim": false
+   },
+   "disagreements": []
+  },
+  {
+   "id": "H12",
+   "text": "Adenocarcinoma, G2, pT3, estimated N-negative. Tumour deposits are absent.",
+   "expected": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "correct"
+    },
+    "unsupported": [
+     "tumour_deposits"
+    ],
+    "overclaim": false
+   },
+   "got": {
+    "fields": {
+     "histologic_type": "correct",
+     "grade": "correct",
+     "pt_stage": "correct",
+     "node_status": "omitted"
+    },
+    "unsupported": [],
+    "overclaim": false
+   },
+   "disagreements": [
+    {
+     "item": "field node_status",
+     "checker": "omitted",
+     "human": "correct"
+    },
+    {
+     "item": "unsupported",
+     "checker": [],
+     "human": [
+      "tumour_deposits"
+     ]
+    }
+   ]
+  }
+ ]
+}

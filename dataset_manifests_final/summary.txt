@@ -1,0 +1,20 @@
+=== Dataset build summary ===
+Usable cases (H5 + report + known cohort): 590
+  COAD: 434
+  READ: 156
+
+=== Split sizes ===
+  train_coad:   347
+  test_coad:    87
+  holdout_read: 156
+
+=== Patch count stats (per slide) ===
+  n_slides_with_features: 599
+  min: 328  max: 31521  mean: 6360.3
+
+=== Warnings ===
+  Cases with H5 but no report (dropped): 1
+  Cases with report but no H5 (dropped): 0
+  Cases with unresolved cohort (dropped): 0
+  H5 files that failed to read: 0
+    missing_report ids (first 10): ['TCGA-G5-6572']

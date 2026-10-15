@@ -1,0 +1,4153 @@
+{
+ "meta": {
+  "checkpoint": "stage1/stage1_mil.pt",
+  "seed": 44,
+  "device": "mps",
+  "eval": "full bags, no subsampling",
+  "host": "Labibas-MacBook-Air.local",
+  "torch": "2.14.0",
+  "finished_at": "2026-09-25T23:55:32+05:30",
+  "git_commit": "d753325",
+  "git_dirty_files": [
+   "gitignore",
+   "stage2/export_predictions.py"
+  ],
+  "method": "cosine similarity of mean-pooled UNI2-h features; neighbours drawn from train_coad only, never the case itself"
+ },
+ "cases": {
+  "TCGA-3L-AA1B": {
+   "neighbour": "TCGA-DM-A28F",
+   "similarity": 0.7004,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28F.E6C435F8-1238-4113-A152-C7AF7620E748.txt"
+   ]
+  },
+  "TCGA-4N-A93T": {
+   "neighbour": "TCGA-QG-A5Z1",
+   "similarity": 0.7755,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-QG-A5Z1.63266BCF-52D2-4EFC-ADD4-B7728BD8101E.txt"
+   ]
+  },
+  "TCGA-4T-AA8H": {
+   "neighbour": "TCGA-NH-A8F7",
+   "similarity": 0.7306,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.0E9A48BA-AAE0-4D88-90E1-141483700759.txt",
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.4D9A2D24-529F-4CFE-8444-013FAAF696EC.txt"
+   ]
+  },
+  "TCGA-5M-AAT4": {
+   "neighbour": "TCGA-5M-AAT5",
+   "similarity": 0.7087,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-5M-AAT5.AA3CF932-9666-4280-9F3E-5CFA523CEC4B.txt"
+   ]
+  },
+  "TCGA-5M-AAT5": {
+   "neighbour": "TCGA-5M-AATE",
+   "similarity": 0.7696,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-5M-AATE.759F9B5B-2E5C-49E6-8E9B-32B265D1BE73.txt"
+   ]
+  },
+  "TCGA-5M-AAT6": {
+   "neighbour": "TCGA-5M-AAT4",
+   "similarity": 0.607,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-5M-AAT4.C0BABB5A-B0ED-42A6-A9D1-6B26843A375D.txt"
+   ]
+  },
+  "TCGA-5M-AATE": {
+   "neighbour": "TCGA-5M-AAT5",
+   "similarity": 0.7696,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-5M-AAT5.AA3CF932-9666-4280-9F3E-5CFA523CEC4B.txt"
+   ]
+  },
+  "TCGA-A6-2671": {
+   "neighbour": "TCGA-A6-6654",
+   "similarity": 0.8759,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6654.0F0A992E-3A5C-490F-AA3E-62D2B26D580B.txt"
+   ]
+  },
+  "TCGA-A6-2672": {
+   "neighbour": "TCGA-A6-6654",
+   "similarity": 0.842,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6654.0F0A992E-3A5C-490F-AA3E-62D2B26D580B.txt"
+   ]
+  },
+  "TCGA-A6-2674": {
+   "neighbour": "TCGA-A6-6653",
+   "similarity": 0.8809,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6653.8360924D-CE15-4713-82D3-F8F8932B1DFB.txt"
+   ]
+  },
+  "TCGA-A6-2675": {
+   "neighbour": "TCGA-CM-6172",
+   "similarity": 0.835,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6172.7F0ED6DE-0830-4ABC-A900-D1A3AB274736.txt"
+   ]
+  },
+  "TCGA-A6-2676": {
+   "neighbour": "TCGA-A6-5661",
+   "similarity": 0.7804,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5661.BFA2520C-B8F1-4475-B98C-6798ECBF6F16.txt"
+   ]
+  },
+  "TCGA-A6-2677": {
+   "neighbour": "TCGA-A6-6654",
+   "similarity": 0.8807,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6654.0F0A992E-3A5C-490F-AA3E-62D2B26D580B.txt"
+   ]
+  },
+  "TCGA-A6-2678": {
+   "neighbour": "TCGA-A6-6140",
+   "similarity": 0.8661,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6140.72F5199D-0B09-44B9-81FD-67A71F21F2AF.txt"
+   ]
+  },
+  "TCGA-A6-2679": {
+   "neighbour": "TCGA-A6-5661",
+   "similarity": 0.8167,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5661.BFA2520C-B8F1-4475-B98C-6798ECBF6F16.txt"
+   ]
+  },
+  "TCGA-A6-2680": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.9233,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-A6-2681": {
+   "neighbour": "TCGA-A6-3808",
+   "similarity": 0.8942,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-3808.E1505F65-72EF-438D-A5E1-93ED8BF6635D.txt"
+   ]
+  },
+  "TCGA-A6-2682": {
+   "neighbour": "TCGA-A6-5661",
+   "similarity": 0.8935,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5661.BFA2520C-B8F1-4475-B98C-6798ECBF6F16.txt"
+   ]
+  },
+  "TCGA-A6-2683": {
+   "neighbour": "TCGA-A6-5660",
+   "similarity": 0.8593,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5660.865DC724-445F-45A7-A143-5318F6ACB580.txt"
+   ]
+  },
+  "TCGA-A6-2684": {
+   "neighbour": "TCGA-A6-2681",
+   "similarity": 0.8825,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-2681.EC4BB62B-EDF5-4051-8240-4E9D89FD928F.txt"
+   ]
+  },
+  "TCGA-A6-2685": {
+   "neighbour": "TCGA-A6-5661",
+   "similarity": 0.8848,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5661.BFA2520C-B8F1-4475-B98C-6798ECBF6F16.txt"
+   ]
+  },
+  "TCGA-A6-2686": {
+   "neighbour": "TCGA-A6-5660",
+   "similarity": 0.8189,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5660.865DC724-445F-45A7-A143-5318F6ACB580.txt"
+   ]
+  },
+  "TCGA-A6-3807": {
+   "neighbour": "TCGA-A6-4107",
+   "similarity": 0.8668,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-4107.EAD64351-1C48-40CF-88D1-ACEA2F34A4EA.txt"
+   ]
+  },
+  "TCGA-A6-3808": {
+   "neighbour": "TCGA-A6-2681",
+   "similarity": 0.8942,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-2681.EC4BB62B-EDF5-4051-8240-4E9D89FD928F.txt"
+   ]
+  },
+  "TCGA-A6-3809": {
+   "neighbour": "TCGA-A6-6653",
+   "similarity": 0.8926,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6653.8360924D-CE15-4713-82D3-F8F8932B1DFB.txt"
+   ]
+  },
+  "TCGA-A6-3810": {
+   "neighbour": "TCGA-A6-6654",
+   "similarity": 0.8992,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6654.0F0A992E-3A5C-490F-AA3E-62D2B26D580B.txt"
+   ]
+  },
+  "TCGA-A6-4105": {
+   "neighbour": "TCGA-A6-5661",
+   "similarity": 0.883,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5661.BFA2520C-B8F1-4475-B98C-6798ECBF6F16.txt"
+   ]
+  },
+  "TCGA-A6-4107": {
+   "neighbour": "TCGA-A6-6654",
+   "similarity": 0.8887,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6654.0F0A992E-3A5C-490F-AA3E-62D2B26D580B.txt"
+   ]
+  },
+  "TCGA-A6-5656": {
+   "neighbour": "TCGA-A6-5660",
+   "similarity": 0.8926,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5660.865DC724-445F-45A7-A143-5318F6ACB580.txt"
+   ]
+  },
+  "TCGA-A6-5657": {
+   "neighbour": "TCGA-A6-6653",
+   "similarity": 0.8981,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6653.8360924D-CE15-4713-82D3-F8F8932B1DFB.txt"
+   ]
+  },
+  "TCGA-A6-5659": {
+   "neighbour": "TCGA-A6-6648",
+   "similarity": 0.8561,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6648.432DEC4F-B217-44BF-A559-1559FDCEB7BA.txt"
+   ]
+  },
+  "TCGA-A6-5660": {
+   "neighbour": "TCGA-A6-5656",
+   "similarity": 0.8926,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5656.9396CC9F-ADF9-4E3E-9CB4-C0A5190299B9.txt"
+   ]
+  },
+  "TCGA-A6-5661": {
+   "neighbour": "TCGA-A6-5657",
+   "similarity": 0.8856,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5657.58264A19-4619-4E74-925B-4F3740A7A29F.txt"
+   ]
+  },
+  "TCGA-A6-5662": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.824,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-A6-5664": {
+   "neighbour": "TCGA-A6-2678",
+   "similarity": 0.8651,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-2678.4C0861D1-A3B9-45CF-B0AC-EE9ADB748E55.txt"
+   ]
+  },
+  "TCGA-A6-5665": {
+   "neighbour": "TCGA-A6-3808",
+   "similarity": 0.8731,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-3808.E1505F65-72EF-438D-A5E1-93ED8BF6635D.txt"
+   ]
+  },
+  "TCGA-A6-5666": {
+   "neighbour": "TCGA-CM-6676",
+   "similarity": 0.8657,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6676.1D53F325-F6F5-474E-9B52-0B45AEF1DFF8.txt"
+   ]
+  },
+  "TCGA-A6-5667": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.8834,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-A6-6137": {
+   "neighbour": "TCGA-A6-6141",
+   "similarity": 0.8137,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6141.1878C2B7-98D8-4797-84F2-30D73D1DB47D.txt"
+   ]
+  },
+  "TCGA-A6-6138": {
+   "neighbour": "TCGA-A6-5657",
+   "similarity": 0.913,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5657.58264A19-4619-4E74-925B-4F3740A7A29F.txt"
+   ]
+  },
+  "TCGA-A6-6140": {
+   "neighbour": "TCGA-A6-6648",
+   "similarity": 0.9,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6648.432DEC4F-B217-44BF-A559-1559FDCEB7BA.txt"
+   ]
+  },
+  "TCGA-A6-6141": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.9112,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-A6-6142": {
+   "neighbour": "TCGA-A6-5657",
+   "similarity": 0.8935,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5657.58264A19-4619-4E74-925B-4F3740A7A29F.txt"
+   ]
+  },
+  "TCGA-A6-6648": {
+   "neighbour": "TCGA-A6-6140",
+   "similarity": 0.9,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6140.72F5199D-0B09-44B9-81FD-67A71F21F2AF.txt"
+   ]
+  },
+  "TCGA-A6-6649": {
+   "neighbour": "TCGA-A6-6648",
+   "similarity": 0.8813,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6648.432DEC4F-B217-44BF-A559-1559FDCEB7BA.txt"
+   ]
+  },
+  "TCGA-A6-6650": {
+   "neighbour": "TCGA-A6-6141",
+   "similarity": 0.9112,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6141.1878C2B7-98D8-4797-84F2-30D73D1DB47D.txt"
+   ]
+  },
+  "TCGA-A6-6651": {
+   "neighbour": "TCGA-A6-6649",
+   "similarity": 0.9013,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6649.FEE7EE02-806C-463A-9841-5758C737207A.txt"
+   ]
+  },
+  "TCGA-A6-6652": {
+   "neighbour": "TCGA-A6-3808",
+   "similarity": 0.8573,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-3808.E1505F65-72EF-438D-A5E1-93ED8BF6635D.txt"
+   ]
+  },
+  "TCGA-A6-6653": {
+   "neighbour": "TCGA-A6-5657",
+   "similarity": 0.8981,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5657.58264A19-4619-4E74-925B-4F3740A7A29F.txt"
+   ]
+  },
+  "TCGA-A6-6654": {
+   "neighbour": "TCGA-A6-4107",
+   "similarity": 0.8887,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-4107.EAD64351-1C48-40CF-88D1-ACEA2F34A4EA.txt"
+   ]
+  },
+  "TCGA-A6-A565": {
+   "neighbour": "TCGA-WS-AB45",
+   "similarity": 0.7609,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-WS-AB45.E9A99C0B-87F4-4E91-A80F-7F9AABB84CBF.txt"
+   ]
+  },
+  "TCGA-A6-A566": {
+   "neighbour": "TCGA-A6-6653",
+   "similarity": 0.6959,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6653.8360924D-CE15-4713-82D3-F8F8932B1DFB.txt"
+   ]
+  },
+  "TCGA-A6-A567": {
+   "neighbour": "TCGA-QG-A5YW",
+   "similarity": 0.6833,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-QG-A5YW.7DB0BAEA-F194-4372-AF76-9CBEB0F9C956.txt"
+   ]
+  },
+  "TCGA-A6-A56B": {
+   "neighbour": "TCGA-AY-A54L",
+   "similarity": 0.718,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-A54L.5319D80A-3DFD-4834-A905-D34E668D4A2F.txt"
+   ]
+  },
+  "TCGA-A6-A5ZU": {
+   "neighbour": "TCGA-NH-A8F7",
+   "similarity": 0.6433,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.0E9A48BA-AAE0-4D88-90E1-141483700759.txt",
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.4D9A2D24-529F-4CFE-8444-013FAAF696EC.txt"
+   ]
+  },
+  "TCGA-AA-3514": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9294,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AA-3516": {
+   "neighbour": "TCGA-AA-3518",
+   "similarity": 0.8573,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3518.DA1E7681-76E1-456F-B8D1-ED08C844C122.txt"
+   ]
+  },
+  "TCGA-AA-3517": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9284,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AA-3518": {
+   "neighbour": "TCGA-AA-3554",
+   "similarity": 0.8684,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3554.3769BE1D-4A1A-4279-A7E0-F4B828BCDDC1.txt"
+   ]
+  },
+  "TCGA-AA-3519": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9373,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AA-3520": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9236,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AA-3521": {
+   "neighbour": "TCGA-AA-3519",
+   "similarity": 0.9373,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3519.127E9D44-2F7C-41F3-B925-D04812A8A9F6.txt"
+   ]
+  },
+  "TCGA-AA-3522": {
+   "neighbour": "TCGA-AA-3543",
+   "similarity": 0.8706,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3543.978056B3-EBF5-465A-AC1D-F470890298A7.txt"
+   ]
+  },
+  "TCGA-AA-3524": {
+   "neighbour": "TCGA-AA-3526",
+   "similarity": 0.9287,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3526.7374CE91-8D9F-4BA3-867A-E326D2298077.txt"
+   ]
+  },
+  "TCGA-AA-3525": {
+   "neighbour": "TCGA-AA-3815",
+   "similarity": 0.8899,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3815.A3EDDE6C-4FBE-4690-98B2-64CBC817A365.txt"
+   ]
+  },
+  "TCGA-AA-3526": {
+   "neighbour": "TCGA-AA-3524",
+   "similarity": 0.9287,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3524.21A38B39-57BE-4CA0-AD3F-F81463E63A05.txt"
+   ]
+  },
+  "TCGA-AA-3527": {
+   "neighbour": "TCGA-AA-3856",
+   "similarity": 0.8649,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3856.9422F618-6EA5-49F3-9761-D176A5B59846.txt"
+   ]
+  },
+  "TCGA-AA-3529": {
+   "neighbour": "TCGA-AA-3979",
+   "similarity": 0.9158,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3979.3336E745-C20B-4CEF-A6FD-8E6EDC6F03A1.txt"
+   ]
+  },
+  "TCGA-AA-3530": {
+   "neighbour": "TCGA-AA-3558",
+   "similarity": 0.9116,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3558.AB0CEFCC-B895-4D15-9A5F-844A9E8C4341.txt"
+   ]
+  },
+  "TCGA-AA-3531": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9248,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AA-3532": {
+   "neighbour": "TCGA-AA-3875",
+   "similarity": 0.8734,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3875.8E2D005B-0201-41EF-9118-15FA334B7CC7.txt"
+   ]
+  },
+  "TCGA-AA-3534": {
+   "neighbour": "TCGA-AA-3956",
+   "similarity": 0.9052,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3956.9BBB5E1A-4BBB-4882-A294-E0F13D82FA4C.txt"
+   ]
+  },
+  "TCGA-AA-3538": {
+   "neighbour": "TCGA-AA-3875",
+   "similarity": 0.9006,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3875.8E2D005B-0201-41EF-9118-15FA334B7CC7.txt"
+   ]
+  },
+  "TCGA-AA-3542": {
+   "neighbour": "TCGA-AA-3562",
+   "similarity": 0.8892,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3562.98738F18-85BD-4AA9-887D-443A1BC00694.txt"
+   ]
+  },
+  "TCGA-AA-3543": {
+   "neighbour": "TCGA-AA-3815",
+   "similarity": 0.8992,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3815.A3EDDE6C-4FBE-4690-98B2-64CBC817A365.txt"
+   ]
+  },
+  "TCGA-AA-3544": {
+   "neighbour": "TCGA-AA-3947",
+   "similarity": 0.8835,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3947.B9614EB3-7A7F-4737-8E48-C13564EE1A4C.txt"
+   ]
+  },
+  "TCGA-AA-3548": {
+   "neighbour": "TCGA-AA-3815",
+   "similarity": 0.8557,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3815.A3EDDE6C-4FBE-4690-98B2-64CBC817A365.txt"
+   ]
+  },
+  "TCGA-AA-3549": {
+   "neighbour": "TCGA-AA-A00D",
+   "similarity": 0.8356,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00D.0D0B2106-A2F1-4D5B-96CD-8E46D3A9D60B.txt"
+   ]
+  },
+  "TCGA-AA-3552": {
+   "neighbour": "TCGA-AA-3989",
+   "similarity": 0.8736,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3989.7988769F-3450-4938-974F-A492C0122E9D.txt"
+   ]
+  },
+  "TCGA-AA-3553": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8834,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AA-3554": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8695,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AA-3555": {
+   "neighbour": "TCGA-AA-3956",
+   "similarity": 0.813,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3956.9BBB5E1A-4BBB-4882-A294-E0F13D82FA4C.txt"
+   ]
+  },
+  "TCGA-AA-3556": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8839,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AA-3558": {
+   "neighbour": "TCGA-AA-3530",
+   "similarity": 0.9116,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3530.76035D5D-D2BB-4616-A9A2-5794A6F1373D.txt"
+   ]
+  },
+  "TCGA-AA-3560": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8904,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AA-3561": {
+   "neighbour": "TCGA-AA-3976",
+   "similarity": 0.8984,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3976.7AB12244-C3C7-4297-8375-7324C8FAE99C.txt"
+   ]
+  },
+  "TCGA-AA-3562": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9158,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AA-3664": {
+   "neighbour": "TCGA-AA-3675",
+   "similarity": 0.8865,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3675.F862FEA6-B8E7-4FAA-8E07-30E72608CD2F.txt"
+   ]
+  },
+  "TCGA-AA-3666": {
+   "neighbour": "TCGA-AA-A01I",
+   "similarity": 0.8692,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01I.51A15A40-E611-49C3-AB69-638871664D86.txt"
+   ]
+  },
+  "TCGA-AA-3667": {
+   "neighbour": "TCGA-AA-A02J",
+   "similarity": 0.9324,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02J.18C139E3-62C0-4D98-8D1B-BA412EE9BE1E.txt"
+   ]
+  },
+  "TCGA-AA-3672": {
+   "neighbour": "TCGA-AA-A01P",
+   "similarity": 0.8622,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01P.8547AC20-9066-452B-BB3D-AF6618445A79.txt"
+   ]
+  },
+  "TCGA-AA-3673": {
+   "neighbour": "TCGA-AA-3667",
+   "similarity": 0.9144,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3667.5D3DA8C3-0854-439D-B2F3-2F9016A78B9D.txt"
+   ]
+  },
+  "TCGA-AA-3675": {
+   "neighbour": "TCGA-AA-3664",
+   "similarity": 0.8865,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3664.C000F50B-58B6-4C7A-9859-43D199747CF0.txt"
+   ]
+  },
+  "TCGA-AA-3678": {
+   "neighbour": "TCGA-AA-3681",
+   "similarity": 0.8554,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3681.2485FB59-2E7A-4C9B-B8CF-3A553C953A21.txt"
+   ]
+  },
+  "TCGA-AA-3679": {
+   "neighbour": "TCGA-AA-3867",
+   "similarity": 0.9142,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3867.A2D8E110-7F5C-4B41-9084-405564F4BC9B.txt"
+   ]
+  },
+  "TCGA-AA-3680": {
+   "neighbour": "TCGA-AA-A02E",
+   "similarity": 0.8786,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02E.72783514-8591-469B-B5CE-B63E274A521C.txt"
+   ]
+  },
+  "TCGA-AA-3681": {
+   "neighbour": "TCGA-AA-3685",
+   "similarity": 0.8313,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3685.26CC9EA1-5415-4FBB-958C-F9FC005BF8E0.txt"
+   ]
+  },
+  "TCGA-AA-3684": {
+   "neighbour": "TCGA-AA-3877",
+   "similarity": 0.7788,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3877.241490A3-7FD3-48F2-94D3-8CABB776E24B.txt"
+   ]
+  },
+  "TCGA-AA-3685": {
+   "neighbour": "TCGA-AA-3814",
+   "similarity": 0.8546,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3814.8521E575-B0FE-42B3-BAAD-107A913A7C21.txt"
+   ]
+  },
+  "TCGA-AA-3688": {
+   "neighbour": "TCGA-AA-A02J",
+   "similarity": 0.8609,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02J.18C139E3-62C0-4D98-8D1B-BA412EE9BE1E.txt"
+   ]
+  },
+  "TCGA-AA-3692": {
+   "neighbour": "TCGA-AA-3977",
+   "similarity": 0.9221,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3977.0AF2B6CB-F718-4D12-B444-2FEB4730EA27.txt"
+   ]
+  },
+  "TCGA-AA-3693": {
+   "neighbour": "TCGA-AA-3956",
+   "similarity": 0.9071,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3956.9BBB5E1A-4BBB-4882-A294-E0F13D82FA4C.txt"
+   ]
+  },
+  "TCGA-AA-3695": {
+   "neighbour": "TCGA-AA-3667",
+   "similarity": 0.9109,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3667.5D3DA8C3-0854-439D-B2F3-2F9016A78B9D.txt"
+   ]
+  },
+  "TCGA-AA-3696": {
+   "neighbour": "TCGA-AA-3852",
+   "similarity": 0.9282,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3852.27E4A994-74C4-47AB-8F7C-00F2C468F3EF.txt"
+   ]
+  },
+  "TCGA-AA-3710": {
+   "neighbour": "TCGA-AA-3518",
+   "similarity": 0.7603,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3518.DA1E7681-76E1-456F-B8D1-ED08C844C122.txt"
+   ]
+  },
+  "TCGA-AA-3715": {
+   "neighbour": "TCGA-AA-A01P",
+   "similarity": 0.8093,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01P.8547AC20-9066-452B-BB3D-AF6618445A79.txt"
+   ]
+  },
+  "TCGA-AA-3811": {
+   "neighbour": "TCGA-AA-3518",
+   "similarity": 0.8262,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3518.DA1E7681-76E1-456F-B8D1-ED08C844C122.txt"
+   ]
+  },
+  "TCGA-AA-3812": {
+   "neighbour": "TCGA-AA-A01C",
+   "similarity": 0.9289,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01C.DDD08E2A-031B-4488-B96B-74697603B470.txt"
+   ]
+  },
+  "TCGA-AA-3814": {
+   "neighbour": "TCGA-AA-3685",
+   "similarity": 0.8546,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3685.26CC9EA1-5415-4FBB-958C-F9FC005BF8E0.txt"
+   ]
+  },
+  "TCGA-AA-3815": {
+   "neighbour": "TCGA-AA-3526",
+   "similarity": 0.908,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3526.7374CE91-8D9F-4BA3-867A-E326D2298077.txt"
+   ]
+  },
+  "TCGA-AA-3818": {
+   "neighbour": "TCGA-AA-3520",
+   "similarity": 0.9053,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3520.1CCF52AC-3817-46AF-9DC6-A948F919A527.txt"
+   ]
+  },
+  "TCGA-AA-3819": {
+   "neighbour": "TCGA-AA-3667",
+   "similarity": 0.9251,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3667.5D3DA8C3-0854-439D-B2F3-2F9016A78B9D.txt"
+   ]
+  },
+  "TCGA-AA-3821": {
+   "neighbour": "TCGA-AA-3994",
+   "similarity": 0.9176,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3994.55C50C9D-4520-4BD3-8ABF-31FE50EC5537.txt"
+   ]
+  },
+  "TCGA-AA-3831": {
+   "neighbour": "TCGA-AA-3680",
+   "similarity": 0.8791,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3680.0CEC2F9E-19B2-4D7F-8ECF-1545393B9A3B.txt"
+   ]
+  },
+  "TCGA-AA-3833": {
+   "neighbour": "TCGA-AA-3930",
+   "similarity": 0.7821,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3930.6312F276-158B-4B14-9F8C-1B47ADABB147.txt"
+   ]
+  },
+  "TCGA-AA-3837": {
+   "neighbour": "TCGA-AA-3844",
+   "similarity": 0.8913,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3844.8445E6A1-3A39-4261-B971-D3409F6B88A3.txt"
+   ]
+  },
+  "TCGA-AA-3841": {
+   "neighbour": "TCGA-AA-3982",
+   "similarity": 0.9185,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3982.98BB6188-7493-47AF-A8DA-99929E1EA542.txt"
+   ]
+  },
+  "TCGA-AA-3842": {
+   "neighbour": "TCGA-AA-3819",
+   "similarity": 0.8877,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3819.549D5D13-B8AA-4798-9FEA-135BD09D005A.txt"
+   ]
+  },
+  "TCGA-AA-3844": {
+   "neighbour": "TCGA-AA-3837",
+   "similarity": 0.8913,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3837.45D68348-26B2-4A0A-AF72-C741BBF76981.txt"
+   ]
+  },
+  "TCGA-AA-3845": {
+   "neighbour": "TCGA-AA-A02R",
+   "similarity": 0.8364,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02R.11E660AD-07D5-4996-A054-5F55D68AB793.txt"
+   ]
+  },
+  "TCGA-AA-3846": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.9321,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AA-3848": {
+   "neighbour": "TCGA-AA-3846",
+   "similarity": 0.9321,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3846.5096C73E-2A6B-4302-B397-E6B2161C081C.txt"
+   ]
+  },
+  "TCGA-AA-3850": {
+   "neighbour": "TCGA-AA-3526",
+   "similarity": 0.8991,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3526.7374CE91-8D9F-4BA3-867A-E326D2298077.txt"
+   ]
+  },
+  "TCGA-AA-3851": {
+   "neighbour": "TCGA-AA-3846",
+   "similarity": 0.9299,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3846.5096C73E-2A6B-4302-B397-E6B2161C081C.txt"
+   ]
+  },
+  "TCGA-AA-3852": {
+   "neighbour": "TCGA-AA-3696",
+   "similarity": 0.9282,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3696.5356D8AB-D569-41AF-BD68-4378154D3AE7.txt"
+   ]
+  },
+  "TCGA-AA-3854": {
+   "neighbour": "TCGA-AA-3852",
+   "similarity": 0.8825,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3852.27E4A994-74C4-47AB-8F7C-00F2C468F3EF.txt"
+   ]
+  },
+  "TCGA-AA-3855": {
+   "neighbour": "TCGA-AA-3856",
+   "similarity": 0.9276,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3856.9422F618-6EA5-49F3-9761-D176A5B59846.txt"
+   ]
+  },
+  "TCGA-AA-3856": {
+   "neighbour": "TCGA-AA-3975",
+   "similarity": 0.9443,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3975.2EA60AAB-1F16-4DD6-9F73-39103A726D83.txt"
+   ]
+  },
+  "TCGA-AA-3858": {
+   "neighbour": "TCGA-AA-A01G",
+   "similarity": 0.9413,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01G.4E27D129-1AC8-4382-B77B-9F8545EFEBE1.txt"
+   ]
+  },
+  "TCGA-AA-3860": {
+   "neighbour": "TCGA-AA-A00A",
+   "similarity": 0.8651,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00A.8159A57E-D8E0-406E-9DAC-3E26E8EB1BA9.txt"
+   ]
+  },
+  "TCGA-AA-3861": {
+   "neighbour": "TCGA-AA-A029",
+   "similarity": 0.8702,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A029.132B76AD-5B42-4315-B96D-BD4D6BB1F33C.txt"
+   ]
+  },
+  "TCGA-AA-3862": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.9107,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AA-3864": {
+   "neighbour": "TCGA-AA-A029",
+   "similarity": 0.8425,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A029.132B76AD-5B42-4315-B96D-BD4D6BB1F33C.txt"
+   ]
+  },
+  "TCGA-AA-3866": {
+   "neighbour": "TCGA-AA-A01T",
+   "similarity": 0.8188,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01T.7DBAA2D8-44FA-4726-94DC-3AFCFBFF15D5.txt"
+   ]
+  },
+  "TCGA-AA-3867": {
+   "neighbour": "TCGA-AA-3979",
+   "similarity": 0.8812,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3979.3336E745-C20B-4CEF-A6FD-8E6EDC6F03A1.txt"
+   ]
+  },
+  "TCGA-AA-3869": {
+   "neighbour": "TCGA-AA-3982",
+   "similarity": 0.9036,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3982.98BB6188-7493-47AF-A8DA-99929E1EA542.txt"
+   ]
+  },
+  "TCGA-AA-3870": {
+   "neighbour": "TCGA-AA-3518",
+   "similarity": 0.8563,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3518.DA1E7681-76E1-456F-B8D1-ED08C844C122.txt"
+   ]
+  },
+  "TCGA-AA-3872": {
+   "neighbour": "TCGA-AA-3976",
+   "similarity": 0.8764,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3976.7AB12244-C3C7-4297-8375-7324C8FAE99C.txt"
+   ]
+  },
+  "TCGA-AA-3875": {
+   "neighbour": "TCGA-AA-3956",
+   "similarity": 0.9199,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3956.9BBB5E1A-4BBB-4882-A294-E0F13D82FA4C.txt"
+   ]
+  },
+  "TCGA-AA-3877": {
+   "neighbour": "TCGA-AA-3525",
+   "similarity": 0.8449,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3525.A97997E2-B3D7-43BC-A519-2AA0AB3DA2CA.txt"
+   ]
+  },
+  "TCGA-AA-3930": {
+   "neighbour": "TCGA-AA-3867",
+   "similarity": 0.8531,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3867.A2D8E110-7F5C-4B41-9084-405564F4BC9B.txt"
+   ]
+  },
+  "TCGA-AA-3939": {
+   "neighbour": "TCGA-AA-3869",
+   "similarity": 0.9342,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3869.34C6F392-82CD-449E-928E-16C5551FAEA8.txt"
+   ]
+  },
+  "TCGA-AA-3941": {
+   "neighbour": "TCGA-AA-3982",
+   "similarity": 0.8688,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3982.98BB6188-7493-47AF-A8DA-99929E1EA542.txt"
+   ]
+  },
+  "TCGA-AA-3947": {
+   "neighbour": "TCGA-AA-3524",
+   "similarity": 0.9008,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3524.21A38B39-57BE-4CA0-AD3F-F81463E63A05.txt"
+   ]
+  },
+  "TCGA-AA-3949": {
+   "neighbour": "TCGA-AA-3966",
+   "similarity": 0.8152,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3966.D2C3087B-9B52-4958-859A-F2EE18FFE6A3.txt"
+   ]
+  },
+  "TCGA-AA-3950": {
+   "neighbour": "TCGA-AA-3966",
+   "similarity": 0.8132,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3966.D2C3087B-9B52-4958-859A-F2EE18FFE6A3.txt"
+   ]
+  },
+  "TCGA-AA-3952": {
+   "neighbour": "TCGA-AA-3984",
+   "similarity": 0.8586,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3984.A1027D0E-BF96-45B2-A762-E71F3A5563DD.txt"
+   ]
+  },
+  "TCGA-AA-3955": {
+   "neighbour": "TCGA-AA-A02W",
+   "similarity": 0.8794,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02W.257FBF57-5DB1-44D5-994D-64EFD1CA4E57.txt"
+   ]
+  },
+  "TCGA-AA-3956": {
+   "neighbour": "TCGA-AA-3875",
+   "similarity": 0.9199,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3875.8E2D005B-0201-41EF-9118-15FA334B7CC7.txt"
+   ]
+  },
+  "TCGA-AA-3966": {
+   "neighbour": "TCGA-AA-3527",
+   "similarity": 0.8411,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3527.401E54D1-5D40-4533-8F5A-939ED4107655.txt"
+   ]
+  },
+  "TCGA-AA-3967": {
+   "neighbour": "TCGA-AA-A01X",
+   "similarity": 0.8085,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01X.1FD84A23-A23D-465B-9D2D-83928659BA60.txt"
+   ]
+  },
+  "TCGA-AA-3968": {
+   "neighbour": "TCGA-AA-3846",
+   "similarity": 0.8828,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3846.5096C73E-2A6B-4302-B397-E6B2161C081C.txt"
+   ]
+  },
+  "TCGA-AA-3970": {
+   "neighbour": "TCGA-AA-3856",
+   "similarity": 0.9035,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3856.9422F618-6EA5-49F3-9761-D176A5B59846.txt"
+   ]
+  },
+  "TCGA-AA-3971": {
+   "neighbour": "TCGA-AA-3986",
+   "similarity": 0.8901,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3986.5CA738D3-2A5E-4DB2-A064-FE61A9CEC8B3.txt"
+   ]
+  },
+  "TCGA-AA-3972": {
+   "neighbour": "TCGA-AA-3819",
+   "similarity": 0.8746,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3819.549D5D13-B8AA-4798-9FEA-135BD09D005A.txt"
+   ]
+  },
+  "TCGA-AA-3973": {
+   "neighbour": "TCGA-AA-3975",
+   "similarity": 0.787,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3975.2EA60AAB-1F16-4DD6-9F73-39103A726D83.txt"
+   ]
+  },
+  "TCGA-AA-3975": {
+   "neighbour": "TCGA-AA-3856",
+   "similarity": 0.9443,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3856.9422F618-6EA5-49F3-9761-D176A5B59846.txt"
+   ]
+  },
+  "TCGA-AA-3976": {
+   "neighbour": "TCGA-AA-3561",
+   "similarity": 0.8984,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3561.6F8B8558-C90F-45FA-9A89-6F35B3C118A8.txt"
+   ]
+  },
+  "TCGA-AA-3977": {
+   "neighbour": "TCGA-AA-3692",
+   "similarity": 0.9221,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3692.F899F217-0D34-4477-8AE3-80640AE34889.txt"
+   ]
+  },
+  "TCGA-AA-3979": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.9162,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AA-3980": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.8954,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AA-3982": {
+   "neighbour": "TCGA-AA-3856",
+   "similarity": 0.9281,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3856.9422F618-6EA5-49F3-9761-D176A5B59846.txt"
+   ]
+  },
+  "TCGA-AA-3984": {
+   "neighbour": "TCGA-AA-3947",
+   "similarity": 0.8615,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3947.B9614EB3-7A7F-4737-8E48-C13564EE1A4C.txt"
+   ]
+  },
+  "TCGA-AA-3986": {
+   "neighbour": "TCGA-AA-A02E",
+   "similarity": 0.8888,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02E.72783514-8591-469B-B5CE-B63E274A521C.txt"
+   ]
+  },
+  "TCGA-AA-3989": {
+   "neighbour": "TCGA-AA-A01I",
+   "similarity": 0.8911,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01I.51A15A40-E611-49C3-AB69-638871664D86.txt"
+   ]
+  },
+  "TCGA-AA-3994": {
+   "neighbour": "TCGA-AA-3821",
+   "similarity": 0.9176,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3821.F65818AC-707F-432E-B5F5-0BE1405074E3.txt"
+   ]
+  },
+  "TCGA-AA-A004": {
+   "neighbour": "TCGA-AA-3814",
+   "similarity": 0.7824,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3814.8521E575-B0FE-42B3-BAAD-107A913A7C21.txt"
+   ]
+  },
+  "TCGA-AA-A00A": {
+   "neighbour": "TCGA-AA-3543",
+   "similarity": 0.8943,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3543.978056B3-EBF5-465A-AC1D-F470890298A7.txt"
+   ]
+  },
+  "TCGA-AA-A00D": {
+   "neighbour": "TCGA-AA-3522",
+   "similarity": 0.8447,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3522.81EC5D87-9F8F-4608-A15A-F015C73CDFA5.txt"
+   ]
+  },
+  "TCGA-AA-A00E": {
+   "neighbour": "TCGA-AA-3814",
+   "similarity": 0.7658,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3814.8521E575-B0FE-42B3-BAAD-107A913A7C21.txt"
+   ]
+  },
+  "TCGA-AA-A00F": {
+   "neighbour": "TCGA-AA-A01C",
+   "similarity": 0.9239,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01C.DDD08E2A-031B-4488-B96B-74697603B470.txt"
+   ]
+  },
+  "TCGA-AA-A00J": {
+   "neighbour": "TCGA-AA-3518",
+   "similarity": 0.816,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3518.DA1E7681-76E1-456F-B8D1-ED08C844C122.txt"
+   ]
+  },
+  "TCGA-AA-A00K": {
+   "neighbour": "TCGA-AA-3814",
+   "similarity": 0.8385,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3814.8521E575-B0FE-42B3-BAAD-107A913A7C21.txt"
+   ]
+  },
+  "TCGA-AA-A00L": {
+   "neighbour": "TCGA-AA-A017",
+   "similarity": 0.9326,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A017.6DFB118D-B692-4957-B563-B3A91080038F.txt"
+   ]
+  },
+  "TCGA-AA-A00N": {
+   "neighbour": "TCGA-AA-A01K",
+   "similarity": 0.8722,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01K.0D66971E-D224-4536-A3BE-B138861D8E7D.txt"
+   ]
+  },
+  "TCGA-AA-A00O": {
+   "neighbour": "TCGA-AA-A01D",
+   "similarity": 0.752,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01D.B52F7D2A-2177-4A2A-A941-042D661D3F37.txt"
+   ]
+  },
+  "TCGA-AA-A00Q": {
+   "neighbour": "TCGA-AA-A01I",
+   "similarity": 0.9186,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01I.51A15A40-E611-49C3-AB69-638871664D86.txt"
+   ]
+  },
+  "TCGA-AA-A00R": {
+   "neighbour": "TCGA-AA-A02R",
+   "similarity": 0.8462,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02R.11E660AD-07D5-4996-A054-5F55D68AB793.txt"
+   ]
+  },
+  "TCGA-AA-A00U": {
+   "neighbour": "TCGA-AA-3529",
+   "similarity": 0.8988,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3529.5489C71B-45A8-4172-A5F7-4DA23D721B98.txt"
+   ]
+  },
+  "TCGA-AA-A00W": {
+   "neighbour": "TCGA-AA-A01X",
+   "similarity": 0.8423,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01X.1FD84A23-A23D-465B-9D2D-83928659BA60.txt"
+   ]
+  },
+  "TCGA-AA-A00Z": {
+   "neighbour": "TCGA-AA-3956",
+   "similarity": 0.928,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3956.9BBB5E1A-4BBB-4882-A294-E0F13D82FA4C.txt"
+   ]
+  },
+  "TCGA-AA-A010": {
+   "neighbour": "TCGA-AA-3543",
+   "similarity": 0.8451,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3543.978056B3-EBF5-465A-AC1D-F470890298A7.txt"
+   ]
+  },
+  "TCGA-AA-A017": {
+   "neighbour": "TCGA-AA-A00L",
+   "similarity": 0.9326,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00L.3A6D9A07-C421-4C87-AC68-2A6FC3BFD05D.txt"
+   ]
+  },
+  "TCGA-AA-A01C": {
+   "neighbour": "TCGA-AA-3812",
+   "similarity": 0.9289,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3812.4393113D-6C83-4763-A258-96AB9B8F604D.txt"
+   ]
+  },
+  "TCGA-AA-A01D": {
+   "neighbour": "TCGA-AA-3846",
+   "similarity": 0.899,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3846.5096C73E-2A6B-4302-B397-E6B2161C081C.txt"
+   ]
+  },
+  "TCGA-AA-A01F": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8971,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AA-A01G": {
+   "neighbour": "TCGA-AA-3858",
+   "similarity": 0.9413,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3858.76997550-47ED-4958-96AA-AC0CDEC9F134.txt"
+   ]
+  },
+  "TCGA-AA-A01I": {
+   "neighbour": "TCGA-AA-3530",
+   "similarity": 0.9056,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3530.76035D5D-D2BB-4616-A9A2-5794A6F1373D.txt"
+   ]
+  },
+  "TCGA-AA-A01K": {
+   "neighbour": "TCGA-AA-3841",
+   "similarity": 0.8852,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3841.A7348FAF-DF79-4765-8910-B183A408E905.txt"
+   ]
+  },
+  "TCGA-AA-A01P": {
+   "neighbour": "TCGA-AA-3715",
+   "similarity": 0.8093,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3715.CC2F2E2C-FCC2-4D75-9589-A9EC31FBE3AC.txt"
+   ]
+  },
+  "TCGA-AA-A01Q": {
+   "neighbour": "TCGA-AA-A01T",
+   "similarity": 0.8348,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01T.7DBAA2D8-44FA-4726-94DC-3AFCFBFF15D5.txt"
+   ]
+  },
+  "TCGA-AA-A01R": {
+   "neighbour": "TCGA-AA-A01S",
+   "similarity": 0.7251,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01S.5A447FA7-E561-4F17-9A66-0CF944B2D8C3.txt"
+   ]
+  },
+  "TCGA-AA-A01S": {
+   "neighbour": "TCGA-AA-A01X",
+   "similarity": 0.876,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01X.1FD84A23-A23D-465B-9D2D-83928659BA60.txt"
+   ]
+  },
+  "TCGA-AA-A01T": {
+   "neighbour": "TCGA-AA-A01Q",
+   "similarity": 0.8348,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01Q.C5E7082D-B5A0-4BF7-B929-9F6715A02276.txt"
+   ]
+  },
+  "TCGA-AA-A01V": {
+   "neighbour": "TCGA-AA-A02O",
+   "similarity": 0.9101,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02O.AEB46243-5146-48F3-A59B-A9455C72F0F5.txt"
+   ]
+  },
+  "TCGA-AA-A01X": {
+   "neighbour": "TCGA-AA-A01S",
+   "similarity": 0.876,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01S.5A447FA7-E561-4F17-9A66-0CF944B2D8C3.txt"
+   ]
+  },
+  "TCGA-AA-A01Z": {
+   "neighbour": "TCGA-AA-A02O",
+   "similarity": 0.8557,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02O.AEB46243-5146-48F3-A59B-A9455C72F0F5.txt"
+   ]
+  },
+  "TCGA-AA-A022": {
+   "neighbour": "TCGA-AA-3518",
+   "similarity": 0.8446,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3518.DA1E7681-76E1-456F-B8D1-ED08C844C122.txt"
+   ]
+  },
+  "TCGA-AA-A024": {
+   "neighbour": "TCGA-AA-3861",
+   "similarity": 0.9101,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3861.DB8A3784-502F-4F08-B31B-FDF25038A65D.txt"
+   ]
+  },
+  "TCGA-AA-A029": {
+   "neighbour": "TCGA-AA-3861",
+   "similarity": 0.8702,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3861.DB8A3784-502F-4F08-B31B-FDF25038A65D.txt"
+   ]
+  },
+  "TCGA-AA-A02E": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9178,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AA-A02F": {
+   "neighbour": "TCGA-AA-3867",
+   "similarity": 0.864,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3867.A2D8E110-7F5C-4B41-9084-405564F4BC9B.txt"
+   ]
+  },
+  "TCGA-AA-A02H": {
+   "neighbour": "TCGA-AA-3531",
+   "similarity": 0.91,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3531.ADF38D8C-1CDE-4C59-B54E-D498E2A96FF2.txt"
+   ]
+  },
+  "TCGA-AA-A02J": {
+   "neighbour": "TCGA-AA-3667",
+   "similarity": 0.9324,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3667.5D3DA8C3-0854-439D-B2F3-2F9016A78B9D.txt"
+   ]
+  },
+  "TCGA-AA-A02K": {
+   "neighbour": "TCGA-AA-A01S",
+   "similarity": 0.8171,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01S.5A447FA7-E561-4F17-9A66-0CF944B2D8C3.txt"
+   ]
+  },
+  "TCGA-AA-A02O": {
+   "neighbour": "TCGA-AA-A01V",
+   "similarity": 0.9101,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01V.C5348097-4824-490A-B2FF-F257BDC9C633.txt"
+   ]
+  },
+  "TCGA-AA-A02R": {
+   "neighbour": "TCGA-AA-A00R",
+   "similarity": 0.8462,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00R.A4E3D45C-6471-4FBA-BC47-AF0FDC01E417.txt"
+   ]
+  },
+  "TCGA-AA-A02W": {
+   "neighbour": "TCGA-AA-3955",
+   "similarity": 0.8794,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3955.20CB4D37-71CC-4CE2-A126-801EF9C251EA.txt"
+   ]
+  },
+  "TCGA-AA-A02Y": {
+   "neighbour": "TCGA-AA-3852",
+   "similarity": 0.8823,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3852.27E4A994-74C4-47AB-8F7C-00F2C468F3EF.txt"
+   ]
+  },
+  "TCGA-AA-A03F": {
+   "neighbour": "TCGA-AA-A01V",
+   "similarity": 0.7641,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01V.C5348097-4824-490A-B2FF-F257BDC9C633.txt"
+   ]
+  },
+  "TCGA-AA-A03J": {
+   "neighbour": "TCGA-AA-A02O",
+   "similarity": 0.861,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02O.AEB46243-5146-48F3-A59B-A9455C72F0F5.txt"
+   ]
+  },
+  "TCGA-AD-5900": {
+   "neighbour": "TCGA-AD-6890",
+   "similarity": 0.909,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6890.572896CD-23B9-431A-8272-94D582E4A672.txt"
+   ]
+  },
+  "TCGA-AD-6548": {
+   "neighbour": "TCGA-AD-6890",
+   "similarity": 0.9102,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6890.572896CD-23B9-431A-8272-94D582E4A672.txt"
+   ]
+  },
+  "TCGA-AD-6888": {
+   "neighbour": "TCGA-AD-6890",
+   "similarity": 0.8633,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6890.572896CD-23B9-431A-8272-94D582E4A672.txt"
+   ]
+  },
+  "TCGA-AD-6889": {
+   "neighbour": "TCGA-AD-6888",
+   "similarity": 0.8191,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6888.BC82E9BE-543C-401F-87EE-3414FFEC3C14.txt"
+   ]
+  },
+  "TCGA-AD-6890": {
+   "neighbour": "TCGA-AD-6548",
+   "similarity": 0.9102,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6548.B2B633B9-BB9E-4320-BAC3-67C05313D7D3.txt"
+   ]
+  },
+  "TCGA-AD-6895": {
+   "neighbour": "TCGA-AD-6899",
+   "similarity": 0.8249,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6899.D2761F85-DAAB-4236-BFF3-D7EC6927A166.txt"
+   ]
+  },
+  "TCGA-AD-6899": {
+   "neighbour": "TCGA-AD-6890",
+   "similarity": 0.8384,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6890.572896CD-23B9-431A-8272-94D582E4A672.txt"
+   ]
+  },
+  "TCGA-AD-6901": {
+   "neighbour": "TCGA-AD-6889",
+   "similarity": 0.8736,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6889.BAF2A936-E132-47D6-831F-675625FEAF0B.txt"
+   ]
+  },
+  "TCGA-AD-6963": {
+   "neighbour": "TCGA-CM-5341",
+   "similarity": 0.8118,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5341.BD882C39-2D27-41A6-9A89-4482D92ED68B.txt"
+   ]
+  },
+  "TCGA-AD-6964": {
+   "neighbour": "TCGA-AD-6895",
+   "similarity": 0.8155,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6895.84A1CC4E-7E89-4F7D-915A-59521640BB59.txt"
+   ]
+  },
+  "TCGA-AD-6965": {
+   "neighbour": "TCGA-AD-6888",
+   "similarity": 0.819,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6888.BC82E9BE-543C-401F-87EE-3414FFEC3C14.txt"
+   ]
+  },
+  "TCGA-AD-A5EJ": {
+   "neighbour": "TCGA-A6-5665",
+   "similarity": 0.8267,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5665.814C8056-1298-4941-9FDE-C660DAE23C0E.txt"
+   ]
+  },
+  "TCGA-AD-A5EK": {
+   "neighbour": "TCGA-AZ-5407",
+   "similarity": 0.8024,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-5407.6C27F8B9-9E3C-4665-A176-A4679EED1FA9.txt"
+   ]
+  },
+  "TCGA-AF-2687": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.8474,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-AF-2689": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.9004,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-AF-2690": {
+   "neighbour": "TCGA-AZ-4684",
+   "similarity": 0.8934,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4684.3E3C0AA0-73DD-47F1-989B-2871336385AF.txt"
+   ]
+  },
+  "TCGA-AF-2691": {
+   "neighbour": "TCGA-A6-6648",
+   "similarity": 0.876,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6648.432DEC4F-B217-44BF-A559-1559FDCEB7BA.txt"
+   ]
+  },
+  "TCGA-AF-2692": {
+   "neighbour": "TCGA-A6-6137",
+   "similarity": 0.7397,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6137.700D53AD-BF88-4B4E-952A-6714E9A74A87.txt"
+   ]
+  },
+  "TCGA-AF-2693": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.9027,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-AF-3400": {
+   "neighbour": "TCGA-A6-3808",
+   "similarity": 0.8911,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-3808.E1505F65-72EF-438D-A5E1-93ED8BF6635D.txt"
+   ]
+  },
+  "TCGA-AF-3911": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.8641,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-AF-3913": {
+   "neighbour": "TCGA-A6-5660",
+   "similarity": 0.9003,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5660.865DC724-445F-45A7-A143-5318F6ACB580.txt"
+   ]
+  },
+  "TCGA-AF-3914": {
+   "neighbour": "TCGA-A6-5661",
+   "similarity": 0.8701,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5661.BFA2520C-B8F1-4475-B98C-6798ECBF6F16.txt"
+   ]
+  },
+  "TCGA-AF-4110": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.8649,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-AF-5654": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.8527,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-AF-6136": {
+   "neighbour": "TCGA-A6-4107",
+   "similarity": 0.899,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-4107.EAD64351-1C48-40CF-88D1-ACEA2F34A4EA.txt"
+   ]
+  },
+  "TCGA-AF-6655": {
+   "neighbour": "TCGA-A6-6654",
+   "similarity": 0.9139,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6654.0F0A992E-3A5C-490F-AA3E-62D2B26D580B.txt"
+   ]
+  },
+  "TCGA-AF-6672": {
+   "neighbour": "TCGA-A6-2678",
+   "similarity": 0.8861,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-2678.4C0861D1-A3B9-45CF-B0AC-EE9ADB748E55.txt"
+   ]
+  },
+  "TCGA-AF-A56K": {
+   "neighbour": "TCGA-A6-A566",
+   "similarity": 0.6516,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-A566.D2679879-72B7-4515-9496-B1FCE87C8571.txt"
+   ]
+  },
+  "TCGA-AF-A56L": {
+   "neighbour": "TCGA-AY-A54L",
+   "similarity": 0.6418,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-A54L.5319D80A-3DFD-4834-A905-D34E668D4A2F.txt"
+   ]
+  },
+  "TCGA-AF-A56N": {
+   "neighbour": "TCGA-AY-A69D",
+   "similarity": 0.6977,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-A69D.94F7B032-1181-44E0-AB16-4A672A88E086.txt"
+   ]
+  },
+  "TCGA-AG-3574": {
+   "neighbour": "TCGA-AA-A02H",
+   "similarity": 0.8958,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02H.3BEA7ED1-F6E7-4A2E-94B9-744503D3F0E7.txt"
+   ]
+  },
+  "TCGA-AG-3575": {
+   "neighbour": "TCGA-AA-3833",
+   "similarity": 0.5747,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3833.701E11C7-9FA9-4D45-9D35-1FAE3C3827AE.txt"
+   ]
+  },
+  "TCGA-AG-3578": {
+   "neighbour": "TCGA-AA-3814",
+   "similarity": 0.8585,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3814.8521E575-B0FE-42B3-BAAD-107A913A7C21.txt"
+   ]
+  },
+  "TCGA-AG-3580": {
+   "neighbour": "TCGA-AA-3986",
+   "similarity": 0.8539,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3986.5CA738D3-2A5E-4DB2-A064-FE61A9CEC8B3.txt"
+   ]
+  },
+  "TCGA-AG-3581": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.91,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AG-3582": {
+   "neighbour": "TCGA-AA-A00K",
+   "similarity": 0.8827,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00K.28B20E9A-DFF6-400D-91FE-05285D277AC6.txt"
+   ]
+  },
+  "TCGA-AG-3583": {
+   "neighbour": "TCGA-AA-3837",
+   "similarity": 0.8934,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3837.45D68348-26B2-4A0A-AF72-C741BBF76981.txt"
+   ]
+  },
+  "TCGA-AG-3584": {
+   "neighbour": "TCGA-AA-A02H",
+   "similarity": 0.8372,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02H.3BEA7ED1-F6E7-4A2E-94B9-744503D3F0E7.txt"
+   ]
+  },
+  "TCGA-AG-3586": {
+   "neighbour": "TCGA-AA-3975",
+   "similarity": 0.8992,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3975.2EA60AAB-1F16-4DD6-9F73-39103A726D83.txt"
+   ]
+  },
+  "TCGA-AG-3587": {
+   "neighbour": "TCGA-AA-3521",
+   "similarity": 0.9175,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.txt"
+   ]
+  },
+  "TCGA-AG-3593": {
+   "neighbour": "TCGA-AA-3980",
+   "similarity": 0.9162,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3980.336FE62C-A0FD-4E99-93DD-15D755BD709B.txt"
+   ]
+  },
+  "TCGA-AG-3594": {
+   "neighbour": "TCGA-AA-3852",
+   "similarity": 0.8959,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3852.27E4A994-74C4-47AB-8F7C-00F2C468F3EF.txt"
+   ]
+  },
+  "TCGA-AG-3598": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8534,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AG-3599": {
+   "neighbour": "TCGA-AA-3526",
+   "similarity": 0.8921,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3526.7374CE91-8D9F-4BA3-867A-E326D2298077.txt"
+   ]
+  },
+  "TCGA-AG-3600": {
+   "neighbour": "TCGA-AA-3526",
+   "similarity": 0.9258,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3526.7374CE91-8D9F-4BA3-867A-E326D2298077.txt"
+   ]
+  },
+  "TCGA-AG-3601": {
+   "neighbour": "TCGA-AA-3856",
+   "similarity": 0.9396,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3856.9422F618-6EA5-49F3-9761-D176A5B59846.txt"
+   ]
+  },
+  "TCGA-AG-3602": {
+   "neighbour": "TCGA-AA-3846",
+   "similarity": 0.9144,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3846.5096C73E-2A6B-4302-B397-E6B2161C081C.txt"
+   ]
+  },
+  "TCGA-AG-3605": {
+   "neighbour": "TCGA-AA-3558",
+   "similarity": 0.8974,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3558.AB0CEFCC-B895-4D15-9A5F-844A9E8C4341.txt"
+   ]
+  },
+  "TCGA-AG-3608": {
+   "neighbour": "TCGA-AA-3976",
+   "similarity": 0.9218,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3976.7AB12244-C3C7-4297-8375-7324C8FAE99C.txt"
+   ]
+  },
+  "TCGA-AG-3609": {
+   "neighbour": "TCGA-AA-3976",
+   "similarity": 0.903,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3976.7AB12244-C3C7-4297-8375-7324C8FAE99C.txt"
+   ]
+  },
+  "TCGA-AG-3611": {
+   "neighbour": "TCGA-AA-3854",
+   "similarity": 0.8804,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3854.DA5AC5A8-184C-4D2F-B0C4-5D2E8E3B7580.txt"
+   ]
+  },
+  "TCGA-AG-3612": {
+   "neighbour": "TCGA-AA-3519",
+   "similarity": 0.9257,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3519.127E9D44-2F7C-41F3-B925-D04812A8A9F6.txt"
+   ]
+  },
+  "TCGA-AG-3726": {
+   "neighbour": "TCGA-AA-A02J",
+   "similarity": 0.7987,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02J.18C139E3-62C0-4D98-8D1B-BA412EE9BE1E.txt"
+   ]
+  },
+  "TCGA-AG-3727": {
+   "neighbour": "TCGA-AA-A02J",
+   "similarity": 0.7494,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02J.18C139E3-62C0-4D98-8D1B-BA412EE9BE1E.txt"
+   ]
+  },
+  "TCGA-AG-3728": {
+   "neighbour": "TCGA-AA-3543",
+   "similarity": 0.8241,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3543.978056B3-EBF5-465A-AC1D-F470890298A7.txt"
+   ]
+  },
+  "TCGA-AG-3878": {
+   "neighbour": "TCGA-AA-3815",
+   "similarity": 0.914,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3815.A3EDDE6C-4FBE-4690-98B2-64CBC817A365.txt"
+   ]
+  },
+  "TCGA-AG-3881": {
+   "neighbour": "TCGA-AA-3692",
+   "similarity": 0.8016,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3692.F899F217-0D34-4477-8AE3-80640AE34889.txt"
+   ]
+  },
+  "TCGA-AG-3882": {
+   "neighbour": "TCGA-AA-3986",
+   "similarity": 0.9126,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3986.5CA738D3-2A5E-4DB2-A064-FE61A9CEC8B3.txt"
+   ]
+  },
+  "TCGA-AG-3883": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.937,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AG-3885": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8894,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AG-3887": {
+   "neighbour": "TCGA-AA-3519",
+   "similarity": 0.9273,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3519.127E9D44-2F7C-41F3-B925-D04812A8A9F6.txt"
+   ]
+  },
+  "TCGA-AG-3890": {
+   "neighbour": "TCGA-AA-A01G",
+   "similarity": 0.9299,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01G.4E27D129-1AC8-4382-B77B-9F8545EFEBE1.txt"
+   ]
+  },
+  "TCGA-AG-3892": {
+   "neighbour": "TCGA-AA-3526",
+   "similarity": 0.8666,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3526.7374CE91-8D9F-4BA3-867A-E326D2298077.txt"
+   ]
+  },
+  "TCGA-AG-3893": {
+   "neighbour": "TCGA-AA-3812",
+   "similarity": 0.9244,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3812.4393113D-6C83-4763-A258-96AB9B8F604D.txt"
+   ]
+  },
+  "TCGA-AG-3894": {
+   "neighbour": "TCGA-AA-3696",
+   "similarity": 0.8837,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3696.5356D8AB-D569-41AF-BD68-4378154D3AE7.txt"
+   ]
+  },
+  "TCGA-AG-3896": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.9144,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AG-3898": {
+   "neighbour": "TCGA-AA-A01S",
+   "similarity": 0.8732,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01S.5A447FA7-E561-4F17-9A66-0CF944B2D8C3.txt"
+   ]
+  },
+  "TCGA-AG-3901": {
+   "neighbour": "TCGA-AA-3852",
+   "similarity": 0.9288,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3852.27E4A994-74C4-47AB-8F7C-00F2C468F3EF.txt"
+   ]
+  },
+  "TCGA-AG-3902": {
+   "neighbour": "TCGA-AA-A02E",
+   "similarity": 0.9204,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02E.72783514-8591-469B-B5CE-B63E274A521C.txt"
+   ]
+  },
+  "TCGA-AG-3906": {
+   "neighbour": "TCGA-AA-A01G",
+   "similarity": 0.9121,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01G.4E27D129-1AC8-4382-B77B-9F8545EFEBE1.txt"
+   ]
+  },
+  "TCGA-AG-3909": {
+   "neighbour": "TCGA-AA-3841",
+   "similarity": 0.8949,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3841.A7348FAF-DF79-4765-8910-B183A408E905.txt"
+   ]
+  },
+  "TCGA-AG-3999": {
+   "neighbour": "TCGA-AA-3562",
+   "similarity": 0.8409,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3562.98738F18-85BD-4AA9-887D-443A1BC00694.txt"
+   ]
+  },
+  "TCGA-AG-4001": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.9095,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AG-4005": {
+   "neighbour": "TCGA-AA-3984",
+   "similarity": 0.9221,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3984.A1027D0E-BF96-45B2-A762-E71F3A5563DD.txt"
+   ]
+  },
+  "TCGA-AG-4007": {
+   "neighbour": "TCGA-AA-3975",
+   "similarity": 0.9277,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3975.2EA60AAB-1F16-4DD6-9F73-39103A726D83.txt"
+   ]
+  },
+  "TCGA-AG-4008": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.9106,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AG-4015": {
+   "neighbour": "TCGA-AA-A00L",
+   "similarity": 0.9025,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00L.3A6D9A07-C421-4C87-AC68-2A6FC3BFD05D.txt"
+   ]
+  },
+  "TCGA-AG-4021": {
+   "neighbour": "TCGA-AA-A004",
+   "similarity": 0.6892,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A004.A4C2CE68-97FC-4EA6-AAD0-75F0B0EC3AD2.txt"
+   ]
+  },
+  "TCGA-AG-4022": {
+   "neighbour": "TCGA-AA-A01X",
+   "similarity": 0.8214,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01X.1FD84A23-A23D-465B-9D2D-83928659BA60.txt"
+   ]
+  },
+  "TCGA-AG-A002": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.7768,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AG-A008": {
+   "neighbour": "TCGA-AA-A02E",
+   "similarity": 0.8534,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02E.72783514-8591-469B-B5CE-B63E274A521C.txt"
+   ]
+  },
+  "TCGA-AG-A00C": {
+   "neighbour": "TCGA-AA-3562",
+   "similarity": 0.9047,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3562.98738F18-85BD-4AA9-887D-443A1BC00694.txt"
+   ]
+  },
+  "TCGA-AG-A00H": {
+   "neighbour": "TCGA-AA-A00L",
+   "similarity": 0.9048,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00L.3A6D9A07-C421-4C87-AC68-2A6FC3BFD05D.txt"
+   ]
+  },
+  "TCGA-AG-A00Y": {
+   "neighbour": "TCGA-AA-A02E",
+   "similarity": 0.9071,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02E.72783514-8591-469B-B5CE-B63E274A521C.txt"
+   ]
+  },
+  "TCGA-AG-A011": {
+   "neighbour": "TCGA-AA-3968",
+   "similarity": 0.8215,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3968.4A17BB93-6880-4BEA-803B-A82FA1B5A9A4.txt"
+   ]
+  },
+  "TCGA-AG-A014": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.9068,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AG-A015": {
+   "neighbour": "TCGA-AA-3861",
+   "similarity": 0.894,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3861.DB8A3784-502F-4F08-B31B-FDF25038A65D.txt"
+   ]
+  },
+  "TCGA-AG-A016": {
+   "neighbour": "TCGA-AA-3848",
+   "similarity": 0.9216,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3848.F8DDA0F2-1A9B-4219-BCFB-A33416AD74BE.txt"
+   ]
+  },
+  "TCGA-AG-A01J": {
+   "neighbour": "TCGA-AA-A01C",
+   "similarity": 0.9062,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01C.DDD08E2A-031B-4488-B96B-74697603B470.txt"
+   ]
+  },
+  "TCGA-AG-A01L": {
+   "neighbour": "TCGA-AA-A01F",
+   "similarity": 0.9151,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01F.6D0B0431-B2C4-41BE-9270-654790FA3170.txt"
+   ]
+  },
+  "TCGA-AG-A01N": {
+   "neighbour": "TCGA-AA-A00U",
+   "similarity": 0.8978,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00U.670DA42C-A894-45FC-9785-17BB52AE81F7.txt"
+   ]
+  },
+  "TCGA-AG-A01W": {
+   "neighbour": "TCGA-AA-A01S",
+   "similarity": 0.8891,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01S.5A447FA7-E561-4F17-9A66-0CF944B2D8C3.txt"
+   ]
+  },
+  "TCGA-AG-A01Y": {
+   "neighbour": "TCGA-AA-A03J",
+   "similarity": 0.8743,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A03J.DECA4002-D8E2-42A2-817C-BCDDA0DB5B7B.txt"
+   ]
+  },
+  "TCGA-AG-A020": {
+   "neighbour": "TCGA-AA-A02O",
+   "similarity": 0.929,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02O.AEB46243-5146-48F3-A59B-A9455C72F0F5.txt"
+   ]
+  },
+  "TCGA-AG-A023": {
+   "neighbour": "TCGA-AA-A02H",
+   "similarity": 0.9173,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02H.3BEA7ED1-F6E7-4A2E-94B9-744503D3F0E7.txt"
+   ]
+  },
+  "TCGA-AG-A025": {
+   "neighbour": "TCGA-AA-A02E",
+   "similarity": 0.8692,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02E.72783514-8591-469B-B5CE-B63E274A521C.txt"
+   ]
+  },
+  "TCGA-AG-A026": {
+   "neighbour": "TCGA-AA-A02J",
+   "similarity": 0.8051,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02J.18C139E3-62C0-4D98-8D1B-BA412EE9BE1E.txt"
+   ]
+  },
+  "TCGA-AG-A02G": {
+   "neighbour": "TCGA-AA-3815",
+   "similarity": 0.8867,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3815.A3EDDE6C-4FBE-4690-98B2-64CBC817A365.txt"
+   ]
+  },
+  "TCGA-AG-A02N": {
+   "neighbour": "TCGA-AA-A02O",
+   "similarity": 0.8767,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A02O.AEB46243-5146-48F3-A59B-A9455C72F0F5.txt"
+   ]
+  },
+  "TCGA-AG-A02X": {
+   "neighbour": "TCGA-AA-A00F",
+   "similarity": 0.8594,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A00F.55E026EA-CC8D-4295-896D-0FFDACE323B0.txt"
+   ]
+  },
+  "TCGA-AG-A032": {
+   "neighbour": "TCGA-AA-A01K",
+   "similarity": 0.8841,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01K.0D66971E-D224-4536-A3BE-B138861D8E7D.txt"
+   ]
+  },
+  "TCGA-AG-A036": {
+   "neighbour": "TCGA-AA-A01X",
+   "similarity": 0.8015,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-A01X.1FD84A23-A23D-465B-9D2D-83928659BA60.txt"
+   ]
+  },
+  "TCGA-AH-6544": {
+   "neighbour": "TCGA-AD-6548",
+   "similarity": 0.8768,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6548.B2B633B9-BB9E-4320-BAC3-67C05313D7D3.txt"
+   ]
+  },
+  "TCGA-AH-6547": {
+   "neighbour": "TCGA-AD-6548",
+   "similarity": 0.8304,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6548.B2B633B9-BB9E-4320-BAC3-67C05313D7D3.txt"
+   ]
+  },
+  "TCGA-AH-6549": {
+   "neighbour": "TCGA-AD-6888",
+   "similarity": 0.8768,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6888.BC82E9BE-543C-401F-87EE-3414FFEC3C14.txt"
+   ]
+  },
+  "TCGA-AH-6643": {
+   "neighbour": "TCGA-AD-6899",
+   "similarity": 0.8419,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6899.D2761F85-DAAB-4236-BFF3-D7EC6927A166.txt"
+   ]
+  },
+  "TCGA-AH-6644": {
+   "neighbour": "TCGA-AD-6890",
+   "similarity": 0.8092,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6890.572896CD-23B9-431A-8272-94D582E4A672.txt"
+   ]
+  },
+  "TCGA-AH-6897": {
+   "neighbour": "TCGA-AD-6888",
+   "similarity": 0.8609,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6888.BC82E9BE-543C-401F-87EE-3414FFEC3C14.txt"
+   ]
+  },
+  "TCGA-AH-6903": {
+   "neighbour": "TCGA-AD-5900",
+   "similarity": 0.8559,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-5900.DFE40B96-EB9B-4544-A87D-9ABC80F8A357.txt"
+   ]
+  },
+  "TCGA-AM-5820": {
+   "neighbour": "TCGA-AM-5821",
+   "similarity": 0.8685,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AM-5821.5BA47E48-C3F0-484B-AAB5-23C75CF0CEA4.txt"
+   ]
+  },
+  "TCGA-AM-5821": {
+   "neighbour": "TCGA-AM-5820",
+   "similarity": 0.8685,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AM-5820.727C0F04-0D64-43EC-A597-3A9E99BF78BB.txt"
+   ]
+  },
+  "TCGA-AU-3779": {
+   "neighbour": "TCGA-5M-AAT5",
+   "similarity": 0.6635,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-5M-AAT5.AA3CF932-9666-4280-9F3E-5CFA523CEC4B.txt"
+   ]
+  },
+  "TCGA-AU-6004": {
+   "neighbour": "TCGA-AY-6197",
+   "similarity": 0.8111,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-6197.0255EFB9-D9FD-492F-861B-AB2472A790A2.txt"
+   ]
+  },
+  "TCGA-AY-4070": {
+   "neighbour": "TCGA-AD-5900",
+   "similarity": 0.8041,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-5900.DFE40B96-EB9B-4544-A87D-9ABC80F8A357.txt"
+   ]
+  },
+  "TCGA-AY-4071": {
+   "neighbour": "TCGA-D5-7000",
+   "similarity": 0.6714,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-7000.027E06D6-F4C5-433B-9B41-3A31678ED776.txt"
+   ]
+  },
+  "TCGA-AY-5543": {
+   "neighbour": "TCGA-A6-2678",
+   "similarity": 0.8166,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-2678.4C0861D1-A3B9-45CF-B0AC-EE9ADB748E55.txt"
+   ]
+  },
+  "TCGA-AY-6196": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.8052,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-AY-6197": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8086,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-AY-6386": {
+   "neighbour": "TCGA-CK-4952",
+   "similarity": 0.8764,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-4952.0086611E-C16D-4934-804E-332F4D0DAAD1.txt"
+   ]
+  },
+  "TCGA-AY-A54L": {
+   "neighbour": "TCGA-AY-A8YK",
+   "similarity": 0.7659,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-A8YK.22C33C79-0791-40C1-A97C-F1C1AD76063E.txt"
+   ]
+  },
+  "TCGA-AY-A69D": {
+   "neighbour": "TCGA-AY-A8YK",
+   "similarity": 0.875,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-A8YK.22C33C79-0791-40C1-A97C-F1C1AD76063E.txt"
+   ]
+  },
+  "TCGA-AY-A71X": {
+   "neighbour": "TCGA-AY-A69D",
+   "similarity": 0.7566,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-A69D.94F7B032-1181-44E0-AB16-4A672A88E086.txt"
+   ]
+  },
+  "TCGA-AY-A8YK": {
+   "neighbour": "TCGA-AY-A69D",
+   "similarity": 0.875,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AY-A69D.94F7B032-1181-44E0-AB16-4A672A88E086.txt"
+   ]
+  },
+  "TCGA-AZ-4308": {
+   "neighbour": "TCGA-AZ-6607",
+   "similarity": 0.9284,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-6607.2A744111-DFA5-4FA2-9EB4-20039A7C08F3.txt"
+   ]
+  },
+  "TCGA-AZ-4313": {
+   "neighbour": "TCGA-CK-4950",
+   "similarity": 0.8749,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-4950.03D5DD22-A6DD-45BE-BFFF-FB5B64D09796.txt"
+   ]
+  },
+  "TCGA-AZ-4315": {
+   "neighbour": "TCGA-AZ-4308",
+   "similarity": 0.9137,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4308.ED3AB172-0CB7-4AF2-827D-65A566BF7C66.txt"
+   ]
+  },
+  "TCGA-AZ-4614": {
+   "neighbour": "TCGA-AZ-4684",
+   "similarity": 0.8779,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4684.3E3C0AA0-73DD-47F1-989B-2871336385AF.txt"
+   ]
+  },
+  "TCGA-AZ-4615": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8681,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-AZ-4616": {
+   "neighbour": "TCGA-CM-6168",
+   "similarity": 0.834,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6168.699E7E12-232F-454C-8F1B-6278DF9BCC52.txt"
+   ]
+  },
+  "TCGA-AZ-4681": {
+   "neighbour": "TCGA-AZ-4684",
+   "similarity": 0.8297,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4684.3E3C0AA0-73DD-47F1-989B-2871336385AF.txt"
+   ]
+  },
+  "TCGA-AZ-4682": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.8664,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-AZ-4684": {
+   "neighbour": "TCGA-AZ-4315",
+   "similarity": 0.902,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4315.927B4861-C24E-4CE4-B7DD-2C950F2FB947.txt"
+   ]
+  },
+  "TCGA-AZ-5403": {
+   "neighbour": "TCGA-G4-6320",
+   "similarity": 0.8494,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6320.C0C529DA-076F-4843-8DFE-CADC1B651A71.txt"
+   ]
+  },
+  "TCGA-AZ-5407": {
+   "neighbour": "TCGA-CM-6680",
+   "similarity": 0.8507,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6680.5FB9EB48-80CA-443A-812D-41F59B9A91EF.txt"
+   ]
+  },
+  "TCGA-AZ-6598": {
+   "neighbour": "TCGA-AZ-4684",
+   "similarity": 0.8645,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4684.3E3C0AA0-73DD-47F1-989B-2871336385AF.txt"
+   ]
+  },
+  "TCGA-AZ-6599": {
+   "neighbour": "TCGA-G4-6323",
+   "similarity": 0.8188,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6323.895D1C1A-E173-4CD7-8170-B1D31AEEF265.txt"
+   ]
+  },
+  "TCGA-AZ-6600": {
+   "neighbour": "TCGA-CM-5860",
+   "similarity": 0.8751,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5860.A827F69B-9150-430B-A680-A84F30182E63.txt"
+   ]
+  },
+  "TCGA-AZ-6601": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8656,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-AZ-6603": {
+   "neighbour": "TCGA-A6-6654",
+   "similarity": 0.837,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6654.0F0A992E-3A5C-490F-AA3E-62D2B26D580B.txt"
+   ]
+  },
+  "TCGA-AZ-6605": {
+   "neighbour": "TCGA-AZ-4315",
+   "similarity": 0.8765,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4315.927B4861-C24E-4CE4-B7DD-2C950F2FB947.txt"
+   ]
+  },
+  "TCGA-AZ-6606": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8618,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-AZ-6607": {
+   "neighbour": "TCGA-AZ-4308",
+   "similarity": 0.9284,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4308.ED3AB172-0CB7-4AF2-827D-65A566BF7C66.txt"
+   ]
+  },
+  "TCGA-AZ-6608": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8462,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-BM-6198": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8938,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-CA-5254": {
+   "neighbour": "TCGA-CA-6719",
+   "similarity": 0.8326,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6719.833D9186-0E43-498F-A698-927A968DE5A1.txt"
+   ]
+  },
+  "TCGA-CA-5255": {
+   "neighbour": "TCGA-CA-5254",
+   "similarity": 0.8286,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-5254.3C13E71B-ABCB-4131-BDA1-4723F13F23EE.txt"
+   ]
+  },
+  "TCGA-CA-5256": {
+   "neighbour": "TCGA-CA-6716",
+   "similarity": 0.8455,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6716.C0C68CB6-C411-42E9-A5BC-F05A58F101F3.txt"
+   ]
+  },
+  "TCGA-CA-5796": {
+   "neighbour": "TCGA-CA-6716",
+   "similarity": 0.8117,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6716.C0C68CB6-C411-42E9-A5BC-F05A58F101F3.txt"
+   ]
+  },
+  "TCGA-CA-5797": {
+   "neighbour": "TCGA-AZ-4682",
+   "similarity": 0.7528,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4682.DBBCD290-F43A-4494-9914-D490DFC24D84.txt"
+   ]
+  },
+  "TCGA-CA-6715": {
+   "neighbour": "TCGA-CA-6718",
+   "similarity": 0.8737,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6718.2693AE88-E1F4-4855-84FB-4E71EC58150E.txt"
+   ]
+  },
+  "TCGA-CA-6716": {
+   "neighbour": "TCGA-CA-5256",
+   "similarity": 0.8455,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-5256.88B57491-1B29-40E0-BB15-95ADBB9AEF9C.txt"
+   ]
+  },
+  "TCGA-CA-6717": {
+   "neighbour": "TCGA-CA-6719",
+   "similarity": 0.8997,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6719.833D9186-0E43-498F-A698-927A968DE5A1.txt"
+   ]
+  },
+  "TCGA-CA-6718": {
+   "neighbour": "TCGA-CA-6715",
+   "similarity": 0.8737,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6715.7DEAB36C-4645-43FE-A82C-14858DD568D4.txt"
+   ]
+  },
+  "TCGA-CA-6719": {
+   "neighbour": "TCGA-CA-6717",
+   "similarity": 0.8997,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6717.C742DF4B-4AEF-41CF-ABA3-64D67E942141.txt"
+   ]
+  },
+  "TCGA-CI-6622": {
+   "neighbour": "TCGA-A6-5656",
+   "similarity": 0.7457,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5656.9396CC9F-ADF9-4E3E-9CB4-C0A5190299B9.txt"
+   ]
+  },
+  "TCGA-CI-6624": {
+   "neighbour": "TCGA-CM-4747",
+   "similarity": 0.7074,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-4747.DA76CC38-102A-4F1C-AB04-430B9EEF7899.txt"
+   ]
+  },
+  "TCGA-CK-4947": {
+   "neighbour": "TCGA-AZ-4308",
+   "similarity": 0.8759,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-4308.ED3AB172-0CB7-4AF2-827D-65A566BF7C66.txt"
+   ]
+  },
+  "TCGA-CK-4948": {
+   "neighbour": "TCGA-CM-5860",
+   "similarity": 0.8604,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5860.A827F69B-9150-430B-A680-A84F30182E63.txt"
+   ]
+  },
+  "TCGA-CK-4950": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.8788,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-CK-4951": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8843,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-CK-4952": {
+   "neighbour": "TCGA-CM-6680",
+   "similarity": 0.9171,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6680.5FB9EB48-80CA-443A-812D-41F59B9A91EF.txt"
+   ]
+  },
+  "TCGA-CK-5912": {
+   "neighbour": "TCGA-CK-6747",
+   "similarity": 0.8609,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-6747.B0A2F381-BE07-4BF8-A54F-0DA67B128895.txt"
+   ]
+  },
+  "TCGA-CK-5913": {
+   "neighbour": "TCGA-CK-6747",
+   "similarity": 0.9046,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-6747.B0A2F381-BE07-4BF8-A54F-0DA67B128895.txt"
+   ]
+  },
+  "TCGA-CK-5914": {
+   "neighbour": "TCGA-CM-6164",
+   "similarity": 0.8998,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6164.7A64EA09-BB1A-4665-8EF4-E6F689731373.txt"
+   ]
+  },
+  "TCGA-CK-5915": {
+   "neighbour": "TCGA-CM-5341",
+   "similarity": 0.8468,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5341.BD882C39-2D27-41A6-9A89-4482D92ED68B.txt"
+   ]
+  },
+  "TCGA-CK-5916": {
+   "neighbour": "TCGA-CK-6746",
+   "similarity": 0.8588,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-6746.6E010B8D-DDD0-44C1-B33A-BDD82C8BA956.txt"
+   ]
+  },
+  "TCGA-CK-6746": {
+   "neighbour": "TCGA-CK-5916",
+   "similarity": 0.8588,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5916.2F0D2DB5-DBF1-49E6-87D4-EB91C938536C.txt"
+   ]
+  },
+  "TCGA-CK-6747": {
+   "neighbour": "TCGA-CK-4952",
+   "similarity": 0.9075,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-4952.0086611E-C16D-4934-804E-332F4D0DAAD1.txt"
+   ]
+  },
+  "TCGA-CK-6748": {
+   "neighbour": "TCGA-CK-4948",
+   "similarity": 0.8889,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-4948.31BA7387-DF2F-4D70-B413-3734BA02438E.txt"
+   ]
+  },
+  "TCGA-CK-6751": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.891,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-CL-4957": {
+   "neighbour": "TCGA-CK-5915",
+   "similarity": 0.9023,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5915.D5358031-11C7-401B-A9D2-0C8DB1D9ED14.txt"
+   ]
+  },
+  "TCGA-CL-5917": {
+   "neighbour": "TCGA-G4-6321",
+   "similarity": 0.8648,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6321.9BD063BF-9893-40C8-8C56-0493A760E439.txt"
+   ]
+  },
+  "TCGA-CL-5918": {
+   "neighbour": "TCGA-CM-6164",
+   "similarity": 0.8701,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6164.7A64EA09-BB1A-4665-8EF4-E6F689731373.txt"
+   ]
+  },
+  "TCGA-CM-4743": {
+   "neighbour": "TCGA-AZ-6605",
+   "similarity": 0.839,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AZ-6605.48827545-D4C3-42D1-9154-34E299A21EA8.txt"
+   ]
+  },
+  "TCGA-CM-4744": {
+   "neighbour": "TCGA-CM-4746",
+   "similarity": 0.9038,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-4746.BC55F7BB-DF41-4DD7-B11D-03405027396A.txt"
+   ]
+  },
+  "TCGA-CM-4746": {
+   "neighbour": "TCGA-CM-4744",
+   "similarity": 0.9038,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-4744.1428CD76-93D4-4E03-AD3C-DDB9166FA39C.txt"
+   ]
+  },
+  "TCGA-CM-4747": {
+   "neighbour": "TCGA-CM-4744",
+   "similarity": 0.8003,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-4744.1428CD76-93D4-4E03-AD3C-DDB9166FA39C.txt"
+   ]
+  },
+  "TCGA-CM-4748": {
+   "neighbour": "TCGA-D5-6898",
+   "similarity": 0.7564,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6898.DCE0850F-677E-4B31-9D4B-D92D1BFBB41A.txt"
+   ]
+  },
+  "TCGA-CM-4750": {
+   "neighbour": "TCGA-A6-5667",
+   "similarity": 0.8512,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5667.56E0D7DD-9466-430C-AC45-00450BF1D771.txt"
+   ]
+  },
+  "TCGA-CM-4751": {
+   "neighbour": "TCGA-CM-5861",
+   "similarity": 0.8506,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5861.AE1EC4F2-2522-4318-9403-1471F2FAB424.txt"
+   ]
+  },
+  "TCGA-CM-4752": {
+   "neighbour": "TCGA-CM-6169",
+   "similarity": 0.868,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6169.94244F00-1696-46E7-88AF-D316A5C238FB.txt"
+   ]
+  },
+  "TCGA-CM-5341": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.9246,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-CM-5344": {
+   "neighbour": "TCGA-CM-6677",
+   "similarity": 0.9229,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6677.35F4EA93-223A-46F7-A6A9-BC69646B313B.txt"
+   ]
+  },
+  "TCGA-CM-5348": {
+   "neighbour": "TCGA-CM-5860",
+   "similarity": 0.9437,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5860.A827F69B-9150-430B-A680-A84F30182E63.txt"
+   ]
+  },
+  "TCGA-CM-5349": {
+   "neighbour": "TCGA-CM-6168",
+   "similarity": 0.8984,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6168.699E7E12-232F-454C-8F1B-6278DF9BCC52.txt"
+   ]
+  },
+  "TCGA-CM-5860": {
+   "neighbour": "TCGA-CM-5348",
+   "similarity": 0.9437,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5348.FE4B66D3-242B-4198-9CEA-92D1F2688F22.txt"
+   ]
+  },
+  "TCGA-CM-5861": {
+   "neighbour": "TCGA-CM-5348",
+   "similarity": 0.8734,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5348.FE4B66D3-242B-4198-9CEA-92D1F2688F22.txt"
+   ]
+  },
+  "TCGA-CM-5862": {
+   "neighbour": "TCGA-CM-5864",
+   "similarity": 0.8356,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5864.0FC4D13C-EFCF-413F-A922-0E88089FA055.txt"
+   ]
+  },
+  "TCGA-CM-5863": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.8664,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-CM-5864": {
+   "neighbour": "TCGA-CM-6677",
+   "similarity": 0.9351,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6677.35F4EA93-223A-46F7-A6A9-BC69646B313B.txt"
+   ]
+  },
+  "TCGA-CM-5868": {
+   "neighbour": "TCGA-CM-5860",
+   "similarity": 0.9559,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5860.A827F69B-9150-430B-A680-A84F30182E63.txt"
+   ]
+  },
+  "TCGA-CM-6161": {
+   "neighbour": "TCGA-CM-6680",
+   "similarity": 0.8526,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6680.5FB9EB48-80CA-443A-812D-41F59B9A91EF.txt"
+   ]
+  },
+  "TCGA-CM-6162": {
+   "neighbour": "TCGA-CM-5863",
+   "similarity": 0.9452,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5863.1441EA9A-3FE4-4EE3-B22D-D73BB53EA399.txt"
+   ]
+  },
+  "TCGA-CM-6163": {
+   "neighbour": "TCGA-CM-6165",
+   "similarity": 0.8986,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6165.8837AC56-AD16-4BB7-9CEA-DC712E0AE524.txt"
+   ]
+  },
+  "TCGA-CM-6164": {
+   "neighbour": "TCGA-CM-5864",
+   "similarity": 0.8742,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5864.0FC4D13C-EFCF-413F-A922-0E88089FA055.txt"
+   ]
+  },
+  "TCGA-CM-6165": {
+   "neighbour": "TCGA-CM-5341",
+   "similarity": 0.9246,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5341.BD882C39-2D27-41A6-9A89-4482D92ED68B.txt"
+   ]
+  },
+  "TCGA-CM-6166": {
+   "neighbour": "TCGA-CM-4751",
+   "similarity": 0.826,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-4751.C1B8B7F6-BFDC-4E4F-BE9A-5B752390EFC0.txt"
+   ]
+  },
+  "TCGA-CM-6167": {
+   "neighbour": "TCGA-CM-6674",
+   "similarity": 0.8954,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6674.C889D318-6874-467A-AE2B-489622F32C7A.txt"
+   ]
+  },
+  "TCGA-CM-6168": {
+   "neighbour": "TCGA-CM-5348",
+   "similarity": 0.9068,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5348.FE4B66D3-242B-4198-9CEA-92D1F2688F22.txt"
+   ]
+  },
+  "TCGA-CM-6169": {
+   "neighbour": "TCGA-CM-6677",
+   "similarity": 0.9261,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6677.35F4EA93-223A-46F7-A6A9-BC69646B313B.txt"
+   ]
+  },
+  "TCGA-CM-6170": {
+   "neighbour": "TCGA-CM-6679",
+   "similarity": 0.8431,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6679.59284F77-B8BD-4E43-A940-70C2A80442F2.txt"
+   ]
+  },
+  "TCGA-CM-6171": {
+   "neighbour": "TCGA-CM-6676",
+   "similarity": 0.8535,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6676.1D53F325-F6F5-474E-9B52-0B45AEF1DFF8.txt"
+   ]
+  },
+  "TCGA-CM-6172": {
+   "neighbour": "TCGA-CM-5348",
+   "similarity": 0.8498,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5348.FE4B66D3-242B-4198-9CEA-92D1F2688F22.txt"
+   ]
+  },
+  "TCGA-CM-6674": {
+   "neighbour": "TCGA-CM-6679",
+   "similarity": 0.9315,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6679.59284F77-B8BD-4E43-A940-70C2A80442F2.txt"
+   ]
+  },
+  "TCGA-CM-6675": {
+   "neighbour": "TCGA-CM-6169",
+   "similarity": 0.9043,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6169.94244F00-1696-46E7-88AF-D316A5C238FB.txt"
+   ]
+  },
+  "TCGA-CM-6676": {
+   "neighbour": "TCGA-A6-5666",
+   "similarity": 0.8657,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-5666.6496F931-2A98-43C3-8B80-7F658D4EA9AB.txt"
+   ]
+  },
+  "TCGA-CM-6677": {
+   "neighbour": "TCGA-CM-6679",
+   "similarity": 0.9601,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6679.59284F77-B8BD-4E43-A940-70C2A80442F2.txt"
+   ]
+  },
+  "TCGA-CM-6678": {
+   "neighbour": "TCGA-CM-5341",
+   "similarity": 0.9119,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5341.BD882C39-2D27-41A6-9A89-4482D92ED68B.txt"
+   ]
+  },
+  "TCGA-CM-6679": {
+   "neighbour": "TCGA-CM-6677",
+   "similarity": 0.9601,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6677.35F4EA93-223A-46F7-A6A9-BC69646B313B.txt"
+   ]
+  },
+  "TCGA-CM-6680": {
+   "neighbour": "TCGA-CK-4952",
+   "similarity": 0.9171,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-4952.0086611E-C16D-4934-804E-332F4D0DAAD1.txt"
+   ]
+  },
+  "TCGA-D5-5537": {
+   "neighbour": "TCGA-D5-6537",
+   "similarity": 0.9,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6537.F05F81CD-FC57-4BE5-A21D-F41E00449893.txt"
+   ]
+  },
+  "TCGA-D5-5538": {
+   "neighbour": "TCGA-CK-5913",
+   "similarity": 0.8561,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5913.376116FC-87F8-4C6D-A448-BF642931EEBF.txt"
+   ]
+  },
+  "TCGA-D5-5539": {
+   "neighbour": "TCGA-D5-6540",
+   "similarity": 0.8673,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6540.BC47B112-83C6-4192-A914-9C885AEED438.txt"
+   ]
+  },
+  "TCGA-D5-5540": {
+   "neighbour": "TCGA-D5-6534",
+   "similarity": 0.8797,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6534.637C02FE-9238-4474-BA5B-15719353895B.txt"
+   ]
+  },
+  "TCGA-D5-5541": {
+   "neighbour": "TCGA-D5-6538",
+   "similarity": 0.8871,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6538.092BF70B-2120-40EC-A98B-C72795D61660.txt"
+   ]
+  },
+  "TCGA-D5-6529": {
+   "neighbour": "TCGA-CM-5349",
+   "similarity": 0.8674,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5349.F4491D68-EC4B-45D7-BAB8-CF4ED1FFAF62.txt"
+   ]
+  },
+  "TCGA-D5-6530": {
+   "neighbour": "TCGA-D5-5537",
+   "similarity": 0.8466,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5537.2674F1EC-C290-426E-8394-42DB0E7EC94A.txt"
+   ]
+  },
+  "TCGA-D5-6531": {
+   "neighbour": "TCGA-D5-6533",
+   "similarity": 0.7983,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6533.638BCBB3-047B-4CD5-9674-BC0401B6E3EE.txt"
+   ]
+  },
+  "TCGA-D5-6532": {
+   "neighbour": "TCGA-D5-6533",
+   "similarity": 0.8325,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6533.638BCBB3-047B-4CD5-9674-BC0401B6E3EE.txt"
+   ]
+  },
+  "TCGA-D5-6533": {
+   "neighbour": "TCGA-D5-6535",
+   "similarity": 0.815,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6535.59BA1E59-3E20-40A9-9068-09FC324845E7.txt"
+   ]
+  },
+  "TCGA-D5-6534": {
+   "neighbour": "TCGA-D5-5540",
+   "similarity": 0.8797,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5540.4B0D96B0-30BD-416C-825A-349509305A6E.txt"
+   ]
+  },
+  "TCGA-D5-6535": {
+   "neighbour": "TCGA-G4-6299",
+   "similarity": 0.8364,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6299.A62D667B-71C5-4964-AF06-9EABD0A1D256.txt"
+   ]
+  },
+  "TCGA-D5-6536": {
+   "neighbour": "TCGA-D5-5537",
+   "similarity": 0.8489,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5537.2674F1EC-C290-426E-8394-42DB0E7EC94A.txt"
+   ]
+  },
+  "TCGA-D5-6537": {
+   "neighbour": "TCGA-D5-5537",
+   "similarity": 0.9,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5537.2674F1EC-C290-426E-8394-42DB0E7EC94A.txt"
+   ]
+  },
+  "TCGA-D5-6538": {
+   "neighbour": "TCGA-D5-5541",
+   "similarity": 0.8871,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5541.1A21E147-900C-4FAE-8A60-9A51093287F2.txt"
+   ]
+  },
+  "TCGA-D5-6539": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.8745,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-D5-6540": {
+   "neighbour": "TCGA-D5-5539",
+   "similarity": 0.8673,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5539.1CFCF7E7-0886-4A24-9AB4-FCC10E998779.txt"
+   ]
+  },
+  "TCGA-D5-6541": {
+   "neighbour": "TCGA-D5-6538",
+   "similarity": 0.82,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6538.092BF70B-2120-40EC-A98B-C72795D61660.txt"
+   ]
+  },
+  "TCGA-D5-6898": {
+   "neighbour": "TCGA-D5-6932",
+   "similarity": 0.8906,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6932.EE1BB225-B1A2-4FF4-8C7D-E01A748BCA32.txt"
+   ]
+  },
+  "TCGA-D5-6920": {
+   "neighbour": "TCGA-D5-6922",
+   "similarity": 0.9156,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6922.424D8FF7-23F7-4396-8747-F85A4C6E0A3E.txt"
+   ]
+  },
+  "TCGA-D5-6922": {
+   "neighbour": "TCGA-D5-6920",
+   "similarity": 0.9156,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6920.785F1166-6B98-497A-9546-75CE66337309.txt"
+   ]
+  },
+  "TCGA-D5-6923": {
+   "neighbour": "TCGA-D5-6924",
+   "similarity": 0.9137,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6924.6A75E6B8-5ECE-4FB9-9BCA-5A751EAC8D7C.txt"
+   ]
+  },
+  "TCGA-D5-6924": {
+   "neighbour": "TCGA-D5-6923",
+   "similarity": 0.9137,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6923.3523F7AC-0A52-44CB-9B99-068955CCB1DA.txt"
+   ]
+  },
+  "TCGA-D5-6926": {
+   "neighbour": "TCGA-D5-6924",
+   "similarity": 0.9112,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6924.6A75E6B8-5ECE-4FB9-9BCA-5A751EAC8D7C.txt"
+   ]
+  },
+  "TCGA-D5-6927": {
+   "neighbour": "TCGA-D5-6931",
+   "similarity": 0.8792,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6931.D58AE578-E4C3-4AE4-9B5D-A7831F976FF7.txt"
+   ]
+  },
+  "TCGA-D5-6928": {
+   "neighbour": "TCGA-D5-7000",
+   "similarity": 0.5239,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-7000.027E06D6-F4C5-433B-9B41-3A31678ED776.txt"
+   ]
+  },
+  "TCGA-D5-6929": {
+   "neighbour": "TCGA-D5-6537",
+   "similarity": 0.8581,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6537.F05F81CD-FC57-4BE5-A21D-F41E00449893.txt"
+   ]
+  },
+  "TCGA-D5-6930": {
+   "neighbour": "TCGA-D5-6931",
+   "similarity": 0.8947,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6931.D58AE578-E4C3-4AE4-9B5D-A7831F976FF7.txt"
+   ]
+  },
+  "TCGA-D5-6931": {
+   "neighbour": "TCGA-D5-6930",
+   "similarity": 0.8947,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6930.0A3FA5B6-52B9-481B-A07F-C62FABC32CC3.txt"
+   ]
+  },
+  "TCGA-D5-6932": {
+   "neighbour": "TCGA-D5-6898",
+   "similarity": 0.8906,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6898.DCE0850F-677E-4B31-9D4B-D92D1BFBB41A.txt"
+   ]
+  },
+  "TCGA-D5-7000": {
+   "neighbour": "TCGA-D5-6898",
+   "similarity": 0.8171,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6898.DCE0850F-677E-4B31-9D4B-D92D1BFBB41A.txt"
+   ]
+  },
+  "TCGA-DC-4745": {
+   "neighbour": "TCGA-CM-6170",
+   "similarity": 0.8961,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6170.319E200A-D0C5-47B3-9432-1EB1404233FA.txt"
+   ]
+  },
+  "TCGA-DC-4749": {
+   "neighbour": "TCGA-CM-6676",
+   "similarity": 0.8624,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6676.1D53F325-F6F5-474E-9B52-0B45AEF1DFF8.txt"
+   ]
+  },
+  "TCGA-DC-5337": {
+   "neighbour": "TCGA-CM-5349",
+   "similarity": 0.9043,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5349.F4491D68-EC4B-45D7-BAB8-CF4ED1FFAF62.txt"
+   ]
+  },
+  "TCGA-DC-5869": {
+   "neighbour": "TCGA-CM-5864",
+   "similarity": 0.9139,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5864.0FC4D13C-EFCF-413F-A922-0E88089FA055.txt"
+   ]
+  },
+  "TCGA-DC-6154": {
+   "neighbour": "TCGA-CM-5860",
+   "similarity": 0.9182,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5860.A827F69B-9150-430B-A680-A84F30182E63.txt"
+   ]
+  },
+  "TCGA-DC-6155": {
+   "neighbour": "TCGA-CM-5348",
+   "similarity": 0.9225,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-5348.FE4B66D3-242B-4198-9CEA-92D1F2688F22.txt"
+   ]
+  },
+  "TCGA-DC-6156": {
+   "neighbour": "TCGA-CM-6679",
+   "similarity": 0.9196,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6679.59284F77-B8BD-4E43-A940-70C2A80442F2.txt"
+   ]
+  },
+  "TCGA-DC-6157": {
+   "neighbour": "TCGA-CK-5915",
+   "similarity": 0.9012,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5915.D5358031-11C7-401B-A9D2-0C8DB1D9ED14.txt"
+   ]
+  },
+  "TCGA-DC-6158": {
+   "neighbour": "TCGA-CM-6168",
+   "similarity": 0.9075,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6168.699E7E12-232F-454C-8F1B-6278DF9BCC52.txt"
+   ]
+  },
+  "TCGA-DC-6160": {
+   "neighbour": "TCGA-CK-5915",
+   "similarity": 0.8537,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-5915.D5358031-11C7-401B-A9D2-0C8DB1D9ED14.txt"
+   ]
+  },
+  "TCGA-DC-6681": {
+   "neighbour": "TCGA-CM-6680",
+   "similarity": 0.9196,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6680.5FB9EB48-80CA-443A-812D-41F59B9A91EF.txt"
+   ]
+  },
+  "TCGA-DC-6682": {
+   "neighbour": "TCGA-CM-4746",
+   "similarity": 0.8645,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-4746.BC55F7BB-DF41-4DD7-B11D-03405027396A.txt"
+   ]
+  },
+  "TCGA-DC-6683": {
+   "neighbour": "TCGA-CM-6677",
+   "similarity": 0.9194,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CM-6677.35F4EA93-223A-46F7-A6A9-BC69646B313B.txt"
+   ]
+  },
+  "TCGA-DM-A0X9": {
+   "neighbour": "TCGA-DM-A28F",
+   "similarity": 0.8761,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28F.E6C435F8-1238-4113-A152-C7AF7620E748.txt"
+   ]
+  },
+  "TCGA-DM-A0XD": {
+   "neighbour": "TCGA-DM-A0XF",
+   "similarity": 0.7864,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A0XF.2E442714-A485-48C1-80FD-9418ABD94D9C.txt"
+   ]
+  },
+  "TCGA-DM-A0XF": {
+   "neighbour": "TCGA-DM-A282",
+   "similarity": 0.8533,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A282.F38C6493-9B5D-4BEC-81AB-B79CF6BD89A7.txt"
+   ]
+  },
+  "TCGA-DM-A1D0": {
+   "neighbour": "TCGA-DM-A28M",
+   "similarity": 0.8572,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28M.0A659279-BA92-44AF-9E93-80457ADEC729.txt"
+   ]
+  },
+  "TCGA-DM-A1D4": {
+   "neighbour": "TCGA-DM-A1DA",
+   "similarity": 0.8762,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1DA.8DECB6DA-5F5F-4475-A601-5252BC4BD486.txt"
+   ]
+  },
+  "TCGA-DM-A1D6": {
+   "neighbour": "TCGA-DM-A28F",
+   "similarity": 0.8263,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28F.E6C435F8-1238-4113-A152-C7AF7620E748.txt"
+   ]
+  },
+  "TCGA-DM-A1D7": {
+   "neighbour": "TCGA-DM-A1D9",
+   "similarity": 0.8453,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1D9.879D9864-FDFE-4D40-A90A-2D8694148298.txt"
+   ]
+  },
+  "TCGA-DM-A1D8": {
+   "neighbour": "TCGA-4T-AA8H",
+   "similarity": 0.7051,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-4T-AA8H.FAB79463-7351-4C25-9AEC-7B47486C7F54.txt"
+   ]
+  },
+  "TCGA-DM-A1D9": {
+   "neighbour": "TCGA-DM-A1D7",
+   "similarity": 0.8453,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1D7.73512C13-D2EB-4E6C-9A26-3759252F385A.txt"
+   ]
+  },
+  "TCGA-DM-A1DA": {
+   "neighbour": "TCGA-DM-A1D4",
+   "similarity": 0.8762,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1D4.98310DA6-E41D-4725-A634-D17B88A7CFE0.txt"
+   ]
+  },
+  "TCGA-DM-A1DB": {
+   "neighbour": "TCGA-DM-A282",
+   "similarity": 0.7913,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A282.F38C6493-9B5D-4BEC-81AB-B79CF6BD89A7.txt"
+   ]
+  },
+  "TCGA-DM-A1HA": {
+   "neighbour": "TCGA-DM-A1D9",
+   "similarity": 0.8129,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1D9.879D9864-FDFE-4D40-A90A-2D8694148298.txt"
+   ]
+  },
+  "TCGA-DM-A280": {
+   "neighbour": "TCGA-DM-A282",
+   "similarity": 0.8514,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A282.F38C6493-9B5D-4BEC-81AB-B79CF6BD89A7.txt"
+   ]
+  },
+  "TCGA-DM-A282": {
+   "neighbour": "TCGA-DM-A0XF",
+   "similarity": 0.8533,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A0XF.2E442714-A485-48C1-80FD-9418ABD94D9C.txt"
+   ]
+  },
+  "TCGA-DM-A285": {
+   "neighbour": "TCGA-DM-A28F",
+   "similarity": 0.8494,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28F.E6C435F8-1238-4113-A152-C7AF7620E748.txt"
+   ]
+  },
+  "TCGA-DM-A288": {
+   "neighbour": "TCGA-DM-A285",
+   "similarity": 0.8661,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A285.1B9E9C45-C8A3-4CFA-AB47-965056517D4D.txt"
+   ]
+  },
+  "TCGA-DM-A28A": {
+   "neighbour": "TCGA-DM-A285",
+   "similarity": 0.8227,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A285.1B9E9C45-C8A3-4CFA-AB47-965056517D4D.txt"
+   ]
+  },
+  "TCGA-DM-A28E": {
+   "neighbour": "TCGA-DM-A1D8",
+   "similarity": 0.697,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1D8.F078AE22-06A2-45CA-A82E-71F7AEFD0312.txt"
+   ]
+  },
+  "TCGA-DM-A28F": {
+   "neighbour": "TCGA-DM-A0X9",
+   "similarity": 0.8761,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A0X9.F323F54C-A86A-47DB-A26D-7541CB54A08E.txt"
+   ]
+  },
+  "TCGA-DM-A28G": {
+   "neighbour": "TCGA-DM-A0X9",
+   "similarity": 0.8355,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A0X9.F323F54C-A86A-47DB-A26D-7541CB54A08E.txt"
+   ]
+  },
+  "TCGA-DM-A28H": {
+   "neighbour": "TCGA-DM-A28A",
+   "similarity": 0.7866,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28A.66BF2525-B76A-4BE5-8FDF-EAE8334F384E.txt"
+   ]
+  },
+  "TCGA-DM-A28K": {
+   "neighbour": "TCGA-DM-A1D0",
+   "similarity": 0.7528,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1D0.6F6B3572-6437-4BAB-8DCB-91CE61567612.txt"
+   ]
+  },
+  "TCGA-DM-A28M": {
+   "neighbour": "TCGA-DM-A1D0",
+   "similarity": 0.8572,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A1D0.6F6B3572-6437-4BAB-8DCB-91CE61567612.txt"
+   ]
+  },
+  "TCGA-DT-5265": {
+   "neighbour": "TCGA-CA-6718",
+   "similarity": 0.8325,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CA-6718.2693AE88-E1F4-4855-84FB-4E71EC58150E.txt"
+   ]
+  },
+  "TCGA-DY-A0XA": {
+   "neighbour": "TCGA-DM-A28E",
+   "similarity": 0.7495,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28E.6BA78869-CE10-4755-82A8-9096731A069C.txt"
+   ]
+  },
+  "TCGA-DY-A1DC": {
+   "neighbour": "TCGA-DM-A28F",
+   "similarity": 0.766,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28F.E6C435F8-1238-4113-A152-C7AF7620E748.txt"
+   ]
+  },
+  "TCGA-DY-A1DD": {
+   "neighbour": "TCGA-DM-A282",
+   "similarity": 0.8653,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A282.F38C6493-9B5D-4BEC-81AB-B79CF6BD89A7.txt"
+   ]
+  },
+  "TCGA-DY-A1DE": {
+   "neighbour": "TCGA-DM-A28F",
+   "similarity": 0.7612,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A28F.E6C435F8-1238-4113-A152-C7AF7620E748.txt"
+   ]
+  },
+  "TCGA-DY-A1DF": {
+   "neighbour": "TCGA-DM-A285",
+   "similarity": 0.8891,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A285.1B9E9C45-C8A3-4CFA-AB47-965056517D4D.txt"
+   ]
+  },
+  "TCGA-DY-A1DG": {
+   "neighbour": "TCGA-DM-A285",
+   "similarity": 0.8239,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-DM-A285.1B9E9C45-C8A3-4CFA-AB47-965056517D4D.txt"
+   ]
+  },
+  "TCGA-EF-5830": {
+   "neighbour": "TCGA-A6-2677",
+   "similarity": 0.7801,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-2677.7A3D9432-C992-4410-9044-CBC04E0DBECE.txt"
+   ]
+  },
+  "TCGA-EI-6506": {
+   "neighbour": "TCGA-D5-5541",
+   "similarity": 0.9077,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5541.1A21E147-900C-4FAE-8A60-9A51093287F2.txt"
+   ]
+  },
+  "TCGA-EI-6507": {
+   "neighbour": "TCGA-A6-3808",
+   "similarity": 0.8147,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-3808.E1505F65-72EF-438D-A5E1-93ED8BF6635D.txt"
+   ]
+  },
+  "TCGA-EI-6508": {
+   "neighbour": "TCGA-D5-6539",
+   "similarity": 0.8875,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6539.3AFFDCB5-2A67-43C9-93AA-1191B1A1197E.txt"
+   ]
+  },
+  "TCGA-EI-6509": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.8262,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-EI-6510": {
+   "neighbour": "TCGA-D5-6540",
+   "similarity": 0.8637,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6540.BC47B112-83C6-4192-A914-9C885AEED438.txt"
+   ]
+  },
+  "TCGA-EI-6511": {
+   "neighbour": "TCGA-D5-6538",
+   "similarity": 0.8716,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6538.092BF70B-2120-40EC-A98B-C72795D61660.txt"
+   ]
+  },
+  "TCGA-EI-6512": {
+   "neighbour": "TCGA-D5-6539",
+   "similarity": 0.839,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6539.3AFFDCB5-2A67-43C9-93AA-1191B1A1197E.txt"
+   ]
+  },
+  "TCGA-EI-6513": {
+   "neighbour": "TCGA-D5-6530",
+   "similarity": 0.8598,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6530.5A7B76ED-D0D1-45A6-814C-3DFFB6F4B717.txt"
+   ]
+  },
+  "TCGA-EI-6514": {
+   "neighbour": "TCGA-D5-5539",
+   "similarity": 0.9024,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5539.1CFCF7E7-0886-4A24-9AB4-FCC10E998779.txt"
+   ]
+  },
+  "TCGA-EI-6881": {
+   "neighbour": "TCGA-D5-6923",
+   "similarity": 0.811,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6923.3523F7AC-0A52-44CB-9B99-068955CCB1DA.txt"
+   ]
+  },
+  "TCGA-EI-6882": {
+   "neighbour": "TCGA-D5-6923",
+   "similarity": 0.8792,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6923.3523F7AC-0A52-44CB-9B99-068955CCB1DA.txt"
+   ]
+  },
+  "TCGA-EI-6883": {
+   "neighbour": "TCGA-D5-5537",
+   "similarity": 0.8866,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-5537.2674F1EC-C290-426E-8394-42DB0E7EC94A.txt"
+   ]
+  },
+  "TCGA-EI-6884": {
+   "neighbour": "TCGA-D5-6931",
+   "similarity": 0.8476,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6931.D58AE578-E4C3-4AE4-9B5D-A7831F976FF7.txt"
+   ]
+  },
+  "TCGA-EI-6885": {
+   "neighbour": "TCGA-D5-6924",
+   "similarity": 0.9199,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6924.6A75E6B8-5ECE-4FB9-9BCA-5A751EAC8D7C.txt"
+   ]
+  },
+  "TCGA-EI-6917": {
+   "neighbour": "TCGA-D5-6898",
+   "similarity": 0.7594,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6898.DCE0850F-677E-4B31-9D4B-D92D1BFBB41A.txt"
+   ]
+  },
+  "TCGA-EI-7002": {
+   "neighbour": "TCGA-D5-6898",
+   "similarity": 0.8866,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6898.DCE0850F-677E-4B31-9D4B-D92D1BFBB41A.txt"
+   ]
+  },
+  "TCGA-EI-7004": {
+   "neighbour": "TCGA-D5-7000",
+   "similarity": 0.669,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-7000.027E06D6-F4C5-433B-9B41-3A31678ED776.txt"
+   ]
+  },
+  "TCGA-F4-6459": {
+   "neighbour": "TCGA-F4-6461",
+   "similarity": 0.8976,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6461.2A2E4B4C-ECA6-4E8B-A84F-193C7C87B6B0.txt"
+   ]
+  },
+  "TCGA-F4-6460": {
+   "neighbour": "TCGA-F4-6808",
+   "similarity": 0.8797,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6808.02919AA1-8F7B-499C-A799-C09984AF58E0.txt"
+   ]
+  },
+  "TCGA-F4-6461": {
+   "neighbour": "TCGA-F4-6856",
+   "similarity": 0.8536,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6856.B45764E2-A7CA-47EC-8A4F-D39FD7F190C8.txt"
+   ]
+  },
+  "TCGA-F4-6463": {
+   "neighbour": "TCGA-F4-6569",
+   "similarity": 0.8146,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6569.7AB8BD50-444E-48EB-BB37-3B64FECFEFE8.txt"
+   ]
+  },
+  "TCGA-F4-6569": {
+   "neighbour": "TCGA-F4-6806",
+   "similarity": 0.8657,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6806.73742089-F64F-41FC-84E2-BC9B59D29C02.txt"
+   ]
+  },
+  "TCGA-F4-6570": {
+   "neighbour": "TCGA-AD-6964",
+   "similarity": 0.7626,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AD-6964.E44F0CF3-E315-4305-9A95-DD8BC9CE7496.txt"
+   ]
+  },
+  "TCGA-F4-6703": {
+   "neighbour": "TCGA-F4-6856",
+   "similarity": 0.8196,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6856.B45764E2-A7CA-47EC-8A4F-D39FD7F190C8.txt"
+   ]
+  },
+  "TCGA-F4-6704": {
+   "neighbour": "TCGA-F4-6855",
+   "similarity": 0.8781,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6855.27EE7F05-6980-4F93-ACB4-4D723F1D6FC2.txt"
+   ]
+  },
+  "TCGA-F4-6805": {
+   "neighbour": "TCGA-F4-6569",
+   "similarity": 0.916,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6569.7AB8BD50-444E-48EB-BB37-3B64FECFEFE8.txt"
+   ]
+  },
+  "TCGA-F4-6806": {
+   "neighbour": "TCGA-F4-6569",
+   "similarity": 0.8657,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6569.7AB8BD50-444E-48EB-BB37-3B64FECFEFE8.txt"
+   ]
+  },
+  "TCGA-F4-6807": {
+   "neighbour": "TCGA-F4-6569",
+   "similarity": 0.9196,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6569.7AB8BD50-444E-48EB-BB37-3B64FECFEFE8.txt"
+   ]
+  },
+  "TCGA-F4-6808": {
+   "neighbour": "TCGA-F4-6854",
+   "similarity": 0.8985,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6854.7B65634E-37D9-4EDD-9B0A-E3EB627999B0.txt"
+   ]
+  },
+  "TCGA-F4-6809": {
+   "neighbour": "TCGA-F4-6854",
+   "similarity": 0.9128,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6854.7B65634E-37D9-4EDD-9B0A-E3EB627999B0.txt"
+   ]
+  },
+  "TCGA-F4-6854": {
+   "neighbour": "TCGA-F4-6809",
+   "similarity": 0.9128,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6809.3EEF31F7-8C59-4B40-B441-DAAE9CB87C92.txt"
+   ]
+  },
+  "TCGA-F4-6855": {
+   "neighbour": "TCGA-F4-6856",
+   "similarity": 0.7871,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6856.B45764E2-A7CA-47EC-8A4F-D39FD7F190C8.txt"
+   ]
+  },
+  "TCGA-F4-6856": {
+   "neighbour": "TCGA-F4-6461",
+   "similarity": 0.8536,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6461.2A2E4B4C-ECA6-4E8B-A84F-193C7C87B6B0.txt"
+   ]
+  },
+  "TCGA-F5-6464": {
+   "neighbour": "TCGA-F4-6461",
+   "similarity": 0.8948,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6461.2A2E4B4C-ECA6-4E8B-A84F-193C7C87B6B0.txt"
+   ]
+  },
+  "TCGA-F5-6465": {
+   "neighbour": "TCGA-F4-6806",
+   "similarity": 0.8985,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6806.73742089-F64F-41FC-84E2-BC9B59D29C02.txt"
+   ]
+  },
+  "TCGA-F5-6571": {
+   "neighbour": "TCGA-F4-6808",
+   "similarity": 0.8814,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6808.02919AA1-8F7B-499C-A799-C09984AF58E0.txt"
+   ]
+  },
+  "TCGA-F5-6702": {
+   "neighbour": "TCGA-F4-6808",
+   "similarity": 0.8398,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6808.02919AA1-8F7B-499C-A799-C09984AF58E0.txt"
+   ]
+  },
+  "TCGA-F5-6810": {
+   "neighbour": "TCGA-F4-6808",
+   "similarity": 0.798,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6808.02919AA1-8F7B-499C-A799-C09984AF58E0.txt"
+   ]
+  },
+  "TCGA-F5-6811": {
+   "neighbour": "TCGA-F4-6808",
+   "similarity": 0.8179,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6808.02919AA1-8F7B-499C-A799-C09984AF58E0.txt"
+   ]
+  },
+  "TCGA-F5-6812": {
+   "neighbour": "TCGA-F4-6460",
+   "similarity": 0.8486,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6460.037E666E-3821-4A1C-931E-C92FA5657F48.txt"
+   ]
+  },
+  "TCGA-F5-6813": {
+   "neighbour": "TCGA-F4-6854",
+   "similarity": 0.8894,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6854.7B65634E-37D9-4EDD-9B0A-E3EB627999B0.txt"
+   ]
+  },
+  "TCGA-F5-6814": {
+   "neighbour": "TCGA-F4-6809",
+   "similarity": 0.3271,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6809.3EEF31F7-8C59-4B40-B441-DAAE9CB87C92.txt"
+   ]
+  },
+  "TCGA-F5-6861": {
+   "neighbour": "TCGA-F4-6809",
+   "similarity": 0.9179,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6809.3EEF31F7-8C59-4B40-B441-DAAE9CB87C92.txt"
+   ]
+  },
+  "TCGA-F5-6863": {
+   "neighbour": "TCGA-F4-6808",
+   "similarity": 0.8963,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6808.02919AA1-8F7B-499C-A799-C09984AF58E0.txt"
+   ]
+  },
+  "TCGA-F5-6864": {
+   "neighbour": "TCGA-F4-6854",
+   "similarity": 0.8543,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-F4-6854.7B65634E-37D9-4EDD-9B0A-E3EB627999B0.txt"
+   ]
+  },
+  "TCGA-G4-6293": {
+   "neighbour": "TCGA-G4-6297",
+   "similarity": 0.8776,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6297.9CB65EE5-2B85-49A4-A1FA-FE0DA865D74E.txt"
+   ]
+  },
+  "TCGA-G4-6294": {
+   "neighbour": "TCGA-G4-6307",
+   "similarity": 0.8565,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6307.FD16F984-2F04-487B-A553-90194C790FF2.txt"
+   ]
+  },
+  "TCGA-G4-6295": {
+   "neighbour": "TCGA-G4-6627",
+   "similarity": 0.9017,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6627.E8744B51-CCED-496B-9746-9F06FF93A01E.txt"
+   ]
+  },
+  "TCGA-G4-6297": {
+   "neighbour": "TCGA-G4-6627",
+   "similarity": 0.8875,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6627.E8744B51-CCED-496B-9746-9F06FF93A01E.txt"
+   ]
+  },
+  "TCGA-G4-6298": {
+   "neighbour": "TCGA-G4-6297",
+   "similarity": 0.8543,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6297.9CB65EE5-2B85-49A4-A1FA-FE0DA865D74E.txt"
+   ]
+  },
+  "TCGA-G4-6299": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.897,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-G4-6302": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.894,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-G4-6303": {
+   "neighbour": "TCGA-G4-6295",
+   "similarity": 0.8681,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6295.C154D187-5C39-4C08-A525-7DC34B810450.txt"
+   ]
+  },
+  "TCGA-G4-6304": {
+   "neighbour": "TCGA-G4-6588",
+   "similarity": 0.8012,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6588.282B7FFE-90F7-4976-BA97-537773193ACD.txt"
+   ]
+  },
+  "TCGA-G4-6306": {
+   "neighbour": "TCGA-G4-6295",
+   "similarity": 0.8777,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6295.C154D187-5C39-4C08-A525-7DC34B810450.txt"
+   ]
+  },
+  "TCGA-G4-6307": {
+   "neighbour": "TCGA-G4-6306",
+   "similarity": 0.8734,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6306.563E9AA1-D970-4CA7-9A04-634F1EC8DC9C.txt"
+   ]
+  },
+  "TCGA-G4-6309": {
+   "neighbour": "TCGA-G4-6588",
+   "similarity": 0.8914,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6588.282B7FFE-90F7-4976-BA97-537773193ACD.txt"
+   ]
+  },
+  "TCGA-G4-6310": {
+   "neighbour": "TCGA-G4-6306",
+   "similarity": 0.7928,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6306.563E9AA1-D970-4CA7-9A04-634F1EC8DC9C.txt"
+   ]
+  },
+  "TCGA-G4-6311": {
+   "neighbour": "TCGA-G4-6321",
+   "similarity": 0.945,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6321.9BD063BF-9893-40C8-8C56-0493A760E439.txt"
+   ]
+  },
+  "TCGA-G4-6314": {
+   "neighbour": "TCGA-G4-6627",
+   "similarity": 0.9148,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6627.E8744B51-CCED-496B-9746-9F06FF93A01E.txt"
+   ]
+  },
+  "TCGA-G4-6315": {
+   "neighbour": "TCGA-D5-6929",
+   "similarity": 0.8527,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-D5-6929.D6EC7D7D-FC73-4411-B42D-19EF642FDB36.txt"
+   ]
+  },
+  "TCGA-G4-6317": {
+   "neighbour": "TCGA-G4-6627",
+   "similarity": 0.8852,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6627.E8744B51-CCED-496B-9746-9F06FF93A01E.txt"
+   ]
+  },
+  "TCGA-G4-6320": {
+   "neighbour": "TCGA-G4-6317",
+   "similarity": 0.8813,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6317.852F4165-5450-4BA2-9042-1AC863F0CA90.txt"
+   ]
+  },
+  "TCGA-G4-6321": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.945,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-G4-6322": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.8677,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-G4-6323": {
+   "neighbour": "TCGA-CK-4952",
+   "similarity": 0.8195,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-CK-4952.0086611E-C16D-4934-804E-332F4D0DAAD1.txt"
+   ]
+  },
+  "TCGA-G4-6586": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.8836,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-G4-6588": {
+   "neighbour": "TCGA-G4-6309",
+   "similarity": 0.8914,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6309.AE3C7A6C-7DEC-49C3-BCC7-454A49C1201D.txt"
+   ]
+  },
+  "TCGA-G4-6625": {
+   "neighbour": "TCGA-G4-6321",
+   "similarity": 0.6307,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6321.9BD063BF-9893-40C8-8C56-0493A760E439.txt"
+   ]
+  },
+  "TCGA-G4-6626": {
+   "neighbour": "TCGA-G4-6295",
+   "similarity": 0.8821,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6295.C154D187-5C39-4C08-A525-7DC34B810450.txt"
+   ]
+  },
+  "TCGA-G4-6627": {
+   "neighbour": "TCGA-G4-6311",
+   "similarity": 0.9077,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6311.9B738535-D694-4F0E-9FAD-F2E67D9FF126.txt"
+   ]
+  },
+  "TCGA-G4-6628": {
+   "neighbour": "TCGA-G4-6309",
+   "similarity": 0.8638,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6309.AE3C7A6C-7DEC-49C3-BCC7-454A49C1201D.txt"
+   ]
+  },
+  "TCGA-G5-6233": {
+   "neighbour": "TCGA-G4-6627",
+   "similarity": 0.8865,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6627.E8744B51-CCED-496B-9746-9F06FF93A01E.txt"
+   ]
+  },
+  "TCGA-G5-6235": {
+   "neighbour": "TCGA-G4-6297",
+   "similarity": 0.9247,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6297.9CB65EE5-2B85-49A4-A1FA-FE0DA865D74E.txt"
+   ]
+  },
+  "TCGA-G5-6641": {
+   "neighbour": "TCGA-G4-6302",
+   "similarity": 0.8847,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-G4-6302.04AFF74D-07D3-4453-8D97-88AF7D64D787.txt"
+   ]
+  },
+  "TCGA-NH-A50T": {
+   "neighbour": "TCGA-NH-A50V",
+   "similarity": 0.8771,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A50V.A745029F-98FE-44AA-8006-A06CEB09F560.txt"
+   ]
+  },
+  "TCGA-NH-A50U": {
+   "neighbour": "TCGA-NH-A8F7",
+   "similarity": 0.8467,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.0E9A48BA-AAE0-4D88-90E1-141483700759.txt",
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.4D9A2D24-529F-4CFE-8444-013FAAF696EC.txt"
+   ]
+  },
+  "TCGA-NH-A50V": {
+   "neighbour": "TCGA-NH-A5IV",
+   "similarity": 0.8258,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A5IV.F7280EE2-0A62-4DE5-8A20-17B6FBB51F41.txt"
+   ]
+  },
+  "TCGA-NH-A5IV": {
+   "neighbour": "TCGA-NH-A50V",
+   "similarity": 0.8258,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A50V.A745029F-98FE-44AA-8006-A06CEB09F560.txt"
+   ]
+  },
+  "TCGA-NH-A6GA": {
+   "neighbour": "TCGA-NH-A8F7",
+   "similarity": 0.8649,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.0E9A48BA-AAE0-4D88-90E1-141483700759.txt",
+    "tcga_report_text/reports_txt/TCGA-NH-A8F7.4D9A2D24-529F-4CFE-8444-013FAAF696EC.txt"
+   ]
+  },
+  "TCGA-NH-A6GB": {
+   "neighbour": "TCGA-NH-A8F8",
+   "similarity": 0.8399,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A8F8.0D65923F-583D-42C2-8CA3-0A209D5F0490.txt"
+   ]
+  },
+  "TCGA-NH-A6GC": {
+   "neighbour": "TCGA-QG-A5Z1",
+   "similarity": 0.7466,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-QG-A5Z1.63266BCF-52D2-4EFC-ADD4-B7728BD8101E.txt"
+   ]
+  },
+  "TCGA-NH-A8F7": {
+   "neighbour": "TCGA-NH-A50U",
+   "similarity": 0.8467,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A50U.ECEF5C94-4177-48A5-BB03-AA57BA9058A6.txt"
+   ]
+  },
+  "TCGA-NH-A8F8": {
+   "neighbour": "TCGA-NH-A6GB",
+   "similarity": 0.8399,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A6GB.163923CC-A65E-4F0F-83CC-D0CA33C8F35E.txt"
+   ]
+  },
+  "TCGA-QG-A5YV": {
+   "neighbour": "TCGA-NH-A6GB",
+   "similarity": 0.6834,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A6GB.163923CC-A65E-4F0F-83CC-D0CA33C8F35E.txt"
+   ]
+  },
+  "TCGA-QG-A5YW": {
+   "neighbour": "TCGA-NH-A8F8",
+   "similarity": 0.6895,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-NH-A8F8.0D65923F-583D-42C2-8CA3-0A209D5F0490.txt"
+   ]
+  },
+  "TCGA-QG-A5YX": {
+   "neighbour": "TCGA-4T-AA8H",
+   "similarity": 0.6783,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-4T-AA8H.FAB79463-7351-4C25-9AEC-7B47486C7F54.txt"
+   ]
+  },
+  "TCGA-QG-A5Z1": {
+   "neighbour": "TCGA-4N-A93T",
+   "similarity": 0.7755,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-4N-A93T.5AEC5E5B-8EC4-4AA0-A195-612CFC38481F.txt"
+   ]
+  },
+  "TCGA-QG-A5Z2": {
+   "neighbour": "TCGA-QG-A5Z1",
+   "similarity": 0.7658,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-QG-A5Z1.63266BCF-52D2-4EFC-ADD4-B7728BD8101E.txt"
+   ]
+  },
+  "TCGA-QL-A97D": {
+   "neighbour": "TCGA-QG-A5Z1",
+   "similarity": 0.7202,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-QG-A5Z1.63266BCF-52D2-4EFC-ADD4-B7728BD8101E.txt"
+   ]
+  },
+  "TCGA-SS-A7HO": {
+   "neighbour": "TCGA-A6-6650",
+   "similarity": 0.6813,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-6650.A3BACC5B-1C12-44E2-99F6-80BAA8668283.txt"
+   ]
+  },
+  "TCGA-T9-A92H": {
+   "neighbour": "TCGA-AA-3833",
+   "similarity": 0.4216,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-AA-3833.701E11C7-9FA9-4D45-9D35-1FAE3C3827AE.txt"
+   ]
+  },
+  "TCGA-WS-AB45": {
+   "neighbour": "TCGA-A6-A565",
+   "similarity": 0.7609,
+   "neighbour_report": [
+    "tcga_report_text/reports_txt/TCGA-A6-A565.177EECE8-D2CB-4CA4-81C5-949F14F793FA.txt"
+   ]
+  }
+ }
+}

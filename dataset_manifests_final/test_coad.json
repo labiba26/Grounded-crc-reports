@@ -1,0 +1,1590 @@
+[
+  {
+    "case_id": "TCGA-3L-AA1B",
+    "cohort": "COAD",
+    "num_slides": 2,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-3L-AA1B-01Z-00-DX2.17CE3683-F4B1-4978-A281-8F620C4D77B4.h5",
+        "num_patches": 8133,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      },
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-3L-AA1B-01Z-00-DX1.8923A151-A690-40B7-9E5A-FCBEDFC2394F.h5",
+        "num_patches": 14853,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-3L-AA1B.09A86147-EB23-489F-9849-9FDC91AC44A1.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-2674",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-2674-01Z-00-DX1.d301f1f5-6f4a-49e6-9c93-f4e8b7f616b8.h5",
+        "num_patches": 2355,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-2674.8D42A0BE-1995-4889-94DB-EEF5528759C0.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-2680",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-2680-01Z-00-DX1.7b77c0fb-f51d-4d16-ae77-f7615b1d0b87.h5",
+        "num_patches": 4245,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-2680.F5ED27B7-F97A-40EC-9743-F5761F7CA1C6.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-2682",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-2682-01Z-00-DX1.be71dca0-b9b7-40be-a6c6-9d053c7886a6.h5",
+        "num_patches": 5727,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-2682.B6280ABB-7CCF-4FDB-AD83-65D8B98DFBBA.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-2684",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-2684-01Z-00-DX1.be127778-e160-4ae3-9e5a-13a16eae2e7a.h5",
+        "num_patches": 3779,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-2684.9DABF713-DD0C-4388-B69E-F1BBB08E4D21.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-3807",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-3807-01Z-00-DX1.c3de2064-4f8d-4786-9ff9-2e0f44293717.h5",
+        "num_patches": 9165,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-3807.64B62C44-5F24-49DB-BC69-F6FAB36044A2.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-3809",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-3809-01Z-00-DX1.c26f03e8-c285-4a66-925d-ae9cba17d7b3.h5",
+        "num_patches": 3642,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-3809.B4D15A05-BC09-4DDB-B35B-13798747FECC.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-3810",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-3810-01Z-00-DX1.2940ca70-013a-4bc3-ad6a-cf4d9ffa77ce.h5",
+        "num_patches": 1314,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-3810.D45C776B-26A5-406A-A4FE-F90896646611.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-5659",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-5659-01Z-00-DX1.c671806f-013e-4d99-9841-cda5bd43eff1.h5",
+        "num_patches": 2197,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-5659.16172149-A834-4F41-A786-5D87A69FC65C.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-5662",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-5662-01Z-00-DX1.82569684-1c31-4346-af9b-c296a020f624.h5",
+        "num_patches": 2064,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-5662.79935EC7-C03D-4DBF-97A6-C97DA85AF6D6.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-6138",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-6138-01Z-00-DX1.11a4fad6-dfa3-4236-b714-bf1023b54622.h5",
+        "num_patches": 4255,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-6138.270FF9CD-8154-4FAB-B2B5-01E9ACE89200.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-6142",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-6142-01Z-00-DX1.e923ce20-d3c3-4d21-9e7c-d999a3742f9b.h5",
+        "num_patches": 4489,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-6142.DE239E8F-C789-4E05-BA13-1936905FB79C.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-A6-6651",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-A6-6651-01Z-00-DX1.09ad2d69-d71d-4fa2-9504-80557a053db4.h5",
+        "num_patches": 4329,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-A6-6651.93F31F79-8BBE-411C-9CCC-C7EA0A4D4937.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3514",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3514-01Z-00-DX1.9e135da2-436e-47e3-9dbf-b2f577677828.h5",
+        "num_patches": 3580,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3514.FB5F0B24-DA5D-4C30-B508-7D45CC48A4F8.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3516",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3516-01Z-00-DX1.0a9d9207-6dc2-44b9-89ea-16418430c484.h5",
+        "num_patches": 3249,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3516.582A3C15-76F6-43A0-9C41-303E4EEADE06.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3517",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3517-01Z-00-DX1.dac0f9a3-fa10-42e7-acaf-e86fff0829d2.h5",
+        "num_patches": 4228,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3517.DE7970C3-C467-4B73-9235-74F654C3F66C.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3532",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3532-01Z-00-DX1.00c7a378-a7c5-4fb4-9f53-6197be81c2eb.h5",
+        "num_patches": 2364,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3532.82516932-0618-4E40-9B7F-BCC09639E261.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3538",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3538-01Z-00-DX1.60d0b039-25d6-4b71-a36f-5b2764a983ef.h5",
+        "num_patches": 1865,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3538.32912174-66B8-4144-9EF0-26B04C05E568.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3542",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3542-01Z-00-DX1.db284d9a-bde5-471c-ac37-5f3216d0f077.h5",
+        "num_patches": 3805,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3542.C13D322B-8984-440D-A279-4A3253A16F80.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3544",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3544-01Z-00-DX1.96850cbf-2305-4b65-8f06-db801af51cc3.h5",
+        "num_patches": 3781,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3544.93EA637F-9CCB-4B49-BC45-E7E5388143F4.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3548",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3548-01Z-00-DX1.41949ab5-79f2-4729-9d54-c0fca1daf124.h5",
+        "num_patches": 3225,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3548.D2B49072-6158-48AE-8C9B-1F0BA0D2660A.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3549",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3549-01Z-00-DX1.2fe99d54-c61b-4867-bafe-efe4f291c429.h5",
+        "num_patches": 4140,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3549.C241ECE3-8A28-4984-AEA5-CBB5379E8D75.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3552",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3552-01Z-00-DX1.84133d42-9a39-44b5-a1ec-a5382650c939.h5",
+        "num_patches": 3748,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3552.8E12A8A9-9717-4533-969F-1D9545DE70F0.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3553",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3553-01Z-00-DX1.45a24cd4-6eb2-4f20-9453-05476da34cdd.h5",
+        "num_patches": 2150,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3553.B7A765AE-6321-4F5E-8894-7B23B6C39BD6.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3556",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3556-01Z-00-DX1.63a74b91-44e8-4ffd-8737-bcf6992183c3.h5",
+        "num_patches": 1194,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3556.2DA209DB-A863-41A2-B387-265857A2DCE6.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3672",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3672-01Z-00-DX1.6cc142eb-e77f-4c09-a6ac-e85470221812.h5",
+        "num_patches": 5444,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3672.72117EA9-8089-4922-9732-D532B6AC5D94.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3678",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3678-01Z-00-DX1.4bc052e9-e5b0-4328-afe5-8d19fd2c386c.h5",
+        "num_patches": 1709,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3678.C37DB00C-1AE4-44FB-94C0-6348AEC56948.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3679",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3679-01Z-00-DX1.b3445f8e-b143-4f24-9edd-8abdcb6b139b.h5",
+        "num_patches": 3607,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3679.C425B16D-B52D-4272-BC6B-73005A14D84E.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3710",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3710-01Z-00-DX1.78082263-b7e9-4281-aa55-2da5f80e4499.h5",
+        "num_patches": 5784,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3710.CAFE6B42-0750-48E0-80FE-3AACAA8FC9B3.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3831",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3831-01Z-00-DX1.0565c3fc-fe21-4b34-ae1b-626a46edaa9e.h5",
+        "num_patches": 2848,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3831.009C3F80-2F13-4B24-90F1-B0EAAC864E66.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3842",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3842-01Z-00-DX1.8bbbd702-2b17-4c3e-a8bd-55c3ae8aaba3.h5",
+        "num_patches": 2135,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3842.890ECC56-472A-4B9B-8513-14C3D7FBD0D7.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3855",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3855-01Z-00-DX1.f305ce6c-e87c-4e68-b31e-2e6e8b52606f.h5",
+        "num_patches": 3579,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3855.F0EEACCF-D2EB-444F-B3E8-D9D3C3663272.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3862",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3862-01Z-00-DX1.67a0bc0d-1fe0-4c90-bb2d-5b12224cc846.h5",
+        "num_patches": 2799,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3862.422E955E-99A6-42BE-9CD9-0D67F6909C11.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3864",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3864-01Z-00-DX1.f6992bc7-ba05-4c30-9500-8f7b07b30f9a.h5",
+        "num_patches": 2930,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3864.B44B2737-EA1F-4280-A3DE-4E5FA43B8E93.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3939",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3939-01Z-00-DX1.6ceb6e8f-a469-4f42-9597-8bf853d95640.h5",
+        "num_patches": 2049,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3939.4A1C0305-9B03-4B34-8F88-B535DB869F12.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3970",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3970-01Z-00-DX1.712c069a-aeaf-498b-80fa-7bb481b13825.h5",
+        "num_patches": 2360,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3970.72BFFE46-A121-4488-ACDC-0FFD4E57CABE.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3971",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3971-01Z-00-DX1.348b1114-a9d5-4a37-8dfd-3bc8738fec35.h5",
+        "num_patches": 5416,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3971.C9868EE7-4CC6-4C5D-AA91-ED744A8FEF35.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3972",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3972-01Z-00-DX1.a60c2c2b-71ea-4cd6-a56b-c8e409a181ac.h5",
+        "num_patches": 1672,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3972.2562DE97-B8B4-4547-9E7F-4C0FAB6552B3.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-3973",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-3973-01Z-00-DX1.05cee752-3f4e-442d-a093-dcfb2b6130f0.h5",
+        "num_patches": 3738,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-3973.9E835A08-C992-405B-A4AA-BE4C570A695C.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-A00O",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-A00O-01Z-00-DX1.6787693F-6E3E-479A-A4DE-44186659285F.h5",
+        "num_patches": 2277,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-A00O.D60FE415-7BE3-49B6-802C-EAF36A583E28.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-A00Q",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-A00Q-01Z-00-DX1.D427F78B-6640-400B-B8F8-B5568B1C4321.h5",
+        "num_patches": 3165,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-A00Q.7F67E829-D10E-4B47-B0A1-6029B57ED112.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-A00Z",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-A00Z-01Z-00-DX1.47847702-E46E-40AA-9BA6-2ED1912D1E73.h5",
+        "num_patches": 1497,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-A00Z.CDC060C5-854A-44FC-946B-66AB98D782A5.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-A024",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-A024-01Z-00-DX1.5F24A31C-2F11-4768-9906-7BAB578C742D.h5",
+        "num_patches": 5735,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-A024.48C27265-38FC-4291-8CB8-B10F577B2FEB.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AA-A02K",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AA-A02K-01Z-00-DX1.732DD8F9-A21A-4E97-A779-3400A6C3D19D.h5",
+        "num_patches": 5271,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AA-A02K.EDDCC4B3-986B-4415-B742-CF0B98EACF72.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AD-6901",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AD-6901-01Z-00-DX1.0a69c0b5-6238-4c1a-bbbd-ea743bf6fc98.h5",
+        "num_patches": 2166,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AD-6901.3252C7D1-76B7-41D7-8126-70FA2F20FDEF.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AU-6004",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AU-6004-01Z-00-DX1.12a234b3-1843-47ca-b650-37c1a631f489.h5",
+        "num_patches": 4503,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AU-6004.28578993-A474-4AFB-93B6-46665B90E1B2.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AZ-4681",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AZ-4681-01Z-00-DX1.e468c1a1-e251-4521-82fe-526c9c5f8190.h5",
+        "num_patches": 12130,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AZ-4681.F93F6D03-DDBC-4399-B896-88AD92B285E6.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AZ-6598",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AZ-6598-01Z-00-DX1.1fc4cd61-4524-413b-b36d-ad438785bc06.h5",
+        "num_patches": 18706,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AZ-6598.7D5CE419-6678-4CD8-89A9-31E8BBB8406F.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-AZ-6603",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-AZ-6603-01Z-00-DX1.e39d6a8c-a738-4d63-b094-11be49fac828.h5",
+        "num_patches": 15119,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-AZ-6603.7DB6364C-AF02-40BF-B276-76B8B901C0EC.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CA-5796",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CA-5796-01Z-00-DX1.88141789-4240-4ab7-8db1-e4cb7ee1ebda.h5",
+        "num_patches": 5551,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CA-5796.8E2777E5-BA8D-4B4C-9C96-15F6355F1FDD.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CK-4951",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CK-4951-01Z-00-DX1.abdbb15c-fd40-4a55-bf54-5668b3d4ea13.h5",
+        "num_patches": 5053,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CK-4951.2D3E5015-F38B-42CE-9466-CDD21A5B3701.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CK-5914",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CK-5914-01Z-00-DX1.dfa6d814-6ddb-4058-a236-d57303cbfbe9.h5",
+        "num_patches": 7232,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CK-5914.6A2276BB-99C0-4E2F-B673-3077DDB9C9D3.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CK-6748",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CK-6748-01Z-00-DX1.1dd76660-7858-470c-a27b-36586b788125.h5",
+        "num_patches": 10535,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CK-6748.D8E78B5E-6E61-413A-B518-A8B77B986E86.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CK-6751",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CK-6751-01Z-00-DX1.df9e123a-c44c-4cc5-82de-ba7c4dbcb444.h5",
+        "num_patches": 5025,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CK-6751.C6E7F8D6-A201-4E43-AD3C-7DAFDB3301E2.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CM-4748",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CM-4748-01Z-00-DX1.e6307e86-29c5-4018-a94a-77fae9b08123.h5",
+        "num_patches": 5234,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CM-4748.D86E67B0-5A10-4760-A2F8-420A06C83DE8.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CM-4750",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CM-4750-01Z-00-DX1.250ea50f-3aae-4fcd-9ba9-25cf2115525f.h5",
+        "num_patches": 11824,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CM-4750.DFA82FCC-99C6-4F13-B3F1-A14615247E2D.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CM-4752",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CM-4752-01Z-00-DX1.ac26d5ca-f554-4766-a4c3-f90a8c327dd4.h5",
+        "num_patches": 5291,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CM-4752.121AE2CB-7FD4-4343-80CE-77FD001B1787.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CM-5344",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CM-5344-01Z-00-DX1.586a3060-8c97-4619-b5b0-ad2d0d2b62cb.h5",
+        "num_patches": 10824,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CM-5344.9AF94CFC-6EEF-4691-9DFB-C0F60CFEBDCB.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CM-5868",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CM-5868-01Z-00-DX1.70f2e193-248d-4bf9-a875-49c314223f70.h5",
+        "num_patches": 10223,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CM-5868.F5259A76-974F-483B-A980-CB39B45FD791.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CM-6162",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CM-6162-01Z-00-DX1.806a99a3-cda2-4dde-8d13-d22912b44d49.h5",
+        "num_patches": 8439,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CM-6162.E5B534C1-549F-4741-B763-3B1F5BE845A5.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-CM-6678",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-CM-6678-01Z-00-DX1.b0e06829-c119-4131-a2ec-22d41d8d6068.h5",
+        "num_patches": 6589,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-CM-6678.B9528D91-A511-4057-BE4B-86C1496778FF.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-D5-6529",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-D5-6529-01Z-00-DX1.3b2ef23a-29b5-4a22-893c-6114d8244e68.h5",
+        "num_patches": 4034,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-D5-6529.68504EB4-8724-494A-A886-B0C22BC0FB09.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-D5-6532",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-D5-6532-01Z-00-DX1.a28f2969-31ae-408f-99f5-5428e183e123.h5",
+        "num_patches": 8390,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-D5-6532.F7AB0E42-7405-4F0F-9A3D-D2B0DC0D7234.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-D5-6541",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-D5-6541-01Z-00-DX1.b342c06b-8c59-4218-82f5-388568037e41.h5",
+        "num_patches": 7176,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-D5-6541.93F340FA-2FE6-4D79-A8E8-7233C8C1B536.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-DM-A1D6",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-DM-A1D6-01Z-00-DX1.BCDA4D6C-8424-477D-9FAF-907206D2DDD6.h5",
+        "num_patches": 8213,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-DM-A1D6.A73A51CC-5DDB-4D1D-ABDC-858856CC3B8D.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-DM-A280",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-DM-A280-01Z-00-DX1.e7cfcec1-e284-4b94-80c2-cbb3186f7c6f.h5",
+        "num_patches": 17100,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-DM-A280.EDE93B1A-2535-4D4B-9995-DD050CA8A5D7.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-DM-A288",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-DM-A288-01Z-00-DX1.716efd68-52d4-4049-b9a6-480700579e74.h5",
+        "num_patches": 10850,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-DM-A288.EB32DBF8-FC70-4848-9595-45B295D698B5.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-DM-A28G",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-DM-A28G-01Z-00-DX1.5e8602bd-31e1-4813-8214-cd56280defe5.h5",
+        "num_patches": 11744,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-DM-A28G.1CA5DFB2-8059-4D71-862C-638393435618.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-DM-A28K",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-DM-A28K-01Z-00-DX1.766edac4-a5c8-45ef-aff6-73e308c1f442.h5",
+        "num_patches": 13987,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-DM-A28K.499EEF9A-F77A-4F0D-A575-CB52AAB54E9B.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-F4-6459",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-F4-6459-01Z-00-DX1.80a78213-1137-4521-9d60-ac64813dec4c.h5",
+        "num_patches": 9963,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-F4-6459.D0F0EEF4-BC4D-47E6-A4B6-C0F5D48C6203.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-F4-6703",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-F4-6703-01Z-00-DX1.28225f5d-d880-4605-831f-f22ec0272cde.h5",
+        "num_patches": 5930,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-F4-6703.227ED987-C3D7-420F-9276-2F803646323B.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-F4-6704",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-F4-6704-01Z-00-DX1.f7cb6641-a6f3-40b7-a5cb-aaf604f73d0f.h5",
+        "num_patches": 3116,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-F4-6704.FDE549EE-A203-4D65-8F24-9F450E6F3857.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-F4-6805",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-F4-6805-01Z-00-DX1.9927edbb-2801-4988-b113-1fdfd31a72a0.h5",
+        "num_patches": 3651,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-F4-6805.C6183FED-CFC7-4E3D-A934-845331FF5CCF.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-F4-6807",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-F4-6807-01Z-00-DX1.84bfb631-af3d-45e7-a7db-730844a53625.h5",
+        "num_patches": 9458,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-F4-6807.F0DE4E3E-4BEE-4AEE-AF8C-37A6DA374814.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-G4-6293",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-G4-6293-01Z-00-DX1.62ed5ed9-a79a-487a-bd6f-1f3f0571d44d.h5",
+        "num_patches": 8615,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-G4-6293.5C5A0F9A-E8C8-4B9B-AB34-275B57CBC291.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-G4-6298",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-G4-6298-01Z-00-DX1.83055d52-71f7-46ec-be53-11d86b19b4cf.h5",
+        "num_patches": 12132,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-G4-6298.BF7B5BF6-9223-412A-B98F-5E89761C5C8A.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-G4-6303",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-G4-6303-01Z-00-DX1.5819f041-d9b8-4fd2-bf52-65677be31df1.h5",
+        "num_patches": 3586,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-G4-6303.7427B7A6-357F-4F90-A25F-BF04DE709E5D.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-G4-6310",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-G4-6310-01Z-00-DX1.b88472d4-3adc-4e4d-b0f2-0dc195a3d7df.h5",
+        "num_patches": 3540,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-G4-6310.B3F10AAD-375B-49EC-9295-122BD1293442.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-G4-6314",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-G4-6314-01Z-00-DX1.bea21980-9584-4382-9de3-4c5114edb10d.h5",
+        "num_patches": 11853,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-G4-6314.41244014-BB57-45AA-B666-4315F0C2E376.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-G4-6586",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-G4-6586-01Z-00-DX1.f19ef98f-9540-4b8d-bd13-5891e79b2576.h5",
+        "num_patches": 10379,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-G4-6586.6B0870C1-2A5A-403F-9A30-770A10928CBA.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-G4-6626",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-G4-6626-01Z-00-DX1.20e7691e-9ef5-4278-a7d4-3967e36f24d5.h5",
+        "num_patches": 5480,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-G4-6626.CDE2661B-5CFE-4295-A585-75DAACB1B9AA.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-NH-A50T",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-NH-A50T-01Z-00-DX1.4624B690-C0DE-42BD-852C-6EBABF40255F.h5",
+        "num_patches": 11039,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-NH-A50T.79B9D161-8397-455C-AC36-7DED2D211C95.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-NH-A6GA",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-NH-A6GA-01Z-00-DX1.33AFBF24-84BD-4E21-8A2D-A565AD3E4376.h5",
+        "num_patches": 10413,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-NH-A6GA.53BA96AA-B755-460C-83CF-ED5BCCD031F6.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-NH-A6GC",
+    "cohort": "COAD",
+    "num_slides": 2,
+    "num_reports": 2,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-NH-A6GC-01Z-00-DX1.29073D7E-5EEF-4BBA-96BE-DC8C69924C42.h5",
+        "num_patches": 8743,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      },
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-NH-A6GC-06Z-00-DX1.5F90CBDB-794B-498D-B75F-60EBDE17B22A.h5",
+        "num_patches": 10974,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-NH-A6GC.1D9DC00B-044F-4304-8C27-077BB64A5C48.txt",
+      "tcga_report_text/reports_txt/TCGA-NH-A6GC.B4D412AD-FD5C-4397-B56E-62F39A375751.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-QG-A5YV",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-QG-A5YV-01Z-00-DX1.9B7FD3EA-D1AB-44B3-B728-820939EF56EA.h5",
+        "num_patches": 18194,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-QG-A5YV.DCBDBBD7-E408-4E5F-AF2B-95F4D01C7D5C.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-QG-A5Z2",
+    "cohort": "COAD",
+    "num_slides": 2,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-QG-A5Z2-01Z-00-DX2.F2352352-8F00-4BB3-8A62-8D1C1E374F95.h5",
+        "num_patches": 19918,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      },
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-QG-A5Z2-01Z-00-DX1.51896C31-235E-48EF-90F7-FC05350CA564.h5",
+        "num_patches": 14562,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-QG-A5Z2.E997748F-FB20-4CF3-8621-966181B7AF2E.txt"
+    ]
+  },
+  {
+    "case_id": "TCGA-QL-A97D",
+    "cohort": "COAD",
+    "num_slides": 1,
+    "num_reports": 1,
+    "slides": [
+      {
+        "path": "UNI2_h_features/TCGA/TCGA-COAD/TCGA-QL-A97D-01Z-00-DX1.6B48E95D-BE3C-4448-A1AF-6988C00B7AF1.h5",
+        "num_patches": 16328,
+        "feature_dim": 1536,
+        "has_coords": true,
+        "error": null
+      }
+    ],
+    "reports": [
+      "tcga_report_text/reports_txt/TCGA-QL-A97D.0433BF3F-FF22-4389-AEFF-60B092A69D88.txt"
+    ]
+  }
+]

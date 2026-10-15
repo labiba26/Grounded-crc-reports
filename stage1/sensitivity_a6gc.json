@@ -1,0 +1,226 @@
+{
+ "checkpoint": "stage1_mil.pt",
+ "device": "mps",
+ "eval": "full bags, no subsampling",
+ "with_case": {
+  "mucinous": {
+   "n": 81,
+   "bal_acc": 0.8200000000000001,
+   "per_class": {
+    "False": {
+     "n": 75,
+     "recall": 0.9733333333333334
+    },
+    "True": {
+     "n": 6,
+     "recall": 0.6666666666666666
+    }
+   }
+  },
+  "grade": {
+   "n": 78,
+   "bal_acc": 0.3968253968253968,
+   "per_class": {
+    "1": {
+     "n": 6,
+     "recall": 0.0
+    },
+    "2": {
+     "n": 63,
+     "recall": 0.6349206349206349
+    },
+    "3": {
+     "n": 9,
+     "recall": 0.5555555555555556
+    }
+   }
+  },
+  "pt_stage": {
+   "n": 72,
+   "bal_acc": 0.3591463414634146,
+   "per_class": {
+    "1": {
+     "n": 1,
+     "recall": 0.0
+    },
+    "2": {
+     "n": 20,
+     "recall": 0.3
+    },
+    "3": {
+     "n": 41,
+     "recall": 0.5365853658536586
+    },
+    "4": {
+     "n": 10,
+     "recall": 0.6
+    }
+   }
+  },
+  "node_positive": {
+   "n": 77,
+   "bal_acc": 0.6019647696476964,
+   "per_class": {
+    "False": {
+     "n": 41,
+     "recall": 0.7317073170731707
+    },
+    "True": {
+     "n": 36,
+     "recall": 0.4722222222222222
+    }
+   }
+  }
+ },
+ "without_case": {
+  "mucinous": {
+   "n": 80,
+   "bal_acc": 0.7866666666666666,
+   "per_class": {
+    "False": {
+     "n": 75,
+     "recall": 0.9733333333333334
+    },
+    "True": {
+     "n": 5,
+     "recall": 0.6
+    }
+   }
+  },
+  "grade": {
+   "n": 78,
+   "bal_acc": 0.3968253968253968,
+   "per_class": {
+    "1": {
+     "n": 6,
+     "recall": 0.0
+    },
+    "2": {
+     "n": 63,
+     "recall": 0.6349206349206349
+    },
+    "3": {
+     "n": 9,
+     "recall": 0.5555555555555556
+    }
+   }
+  },
+  "pt_stage": {
+   "n": 71,
+   "bal_acc": 0.34803523035230355,
+   "per_class": {
+    "1": {
+     "n": 1,
+     "recall": 0.0
+    },
+    "2": {
+     "n": 20,
+     "recall": 0.3
+    },
+    "3": {
+     "n": 41,
+     "recall": 0.5365853658536586
+    },
+    "4": {
+     "n": 9,
+     "recall": 0.5555555555555556
+    }
+   }
+  },
+  "node_positive": {
+   "n": 76,
+   "bal_acc": 0.6087108013937282,
+   "per_class": {
+    "False": {
+     "n": 41,
+     "recall": 0.7317073170731707
+    },
+    "True": {
+     "n": 35,
+     "recall": 0.4857142857142857
+    }
+   }
+  }
+ },
+ "case": {
+  "slides": {
+   "TCGA-NH-A6GC-01Z-00-DX1": 8743,
+   "TCGA-NH-A6GC-06Z-00-DX1": 10974
+  },
+  "attention_share": {
+   "TCGA-NH-A6GC-01Z-00-DX1": 0.45296013355255127,
+   "TCGA-NH-A6GC-06Z-00-DX1": 0.5470398664474487
+  },
+  "gold": {
+   "mucinous": true,
+   "grade": null,
+   "pt_stage": 4,
+   "node_positive": true
+  },
+  "predictions": {
+   "both slides (as evaluated)": {
+    "mucinous": {
+     "False": 0.001,
+     "True": 0.999
+    },
+    "grade": {
+     "1": 0.577,
+     "2": 0.318,
+     "3": 0.105
+    },
+    "pt_stage": {
+     "1": 0.002,
+     "2": 0.003,
+     "3": 0.481,
+     "4": 0.514
+    },
+    "node_positive": {
+     "False": 0.578,
+     "True": 0.422
+    }
+   },
+   "TCGA-NH-A6GC-01Z-00-DX1 only": {
+    "mucinous": {
+     "False": 0.0,
+     "True": 1.0
+    },
+    "grade": {
+     "1": 0.65,
+     "2": 0.265,
+     "3": 0.085
+    },
+    "pt_stage": {
+     "1": 0.004,
+     "2": 0.004,
+     "3": 0.429,
+     "4": 0.563
+    },
+    "node_positive": {
+     "False": 0.675,
+     "True": 0.325
+    }
+   },
+   "TCGA-NH-A6GC-06Z-00-DX1 only": {
+    "mucinous": {
+     "False": 0.001,
+     "True": 0.999
+    },
+    "grade": {
+     "1": 0.505,
+     "2": 0.368,
+     "3": 0.128
+    },
+    "pt_stage": {
+     "1": 0.002,
+     "2": 0.002,
+     "3": 0.528,
+     "4": 0.468
+    },
+    "node_positive": {
+     "False": 0.486,
+     "True": 0.514
+    }
+   }
+  }
+ }
+}

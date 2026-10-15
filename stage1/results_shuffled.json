@@ -1,0 +1,1362 @@
+{
+  "run_tag": "shuffled",
+  "is_control": true,
+  "matched_config_from": "results_stage1.json",
+  "provenance": {
+    "finished_at": "2026-09-24T15:03:28+05:30",
+    "git_commit": "2c5a219",
+    "git_dirty_code": true,
+    "git_dirty_files": [
+      ".gitignore",
+      "README.md",
+      "SERVER_SETUP.md",
+      "THESIS_LOG.md",
+      "gdc_clinical_coad_read.tsv",
+      "stage1/compare_gdc.py",
+      "stage1/extract_fields.py",
+      "stage1/gdc_agreement.json",
+      "stage1/results_shuffled.json",
+      "stage1/results_stage1.json",
+      "stage1/structured_labels.json",
+      "stage1/test_extract_fields.py",
+      "stage1/test_per_class.py",
+      "stage1/test_run_paths.py",
+      "stage1/train_stage1.py"
+    ],
+    "host": "Labibas-MacBook-Air.local",
+    "torch": "2.14.0",
+    "device": "mps"
+  },
+  "config": {
+    "seeds": 5,
+    "epochs": 60,
+    "patience": 8,
+    "val_frac": 0.15,
+    "max_patches": 2048,
+    "batch_size": 8,
+    "lr": 0.0002,
+    "dropout": 0.4,
+    "weight_decay": 0.01,
+    "num_workers": 4,
+    "verbose": false,
+    "shuffle_labels": true,
+    "smoke": false,
+    "run_tag": null,
+    "match_config": "results_stage1.json"
+  },
+  "n_seeds": 5,
+  "best_epochs": [
+    15,
+    1,
+    1,
+    4,
+    2
+  ],
+  "test_coad": {
+    "mucinous": {
+      "n": 81,
+      "bal_acc_mean": 0.47400000000000003,
+      "bal_acc_sd": 0.020912516188477486,
+      "ci95": [
+        0.36891958738586567,
+        0.581434955668485
+      ],
+      "chance": 0.5,
+      "majority": 0.9259259259259259,
+      "acc_mean": 0.7925925925925925,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": false,
+          "n": 75,
+          "recall_mean": 0.8480000000000001,
+          "recall_sd": 0.23241342474134322,
+          "thin": false
+        },
+        {
+          "class": true,
+          "n": 6,
+          "recall_mean": 0.1,
+          "recall_sd": 0.20000000000000004,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.47400000000000003,
+      "bal_acc_min5_sd": 0.020912516188477486,
+      "n_classes_min5": 2,
+      "chance_min5": 0.5
+    },
+    "grade": {
+      "n": 78,
+      "bal_acc_mean": 0.355026455026455,
+      "bal_acc_sd": 0.04774820813832159,
+      "ci95": [
+        0.25793422882201483,
+        0.46572863925640723
+      ],
+      "chance": 0.3333333333333333,
+      "majority": 0.8076923076923077,
+      "acc_mean": 0.6051282051282051,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": 1,
+          "n": 6,
+          "recall_mean": 0.03333333333333333,
+          "recall_sd": 0.06666666666666667,
+          "thin": false
+        },
+        {
+          "class": 2,
+          "n": 63,
+          "recall_mean": 0.6984126984126984,
+          "recall_sd": 0.13355989820928652,
+          "thin": false
+        },
+        {
+          "class": 3,
+          "n": 9,
+          "recall_mean": 0.33333333333333337,
+          "recall_sd": 0.1859244503409057,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.355026455026455,
+      "bal_acc_min5_sd": 0.04774820813832159,
+      "n_classes_min5": 3,
+      "chance_min5": 0.3333333333333333
+    },
+    "pt_stage": {
+      "n": 72,
+      "bal_acc_mean": 0.24329268292682923,
+      "bal_acc_sd": 0.026027373134650048,
+      "ci95": [
+        0.15885669632491764,
+        0.3537346300904456
+      ],
+      "chance": 0.25,
+      "majority": 0.5694444444444444,
+      "acc_mean": 0.38611111111111107,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": 1,
+          "n": 1,
+          "recall_mean": 0.0,
+          "recall_sd": 0.0,
+          "thin": true
+        },
+        {
+          "class": 2,
+          "n": 20,
+          "recall_mean": 0.33999999999999997,
+          "recall_sd": 0.22449944320643647,
+          "thin": false
+        },
+        {
+          "class": 3,
+          "n": 41,
+          "recall_mean": 0.47317073170731705,
+          "recall_sd": 0.31485150367034,
+          "thin": false
+        },
+        {
+          "class": 4,
+          "n": 10,
+          "recall_mean": 0.15999999999999998,
+          "recall_sd": 0.1624807680927192,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.32439024390243903,
+      "bal_acc_min5_sd": 0.034703164179533404,
+      "n_classes_min5": 3,
+      "chance_min5": 0.3333333333333333
+    },
+    "node_positive": {
+      "n": 77,
+      "bal_acc_mean": 0.47533875338753384,
+      "bal_acc_sd": 0.027972416110214966,
+      "ci95": [
+        0.3676414938836061,
+        0.5853798221427987
+      ],
+      "chance": 0.5,
+      "majority": 0.5324675324675324,
+      "acc_mean": 0.48311688311688306,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": false,
+          "n": 41,
+          "recall_mean": 0.5951219512195122,
+          "recall_sd": 0.17149654469509215,
+          "thin": false
+        },
+        {
+          "class": true,
+          "n": 36,
+          "recall_mean": 0.3555555555555556,
+          "recall_sd": 0.20667861375264748,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.47533875338753384,
+      "bal_acc_min5_sd": 0.027972416110214966,
+      "n_classes_min5": 2,
+      "chance_min5": 0.5
+    }
+  },
+  "holdout_read": {
+    "mucinous": {
+      "n": 151,
+      "bal_acc_mean": 0.5197872340425531,
+      "bal_acc_sd": 0.05022378370128215,
+      "ci95": [
+        0.4406007332996098,
+        0.5979918973684473
+      ],
+      "chance": 0.5,
+      "majority": 0.9337748344370861,
+      "acc_mean": 0.814569536423841,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": false,
+          "n": 141,
+          "recall_mean": 0.8595744680851064,
+          "recall_sd": 0.22491999594796935,
+          "thin": false
+        },
+        {
+          "class": true,
+          "n": 10,
+          "recall_mean": 0.18,
+          "recall_sd": 0.3124099870362662,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.5197872340425531,
+      "bal_acc_min5_sd": 0.05022378370128215,
+      "n_classes_min5": 2,
+      "chance_min5": 0.5
+    },
+    "grade": {
+      "n": 139,
+      "bal_acc_mean": 0.32314263920671243,
+      "bal_acc_sd": 0.019973538412061686,
+      "ci95": [
+        0.2510554138735725,
+        0.40474271285887836
+      ],
+      "chance": 0.3333333333333333,
+      "majority": 0.8273381294964028,
+      "acc_mean": 0.6057553956834532,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": 1,
+          "n": 5,
+          "recall_mean": 0.0,
+          "recall_sd": 0.0,
+          "thin": false
+        },
+        {
+          "class": 2,
+          "n": 115,
+          "recall_mean": 0.6852173913043478,
+          "recall_sd": 0.09307191763658888,
+          "thin": false
+        },
+        {
+          "class": 3,
+          "n": 19,
+          "recall_mean": 0.28421052631578947,
+          "recall_sd": 0.07877173445839876,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.32314263920671243,
+      "bal_acc_min5_sd": 0.019973538412061686,
+      "n_classes_min5": 3,
+      "chance_min5": 0.3333333333333333
+    },
+    "pt_stage": {
+      "n": 127,
+      "bal_acc_mean": 0.25222222222222224,
+      "bal_acc_sd": 0.0224399060318008,
+      "ci95": [
+        0.18472728626076118,
+        0.3342670125283429
+      ],
+      "chance": 0.25,
+      "majority": 0.7086614173228346,
+      "acc_mean": 0.46299212598425205,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": 1,
+          "n": 5,
+          "recall_mean": 0.0,
+          "recall_sd": 0.0,
+          "thin": false
+        },
+        {
+          "class": 2,
+          "n": 24,
+          "recall_mean": 0.39166666666666666,
+          "recall_sd": 0.2549509756796392,
+          "thin": false
+        },
+        {
+          "class": 3,
+          "n": 90,
+          "recall_mean": 0.5422222222222223,
+          "recall_sd": 0.2719295478839063,
+          "thin": false
+        },
+        {
+          "class": 4,
+          "n": 8,
+          "recall_mean": 0.075,
+          "recall_sd": 0.09999999999999999,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.25222222222222224,
+      "bal_acc_min5_sd": 0.0224399060318008,
+      "n_classes_min5": 4,
+      "chance_min5": 0.25
+    },
+    "node_positive": {
+      "n": 139,
+      "bal_acc_mean": 0.5155666251556662,
+      "bal_acc_sd": 0.027643879761657178,
+      "ci95": [
+        0.43318951045106247,
+        0.5971064383010881
+      ],
+      "chance": 0.5,
+      "majority": 0.5251798561151079,
+      "acc_mean": 0.5223021582733813,
+      "verdict": "not above chance",
+      "per_class": [
+        {
+          "class": false,
+          "n": 73,
+          "recall_mean": 0.6493150684931507,
+          "recall_sd": 0.2125010348456473,
+          "thin": false
+        },
+        {
+          "class": true,
+          "n": 66,
+          "recall_mean": 0.38181818181818183,
+          "recall_sd": 0.22583382889559644,
+          "thin": false
+        }
+      ],
+      "bal_acc_min5_mean": 0.5155666251556662,
+      "bal_acc_min5_sd": 0.027643879761657178,
+      "n_classes_min5": 2,
+      "chance_min5": 0.5
+    }
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "best_epoch": 15,
+      "val_bal_acc": 0.4344311109900355,
+      "test_coad": {
+        "mucinous": {
+          "n": 81,
+          "acc": 0.8518518518518519,
+          "bal_acc": 0.46,
+          "majority": 0.9259259259259259,
+          "per_class": [
+            {
+              "class": false,
+              "n": 75,
+              "recall": 0.92
+            },
+            {
+              "class": true,
+              "n": 6,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.46,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 78,
+          "acc": 0.7435897435897436,
+          "bal_acc": 0.3703703703703704,
+          "majority": 0.8076923076923077,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 6,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 63,
+              "recall": 0.8888888888888888
+            },
+            {
+              "class": 3,
+              "n": 9,
+              "recall": 0.2222222222222222
+            }
+          ],
+          "bal_acc_min5": 0.3703703703703704,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 72,
+          "acc": 0.4444444444444444,
+          "bal_acc": 0.21432926829268292,
+          "majority": 0.5694444444444444,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 1,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 20,
+              "recall": 0.15
+            },
+            {
+              "class": 3,
+              "n": 41,
+              "recall": 0.7073170731707317
+            },
+            {
+              "class": 4,
+              "n": 10,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.28577235772357723,
+          "n_classes_min5": 3
+        },
+        "node_positive": {
+          "n": 77,
+          "acc": 0.4805194805194805,
+          "bal_acc": 0.4698509485094851,
+          "majority": 0.5324675324675324,
+          "per_class": [
+            {
+              "class": false,
+              "n": 41,
+              "recall": 0.6341463414634146
+            },
+            {
+              "class": true,
+              "n": 36,
+              "recall": 0.3055555555555556
+            }
+          ],
+          "bal_acc_min5": 0.4698509485094851,
+          "n_classes_min5": 2
+        }
+      },
+      "holdout_read": {
+        "mucinous": {
+          "n": 151,
+          "acc": 0.8874172185430463,
+          "bal_acc": 0.475177304964539,
+          "majority": 0.9337748344370861,
+          "per_class": [
+            {
+              "class": false,
+              "n": 141,
+              "recall": 0.950354609929078
+            },
+            {
+              "class": true,
+              "n": 10,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.475177304964539,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 139,
+          "acc": 0.6906474820143885,
+          "bal_acc": 0.3368421052631579,
+          "majority": 0.8273381294964028,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 115,
+              "recall": 0.8
+            },
+            {
+              "class": 3,
+              "n": 19,
+              "recall": 0.21052631578947367
+            }
+          ],
+          "bal_acc_min5": 0.3368421052631579,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 127,
+          "acc": 0.5433070866141733,
+          "bal_acc": 0.21458333333333332,
+          "majority": 0.7086614173228346,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 24,
+              "recall": 0.125
+            },
+            {
+              "class": 3,
+              "n": 90,
+              "recall": 0.7333333333333333
+            },
+            {
+              "class": 4,
+              "n": 8,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.21458333333333332,
+          "n_classes_min5": 4
+        },
+        "node_positive": {
+          "n": 139,
+          "acc": 0.5323741007194245,
+          "bal_acc": 0.523557492735575,
+          "majority": 0.5251798561151079,
+          "per_class": [
+            {
+              "class": false,
+              "n": 73,
+              "recall": 0.6986301369863014
+            },
+            {
+              "class": true,
+              "n": 66,
+              "recall": 0.3484848484848485
+            }
+          ],
+          "bal_acc_min5": 0.523557492735575,
+          "n_classes_min5": 2
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "best_epoch": 1,
+      "val_bal_acc": 0.442022792022792,
+      "test_coad": {
+        "mucinous": {
+          "n": 81,
+          "acc": 0.9135802469135802,
+          "bal_acc": 0.49333333333333335,
+          "majority": 0.9259259259259259,
+          "per_class": [
+            {
+              "class": false,
+              "n": 75,
+              "recall": 0.9866666666666667
+            },
+            {
+              "class": true,
+              "n": 6,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.49333333333333335,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 78,
+          "acc": 0.5,
+          "bal_acc": 0.3650793650793651,
+          "majority": 0.8076923076923077,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 6,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 63,
+              "recall": 0.5396825396825397
+            },
+            {
+              "class": 3,
+              "n": 9,
+              "recall": 0.5555555555555556
+            }
+          ],
+          "bal_acc_min5": 0.3650793650793651,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 72,
+          "acc": 0.25,
+          "bal_acc": 0.236890243902439,
+          "majority": 0.5694444444444444,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 1,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 20,
+              "recall": 0.55
+            },
+            {
+              "class": 3,
+              "n": 41,
+              "recall": 0.0975609756097561
+            },
+            {
+              "class": 4,
+              "n": 10,
+              "recall": 0.3
+            }
+          ],
+          "bal_acc_min5": 0.31585365853658537,
+          "n_classes_min5": 3
+        },
+        "node_positive": {
+          "n": 77,
+          "acc": 0.4935064935064935,
+          "bal_acc": 0.4854336043360433,
+          "majority": 0.5324675324675324,
+          "per_class": [
+            {
+              "class": false,
+              "n": 41,
+              "recall": 0.6097560975609756
+            },
+            {
+              "class": true,
+              "n": 36,
+              "recall": 0.3611111111111111
+            }
+          ],
+          "bal_acc_min5": 0.4854336043360433,
+          "n_classes_min5": 2
+        }
+      },
+      "holdout_read": {
+        "mucinous": {
+          "n": 151,
+          "acc": 0.9337748344370861,
+          "bal_acc": 0.5464539007092198,
+          "majority": 0.9337748344370861,
+          "per_class": [
+            {
+              "class": false,
+              "n": 141,
+              "recall": 0.9929078014184397
+            },
+            {
+              "class": true,
+              "n": 10,
+              "recall": 0.1
+            }
+          ],
+          "bal_acc_min5": 0.5464539007092198,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 139,
+          "acc": 0.5179856115107914,
+          "bal_acc": 0.32585812356979404,
+          "majority": 0.8273381294964028,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 115,
+              "recall": 0.5565217391304348
+            },
+            {
+              "class": 3,
+              "n": 19,
+              "recall": 0.42105263157894735
+            }
+          ],
+          "bal_acc_min5": 0.32585812356979404,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 127,
+          "acc": 0.2440944881889764,
+          "bal_acc": 0.25763888888888886,
+          "majority": 0.7086614173228346,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 24,
+              "recall": 0.625
+            },
+            {
+              "class": 3,
+              "n": 90,
+              "recall": 0.15555555555555556
+            },
+            {
+              "class": 4,
+              "n": 8,
+              "recall": 0.25
+            }
+          ],
+          "bal_acc_min5": 0.25763888888888886,
+          "n_classes_min5": 4
+        },
+        "node_positive": {
+          "n": 139,
+          "acc": 0.5179856115107914,
+          "bal_acc": 0.5105853051058531,
+          "majority": 0.5251798561151079,
+          "per_class": [
+            {
+              "class": false,
+              "n": 73,
+              "recall": 0.6575342465753424
+            },
+            {
+              "class": true,
+              "n": 66,
+              "recall": 0.36363636363636365
+            }
+          ],
+          "bal_acc_min5": 0.5105853051058531,
+          "n_classes_min5": 2
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "best_epoch": 1,
+      "val_bal_acc": 0.39952483268332606,
+      "test_coad": {
+        "mucinous": {
+          "n": 81,
+          "acc": 0.3950617283950617,
+          "bal_acc": 0.44333333333333336,
+          "majority": 0.9259259259259259,
+          "per_class": [
+            {
+              "class": false,
+              "n": 75,
+              "recall": 0.38666666666666666
+            },
+            {
+              "class": true,
+              "n": 6,
+              "recall": 0.5
+            }
+          ],
+          "bal_acc_min5": 0.44333333333333336,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 78,
+          "acc": 0.6538461538461539,
+          "bal_acc": 0.3333333333333333,
+          "majority": 0.8076923076923077,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 6,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 63,
+              "recall": 0.7777777777777778
+            },
+            {
+              "class": 3,
+              "n": 9,
+              "recall": 0.2222222222222222
+            }
+          ],
+          "bal_acc_min5": 0.3333333333333333,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 72,
+          "acc": 0.3333333333333333,
+          "bal_acc": 0.2923780487804878,
+          "majority": 0.5694444444444444,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 1,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 20,
+              "recall": 0.55
+            },
+            {
+              "class": 3,
+              "n": 41,
+              "recall": 0.21951219512195122
+            },
+            {
+              "class": 4,
+              "n": 10,
+              "recall": 0.4
+            }
+          ],
+          "bal_acc_min5": 0.38983739837398373,
+          "n_classes_min5": 3
+        },
+        "node_positive": {
+          "n": 77,
+          "acc": 0.4935064935064935,
+          "bal_acc": 0.4684959349593496,
+          "majority": 0.5324675324675324,
+          "per_class": [
+            {
+              "class": false,
+              "n": 41,
+              "recall": 0.8536585365853658
+            },
+            {
+              "class": true,
+              "n": 36,
+              "recall": 0.08333333333333333
+            }
+          ],
+          "bal_acc_min5": 0.4684959349593496,
+          "n_classes_min5": 2
+        }
+      },
+      "holdout_read": {
+        "mucinous": {
+          "n": 151,
+          "acc": 0.4370860927152318,
+          "bal_acc": 0.6056737588652482,
+          "majority": 0.9337748344370861,
+          "per_class": [
+            {
+              "class": false,
+              "n": 141,
+              "recall": 0.41134751773049644
+            },
+            {
+              "class": true,
+              "n": 10,
+              "recall": 0.8
+            }
+          ],
+          "bal_acc_min5": 0.6056737588652482,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 139,
+          "acc": 0.6834532374100719,
+          "bal_acc": 0.3485888634630054,
+          "majority": 0.8273381294964028,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 115,
+              "recall": 0.782608695652174
+            },
+            {
+              "class": 3,
+              "n": 19,
+              "recall": 0.2631578947368421
+            }
+          ],
+          "bal_acc_min5": 0.3485888634630054,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 127,
+          "acc": 0.3700787401574803,
+          "bal_acc": 0.27361111111111114,
+          "majority": 0.7086614173228346,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 24,
+              "recall": 0.625
+            },
+            {
+              "class": 3,
+              "n": 90,
+              "recall": 0.34444444444444444
+            },
+            {
+              "class": 4,
+              "n": 8,
+              "recall": 0.125
+            }
+          ],
+          "bal_acc_min5": 0.27361111111111114,
+          "n_classes_min5": 4
+        },
+        "node_positive": {
+          "n": 139,
+          "acc": 0.4892086330935252,
+          "bal_acc": 0.4701120797011208,
+          "majority": 0.5251798561151079,
+          "per_class": [
+            {
+              "class": false,
+              "n": 73,
+              "recall": 0.8493150684931506
+            },
+            {
+              "class": true,
+              "n": 66,
+              "recall": 0.09090909090909091
+            }
+          ],
+          "bal_acc_min5": 0.4701120797011208,
+          "n_classes_min5": 2
+        }
+      }
+    },
+    {
+      "seed": 45,
+      "best_epoch": 4,
+      "val_bal_acc": 0.38805108768996066,
+      "test_coad": {
+        "mucinous": {
+          "n": 81,
+          "acc": 0.9259259259259259,
+          "bal_acc": 0.5,
+          "majority": 0.9259259259259259,
+          "per_class": [
+            {
+              "class": false,
+              "n": 75,
+              "recall": 1.0
+            },
+            {
+              "class": true,
+              "n": 6,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.5,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 78,
+          "acc": 0.6025641025641025,
+          "bal_acc": 0.2804232804232804,
+          "majority": 0.8076923076923077,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 6,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 63,
+              "recall": 0.7301587301587301
+            },
+            {
+              "class": 3,
+              "n": 9,
+              "recall": 0.1111111111111111
+            }
+          ],
+          "bal_acc_min5": 0.2804232804232804,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 72,
+          "acc": 0.3611111111111111,
+          "bal_acc": 0.2350609756097561,
+          "majority": 0.5694444444444444,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 1,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 20,
+              "recall": 0.45
+            },
+            {
+              "class": 3,
+              "n": 41,
+              "recall": 0.3902439024390244
+            },
+            {
+              "class": 4,
+              "n": 10,
+              "recall": 0.1
+            }
+          ],
+          "bal_acc_min5": 0.31341463414634146,
+          "n_classes_min5": 3
+        },
+        "node_positive": {
+          "n": 77,
+          "acc": 0.44155844155844154,
+          "bal_acc": 0.4332655826558266,
+          "majority": 0.5324675324675324,
+          "per_class": [
+            {
+              "class": false,
+              "n": 41,
+              "recall": 0.5609756097560976
+            },
+            {
+              "class": true,
+              "n": 36,
+              "recall": 0.3055555555555556
+            }
+          ],
+          "bal_acc_min5": 0.4332655826558266,
+          "n_classes_min5": 2
+        }
+      },
+      "holdout_read": {
+        "mucinous": {
+          "n": 151,
+          "acc": 0.9271523178807947,
+          "bal_acc": 0.49645390070921985,
+          "majority": 0.9337748344370861,
+          "per_class": [
+            {
+              "class": false,
+              "n": 141,
+              "recall": 0.9929078014184397
+            },
+            {
+              "class": true,
+              "n": 10,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.49645390070921985,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 139,
+          "acc": 0.5755395683453237,
+          "bal_acc": 0.29046529366895496,
+          "majority": 0.8273381294964028,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 115,
+              "recall": 0.6608695652173913
+            },
+            {
+              "class": 3,
+              "n": 19,
+              "recall": 0.21052631578947367
+            }
+          ],
+          "bal_acc_min5": 0.29046529366895496,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 127,
+          "acc": 0.49606299212598426,
+          "bal_acc": 0.2743055555555556,
+          "majority": 0.7086614173228346,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 24,
+              "recall": 0.5416666666666666
+            },
+            {
+              "class": 3,
+              "n": 90,
+              "recall": 0.5555555555555556
+            },
+            {
+              "class": 4,
+              "n": 8,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.2743055555555556,
+          "n_classes_min5": 4
+        },
+        "node_positive": {
+          "n": 139,
+          "acc": 0.5683453237410072,
+          "bal_acc": 0.5563511830635118,
+          "majority": 0.5251798561151079,
+          "per_class": [
+            {
+              "class": false,
+              "n": 73,
+              "recall": 0.7945205479452054
+            },
+            {
+              "class": true,
+              "n": 66,
+              "recall": 0.3181818181818182
+            }
+          ],
+          "bal_acc_min5": 0.5563511830635118,
+          "n_classes_min5": 2
+        }
+      }
+    },
+    {
+      "seed": 46,
+      "best_epoch": 2,
+      "val_bal_acc": 0.4342963953258071,
+      "test_coad": {
+        "mucinous": {
+          "n": 81,
+          "acc": 0.8765432098765432,
+          "bal_acc": 0.47333333333333333,
+          "majority": 0.9259259259259259,
+          "per_class": [
+            {
+              "class": false,
+              "n": 75,
+              "recall": 0.9466666666666667
+            },
+            {
+              "class": true,
+              "n": 6,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.47333333333333333,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 78,
+          "acc": 0.5256410256410257,
+          "bal_acc": 0.4259259259259259,
+          "majority": 0.8076923076923077,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 6,
+              "recall": 0.16666666666666666
+            },
+            {
+              "class": 2,
+              "n": 63,
+              "recall": 0.5555555555555556
+            },
+            {
+              "class": 3,
+              "n": 9,
+              "recall": 0.5555555555555556
+            }
+          ],
+          "bal_acc_min5": 0.4259259259259259,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 72,
+          "acc": 0.5416666666666666,
+          "bal_acc": 0.23780487804878048,
+          "majority": 0.5694444444444444,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 1,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 20,
+              "recall": 0.0
+            },
+            {
+              "class": 3,
+              "n": 41,
+              "recall": 0.9512195121951219
+            },
+            {
+              "class": 4,
+              "n": 10,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.3170731707317073,
+          "n_classes_min5": 3
+        },
+        "node_positive": {
+          "n": 77,
+          "acc": 0.5064935064935064,
+          "bal_acc": 0.5196476964769647,
+          "majority": 0.5324675324675324,
+          "per_class": [
+            {
+              "class": false,
+              "n": 41,
+              "recall": 0.3170731707317073
+            },
+            {
+              "class": true,
+              "n": 36,
+              "recall": 0.7222222222222222
+            }
+          ],
+          "bal_acc_min5": 0.5196476964769647,
+          "n_classes_min5": 2
+        }
+      },
+      "holdout_read": {
+        "mucinous": {
+          "n": 151,
+          "acc": 0.8874172185430463,
+          "bal_acc": 0.475177304964539,
+          "majority": 0.9337748344370861,
+          "per_class": [
+            {
+              "class": false,
+              "n": 141,
+              "recall": 0.950354609929078
+            },
+            {
+              "class": true,
+              "n": 10,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.475177304964539,
+          "n_classes_min5": 2
+        },
+        "grade": {
+          "n": 139,
+          "acc": 0.5611510791366906,
+          "bal_acc": 0.3139588100686499,
+          "majority": 0.8273381294964028,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 115,
+              "recall": 0.6260869565217392
+            },
+            {
+              "class": 3,
+              "n": 19,
+              "recall": 0.3157894736842105
+            }
+          ],
+          "bal_acc_min5": 0.3139588100686499,
+          "n_classes_min5": 3
+        },
+        "pt_stage": {
+          "n": 127,
+          "acc": 0.6614173228346457,
+          "bal_acc": 0.24097222222222223,
+          "majority": 0.7086614173228346,
+          "per_class": [
+            {
+              "class": 1,
+              "n": 5,
+              "recall": 0.0
+            },
+            {
+              "class": 2,
+              "n": 24,
+              "recall": 0.041666666666666664
+            },
+            {
+              "class": 3,
+              "n": 90,
+              "recall": 0.9222222222222223
+            },
+            {
+              "class": 4,
+              "n": 8,
+              "recall": 0.0
+            }
+          ],
+          "bal_acc_min5": 0.24097222222222223,
+          "n_classes_min5": 4
+        },
+        "node_positive": {
+          "n": 139,
+          "acc": 0.5035971223021583,
+          "bal_acc": 0.5172270651722706,
+          "majority": 0.5251798561151079,
+          "per_class": [
+            {
+              "class": false,
+              "n": 73,
+              "recall": 0.2465753424657534
+            },
+            {
+              "class": true,
+              "n": 66,
+              "recall": 0.7878787878787878
+            }
+          ],
+          "bal_acc_min5": 0.5172270651722706,
+          "n_classes_min5": 2
+        }
+      }
+    }
+  ]
+}
