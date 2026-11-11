@@ -1,0 +1,634 @@
+diagnoses.0.ajcc_pathologic_n	diagnoses.0.ajcc_pathologic_stage	diagnoses.0.ajcc_pathologic_t	diagnoses.0.morphology	diagnoses.0.primary_diagnosis	diagnoses.0.tissue_or_organ_of_origin	diagnoses.0.tumor_grade	diagnoses.1.ajcc_pathologic_n	diagnoses.1.ajcc_pathologic_stage	diagnoses.1.ajcc_pathologic_t	diagnoses.1.morphology	diagnoses.1.primary_diagnosis	diagnoses.1.tissue_or_organ_of_origin	diagnoses.1.tumor_grade	diagnoses.2.ajcc_pathologic_n	diagnoses.2.ajcc_pathologic_stage	diagnoses.2.ajcc_pathologic_t	diagnoses.2.morphology	diagnoses.2.primary_diagnosis	diagnoses.2.tissue_or_organ_of_origin	diagnoses.2.tumor_grade	diagnoses.3.ajcc_pathologic_n	diagnoses.3.ajcc_pathologic_stage	diagnoses.3.ajcc_pathologic_t	diagnoses.3.morphology	diagnoses.3.primary_diagnosis	diagnoses.3.tissue_or_organ_of_origin	diagnoses.3.tumor_grade	diagnoses.4.morphology	diagnoses.4.primary_diagnosis	diagnoses.4.tissue_or_organ_of_origin	id	project.project_id	submitter_id
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Transverse colon				T2	Not Reported	Not Reported	Breast, NOS																			c46971a1-cbac-425d-bac2-f4142c92522e	TCGA-COAD	TCGA-AA-3672
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Cecum					Not Reported	Not Reported	Prostate gland					Not Reported	Not Reported	Not Reported												265d7b06-65fe-42c5-ad21-e6b160e94718	TCGA-COAD	TCGA-AA-3552
+			Not Reported	Not Reported	Prostate gland		N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Not Reported												d655bbf6-c710-411d-aff5-ceb0fb6e6680	TCGA-COAD	TCGA-AA-3867
+			8083/3	Basaloid squamous cell carcinoma	Skin of scalp and neck		N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																			4f601d7b-8db1-4c6d-9374-21dcd804980d	TCGA-COAD	TCGA-AD-6895
+			Not Reported	Not Reported	Stomach, NOS		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			2d02bd7a-5beb-4e43-9ccb-18d89c9d5ca2	TCGA-COAD	TCGA-AA-3560
+			Not Reported	Not Reported	Prostate gland		N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			ad440651-a2de-4bb1-90da-1e5e8975ab59	TCGA-COAD	TCGA-AA-3521
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon	Not Reported																									65bb7520-f055-43a8-b735-1152fa2c9e04	TCGA-COAD	TCGA-A6-2670
+			Not Reported	Not Reported	Not Reported		N0	Stage III	T3	8140/3	Adenocarcinoma, NOS	Prostate gland		N1b		T3	8140/3	Adenocarcinoma, NOS	Cecum		N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					13eff2e5-e33a-485f-9ba4-8a7ccb3c7528	TCGA-COAD	TCGA-AD-6888
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Skin, NOS																			401a37f3-6630-4400-a811-a262351e37de	TCGA-COAD	TCGA-AA-3531
+			Not Reported	Not Reported	Lung, NOS		N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Descending colon																			d4e1472a-7b5f-46f4-acb7-b961f634e28e	TCGA-COAD	TCGA-AA-A024
+N2		T3	Not Reported	Not Reported	Ascending colon					9700/3	Mycosis fungoides	Unknown					Not Reported	Not Reported	Not Reported		N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					93cd5d07-e0d3-40f8-ae7f-beadb1efb7c1	TCGA-COAD	TCGA-AA-3972
+N0	Stage IIA	T3	8255/3	Adenocarcinoma with mixed subtypes	Colon, NOS					Not Reported	Not Reported	Breast, NOS																			f38d49b7-6cad-4460-abd0-3685a3b2d941	TCGA-COAD	TCGA-AA-3814
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Breast, NOS																			269e8ca8-722d-449b-ace1-6545bd72bdd6	TCGA-COAD	TCGA-AA-3527
+			9650/3	Hodgkin lymphoma, NOS	Blood		N1	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			f1e6ce83-b4a0-4643-8e8e-a1ef8a158a27	TCGA-COAD	TCGA-AZ-6608
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Colon, NOS																			b107565b-7558-4745-952b-689178367e1c	TCGA-COAD	TCGA-AA-3525
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Cecum					Not Reported	Not Reported	Not Reported					8120/3	Transitional cell carcinoma	Bladder, NOS					Not Reported	Not Reported	Not Reported					abe658e0-33f9-4f57-849b-dec4d20964d6	TCGA-COAD	TCGA-G4-6314
+			8070/3	Squamous cell carcinoma, NOS	Other ill-defined sites		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																			93690a96-421c-4c59-85ba-fa6dd538c721	TCGA-COAD	TCGA-G4-6588
+NX	Stage II	T2c	8140/3	Adenocarcinoma, NOS	Prostate gland		N1	Stage IV	T4b	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Not Reported												77a44132-af22-4115-9fa2-78f2f74bf687	TCGA-COAD	TCGA-A6-2682
+			Not Reported	Not Reported	Breast, NOS		N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Colon, NOS																			d9fb85c3-ade1-47bf-8159-170f81eb130f	TCGA-COAD	TCGA-AA-3662
+N0		T1	Not Reported	Not Reported	Larynx, NOS		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			af17788e-a562-43aa-bd36-fd3e031f483c	TCGA-COAD	TCGA-AA-3979
+N0		T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																			6fbc2b46-6762-4778-aa7e-782162c5397c	TCGA-COAD	TCGA-AZ-4681
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Splenic flexure of colon		N0		T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																			c113808a-773f-4179-82d6-9083518404b5	TCGA-COAD	TCGA-AD-6548
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Prostate gland																			28033279-cc74-4775-afdf-2497f6ddb55c	TCGA-COAD	TCGA-AA-3506
+N2	Stage IV	T3	8480/3	Mucinous adenocarcinoma	Ascending colon					Not Reported	Not Reported	Parotid gland																			99c532b0-6b42-4925-a344-fc7262c415ee	TCGA-COAD	TCGA-DM-A285
+N1	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Not Reported	Not Reported	Prostate gland																			14efca0c-882d-4fba-b15c-64af6e213b80	TCGA-COAD	TCGA-AA-3976
+			8140/3	Adenocarcinoma, NOS	Not Reported					8070/3	Squamous cell carcinoma, NOS	Skin, NOS		N2b		T4a	8140/3	Adenocarcinoma, NOS	Ascending colon												5e7074a6-5011-4dc5-950c-41365dbc6d09	TCGA-COAD	TCGA-AD-6964
+			8140/3	Adenocarcinoma, NOS	Colon, NOS		N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																			2c0a725a-e829-4d84-89d9-d0d47f6cfa37	TCGA-COAD	TCGA-G4-6628
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Sigmoid colon																			639e1050-088a-48fe-a0ef-4a01a3468cac	TCGA-COAD	TCGA-AA-3496
+			Not Reported	Not Reported	Breast, NOS		N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																			beb63625-d9bf-4ccd-bc53-635b53d24240	TCGA-COAD	TCGA-AA-3870
+N0	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS		N0		T3	Not Reported	Not Reported	Peritoneum, NOS		N0		T3	Not Reported	Not Reported	Sigmoid colon												57a2044d-20cc-4d02-b268-ce570a0fabe3	TCGA-COAD	TCGA-AA-3713
+			9732/3	Multiple myeloma	Blood		N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Sigmoid colon																			fd16b634-2e04-44a3-862d-fb03cd73c057	TCGA-COAD	TCGA-AA-3556
+N0	Stage IA	T1a	8140/3	Adenocarcinoma, NOS	Uterus, NOS		N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Descending colon																			1fd75c4d-e74c-410c-a150-814722c6c1cc	TCGA-COAD	TCGA-AZ-4313
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Prostate gland																			dde411b2-5d2b-4638-8149-89bc1eb3c7ad	TCGA-COAD	TCGA-AA-3697
+N2	Stage III	T3	8574/3	Adenocarcinoma with neuroendocrine differentiation	Colon, NOS																										d7ebd11a-1339-4b28-be90-a788d2cfa706	TCGA-COAD	TCGA-AA-3811
+			Not Reported	Not Reported	Kidney, NOS		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																			05ff79c5-1127-4cac-8f4c-84089a3f2cde	TCGA-COAD	TCGA-AA-3862
+N1b	Stage IIIA	T1	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										c777a777-373a-4773-9566-6c373261f00a	TCGA-COAD	TCGA-CM-4750
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Breast, NOS																			ba49b428-246d-46d2-b549-39a5fc8f7003	TCGA-COAD	TCGA-AA-3554
+			8090/3	Basal cell carcinoma, NOS	Head, face or neck, NOS		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																			7570761b-c333-40df-ac8c-9b7f94c58ef9	TCGA-COAD	TCGA-G4-6586
+			Not Reported	Not Reported	Lung, NOS		N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																			c085da47-d634-491a-80ea-514e5a231f70	TCGA-COAD	TCGA-CK-5912
+			Not Reported	Not Reported	Prostate gland		N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																			04d7a52f-a89b-4114-a608-a6254b4d604f	TCGA-COAD	TCGA-AA-3986
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Descending colon																										733d8b6a-ca9d-4a69-8c9c-1f88733e8b68	TCGA-COAD	TCGA-AA-3970
+			Not Reported	Not Reported	Not Reported					8720/3	Malignant melanoma, NOS	Skin of lower limb and hip		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS												4f786107-3cf5-4ab3-bba4-f399dee23f0e	TCGA-COAD	TCGA-AA-3844
+N0	Stage II	T3	8560/3	Adenosquamous carcinoma	Ascending colon					Not Reported	Not Reported	Bladder, NOS					Not Reported	Not Reported	Not Reported		N0		T3a	Not Reported	Not Reported	Kidney, NOS					e394e9ec-7288-4ede-9ef8-41b631d100dd	TCGA-COAD	TCGA-AA-3715
+			Not Reported	Not Reported	Gum, NOS		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Descending colon																			c1e141af-bdd1-4176-8c0e-cf1ab0c1d9d3	TCGA-COAD	TCGA-AA-3952
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Testis, NOS																			1ad0b9b9-7ded-4281-b114-9dcc6138c037	TCGA-COAD	TCGA-AA-3530
+			Not Reported	Not Reported	Not Reported		N2	Stage IV	T3	8480/3	Mucinous adenocarcinoma	Colon, NOS					8010/2	Carcinoma in situ, NOS	Rectum, NOS												bce3ce45-4fb3-4d8e-9ec7-d24427c2ba4d	TCGA-COAD	TCGA-AA-3692
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon		N1		T1	Not Reported	Not Reported	Breast, NOS																			ac6a3df9-41b1-4e5a-a15e-f44481384c23	TCGA-COAD	TCGA-AA-3860
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					8010/2	Carcinoma in situ, NOS	Colon, NOS																			2c9996bb-af6e-4424-881a-e81b9c9aeb78	TCGA-COAD	TCGA-AA-3688
+N1	Stage IIIB	T4a	8140/3	Adenocarcinoma, NOS	Cecum					Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Prostate gland												ab9cc98a-86ae-4913-bcb2-cc3aeff8abb1	TCGA-COAD	TCGA-G4-6298
+			Not Reported	Not Reported	Prostate gland					Not Reported	Not Reported	Not Reported		N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Cecum												41f8c9fd-ae52-4458-886b-faf37de77dd0	TCGA-COAD	TCGA-G4-6294
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										86a9e44f-728e-48e4-9e1b-682b023f7c0a	TCGA-COAD	TCGA-AA-3967
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Ascending colon					Not Reported	Not Reported	Prostate gland																			912b61a1-6a5b-451c-b753-9c3dac03e8cb	TCGA-COAD	TCGA-AA-3543
+			Not Reported	Not Reported	Rectum, NOS					Not Reported	Not Reported	Skin, NOS					Not Reported	Not Reported	Unknown		N2	Stage III	T3	8480/3	Mucinous adenocarcinoma	Colon, NOS					d9d7f0d4-fa64-48f2-8037-52cbf0b34ad8	TCGA-COAD	TCGA-AA-3516
+			8720/3	Melanoma, NOS	Skin, NOS					Not Reported	Not Reported	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					8500/3	Infiltrating duct carcinoma, NOS	Breast, NOS					5eed7e8a-c219-4497-a99f-bfc48faca4d8	TCGA-COAD	TCGA-G4-6625
+N1	Stage III	T3a	8310/3	Clear cell carcinoma	Kidney, NOS		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																			d976782c-90c1-421d-b83c-7fc2617e2709	TCGA-COAD	TCGA-A6-2677
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Unknown																			14c13b05-abfe-472e-83a9-b28f60e58ad8	TCGA-COAD	TCGA-G4-6310
+			Not Reported	Not Reported	Prostate gland		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																			381cf7f3-cd7b-4660-8175-ff8062f7bf78	TCGA-COAD	TCGA-AA-A00L
+			8010/2	Carcinoma in situ, NOS	Colon, NOS		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																			127f738d-afa1-42f6-a9a0-f33806667b84	TCGA-COAD	TCGA-AA-3562
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					8090/3	Basal cell carcinoma, NOS	External ear																			39b6ae01-c97b-4234-8a28-208fdf170432	TCGA-COAD	TCGA-A6-6649
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Prostate gland																			03efbc94-a43d-4db0-9377-e397348430a6	TCGA-COAD	TCGA-AA-3524
+			Not Reported	Not Reported	Thyroid gland		N1	Stage III	T2	8140/3	Adenocarcinoma, NOS	Cecum																			e7dbfca1-9657-4952-8e0d-dec6373dda5b	TCGA-COAD	TCGA-G4-6321
+			Not Reported	Not Reported	Colon, NOS					8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon		N0	Stage III	T3	8140/3	Adenocarcinoma, NOS	Prostate gland		Not Reported	Not Reported	Bladder, NOS	7ad0617e-bc4a-4869-8419-744f04d9b7a3	TCGA-COAD	TCGA-AZ-6601
+			Not Reported	Not Reported	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Eyelid												95d4f0c4-5997-4ffb-b876-0ddfeee972bb	TCGA-COAD	TCGA-A6-4105
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Ascending colon		N1		T2	Not Reported	Not Reported	Stomach, NOS																			cc53bf9e-5e27-4305-a08b-552120c10aa5	TCGA-COAD	TCGA-AA-3950
+			Not Reported	Not Reported	Prostate gland					9820/3	Lymphoid leukemia, NOS	Bone marrow		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon												af3a0634-4292-45bd-b948-6b6bd2d58090	TCGA-COAD	TCGA-AA-A00Z
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					8720/3	Malignant melanoma, NOS	Skin, NOS																			d7ba64d7-b4e5-488d-9f28-bcb7bf3c0f35	TCGA-COAD	TCGA-AA-3522
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										315ef7f6-ca21-4d87-8f19-40bd455885ec	TCGA-COAD	TCGA-AY-4071
+N1b	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										cc1d6ad3-b60d-482e-8fa4-0af26823007d	TCGA-COAD	TCGA-CM-5863
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction				T3	8140/3	Adenocarcinoma, NOS	Prostate gland					Unknown	Unknown	Not Reported												c2ea7b58-cabd-407e-98ce-6cbf9e4d93e1	TCGA-READ	TCGA-G5-6235
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										d63a90d4-730f-4916-af02-d06854221d7a	TCGA-READ	TCGA-AG-4009
+			8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										2cf90e4e-b952-4a77-aaa9-39e4e2e5c4b3	TCGA-READ	TCGA-G5-6572
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS		N0		T1c	Not Reported	Not Reported	Breast, NOS																			1543c1da-bde4-41c1-a510-56b62db8cca8	TCGA-READ	TCGA-AG-3612
+			Not Reported	Not Reported	Prostate gland					Unknown	Unknown	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS												9f4574ec-a58a-4410-8735-c5e5bc4ca7e0	TCGA-READ	TCGA-AG-A00H
+			8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			71a32fca-d48f-4ea3-8df7-69f9dda8fa91	TCGA-READ	TCGA-AF-2692
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS					Not Reported	Not Reported	Prostate gland																			51c37449-6a2e-4c3d-a7cc-06f901e1224f	TCGA-READ	TCGA-AG-A014
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										856a490c-c6da-48fe-88b5-9fde0f481365	TCGA-READ	TCGA-AG-3728
+			Not Reported	Not Reported	Colon, NOS		N0	Stage IV	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			1118490d-75aa-43cc-b2a2-c2af61829ffc	TCGA-READ	TCGA-AG-A01N
+			Not Reported	Not Reported	Prostate gland		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																			fb632146-92c7-40d9-acc3-6dc4a2d499be	TCGA-READ	TCGA-AG-3611
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Not Reported	Not Reported	Pancreas, NOS																			594a52b0-c929-4e50-ae27-7542e32667ae	TCGA-READ	TCGA-AG-3580
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										d461e83a-7f09-4e4c-ac49-f05766a6051a	TCGA-READ	TCGA-AG-3891
+N2		T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS					Unknown	Unknown	Not Reported					8140/3	Adenocarcinoma, NOS	Prostate gland												ff427104-0727-483c-8513-243dec80db9d	TCGA-READ	TCGA-G5-6233
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										2faf928d-453a-4d07-b058-b5d4e1d13845	TCGA-READ	TCGA-AF-2693
+			8140/3	Adenocarcinoma, NOS	Rectosigmoid junction	Not Reported																									a4faf514-50af-43ed-b294-350ee0756250	TCGA-READ	TCGA-AF-3912
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										ec2abe34-6566-4c2f-8d06-ade2e858b301	TCGA-READ	TCGA-AG-3906
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Rectum, NOS					Not Reported	Not Reported	Breast, NOS					Unknown	Unknown	Not Reported												3bc6e336-f58e-4dc4-8414-7318e55016ed	TCGA-READ	TCGA-AG-A023
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										c69dec57-7a84-481b-bcfe-61a771d0a9d1	TCGA-READ	TCGA-AG-3602
+			Unknown	Unknown	Not Reported					Not Reported	Not Reported	Head, face or neck, NOS					8720/3	Malignant melanoma, NOS	Other ill-defined sites		N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Rectum, NOS					09daff79-6493-45c1-8cba-9381259e2bea	TCGA-READ	TCGA-AG-A015
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS					Not Reported	Not Reported	Skin of scalp and neck																			e2d395f8-bf13-4fe4-8031-683b0eedd875	TCGA-READ	TCGA-AG-3890
+N0	Stage III	T3a	8140/3	Adenocarcinoma, NOS	Prostate gland		N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																			03a9dd9d-62ae-4acd-9272-389274858f3d	TCGA-READ	TCGA-AF-3913
+N1	Stage IIIA	T1	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction					8090/3	Basal cell carcinoma, NOS	Lip, NOS																			0a2cb2f9-972c-450c-8b7a-115a4cb93658	TCGA-READ	TCGA-G5-6641
+			8140/3	Adenocarcinoma, NOS	Prostate gland		N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			a46be4e1-260c-4ce9-8b0f-1326d90c697f	TCGA-READ	TCGA-BM-6198
+			8140/3	Adenocarcinoma, NOS	Not Reported		N2a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Unknown	Unknown	Not Reported												3f2ca278-c74a-4aa7-b029-189d9d0b510c	TCGA-READ	TCGA-AF-3914
+			Unknown	Unknown	Not Reported		N1	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			b26143d3-d458-4d5c-8446-fd2f05707352	TCGA-READ	TCGA-CI-6620
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS		N0		T3a	Not Reported	Not Reported	Prostate gland																			72802851-9340-4c5f-a90b-23b7afd7577a	TCGA-READ	TCGA-AG-4008
+N0	Stage IIA	T3	8211/3	Tubular adenocarcinoma	Rectum, NOS																										bcb21cdd-2f57-4df0-bbbe-a74fa5a654d6	TCGA-READ	TCGA-EI-6506
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										81dac02c-6e5f-4afe-9c90-12b5a4f26594	TCGA-READ	TCGA-AG-3609
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										cc2a014b-fb3c-4839-a5fb-6c40e745df1b	TCGA-READ	TCGA-F5-6811
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										cb005c69-7301-41ce-b534-c9751f1436c5	TCGA-READ	TCGA-AG-A002
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										26964b56-583f-46cc-ab2e-a948bf3e5432	TCGA-READ	TCGA-DC-6682
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										368fd5c9-cd4b-4326-a47b-4d72938cfb8f	TCGA-READ	TCGA-AF-2690
+N2	Stage III	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										f2a8deb2-0e2c-4bbd-8fa1-99b7abb2f3aa	TCGA-READ	TCGA-AG-A036
+N1	Stage IIIB	T3	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																										a8a5553c-bfe1-4d5f-aacc-5549ded3f91f	TCGA-READ	TCGA-EI-6513
+			8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																			bd818ae4-b31a-4616-9303-b8aee56a848f	TCGA-READ	TCGA-AF-A56K
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										6bc056f2-f06e-428f-aebc-85b780d880ed	TCGA-READ	TCGA-AG-3598
+			Unknown	Unknown	Not Reported		N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			c9632a8b-dcfe-4480-a8ad-482f55b8cfa2	TCGA-READ	TCGA-AG-3587
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										a424bfe7-5518-4c80-83c8-709a34320bc7	TCGA-READ	TCGA-AG-A02X
+N0	Stage II	T4	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										31bd8589-378c-40e5-8b7f-3b4c81f304be	TCGA-READ	TCGA-AG-A026
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										a2b6246d-2b80-49c5-968b-694b4e8171dc	TCGA-READ	TCGA-AG-3591
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										3124e819-292b-48e7-baac-8c5c4a86dc20	TCGA-READ	TCGA-AG-3581
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										16a9e1c5-85c2-4930-a16c-af59114bac9a	TCGA-READ	TCGA-DC-6683
+N0		T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										c7162d11-4bdc-41cd-a964-46fc416829db	TCGA-READ	TCGA-AH-6547
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										78499f63-fe28-4b99-9f0e-6002203c4596	TCGA-READ	TCGA-F5-6861
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										a744d4a3-f99a-46ce-9b3f-8ee8835e67ec	TCGA-READ	TCGA-AG-3605
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										bcfe4fe9-d090-49f9-85a7-2b472e0f7453	TCGA-READ	TCGA-AG-3902
+N1	Stage III	T3	8480/3	Mucinous adenocarcinoma	Rectum, NOS																										19e46a3d-18c5-4927-8501-2265e2d617b8	TCGA-READ	TCGA-AG-A020
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										fdeeff8e-1328-42a4-aca0-a03b97421f1e	TCGA-READ	TCGA-AG-3878
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										d846228f-67af-4b3b-9796-dbc263c2054c	TCGA-READ	TCGA-AG-4001
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										2bd23664-453b-4fbf-823e-6dbcde0c4a2a	TCGA-READ	TCGA-DC-6160
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										db1e3104-8bfd-4353-854a-c478ba1f7d07	TCGA-READ	TCGA-AG-3582
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS					8140/3	Adenocarcinoma, NOS	Not Reported					Unknown	Unknown	Not Reported					Unknown	Unknown	Not Reported					85947797-54b8-44fb-910b-5cd689542994	TCGA-READ	TCGA-F5-6571
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										1388bba1-02ba-40df-93e5-c3d58b7bbae0	TCGA-READ	TCGA-AG-4015
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										5d4b9087-fa7b-47b8-9b12-adc0dd1cf17c	TCGA-READ	TCGA-AF-5654
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										17a8d208-fcf6-4480-945c-848d4234aafd	TCGA-READ	TCGA-AG-3600
+N1	Stage IIIB	T4	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										ba902e78-752f-4248-9a59-ea08475c961b	TCGA-READ	TCGA-AG-3601
+N1	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										1586cb0a-081a-4364-9470-46f9d0f0167d	TCGA-READ	TCGA-AG-3901
+			Unknown	Unknown	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			5555fbdd-962f-4d79-b36c-ae3c3cc4aff4	TCGA-READ	TCGA-DY-A1DE
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Unknown primary site																										b6ba7313-8e91-4c39-8629-db3e96f4c556	TCGA-READ	TCGA-AG-3881
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										0011a67b-1ba9-4a32-a6b8-7850759a38cf	TCGA-READ	TCGA-DC-6158
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										016c9c14-4c88-49f5-a11a-dd4bc282f11e	TCGA-READ	TCGA-DC-5337
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										04178a4f-14b0-45ba-aa3e-f21638e23765	TCGA-READ	TCGA-AG-3578
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										065b26fc-6827-44d5-83d8-1100c63fcda6	TCGA-READ	TCGA-AG-3894
+N0		T2	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																										093ca3a7-f545-468a-85ed-a35c3da03628	TCGA-READ	TCGA-EI-6510
+N0	Stage IIB	T4a	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										0b6b1937-4024-4f2c-aeca-46387277755f	TCGA-READ	TCGA-EF-5830
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS					Unknown	Unknown	Not Reported																			0bb786ee-07cf-4853-9b49-ec95cd14e282	TCGA-READ	TCGA-AG-A032
+N1	Stage IIIA	T3	8255/3	Adenocarcinoma with mixed subtypes	Rectum, NOS																										0cb21fb0-520f-4105-99ec-697a335115b5	TCGA-READ	TCGA-EI-6917
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										0eda7373-8335-455f-b90a-8c3540f28088	TCGA-READ	TCGA-AG-3574
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										10290e91-9784-4f94-8daa-b5d9a8b0efb9	TCGA-READ	TCGA-AG-3593
+NX		T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										107cb92b-6231-4e7a-af05-1f5de5981947	TCGA-READ	TCGA-AH-6549
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										12f1d449-4da3-460d-b4f3-9e1232440a8b	TCGA-READ	TCGA-AG-3592
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										156cb6c6-b5d4-4ea9-9495-fc972cf9c84a	TCGA-READ	TCGA-CI-6621
+N1	Stage IV	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS					Unknown	Unknown	Not Reported																			17878cb0-a8f9-43a4-911c-0f94c2a5e3df	TCGA-READ	TCGA-AG-A02G
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS					Unknown	Unknown	Not Reported					Unknown	Unknown	Not Reported												17e286b7-7793-446d-b556-1108addb5ba2	TCGA-READ	TCGA-AF-3911
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										182fe81e-9c96-4824-8a8a-28f7c498020f	TCGA-READ	TCGA-AH-6897
+N1b	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										1e89c189-7c8a-44c9-9b0f-2f625a285003	TCGA-READ	TCGA-AH-6903
+			8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																			205f30ff-fb10-44a8-a1c6-c538de100db5	TCGA-READ	TCGA-DY-A1DC
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										21e8c2b7-3a80-4b7e-acec-6ff863f15324	TCGA-READ	TCGA-AG-3726
+N1	Stage IIIB	T3	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																										25b43e40-e1f9-42a0-8052-5138f381eed9	TCGA-READ	TCGA-EI-6512
+N2b	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Unknown	Unknown	Not Reported					Unknown	Unknown	Not Reported												261925e3-96e4-440c-8e95-c003d44ab2f2	TCGA-READ	TCGA-DC-6156
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										2a7903cc-345d-48f7-9fec-b4a5f09f8002	TCGA-READ	TCGA-AG-3599
+N2	Stage IV	T3	8211/3	Tubular adenocarcinoma	Rectum, NOS																										2b1783da-9ede-4590-b96a-6b0eabc8777f	TCGA-READ	TCGA-EI-7002
+			8211/3	Tubular adenocarcinoma	Not Reported		N1b	Stage IV	T3	8211/3	Tubular adenocarcinoma	Rectum, NOS																			3165bf70-df19-4043-bcfc-9ae92197ef72	TCGA-READ	TCGA-EI-6885
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Unknown	Unknown	Not Reported					Unknown	Unknown	Not Reported					Unknown	Unknown	Not Reported					335d0351-3740-4847-9ff4-be2f078c70f7	TCGA-READ	TCGA-AF-2689
+N2b	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										33e91116-8844-4861-843d-784c70b4a6fc	TCGA-READ	TCGA-DC-6154
+N2a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										3546a93b-b279-4615-9d5f-5baa787e487e	TCGA-READ	TCGA-F5-6864
+			Not Reported	Not Reported	Not Reported																										375436b3-66ac-4d5e-b495-18a96d812a69	TCGA-READ	TCGA-F5-6810
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										398da5c2-d9f2-4eb4-9813-21009d3ad048	TCGA-READ	TCGA-CI-6624
+N1	Stage IIIA	T3	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																										3aecf83e-c614-4ffa-8c82-1b5dadf6509e	TCGA-READ	TCGA-EI-6881
+N1c	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										3b55aa84-9fdc-4125-8d39-d8949de2a1b3	TCGA-READ	TCGA-CI-6619
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										3be106bc-ba42-4c70-9b50-697d89db617d	TCGA-READ	TCGA-AG-A011
+N2a	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										3e97286f-8aa8-4b6a-b339-d7a8e30f60c2	TCGA-READ	TCGA-DC-6681
+N0	Stage II	T3	8480/3	Mucinous adenocarcinoma	Rectum, NOS																										3f10de1e-c8ce-415e-b4e1-e50901686a2f	TCGA-READ	TCGA-DT-5265
+N0	Stage IIA	T3	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																										40974ab3-e532-4d6e-9c98-ee640f3976d6	TCGA-READ	TCGA-EI-6514
+N0	Stage IIC	T3	8211/3	Tubular adenocarcinoma	Rectum, NOS																										468c2ecb-a21f-49a7-91f3-63d3ef266cf8	TCGA-READ	TCGA-EI-6883
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										4d5437b3-b6a0-4d17-a7aa-4f2b790e4532	TCGA-READ	TCGA-EF-5831
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										5a7d19f9-6be2-45ac-9ffc-11e28594eeee	TCGA-READ	TCGA-AG-3898
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										5af7b4eb-8314-41ce-ab2b-f98054a78a8b	TCGA-READ	TCGA-AG-3583
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Unknown	Unknown	Not Reported					Unknown	Unknown	Not Reported												5bc1db25-3e25-44d7-99cb-e31f00cf1d58	TCGA-READ	TCGA-AF-6136
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										5daa9f6b-eeba-466f-992b-2bd29fa60e93	TCGA-READ	TCGA-AG-3575
+N2b	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										5f10f8e4-a6f9-4643-b210-390bc8fd32bd	TCGA-READ	TCGA-AF-4110
+			Unknown	Unknown	Not Reported		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																			60778da8-d99e-4e51-96a2-3e900b3978d9	TCGA-READ	TCGA-AG-3999
+			8140/3	Adenocarcinoma, NOS	Not Reported		N2b	Stage IV	T4a	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Unknown	Unknown	Not Reported												6221496d-40cc-4071-969f-6fbcba4f573c	TCGA-READ	TCGA-AF-6672
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										634d542b-a72f-408b-9fef-65ef6c45f882	TCGA-READ	TCGA-DC-6157
+N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										644571e9-b8e6-42f3-a2e4-33bad0fac661	TCGA-READ	TCGA-DC-4745
+			8263/3	Adenocarcinoma in tubulovillous adenoma	Not Reported		N2b	Stage IIIC	T3	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																			652e503a-1be8-445b-96d6-ff114f911e76	TCGA-READ	TCGA-EI-6509
+			Unknown	Unknown	Not Reported		N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			6dafce6c-b2a9-4b23-b9f8-b71e01616389	TCGA-READ	TCGA-AG-4021
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										72756208-a5ed-47d2-8c4c-19a8d39f7b9d	TCGA-READ	TCGA-AG-3731
+			Unknown	Unknown	Not Reported		N1	Stage IIIB	T4a	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			72e640f2-869f-4aef-8ebe-b127f3e7048a	TCGA-READ	TCGA-F5-6863
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										74543fa4-ce73-46e4-9c59-224e8242b4a2	TCGA-READ	TCGA-AG-A01W
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										769880ae-34d9-405e-8ea7-33ba47cf2dd2	TCGA-READ	TCGA-AG-3909
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										7a285463-76f4-447d-bb04-336bb5ec1009	TCGA-READ	TCGA-CL-5917
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										811f3feb-a5a9-48b1-acda-fbb23fcbcf16	TCGA-READ	TCGA-AF-A56N
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										813bb368-9389-4528-9b18-387374bc912f	TCGA-READ	TCGA-DY-A1DD
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										830fd359-abd4-4c99-89e4-2d6bb9ce5637	TCGA-READ	TCGA-AF-2691
+N1		T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										835cbd02-4dbb-4273-9704-4b5d272493d7	TCGA-READ	TCGA-AH-6544
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										848a5838-8a06-45a9-a3d6-e4ed47b824ab	TCGA-READ	TCGA-AG-A01L
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										866de12b-e4df-4f19-b62e-e3fd85d4ec08	TCGA-READ	TCGA-AG-4005
+			Unknown	Unknown	Not Reported		N1	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			89e4905e-31bb-4125-9262-93f600aed7e5	TCGA-READ	TCGA-DY-A1DG
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										8ad1c98b-5395-477e-87a8-19dff3a59c26	TCGA-READ	TCGA-AG-A02N
+N2a	Stage IIIC	T4b	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										8b4383b1-a684-41ea-bfb0-c84e6f5b287d	TCGA-READ	TCGA-F5-6464
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Rectum, NOS					Unknown	Unknown	Not Reported																			8c7ccdb0-7653-4a8d-86b6-de39afc40765	TCGA-READ	TCGA-AG-3887
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Colon, NOS																										8e00e7e7-ffaf-44f0-91a7-172671f18e08	TCGA-READ	TCGA-AG-4007
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										8feb0e8f-d09b-437d-8651-0cdecfe776bf	TCGA-READ	TCGA-F5-6814
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										9084b672-8e65-4b7f-a256-32fd35aa8ab5	TCGA-READ	TCGA-AG-4022
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										92c65e5a-3f07-49d9-ab69-46a0eb86ae88	TCGA-READ	TCGA-AG-3882
+N2	Stage IIIC	T4a	8140/3	Adenocarcinoma, NOS	Connective, subcutaneous and other soft tissues of abdomen					Unknown	Unknown	Not Reported					Unknown	Unknown	Not Reported												99d2c035-06a2-4bc3-8ff9-db875d232c93	TCGA-READ	TCGA-F5-6813
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										9af35239-ffb9-4d4f-889e-f743da271eef	TCGA-READ	TCGA-AG-3896
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										9c7b5e85-5579-4d0f-a7ea-b9d081ac0037	TCGA-READ	TCGA-AG-A016
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										9d7e0672-0a9e-4dbf-a583-80f4eb086ec6	TCGA-READ	TCGA-AG-A025
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										9df9af6b-00b0-47af-aac7-b52dac399ba5	TCGA-READ	TCGA-DY-A0XA
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										a18acb1d-403a-4802-8efb-9085e006f4c5	TCGA-READ	TCGA-AG-A01J
+N1		T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										a2e47568-eb43-4c89-ad7c-dfbaa2ba7e27	TCGA-READ	TCGA-CL-4957
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										a83923fd-276c-4526-9922-5ef741f551fd	TCGA-READ	TCGA-AG-3732
+N2	Stage III	T3	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										a8b974f4-aabf-484d-bfa2-a286b39681e0	TCGA-READ	TCGA-AG-3586
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										a91f7a8c-e0fe-403a-9ef0-f7679b2761cc	TCGA-READ	TCGA-AG-A01Y
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										acccb105-6439-4b30-a0b9-bb94c7873d4a	TCGA-READ	TCGA-CI-6623
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										add567b7-29ef-4122-8a54-57d36f735e78	TCGA-READ	TCGA-AG-3893
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										b1a787b6-8e94-4b1b-b063-3338c80eef78	TCGA-READ	TCGA-DY-A1DF
+N1	Stage IIIA	T3	8211/3	Tubular adenocarcinoma	Rectum, NOS																										b2b125c7-8993-4424-b390-048ccccc9d08	TCGA-READ	TCGA-EI-6884
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										b2c48624-a483-4b1d-9155-c0c80ed2f7a0	TCGA-READ	TCGA-AG-3584
+N2b		T4a	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										b2db7f47-540f-4bd3-81bb-d686b0225201	TCGA-READ	TCGA-EI-7004
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										b6e6e715-ccc5-474f-860a-a10bf1962936	TCGA-READ	TCGA-AG-3883
+N2b	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Unknown	Unknown	Not Reported																			bd0ddc1e-ba3b-4719-a2fa-776f0475dd8a	TCGA-READ	TCGA-AH-6643
+N0	Stage IIB	T4	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										bd6877a8-06b4-4b95-bed2-15c524068f21	TCGA-READ	TCGA-CI-6622
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										bf65c2cd-8348-488f-8485-9196ba42d17e	TCGA-READ	TCGA-DC-4749
+N1	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										c2395f04-e248-4091-855d-802b1b871f29	TCGA-READ	TCGA-DY-A1H8
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										c3760fb2-3b8a-4251-a189-21d56fba5017	TCGA-READ	TCGA-AG-3608
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Rectum, NOS																										c3f0608b-d493-4c74-930a-d7998a48a659	TCGA-READ	TCGA-EI-6507
+			Unknown	Unknown	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																			c7e09161-60d6-4dff-a840-7cec3bb7a30a	TCGA-READ	TCGA-AG-A00Y
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										c8fd1040-82a2-4cda-ac49-c2f82b20cbab	TCGA-READ	TCGA-AF-A56L
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										ca8374a4-ce94-4091-aa9e-44339a7c4b22	TCGA-READ	TCGA-AG-3594
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																										cbcb2141-b415-4410-8dd7-2a3cd3980a19	TCGA-READ	TCGA-AF-3400
+N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										cd05d121-f107-4c8e-95a8-153a84f5134a	TCGA-READ	TCGA-DC-5869
+N1	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										ce2e0f1c-60ff-4f93-8bba-4f4d3ccac37c	TCGA-READ	TCGA-AF-6655
+N1	Stage IIIB	T3	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																										d004a083-6dc6-4db6-96d0-88a8ca3b1b93	TCGA-READ	TCGA-EI-6511
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										d7cb062c-898d-4452-8e87-57262162bafa	TCGA-READ	TCGA-F5-6465
+N1a	Stage IIIB	T3	8263/3	Adenocarcinoma in tubulovillous adenoma	Rectum, NOS																										d8bfcc67-f5c3-42cd-9fc4-bd483f896da1	TCGA-READ	TCGA-EI-6508
+NX		T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										d9121e5a-88f2-47a6-a0b1-25735c209e54	TCGA-READ	TCGA-AH-6644
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										ded3feb2-1079-4520-a7ca-f5b5fc73d7c5	TCGA-READ	TCGA-AG-3892
+N0	Stage IIA	T3	8255/3	Adenocarcinoma with mixed subtypes	Rectum, NOS																										e3a80e41-2e46-4b04-86c6-fd444d616ab5	TCGA-READ	TCGA-EI-6882
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Connective, subcutaneous and other soft tissues of abdomen																										e5d7bbd4-4f38-4a5a-9966-f44f8a15a10e	TCGA-READ	TCGA-F5-6812
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										e5e4aa9f-6015-4d62-a088-69920d7f2500	TCGA-READ	TCGA-AG-3885
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										e6827400-0d95-46b0-8874-6ce9e9d5011b	TCGA-READ	TCGA-AG-3727
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Rectum, NOS																										e7503a51-6647-4cc2-80dd-645d0df4db43	TCGA-READ	TCGA-AG-A008
+N1b	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										eb75ca70-e60f-453f-820c-485390abad88	TCGA-READ	TCGA-DC-6155
+			Unknown	Unknown	Not Reported		N1	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																			f1ce4b5f-55d0-4989-a5f3-6b6e591538b2	TCGA-READ	TCGA-F5-6702
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										f49a8e1e-d247-4c76-ac3b-ad8e5d6b8d18	TCGA-READ	TCGA-CL-5918
+			Unknown	Unknown	Not Reported		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																			f9204a59-6877-4d06-a20e-fd7ab0859ed5	TCGA-READ	TCGA-AF-2687
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Colon, NOS																										fbcd7e69-533f-4b6c-9868-162139135b58	TCGA-READ	TCGA-AG-3742
+N2	Stage III	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										fd798ddf-7273-49b8-b13c-d9909c8c87ff	TCGA-READ	TCGA-AG-3725
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectum, NOS																										ff004403-8cc5-43e6-bd1c-dde4eb1e6193	TCGA-READ	TCGA-AG-A00C
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										41658cf8-0de1-4a97-bb60-0f0107c84e00	TCGA-COAD	TCGA-AA-3675
+			Not Reported	Not Reported	Eyelid		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																			81555ac5-9cc2-49ae-9033-657f56243f20	TCGA-COAD	TCGA-AA-3939
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										568dbda7-88b5-4330-881f-dc5d6c7ce4ae	TCGA-COAD	TCGA-G4-6307
+			Not Reported	Not Reported	Not Reported		N0	Stage II	T4	8140/3	Adenocarcinoma, NOS	Colon, NOS																			93edb105-5dc9-4a4a-9fca-c91f0161fcc7	TCGA-COAD	TCGA-AA-3511
+			Not Reported	Not Reported	Not Reported		N1	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																			80311cf5-7e18-4545-92ad-c4b7dd5c9677	TCGA-COAD	TCGA-AA-3842
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										01ad5016-f691-4bca-82a0-910429d8d25b	TCGA-COAD	TCGA-AA-3561
+			Not Reported	Not Reported	Not Reported		N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																			0dacc5ce-498f-4c60-9f78-7a013ffaa9ce	TCGA-COAD	TCGA-D5-5538
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										563d67a1-f1ba-4722-aa2d-9b35b1689468	TCGA-COAD	TCGA-CA-5255
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										44c2854e-3f8c-48e1-b4d5-1b5778d4fce4	TCGA-COAD	TCGA-AA-3858
+N0	Stage IIB	T4	8140/3	Adenocarcinoma, NOS	Colon, NOS																										89a6384e-1cea-440b-9f17-d57cb0805174	TCGA-COAD	TCGA-A6-2676
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			10881458-55b2-41d1-8358-4ee6ccb8ec85	TCGA-COAD	TCGA-AA-A02K
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										cc22913d-2dda-48bb-82aa-9960b73f3e44	TCGA-COAD	TCGA-NH-A5IV
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Hepatic flexure of colon																										ff1407c6-9174-4bae-a19b-d34ca71b898c	TCGA-COAD	TCGA-A6-2680
+N1b	Stage IIIC	T4b	8480/3	Mucinous adenocarcinoma	Colon, NOS																										b54865b6-824e-4163-b759-21a6eacc98ce	TCGA-COAD	TCGA-A6-6781
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Not Reported																			81a7184e-f9f5-4e3f-9603-5f5642386c1e	TCGA-COAD	TCGA-T9-A92H
+N2a	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										c6f6c032-5d4e-4028-aed0-24a587620354	TCGA-COAD	TCGA-AY-A8YK
+N1a	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										2d3ce817-b269-4662-a92d-392bd3662399	TCGA-COAD	TCGA-CM-5341
+N2b	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										9382987c-b5b3-48fe-8194-4d83fe340cd0	TCGA-COAD	TCGA-F4-6807
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Cecum																										e703af88-c05f-4d7b-b225-d640e4d1a2a5	TCGA-COAD	TCGA-AZ-4616
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Hepatic flexure of colon																										3e1886a8-2ed2-41ee-8b58-10f5321ade6f	TCGA-COAD	TCGA-DM-A28K
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										d4da3298-3a02-44a6-bdcd-d260f38e520b	TCGA-COAD	TCGA-AY-A71X
+N0	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										96ac1f4b-79b0-4517-8caf-fc05abcaaf4f	TCGA-COAD	TCGA-A6-6652
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										0c53b010-4243-4da3-a059-7f54c9a850ec	TCGA-COAD	TCGA-F4-6703
+			Not Reported	Not Reported	Not Reported		N2b	Stage IIIC	T4a	8140/3	Adenocarcinoma, NOS	Cecum																			c8de215d-53a4-4e6c-be58-5887a8094815	TCGA-COAD	TCGA-AD-6965
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										de287a25-981d-49f8-81af-fe0300e4cd31	TCGA-COAD	TCGA-AZ-4315
+N2	Stage III	T3	8140/3	Adenocarcinoma, NOS	Descending colon																										2b94070a-21ec-457b-88af-3d2a89b97ac6	TCGA-COAD	TCGA-AA-3712
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										35c295c2-37d1-44b2-87a3-1039645e5bae	TCGA-COAD	TCGA-AA-3510
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										081a3dc7-45e1-457d-add0-c4686140a8d0	TCGA-COAD	TCGA-AA-A00D
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										10994156-7c2f-420e-aeb8-11d566b3d5e4	TCGA-COAD	TCGA-AA-3971
+N2	Stage III	T3	8480/3	Mucinous adenocarcinoma	Cecum																										2a971e32-b0e7-4a3f-8c40-62d69c0307d8	TCGA-COAD	TCGA-AA-A03F
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										6fa41234-9077-4d05-a295-6820f3bedf5b	TCGA-COAD	TCGA-AA-A02O
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										613aa3e8-a70b-45a9-9c08-0c2346c8bf00	TCGA-COAD	TCGA-AD-A5EJ
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			19089ae0-b590-4649-9d94-a147fa506e32	TCGA-COAD	TCGA-G4-6627
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										5da56982-6de7-4994-aa9e-3b01200b2959	TCGA-COAD	TCGA-AA-3861
+N1		T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										56d5b0b9-9093-4286-a2c6-7faa9a1680f5	TCGA-COAD	TCGA-AZ-6603
+N0	Stage IIA	T3	8260/3	Papillary adenocarcinoma, NOS	Ascending colon																										95a54459-3fac-42d5-8ec1-ed66d971d64d	TCGA-COAD	TCGA-CA-6716
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										4138aca8-e085-45fb-b353-74852efe61bf	TCGA-COAD	TCGA-CM-6676
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Cecum																										93ca8937-97c0-4f6e-bdec-66d32f2a7b3d	TCGA-COAD	TCGA-AA-A029
+N1	Stage IIIA	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										80809d79-92e1-4d6c-ba2e-0a9589997792	TCGA-COAD	TCGA-AA-A01C
+N2a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																										fb9e7684-a7f7-4f17-bc5d-1f359e1b0d42	TCGA-COAD	TCGA-CM-6680
+N1	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Cecum																										c293a148-a88c-4fb3-b2f4-e64e918044f9	TCGA-COAD	TCGA-CK-4950
+			Not Reported	Not Reported	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																			9c34830b-4d7f-4b41-9659-fbfc36c145c9	TCGA-COAD	TCGA-D5-6529
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										3a785e32-7960-4c72-84c4-fb42c4dd86f1	TCGA-COAD	TCGA-A6-2678
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										fbb69964-f962-4b89-b59b-dd05f8faf61a	TCGA-COAD	TCGA-AZ-6599
+N1	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										e7af286b-3dec-4cf2-8fbd-fa64b3efdf7f	TCGA-COAD	TCGA-F4-6809
+			Not Reported	Not Reported	Not Reported		N2b	Stage IV	T4a	8140/3	Adenocarcinoma, NOS	Ascending colon																			ce00896a-f7d2-4123-bb95-24cb6e53fc32	TCGA-COAD	TCGA-5M-AAT6
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										a94e1279-a975-480a-93e9-7b1ff05cbcbf	TCGA-COAD	TCGA-3L-AA1B
+			Not Reported	Not Reported	Not Reported		N2	Stage IIIC	T3	8480/3	Mucinous adenocarcinoma	Rectosigmoid junction																			e2edbf3f-25d8-49aa-b656-2a59c3b99aeb	TCGA-COAD	TCGA-AA-A01D
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										68801d41-535f-4b38-989b-ef4fe5f00039	TCGA-COAD	TCGA-A6-6653
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										b6202d8d-dd3c-4fa2-9242-6e55759846af	TCGA-COAD	TCGA-CM-5344
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Cecum																										9b2c325c-1f03-43c7-ad5c-b49c6d205635	TCGA-COAD	TCGA-DM-A28A
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										b823d6e5-54b0-43d3-95e2-9be33dc6f734	TCGA-COAD	TCGA-DM-A0XF
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										88e64f45-adc4-4223-9838-4d7d45b8f0c0	TCGA-COAD	TCGA-AA-3526
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										192da41f-f0a5-494e-8eb9-96bcdae56ff8	TCGA-COAD	TCGA-AA-3819
+N0	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Descending colon					Not Reported	Not Reported	Not Reported																			65056295-8fcd-4f82-a3c9-a5acd79521fe	TCGA-COAD	TCGA-A6-6648
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										17633a60-e12b-4a7c-bd8a-c16341ddc606	TCGA-COAD	TCGA-CA-5256
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Not Reported																			a56d528b-238a-4556-92c8-7645304a2da0	TCGA-COAD	TCGA-AA-3558
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										300fff5a-0f61-402d-b845-3938ba7b1294	TCGA-COAD	TCGA-QG-A5YX
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										9c45eaec-d854-4f51-80a3-2d80d6b4aebc	TCGA-COAD	TCGA-QG-A5Z1
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										e831369c-78c0-4c75-9cf3-f46ed669312e	TCGA-COAD	TCGA-AA-3544
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										eeb42912-0c7a-46bb-bd95-369b2b425727	TCGA-COAD	TCGA-F4-6570
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										dc22eba5-6fb7-4875-b30a-99fa00758301	TCGA-COAD	TCGA-D5-6920
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										02f9668c-71e6-485f-88b1-b37dc8bdd2ab	TCGA-COAD	TCGA-AA-3866
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										1a09207e-9184-4f32-bd07-a9f4dc6c825d	TCGA-COAD	TCGA-AA-3833
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										81e7cca8-2d71-4446-9692-872c2fe68d0a	TCGA-COAD	TCGA-A6-6654
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Transverse colon																										21bdad0d-c6a2-428c-b2b4-0de282b34abc	TCGA-COAD	TCGA-AA-3850
+			Not Reported	Not Reported	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																			955464c8-9c62-430c-87b8-107db5c980a8	TCGA-COAD	TCGA-AD-6889
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										a9cb21d1-4c4a-4f30-ad4d-c54bed26f187	TCGA-COAD	TCGA-AA-3975
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										bfb07784-693b-4c25-874e-4ad6e04a5d46	TCGA-COAD	TCGA-AA-3529
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Cecum																										23d0681a-912a-408f-b19a-0bbcf5ffc2f3	TCGA-COAD	TCGA-AA-3695
+N0	Stage IIB	T4a	8140/3	Adenocarcinoma, NOS	Ascending colon																										3eb37b12-b8b4-40a3-bd8b-f89fc39c05fa	TCGA-COAD	TCGA-A6-6782
+N0	Stage II	T4	8140/3	Adenocarcinoma, NOS	Cecum																										7a481097-14a3-4916-9632-d899c25fd284	TCGA-COAD	TCGA-AA-A022
+N2	Stage IIIC	T4	8480/3	Mucinous adenocarcinoma	Ascending colon																										5342e2e8-1465-4f7b-9450-ef27280f80c7	TCGA-COAD	TCGA-CK-4952
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										96e013d9-8e89-46a7-8d07-bae95af36708	TCGA-COAD	TCGA-CM-5860
+N2	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction					Not Reported	Not Reported	Liver																			cac80259-3a26-4a99-b0d3-13454068e6ed	TCGA-COAD	TCGA-AZ-4684
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Colon, NOS																										d259eeb2-d15e-436d-9d37-2d0b7658bc91	TCGA-COAD	TCGA-D5-6534
+N1		T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										92c043b6-8d53-4c1c-808a-c4be5e2926e6	TCGA-COAD	TCGA-DM-A1D8
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										4ad9784e-1edc-4186-9b45-4dfe0003f74b	TCGA-COAD	TCGA-A6-6138
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Descending colon																										9d8c4693-8e36-473b-bb34-a7cdc04dd223	TCGA-COAD	TCGA-CM-6170
+			Not Reported	Not Reported	Not Reported		N1	Stage III	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			2e386e48-b99b-4806-a3e3-081d72a606e7	TCGA-COAD	TCGA-AA-A01X
+			Not Reported	Not Reported	Breast, NOS		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					8070/2	Squamous cell carcinoma in situ, NOS	Other ill-defined sites					Not Reported	Not Reported	Not Reported					7d8eab0a-e6c8-4449-9ebf-50c41db94a06	TCGA-COAD	TCGA-A6-2681
+N1	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										33522271-b2ca-4da4-a942-501ab9117c51	TCGA-COAD	TCGA-AA-3693
+N0		T1	8140/3	Adenocarcinoma, NOS	Ascending colon																										e8e80df9-e3ba-4dec-b8fc-a5e80d8c6798	TCGA-COAD	TCGA-AD-6890
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										db246424-3979-4f23-b316-8d30c449ee15	TCGA-COAD	TCGA-AA-3984
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										227f945f-76fd-4a63-9609-d4e730a3d22a	TCGA-COAD	TCGA-CM-5349
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										aa85d9e8-caa6-422c-95ce-780e4ac2a5e4	TCGA-COAD	TCGA-AA-3532
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										0a815133-0edd-4422-89f2-2f067b6f2156	TCGA-COAD	TCGA-AA-3848
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										091e3084-04ee-4497-893c-d46226dec78f	TCGA-COAD	TCGA-AA-A00U
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										e6ec5a68-7555-4f26-bd7e-9cdb4c5f7004	TCGA-COAD	TCGA-AA-3549
+N1a	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										ec3f3f11-75df-4fcc-ba03-f19aca907645	TCGA-COAD	TCGA-CM-6162
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Descending colon																										21ddbfaa-1b21-4a2b-be2c-237dd69b20ff	TCGA-COAD	TCGA-A6-6140
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Ascending colon																										0e87e5fd-d5bb-4c0d-952d-711a6abbf336	TCGA-COAD	TCGA-AA-3821
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										8e87ddca-f43e-4c6f-9d5b-430b666a7f6c	TCGA-COAD	TCGA-CM-6169
+			8140/3	Adenocarcinoma, NOS	Not Reported		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Cecum																			aec0c661-afac-4f7a-8c31-154d743f2499	TCGA-COAD	TCGA-DM-A28H
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										6a4031c6-ee88-48be-81a5-a522720edd02	TCGA-COAD	TCGA-CM-6164
+N1	Stage IIIB	T4	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										62d39be5-f029-4eb8-8b00-46470e06a755	TCGA-COAD	TCGA-AA-A00Q
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Not Reported																			df5ab6cc-6f68-4b6b-95e2-954c6b57ba9c	TCGA-COAD	TCGA-CA-6718
+N0		T3	8140/3	Adenocarcinoma, NOS	Cecum					8140/3	Adenocarcinoma, NOS	Not Reported																			b76d1de7-6447-474d-bf67-77e0bb2da73a	TCGA-COAD	TCGA-AD-6901
+N0		T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										303286c2-bc58-4bbb-9171-74cdb1d7f62f	TCGA-COAD	TCGA-G4-6306
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										79d33c28-a7e2-4fca-8be1-a16fb6d68d49	TCGA-COAD	TCGA-G4-6311
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Hepatic flexure of colon																										55697871-b9aa-4acd-8dbe-dcd5391db8f0	TCGA-COAD	TCGA-CM-6674
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Colon, NOS																										20ccd267-74e5-4574-a8e1-028bcd74aaeb	TCGA-COAD	TCGA-AA-3872
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										31a3877d-3e82-450e-811f-3448b06f3950	TCGA-COAD	TCGA-AA-3655
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			4c6c8d3d-e4a3-490a-9211-cfbe7e6ee25b	TCGA-COAD	TCGA-A6-5665
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										84e34cf2-b3bb-4a1a-8fb7-6c2c604c4008	TCGA-COAD	TCGA-AA-A01S
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																										e3ca9046-9634-4332-b19f-88b18110f941	TCGA-COAD	TCGA-CM-4751
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										e6c8c5fc-158a-4de4-b3f6-3b645584bbc7	TCGA-COAD	TCGA-AA-A03J
+N1a	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			a19cd9f8-482b-4b70-b7d7-06d6bb1b0260	TCGA-COAD	TCGA-CM-5862
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										d5a1f43e-25a7-47f5-b63e-43714f9f732a	TCGA-COAD	TCGA-QL-A97D
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Not Reported																			4563e4e0-a661-46de-ad25-9c86a621e147	TCGA-COAD	TCGA-AA-3812
+N2b	Stage IIIC	T4a	8480/3	Mucinous adenocarcinoma	Colon, NOS																										ea923671-3903-4a79-830d-e7e4b1eabab0	TCGA-COAD	TCGA-AD-6899
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Cecum																										c59d90a6-9cda-426d-b8ea-41f0a87033d5	TCGA-COAD	TCGA-AZ-4323
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					8140/3	Adenocarcinoma, NOS	Liver																			cee553c8-460d-436b-b55d-8f41624816cc	TCGA-COAD	TCGA-G4-6317
+N2b	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Cecum																										9f45a227-1fd5-478c-a194-4a5c61b68cc3	TCGA-COAD	TCGA-QG-A5YW
+N1c	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										326c1637-ea91-4006-b440-d38420af1ae5	TCGA-COAD	TCGA-A6-6137
+			Not Reported	Not Reported	Not Reported		N0	Stage IIB	T4	8140/3	Adenocarcinoma, NOS	Transverse colon																			567ddc8e-2b00-417d-a326-479cb02e08dd	TCGA-COAD	TCGA-G4-6304
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										b728e6e8-a0e4-496b-904c-6f07c12e901f	TCGA-COAD	TCGA-A6-3810
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										7ea546ce-f48a-4d9c-96b4-a0124c692870	TCGA-COAD	TCGA-CM-4752
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										b16bb717-d1cf-4237-a554-43f3995b82f2	TCGA-COAD	TCGA-AA-3815
+			Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported		N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Sigmoid colon												fac2c617-8149-45bb-b766-fbe13dc3c425	TCGA-COAD	TCGA-DM-A1D7
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										5116e3b4-2bac-40f5-8046-b9c1783faaa5	TCGA-COAD	TCGA-A6-3807
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Colon, NOS																										0f940ec0-eb0b-422a-a764-a26c8e5c216d	TCGA-COAD	TCGA-AA-3837
+			Not Reported	Not Reported	Liver		N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																			ebc5a6f8-34fd-48c1-a2b9-7f60f45fbf27	TCGA-COAD	TCGA-D5-6537
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Colon, NOS																										7a6c54f1-f4e4-426b-b306-2ca3c4de12ca	TCGA-COAD	TCGA-AA-3854
+N1	Stage IIIB	T4a	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										3a8ca50f-bc9f-4250-8c8d-22893763ea46	TCGA-COAD	TCGA-D5-6926
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										268c01b3-d2ce-44c0-a2fe-ea846a1253cc	TCGA-COAD	TCGA-CA-6717
+			Not Reported	Not Reported	Not Reported		N1	Stage IIIB	T4	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			73f9681a-f9ef-4880-bd16-93624fd117c6	TCGA-COAD	TCGA-CK-4947
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Colon, NOS																										bc42fe2d-1a33-428d-a601-b1871f4c8d9b	TCGA-COAD	TCGA-AA-3966
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										3aae5316-6a5d-4b83-9020-ad691d4edf99	TCGA-COAD	TCGA-G4-6626
+N1a	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										4aadf2a2-ce1e-4f94-b146-59292e83e7fd	TCGA-COAD	TCGA-CM-5868
+N1	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Colon, NOS																										e8841edf-e070-425b-b4d4-bbb2115f9dbd	TCGA-COAD	TCGA-AA-3973
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										628408ce-0691-4e0b-b4c7-aca9a0d73bb0	TCGA-COAD	TCGA-AA-3673
+			Not Reported	Not Reported	Not Reported		N2b	Stage IVB	T3	8140/3	Adenocarcinoma, NOS	Cecum																			fce1fd5a-54d2-4260-b187-4eb7035e96e9	TCGA-COAD	TCGA-CM-6675
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										c594196e-49ef-4195-a6b6-4ef4a1d9ec15	TCGA-COAD	TCGA-AA-3538
+N1	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Cecum																										3334201d-a3c0-45ec-a9ed-cf48cc8c38e8	TCGA-COAD	TCGA-AZ-4614
+N1	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Colon, NOS																										750770db-53cf-4021-a8c2-5e0ddb97fef5	TCGA-COAD	TCGA-AA-3994
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										b3c267aa-345d-40d8-a8da-f9f08c64f9c7	TCGA-COAD	TCGA-D5-6923
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Not Reported																			36eaf209-c332-4321-b6aa-51a3368ecd79	TCGA-COAD	TCGA-AA-3555
+N1	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										cbdabbcd-d8f1-4d7c-9e18-ebd83d888c51	TCGA-COAD	TCGA-AA-3949
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										b612d491-7442-4119-a53c-5ebcc35c31f4	TCGA-COAD	TCGA-A6-2672
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Descending colon																										23252dca-e836-47a0-b294-758ad60aa259	TCGA-COAD	TCGA-G4-6299
+N1	Stage IIIB	T4	8480/3	Mucinous adenocarcinoma	Ascending colon																										56e612e8-2c29-4782-be79-2813cc8dd2e6	TCGA-COAD	TCGA-AA-A00J
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										131e0571-de86-415f-b3fb-dc9f971258d3	TCGA-COAD	TCGA-D5-6932
+			Not Reported	Not Reported	Not Reported					8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage IIB	T4a	8140/3	Adenocarcinoma, NOS	Cecum												8d0fa506-3f51-4108-8427-7dabf270bcd4	TCGA-COAD	TCGA-SS-A7HO
+N2	Stage III	T3	8480/3	Mucinous adenocarcinoma	Ascending colon					Not Reported	Not Reported	Not Reported																			97f6c8d3-09a0-4128-8f10-41e736648a5f	TCGA-COAD	TCGA-AA-A01R
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										9dcb4e16-b582-4cd0-87cf-04f480ec2cec	TCGA-COAD	TCGA-AA-3542
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										b079a153-62f9-4026-a2f8-a1390168bbb9	TCGA-COAD	TCGA-A6-4107
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Cecum																										b08b5f49-9434-4653-9772-097ec29b2ca3	TCGA-COAD	TCGA-D5-6540
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										bc02f801-081b-489b-87cb-d275c70299d5	TCGA-COAD	TCGA-AA-3845
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										384400c1-98d6-4cc3-8724-de6711f6208b	TCGA-COAD	TCGA-AA-3980
+N2a	Stage IIIB	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										5c24435e-8e50-42c2-80c7-919b1cad0133	TCGA-COAD	TCGA-AA-3955
+			8140/3	Adenocarcinoma, NOS	Liver		N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					8140/3	Adenocarcinoma, NOS	Liver												857a5889-19e7-4208-8362-f1377c408037	TCGA-COAD	TCGA-A6-A567
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										19d1a5fc-3ce9-4e43-a364-a4150bcf911b	TCGA-COAD	TCGA-A6-2686
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										eed7405f-f8f3-41a4-a0e7-242f23087f59	TCGA-COAD	TCGA-CM-6171
+N1	Stage IIIB	T3	8260/3	Papillary adenocarcinoma, NOS	Sigmoid colon																										794131b8-f4be-4f15-b3b9-6f0b10a5a38b	TCGA-COAD	TCGA-CA-6715
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										d17a2ab0-faef-40de-a87d-1291868b200d	TCGA-COAD	TCGA-AA-3679
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										0b8de222-119a-40f3-8beb-12b9d933225b	TCGA-COAD	TCGA-AA-3856
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										d2c99bed-3446-4d12-99e0-00611faa37dc	TCGA-COAD	TCGA-AA-A004
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										c658f35d-ceeb-4189-8e3d-03e3b9706667	TCGA-COAD	TCGA-CK-5915
+			Not Reported	Not Reported	Not Reported		N1	Stage IIIB	T4	8480/3	Mucinous adenocarcinoma	Descending colon																			790266bc-c252-43f4-85d1-1b06ee529cf8	TCGA-COAD	TCGA-A6-A566
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										26a41625-4680-47b2-afa9-6a72b148e1c0	TCGA-COAD	TCGA-CA-5254
+			Not Reported	Not Reported	Not Reported		N0	Stage IIC	T4b	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Not Reported												25c3201a-3dd5-4edf-ad09-104e5c10663e	TCGA-COAD	TCGA-A6-5666
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										4f9775f2-b663-4daf-aa9e-50915cae9407	TCGA-COAD	TCGA-A6-3808
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										32b77693-18e1-4692-8488-add1940c9e7c	TCGA-COAD	TCGA-AU-6004
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										ddf69ed9-4c53-48b8-9f01-495bd60c3425	TCGA-COAD	TCGA-AA-3514
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										f5c3bc61-1018-4351-bb23-aacc1459365f	TCGA-COAD	TCGA-AA-3710
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										98d45099-feae-4dad-aa38-ec03fed6d999	TCGA-COAD	TCGA-A6-5659
+N0	Stage IIB	T4	8480/3	Mucinous adenocarcinoma	Colon, NOS																										654c6f5c-3e5c-49f0-b53f-87cd9797d7c9	TCGA-COAD	TCGA-AA-3947
+			Not Reported	Not Reported	Liver		N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																			bf69a4ce-ec7e-4752-a86d-dcc80e3c9a57	TCGA-COAD	TCGA-AZ-4615
+N2b	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										0dc41cd5-0672-407c-9b4a-0f5f3970aa54	TCGA-COAD	TCGA-A6-5660
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					8140/3	Adenocarcinoma, NOS	Liver					8140/3	Adenocarcinoma, NOS	Not Reported												e83e5700-f968-4978-bb78-56a83936ce8c	TCGA-COAD	TCGA-D5-6536
+			Not Reported	Not Reported	Not Reported		N1	Stage IIIA	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																			15d1b0fb-5c5f-4689-94f5-b33120a2bfae	TCGA-COAD	TCGA-D5-5539
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Cecum																										286cbae3-8324-43b7-9b20-0f40dda1588e	TCGA-COAD	TCGA-D5-6930
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Descending colon																										c48e2ce0-3806-4675-92f3-d38ff67c5efa	TCGA-COAD	TCGA-DM-A28M
+N2b	Stage IIIC	T3	8480/3	Mucinous adenocarcinoma	Sigmoid colon																										c6ed47f4-358b-4f06-b5cd-cdf1d5c47b43	TCGA-COAD	TCGA-F4-6704
+			Not Reported	Not Reported	Not Reported		N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			73448b56-a6c6-4c98-a153-ab704261e073	TCGA-COAD	TCGA-AA-A02W
+N1	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Ascending colon																										aee20b98-df51-4ead-86cc-0d5f60a74b90	TCGA-COAD	TCGA-AZ-6600
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Cecum																										64bd568d-0509-48fe-8d0a-aef2a85d5c57	TCGA-COAD	TCGA-F4-6856
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										4beee9d4-ee52-4fed-bcc4-d300f5ddd4d0	TCGA-COAD	TCGA-A6-5661
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Cecum																										c21d2c68-920f-4526-b754-286579c049f3	TCGA-COAD	TCGA-AA-3663
+			8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																			49929108-023e-4d35-b26d-50ab4d3ae581	TCGA-COAD	TCGA-A6-2684
+			8480/3	Mucinous adenocarcinoma	Not Reported		N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Cecum																			2db3c23d-c591-4ea0-b0a8-ed9c4343c80e	TCGA-COAD	TCGA-CK-4951
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										85e95dda-6198-464a-9187-fd0832bebb72	TCGA-COAD	TCGA-AA-3492
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Ascending colon																										7a70f061-9a6f-408e-a416-7f5295ceba3b	TCGA-COAD	TCGA-CK-6751
+N2	Stage IV	T4	8480/3	Mucinous adenocarcinoma	Cecum																										d761bc06-dee8-478a-be99-8af9c504e49c	TCGA-COAD	TCGA-AA-3684
+N1	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Transverse colon																										8c0894fb-5e78-40ae-be0b-329ca30f758a	TCGA-COAD	TCGA-DM-A1HB
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										f2ef5afa-6191-43a1-a023-d53c0d985139	TCGA-COAD	TCGA-AA-3846
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										1c111912-c664-42f5-9802-065b1994a2f4	TCGA-COAD	TCGA-F4-6855
+N2	Stage IV	T3	8480/3	Mucinous adenocarcinoma	Sigmoid colon					Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported												57cdaa1c-4e94-4a28-ab3b-300c0457555f	TCGA-COAD	TCGA-A6-2674
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										f87c6dcc-1a9e-4df5-962c-1f946e2611f8	TCGA-COAD	TCGA-AA-A01T
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										84959e50-17f5-4f2b-8e0c-5ebb139d2c3a	TCGA-COAD	TCGA-QG-A5Z2
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										fb4cc403-694c-421f-b360-3108b6d57ad5	TCGA-COAD	TCGA-AU-3779
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										aedde4a5-6520-40b9-9721-c9b826490b7a	TCGA-COAD	TCGA-CM-6166
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										75c3004d-1ef4-49f9-86e0-1bb7b9553a3d	TCGA-COAD	TCGA-CM-6168
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										d651f9ba-8746-46c4-852c-6c2992c7d10e	TCGA-COAD	TCGA-AA-3667
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										a06c09a8-0951-49f4-a765-5147bbcae109	TCGA-COAD	TCGA-AA-3664
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										a512701f-88bb-4b05-8c94-fd285b9dd13e	TCGA-COAD	TCGA-AA-3666
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										81f6b141-2195-4091-9cd3-dfb022663949	TCGA-COAD	TCGA-AA-3930
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										3d8fd9b2-9aa2-4c81-8843-535ae66d6140	TCGA-COAD	TCGA-AZ-4308
+N2b	Stage IV	T4a	8140/3	Adenocarcinoma, NOS	Ascending colon																										1e0789d6-7efb-4807-8d36-cd9224675a0c	TCGA-COAD	TCGA-NH-A8F8
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										b4c3cf95-a27c-4bcf-9321-38723473e83b	TCGA-COAD	TCGA-AA-3855
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Cecum																										c8d6fe73-3504-42a5-9723-e1916fba8208	TCGA-COAD	TCGA-AZ-6606
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Descending colon																										ca5b878f-8bff-410a-8e6e-b1c133018c8d	TCGA-COAD	TCGA-G4-6315
+			Not Reported	Not Reported	Not Reported		N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			e4be17c8-0855-432c-bb80-28bb24b62f32	TCGA-COAD	TCGA-G4-6309
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										7b47489f-c3cc-4388-b5d7-c7c02790a5f6	TCGA-COAD	TCGA-AA-3956
+N2b	Stage IIIC	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										2c30dc20-18a8-44f9-ab10-558c1e5634dc	TCGA-COAD	TCGA-AY-6196
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										6775ce57-b4cf-425c-a898-061bb9a8a1a8	TCGA-COAD	TCGA-DM-A280
+N1a	Stage IIIC	T4b	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										c83d38fc-e011-4f75-a100-96513611f3e9	TCGA-COAD	TCGA-QG-A5YV
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										3758f4f7-ac2f-4f9d-bee2-526196f8129a	TCGA-COAD	TCGA-CK-5913
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Hepatic flexure of colon																										da21e143-dbf6-4ac7-8872-f1d9ae39512d	TCGA-COAD	TCGA-G4-6320
+N0	Stage I	T1	8480/3	Mucinous adenocarcinoma	Transverse colon																										043a4745-566b-4106-b159-99cb8b394b81	TCGA-COAD	TCGA-AA-3877
+N0	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										73a142e1-8ac2-4cfe-b8cf-7e9dea64f488	TCGA-COAD	TCGA-AA-A02J
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										01240896-3f3f-4bf9-9799-55c87bfacf36	TCGA-COAD	TCGA-F4-6854
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										01f493d4-229d-47a6-baa8-32a342c65d01	TCGA-COAD	TCGA-AA-A00O
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										022f39e9-57ee-4b2b-8b3a-8929e3d69a37	TCGA-COAD	TCGA-DM-A28F
+N1b	Stage IVB	T4b	8480/3	Mucinous adenocarcinoma	Descending colon																										0687bea4-911a-4ef2-9fa2-531ef6ba7910	TCGA-COAD	TCGA-NH-A6GC
+N0	Stage IIB	T4	8140/3	Adenocarcinoma, NOS	Transverse colon																										0712566e-3371-4715-95f1-5b792e72d758	TCGA-COAD	TCGA-AA-A010
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										07dc5a1d-64b7-42ba-928e-9753bd533c1e	TCGA-COAD	TCGA-A6-2675
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										09942e9f-c178-44bc-9cd9-f5bfa350b23f	TCGA-COAD	TCGA-AA-3519
+N1	Stage IIIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										0a94eecf-4db2-4846-8383-c83ff02e4a9f	TCGA-COAD	TCGA-D5-6922
+N0	Stage IA	Tis	8140/3	Adenocarcinoma, NOS	Cecum																										0c463362-7925-4d9a-9d63-098b50af2fb9	TCGA-COAD	TCGA-G4-6323
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										0cb0dac8-4ce2-444a-b1ae-1550e065b4d9	TCGA-COAD	TCGA-AA-A01V
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										0cbe9848-8eac-4ea8-a36b-fb74b4a33de7	TCGA-COAD	TCGA-AA-A00K
+N1b	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										0ec6ed47-db99-4273-9823-ffbde6a77091	TCGA-COAD	TCGA-A6-6651
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Ascending colon																										0f008098-d8aa-46dc-8445-cca59838c582	TCGA-COAD	TCGA-AD-5900
+N0	Stage IIB	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										0f74d992-00da-4728-9564-086ca1b95921	TCGA-COAD	TCGA-A6-2679
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										10628a61-bd5e-4415-af97-631c5ca320cb	TCGA-COAD	TCGA-AA-A00A
+N0	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										1136dd50-242a-4659-aad4-c53f9e759bb3	TCGA-COAD	TCGA-5M-AAT4
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										124b6856-f581-46da-9068-b0a49b999785	TCGA-COAD	TCGA-AA-A00E
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										132229e5-947d-43e9-a54c-a97d4be7d604	TCGA-COAD	TCGA-AA-A01F
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			13ae9d83-a22f-451f-88bb-686051725cf3	TCGA-COAD	TCGA-AA-A01P
+N2	Stage IIIC	T3	8480/3	Mucinous adenocarcinoma	Cecum					Not Reported	Not Reported	Not Reported																			143f2dd6-a280-41c5-9242-442ef91b73ec	TCGA-COAD	TCGA-DM-A288
+N1a	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										14cc6f5b-5692-471e-98b4-ae200b3d8fed	TCGA-COAD	TCGA-AY-5543
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										15b987ba-77ab-477b-a54a-65ec5c7c399e	TCGA-COAD	TCGA-AA-3495
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										1add38c2-df6f-47c9-9373-0bec0e40baf8	TCGA-COAD	TCGA-AA-3851
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										1b0b0533-7c4f-4edd-a75e-8b56f49d54ab	TCGA-COAD	TCGA-DM-A1D0
+			Not Reported	Not Reported	Not Reported		N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			264c0d45-078a-4207-a101-71f99bcd237e	TCGA-COAD	TCGA-G4-6303
+N2	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Colon, NOS																										26a12266-c6d8-42f9-bd4e-5093d827ac9a	TCGA-COAD	TCGA-AM-5820
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										27d9c162-11bb-48fb-a41a-aa05fcb4c1c2	TCGA-COAD	TCGA-G4-6293
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										27e2438d-bd01-4c50-9102-563276ed9922	TCGA-COAD	TCGA-D5-6898
+N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										28d03569-8717-40da-8989-70baf2b18f9f	TCGA-COAD	TCGA-A6-5667
+			Not Reported	Not Reported	Not Reported		N2	Stage IIIC	T4b	8140/3	Adenocarcinoma, NOS	Colon, NOS																			2900eadd-7e27-4371-94e5-7d58cdff0138	TCGA-COAD	TCGA-F4-6461
+			Not Reported	Not Reported	Liver		N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			2a7bbafe-d499-4241-ba3d-a52ba0a5db3c	TCGA-COAD	TCGA-F4-6460
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										2dced66c-1f0d-4039-a5e5-54cca77c16e9	TCGA-COAD	TCGA-AA-3548
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										31d960d7-8f5b-4d22-bf5e-fae0849c4efd	TCGA-COAD	TCGA-D5-5540
+N0		T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										33e989b9-fac4-47d8-b429-269044ac772a	TCGA-COAD	TCGA-AA-3977
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										3470b1af-689f-467a-9f9e-de74088f9b94	TCGA-COAD	TCGA-CM-6161
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Cecum																										35620be9-3ba5-4be7-9e00-83103e6a92e6	TCGA-COAD	TCGA-AA-A02E
+N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																										35c9264f-34ec-4d75-ab80-aaac86108fc8	TCGA-COAD	TCGA-AY-6386
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			38d65618-4857-490e-86b3-0a3f772a9f60	TCGA-COAD	TCGA-CK-5916
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Splenic flexure of colon																										39aec099-a33e-47a4-a602-cbf65ddd3830	TCGA-COAD	TCGA-D5-6541
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Cecum																										39d3b5b3-d51e-4d77-a8aa-2977fa734fab	TCGA-COAD	TCGA-AA-3869
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										3e0c34cb-fca5-4bcf-a5c1-5a7d286dd072	TCGA-COAD	TCGA-CA-5797
+N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										40c217ee-429f-41f4-adc6-db9186622b17	TCGA-COAD	TCGA-CM-6172
+N0		T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										47a8e514-904c-4867-8f43-7eb573be835b	TCGA-COAD	TCGA-AD-6963
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										4881a390-c4e4-48b4-ae66-140c64a87614	TCGA-COAD	TCGA-A6-A5ZU
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Splenic flexure of colon																										490eabca-4575-4bd6-9604-6b6e23d069ce	TCGA-COAD	TCGA-NH-A50T
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										4a785dc7-f5f6-4607-a19d-e6354b2fb5a9	TCGA-COAD	TCGA-F4-6808
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										4be66108-e72a-406b-bb4b-f58ff2877336	TCGA-COAD	TCGA-AA-A01Q
+			Not Reported	Not Reported	Not Reported																										515a062e-f68e-4100-a923-bd2ce0bbe071	TCGA-COAD	TCGA-5M-AAT5
+			Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported		N2a	Stage IIIC	T4a	8140/3	Adenocarcinoma, NOS	Ascending colon												51dcbfac-6f04-4364-877d-0bf1bd566335	TCGA-COAD	TCGA-NH-A6GA
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Ascending colon																										5498d5ef-ad24-4034-9750-7c996c5355e1	TCGA-COAD	TCGA-AA-3875
+			Not Reported	Not Reported	Not Reported		N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported					565e2726-4942-4726-89d3-c5e3797f7204	TCGA-COAD	TCGA-A6-2671
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										56c8b812-ca8e-4eb2-b0fe-f264316789bf	TCGA-COAD	TCGA-DM-A1HA
+N1b	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Cecum					8140/3	Adenocarcinoma, NOS	Liver																			56eb96a4-d2c2-42fb-b26c-1a80012bcb8e	TCGA-COAD	TCGA-CM-4747
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										57b0f89f-1b75-453e-922c-01cd4d44ca49	TCGA-COAD	TCGA-CK-5914
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										58facedb-fcb8-4ecf-8338-2bfa4947acef	TCGA-COAD	TCGA-A6-6141
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										5a195baa-2d05-4273-a7c4-64cc816b0406	TCGA-COAD	TCGA-AA-3982
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										5b259d18-3976-4f44-967f-fe5fa8447c8b	TCGA-COAD	TCGA-CM-5864
+N2	Stage IIIC	T4b	8140/3	Adenocarcinoma, NOS	Colon, NOS																										5d66191d-da49-4d7e-89a4-a382db338340	TCGA-COAD	TCGA-D5-6931
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										5d73b382-3da3-4220-890e-2095228bbe6c	TCGA-COAD	TCGA-CK-4948
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Bladder, NOS																			5f1399ef-8100-49e7-806f-9f532e55c0ba	TCGA-COAD	TCGA-AA-3520
+N2a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum					8140/3	Adenocarcinoma, NOS	Liver					8140/3	Adenocarcinoma, NOS	Liver												5f6ed48b-3b5a-4d20-8fbf-c9aa3feea186	TCGA-COAD	TCGA-RU-A8FL
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										605baa86-79e3-484d-82d2-4de27d405ba1	TCGA-COAD	TCGA-AM-5821
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										60ad2c8a-6bbf-43fc-ae73-cc1f6d6c163c	TCGA-COAD	TCGA-AA-A00F
+			Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported		N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Cecum					8140/3	Adenocarcinoma, NOS	Not Reported					622cc1c4-d721-4b5c-a88b-216d6368660b	TCGA-COAD	TCGA-G4-6297
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon		N2b	Stage IVB	T3	8140/3	Adenocarcinoma, NOS	Cecum																			6454ff0c-26f8-4cc2-b77c-7e5abdc20acd	TCGA-COAD	TCGA-NH-A8F7
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										64b0461f-038d-4712-948e-818dc2f10eef	TCGA-COAD	TCGA-D5-6929
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										64dcf1a5-c78c-4d3f-852c-15865b3b6189	TCGA-COAD	TCGA-AZ-6607
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										65ab030d-39f2-48ab-80ac-90cb1faa823a	TCGA-COAD	TCGA-CA-5796
+N0	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										67ba29e7-f294-4dcd-9630-ad768c22c588	TCGA-COAD	TCGA-AA-3494
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										69fb431f-0caf-4cdd-9085-eda5b18ed15d	TCGA-COAD	TCGA-AA-A02H
+			Not Reported	Not Reported	Not Reported		N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																			6baf61b6-ae5b-42f0-adc9-0d26fda231f7	TCGA-COAD	TCGA-AY-4070
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										6cd8d2dd-5545-43b0-b796-ae0506d62eb8	TCGA-COAD	TCGA-A6-6650
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										6e9e0c2f-2ddb-40f1-8e8c-618119e62ec1	TCGA-COAD	TCGA-AA-3488
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Cecum																										6f2b5a14-569c-4084-8c67-b1a44d787897	TCGA-COAD	TCGA-AA-A01G
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Colon, NOS																										6fc5e56a-1f5e-4ff1-948e-5ef636ebb48d	TCGA-COAD	TCGA-AA-3852
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Cecum																										7144a65f-a63f-4b79-8fe2-cfe48696de03	TCGA-COAD	TCGA-G4-6302
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon					Not Reported	Not Reported	Not Reported																			74a0264d-1d31-430d-9a88-e7334c8aa96c	TCGA-COAD	TCGA-A6-A56B
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										755d3bde-76c3-45c1-8427-8e4d5d686dc1	TCGA-COAD	TCGA-CK-6747
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										75ea63a9-357b-4566-bd78-eaa67809decd	TCGA-COAD	TCGA-DM-A0X9
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										764c97c9-01d3-45cb-86bd-f8a52b5468da	TCGA-COAD	TCGA-AA-A02R
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										76e96b5a-b565-42c7-a651-34d5132e6dde	TCGA-COAD	TCGA-CM-6679
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										7dfbc0ed-e684-4966-8b59-fb6b9e80c129	TCGA-COAD	TCGA-AA-3841
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Cecum																										7f6898e2-a840-4ad1-80f7-783f8b766fcc	TCGA-COAD	TCGA-WS-AB45
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										80e677b1-5ebe-4069-a1a5-1538ffee6642	TCGA-COAD	TCGA-AA-3509
+N1b	Stage IVA	T4	8140/3	Adenocarcinoma, NOS	Colon, NOS																										835c3e23-ac2b-4bc9-ac65-e3e81adecf77	TCGA-COAD	TCGA-AA-3941
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										8368d745-c74d-4236-ba75-16ca7aaeb3ca	TCGA-COAD	TCGA-AA-3502
+N1	Stage IIIB	T4	8140/3	Adenocarcinoma, NOS	Ascending colon																										849031de-ac8a-4012-9362-d192512997f1	TCGA-COAD	TCGA-AZ-6605
+			Not Reported	Not Reported	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																			849442d3-eb82-416e-9d36-2fc15dfac67a	TCGA-COAD	TCGA-DM-A1D4
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Descending colon					Not Reported	Not Reported	Not Reported																			85a57cfe-f1c9-44d9-8b50-022c0d3438d1	TCGA-COAD	TCGA-AZ-5403
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										85bdc1ac-a1a4-46c2-bc2d-e5fabf5c89e9	TCGA-COAD	TCGA-DM-A28E
+N0	Stage IIB	T4	8480/3	Mucinous adenocarcinoma	Colon, NOS																										8632579e-d318-4dab-9994-d3945afc42ab	TCGA-COAD	TCGA-A6-3809
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										86d18004-9478-4e46-83b4-4fbe445ccb70	TCGA-COAD	TCGA-AA-A01I
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Ascending colon																										88832340-46ad-449c-8f81-6a8e5b495510	TCGA-COAD	TCGA-A6-6780
+N1	Stage IV	T3	8480/3	Mucinous adenocarcinoma	Sigmoid colon																										8a84b03a-e37e-4827-98f0-4d480ec31037	TCGA-COAD	TCGA-CK-6748
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										8c043ecd-2265-411f-bc3b-dc341cf56ac2	TCGA-COAD	TCGA-CM-6163
+N1b	Stage IIIB	T4a	8140/3	Adenocarcinoma, NOS	Ascending colon																										92554413-9ebc-4354-8e1b-9682f3a031d9	TCGA-COAD	TCGA-4N-A93T
+N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										94067eb7-98b7-4975-bab1-c09e1b454a25	TCGA-COAD	TCGA-D5-5541
+			Not Reported	Not Reported	Not Reported		N2	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Splenic flexure of colon					Not Reported	Not Reported	Not Reported												960d278c-c87d-42dc-ad28-42e010d8f0f1	TCGA-COAD	TCGA-A6-5662
+			8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																			9743d31a-ea8f-4847-87d2-ebf77cc5983d	TCGA-COAD	TCGA-CM-5861
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Descending colon					Not Reported	Not Reported	Not Reported																			9cdca5d8-ea77-4df9-b2ba-0d5e8ec37bcd	TCGA-COAD	TCGA-CA-6719
+N0	Stage IVA	T4a	8480/3	Mucinous adenocarcinoma	Cecum					Not Reported	Not Reported	Not Reported																			9d68516e-7e5c-403e-8aca-ea1abe0d6014	TCGA-COAD	TCGA-NH-A50U
+N2a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										9fd08502-355b-4f5a-a25c-73ec7184f6d3	TCGA-COAD	TCGA-F4-6459
+N2	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Hepatic flexure of colon																										a117ace8-ac5a-48d8-8aee-3024d6f0f873	TCGA-COAD	TCGA-D5-6538
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										a123dc45-e427-461e-8d60-c51307aa498c	TCGA-COAD	TCGA-D5-6535
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										a435fdf4-a89a-499e-9006-cbb5693eab26	TCGA-COAD	TCGA-AA-A02Y
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			a54b322b-80d3-435c-8d14-25841b741f6c	TCGA-COAD	TCGA-5M-AATE
+			8140/3	Adenocarcinoma, NOS	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum					Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported					a56f6562-d2af-47b9-bf81-94b3b4893173	TCGA-COAD	TCGA-DM-A0XD
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Descending colon																										a5e14add-1552-4606-9ffe-3a03bcf76640	TCGA-COAD	TCGA-4T-AA8H
+N0	Stage IIB	T4b	8140/3	Adenocarcinoma, NOS	Cecum																										a6f98ee5-9638-4ebe-804b-fba54aea9f90	TCGA-COAD	TCGA-CK-6746
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										a72dd578-3a6f-4807-a843-4a942500944e	TCGA-COAD	TCGA-AA-A01K
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										a782f174-241d-42c6-9bc4-61cc39f8b397	TCGA-COAD	TCGA-D5-6927
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Hepatic flexure of colon																										a85e8208-a6f5-4e91-8f35-ef574f4273fc	TCGA-COAD	TCGA-CM-6677
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										a8b4284d-cbbb-43e3-897b-d04af4bfba74	TCGA-COAD	TCGA-AZ-6598
+			Not Reported	Not Reported	Not Reported																										a9e4b6db-8b4b-4345-a4a1-d63175eb0174	TCGA-COAD	TCGA-5M-AATA
+N1	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										aa909ffb-03e1-4e3f-8888-2212b23d90b7	TCGA-COAD	TCGA-AA-3696
+N1	Stage III	T3	8140/3	Adenocarcinoma, NOS	Cecum																										abb0d53f-f74e-45dc-8fbb-40863016f3c6	TCGA-COAD	TCGA-AA-3681
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										ac13d568-f79e-4ba7-b7bf-18e4354e0920	TCGA-COAD	TCGA-D5-6532
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										acd51808-870c-4684-a2de-aa0b058729e1	TCGA-COAD	TCGA-AY-A69D
+			Not Reported	Not Reported	Not Reported		N2		T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																			ae6b315f-3f78-4695-adfa-48b0bbab2c89	TCGA-COAD	TCGA-D5-5537
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										af06cde0-c69a-4bb1-a234-8023b95e4835	TCGA-COAD	TCGA-AA-A017
+N1	Stage IIIB	T3	8480/3	Mucinous adenocarcinoma	Descending colon					Not Reported	Not Reported	Not Reported																			b3fea9bb-53f9-4ddb-922d-b570562d7a7d	TCGA-COAD	TCGA-G4-6322
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Cecum																										b718134c-5231-4f29-a423-7bad17c93fc5	TCGA-COAD	TCGA-AZ-5407
+N1a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																										b89267a4-0e6b-401e-85b0-e66775858aa6	TCGA-COAD	TCGA-CM-5348
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										b95720b1-aa00-4c6a-b202-3350d035829f	TCGA-COAD	TCGA-AA-3489
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon					8140/3	Adenocarcinoma, NOS	Liver					Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Lung, NOS					bab21810-f51b-421e-a87f-1f1136cbc77a	TCGA-COAD	TCGA-F4-6806
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										bce5579c-08c6-48e9-853e-fac85ba8cbea	TCGA-COAD	TCGA-AA-3831
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										be85f845-b281-467c-8b97-bed7b7fdff64	TCGA-COAD	TCGA-D5-6924
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										c0b8c55c-b993-481d-aeea-9ebfa64ee20e	TCGA-COAD	TCGA-CM-4746
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					Not Reported	Not Reported	Not Reported																			c4d74653-d26b-4e51-aee0-82ee3d42f883	TCGA-COAD	TCGA-AA-3517
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										c5c4a0a5-900d-483d-9282-475654d63265	TCGA-COAD	TCGA-AA-3518
+N1	Stage III	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										c616f95f-4ea1-4019-8c17-041878085c88	TCGA-COAD	TCGA-AA-3678
+			Not Reported	Not Reported	Not Reported		N1a	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			c7c5348f-5708-45bf-b40e-1bf7c9348f60	TCGA-COAD	TCGA-A6-6142
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Cecum																										c82bbe23-0264-45a7-b1a6-82b4654108c8	TCGA-COAD	TCGA-AA-3864
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										c8d7eb0f-2502-4277-a8ef-435b08f3c863	TCGA-COAD	TCGA-CM-4743
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported																			c9e829d9-cd08-41a9-a5a4-34f2d7d619c7	TCGA-COAD	TCGA-AA-A01Z
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										ca22edd4-eb7c-4677-84aa-6f0354459a19	TCGA-COAD	TCGA-AA-A00R
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										cab7bdbc-0a11-4901-97c3-26b884f79cb5	TCGA-COAD	TCGA-AA-3968
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Transverse colon																										cbe23011-93b7-4e9f-b934-bd0122f91f54	TCGA-COAD	TCGA-F4-6463
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										cc15469c-7bad-4e86-9da3-ae0c72e9d380	TCGA-COAD	TCGA-CM-4744
+N1a	Stage IIIB	T4a	8480/3	Mucinous adenocarcinoma	Transverse colon																										cd845618-4cc4-49c2-9055-c171d4c24ee1	TCGA-COAD	TCGA-CM-4748
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										d181c72b-843c-4b2d-b014-2a6dd1c3c1ec	TCGA-COAD	TCGA-AA-3553
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Colon, NOS																										d3062aac-4c42-41b4-a9f3-90aa72e6fb1e	TCGA-COAD	TCGA-F4-6569
+N2a	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Cecum																										d3b7ada6-5395-4212-a921-8e97c92b605d	TCGA-COAD	TCGA-NH-A50V
+N2b	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Cecum																										d42bc7f0-cfb2-4ece-ae47-521308635633	TCGA-COAD	TCGA-CM-6167
+N2	Stage IV	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										d5619045-060a-4b60-86e4-6a5774994fd4	TCGA-COAD	TCGA-AA-3989
+N0	Stage I	T2	8480/3	Mucinous adenocarcinoma	Cecum																										d5a296ae-c165-413c-adcc-33c9e99ff873	TCGA-COAD	TCGA-D5-7000
+			8140/3	Adenocarcinoma, NOS	Liver		N1c	Stage IVA	T4a	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			d7048098-09b3-4763-ad54-9c5c6fe14bc0	TCGA-COAD	TCGA-CM-6678
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										d71ae66e-2c8a-4fd8-8b4b-a5a2d456a21d	TCGA-COAD	TCGA-DM-A1DB
+			Not Reported	Not Reported	Not Reported		N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Hepatic flexure of colon																			d8e9ea52-ff28-4626-baa3-71350fd53ddf	TCGA-COAD	TCGA-AY-A54L
+N1	Stage IIIB	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										dbbee8f5-d83d-4195-85cf-f89d327da0a9	TCGA-COAD	TCGA-A6-5657
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										dca004bf-9c14-45a1-b186-ab3759f6c7fe	TCGA-COAD	TCGA-AA-3685
+N1	Stage IV	T3	8010/3	Carcinoma, NOS	Sigmoid colon																										dd4be58e-da22-4bcd-bf4c-2b9e60ffda19	TCGA-COAD	TCGA-AA-A02F
+N2	Stage IIIC	T3	8480/3	Mucinous adenocarcinoma	Transverse colon					Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported												dd7a53ee-cb08-40c4-9935-51d1ca17e9e8	TCGA-COAD	TCGA-A6-A565
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										df228c56-89ac-4122-93b3-6c0740c4ec09	TCGA-COAD	TCGA-AA-3534
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Cecum																										e17959bd-045d-4540-b43a-c3863e8ff3c0	TCGA-COAD	TCGA-G4-6295
+N2b	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										e3b0ee77-c419-4b2b-833f-90a221415489	TCGA-COAD	TCGA-NH-A6GB
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Cecum																										e3b6018c-ab2c-47c5-b183-a295d0110835	TCGA-COAD	TCGA-DM-A1D9
+N0	Stage IIB	T4	8480/3	Mucinous adenocarcinoma	Cecum																										e457344d-76fb-46bf-b362-61a6e811d131	TCGA-COAD	TCGA-AA-A00N
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Hepatic flexure of colon																										e4c0d890-a634-48bd-9108-e674532b0d2e	TCGA-COAD	TCGA-D5-6531
+N0	Stage IVA	T3	8140/3	Adenocarcinoma, NOS	Rectosigmoid junction																										e588714a-7753-4c3c-abb6-eaf1aab53ab3	TCGA-COAD	TCGA-AZ-4682
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS					8140/3	Adenocarcinoma, NOS	Not Reported																			e5921d6b-51cf-44be-b295-610cf7c3a69a	TCGA-COAD	TCGA-A6-2685
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Hepatic flexure of colon																										e75985cb-357e-4072-b047-eea37965d70c	TCGA-COAD	TCGA-DM-A282
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										e76258b7-e13a-4b05-855b-d792701ffba1	TCGA-COAD	TCGA-F4-6805
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Ascending colon																										e8ec26bd-c88d-42b9-ac8a-ab121b8140f8	TCGA-COAD	TCGA-AD-A5EK
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Splenic flexure of colon																										eb191e71-4b6e-4c8d-8348-519be5a1e657	TCGA-COAD	TCGA-DM-A1D6
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										eb4e4e09-98b3-4e85-8dd2-75676ff2af14	TCGA-COAD	TCGA-A6-5656
+N0	Stage IIA	T3	8480/3	Mucinous adenocarcinoma	Hepatic flexure of colon																										eecaa5cd-0b69-4af2-a782-035025f207b6	TCGA-COAD	TCGA-D5-6928
+N0		T3	8140/3	Adenocarcinoma, NOS	Transverse colon																										ef4bb5bf-4535-4bd1-8a74-aba920123ee2	TCGA-COAD	TCGA-D5-6539
+N2	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Cecum																										f3b9defb-88ed-4c95-9feb-7197d869676c	TCGA-COAD	TCGA-AA-3680
+N2	Stage IIIC	T3	8140/3	Adenocarcinoma, NOS	Cecum																										f4a804d3-b5c4-4da5-800f-6e5757ecfa1c	TCGA-COAD	TCGA-DM-A1DA
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										f4e047a5-bdb2-4bc2-aff0-e0f45bcc9062	TCGA-COAD	TCGA-CM-6165
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										f6c674bf-396d-4bfe-8d08-e7266c314be3	TCGA-COAD	TCGA-AY-6197
+			Not Reported	Not Reported	Not Reported		N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Sigmoid colon																			f83b909c-da90-41ed-b532-a2ef9371cff9	TCGA-COAD	TCGA-DM-A28C
+N2a	Stage IIIC	T4a	8140/3	Adenocarcinoma, NOS	Ascending colon					Not Reported	Not Reported	Not Reported					Not Reported	Not Reported	Not Reported												f88c0259-58ff-4bcc-a777-7705cdbd8213	TCGA-COAD	TCGA-A6-5664
+N0	Stage I	T2	8140/3	Adenocarcinoma, NOS	Cecum																										f89bbd17-c732-4847-b71c-a8627a702747	TCGA-COAD	TCGA-D5-6530
+N0	Stage II	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										f9b5e6a5-c2da-4a0d-9251-bb6f557b7b58	TCGA-COAD	TCGA-AA-3660
+N0		T4b	8140/3	Adenocarcinoma, NOS	Transverse colon																										fa83dfb5-7386-4a35-9861-aa866478d5f1	TCGA-COAD	TCGA-D5-6533
+N0	Stage I	T1	8140/3	Adenocarcinoma, NOS	Sigmoid colon																										fa96d094-0165-401c-8fd5-6d1ee4ef3994	TCGA-COAD	TCGA-AA-A00W
+			Not Reported	Not Reported	Not Reported		N0	Stage IV	T4	8140/3	Adenocarcinoma, NOS	Ascending colon																			fafd4576-0709-49e1-926f-ad1ee09907ec	TCGA-COAD	TCGA-A6-2683
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Colon, NOS																										fdffda5f-72b2-4153-b7f1-d7043b7ca898	TCGA-COAD	TCGA-AA-3818
+N0	Stage IIA	T3	8140/3	Adenocarcinoma, NOS	Ascending colon																										ffa7e03a-4a3c-41f0-937a-4fb862fd2194	TCGA-COAD	TCGA-DM-A28G

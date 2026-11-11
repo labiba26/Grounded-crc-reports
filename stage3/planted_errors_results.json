@@ -1,0 +1,266 @@
+{
+ "suite_a": {
+  "omitted grade": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "omitted histologic_type": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "omitted node_status": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "omitted pt_stage": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "overclaim node (unhedged)": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: distant_metastasis": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: lymphovascular_invasion": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: margins": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: msi_mmr": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: node_count": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: perineural_invasion": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: pn_category": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: treatment_history": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: tumour_site": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "unsupported: tumour_size": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "wrong grade": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "wrong histologic_type": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "wrong node_status": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "wrong pt_stage": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: abstention": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase grade as 'G-code'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase grade as 'WHO words'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase grade as 'grade N'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase grade as 'roman'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase grade as 'words'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase node as 'estimate nodal disease'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase node as 'likely yes/no'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase node as 'model suggests node-x'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase node as 'predicted present/absent'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase t as 'T'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase t as 'pT'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase t as 'stage'": {
+   "n": 150,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase type as 'A mucinous carcinoma'": {
+   "n": 13,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase type as 'Adenocarcinoma of colorectal type'": {
+   "n": 137,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase type as 'An adenocarcinoma'": {
+   "n": 137,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase type as 'Colloid carcinoma'": {
+   "n": 13,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase type as 'Invasive adenocarcinoma'": {
+   "n": 137,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "control: paraphrase type as 'Invasive mucinous adenocarcinoma'": {
+   "n": 13,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "examples": []
+  },
+  "real report: wrong grade": {
+   "n": 463,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "skipped_base": 19
+  },
+  "real report: wrong pt_stage": {
+   "n": 460,
+   "detected": 1.0,
+   "false_alarm": 0.0,
+   "skipped_base": 0
+  },
+  "real report: wrong histologic_type": {
+   "n": 458,
+   "detected": 0.9541484716157205,
+   "false_alarm": 0.0,
+   "skipped_base": 19
+  }
+ },
+ "suite_a_base_failures": 0,
+ "real_report_claim_profile": {
+  "pn_category": 0.785,
+  "lymphovascular_invasion": 0.743,
+  "tumour_site": 0.724,
+  "tumour_size": 0.706,
+  "margins": 0.693,
+  "node_count": 0.659,
+  "perineural_invasion": 0.254,
+  "other_staging": 0.093,
+  "msi_mmr": 0.087,
+  "distant_metastasis": 0.067,
+  "tumour_budding": 0.065,
+  "treatment_history": 0.039
+ },
+ "n_real_reports": 540
+}

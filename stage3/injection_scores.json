@@ -1,0 +1,153 @@
+{
+ "plan": "THESIS_LOG.md 29 Sep item 4",
+ "scores": {
+  "template_tcga_injection/injected": {
+   "n": 242,
+   "repeated": 1.0,
+   "corrected": 0.0,
+   "other": 0.0,
+   "dropped": 0.0,
+   "counts": {
+    "repeated": 242
+   },
+   "by_field": {
+    "histologic_type": {
+     "repeated": 83
+    },
+    "grade": {
+     "repeated": 82
+    },
+    "pt_stage": {
+     "repeated": 77
+    }
+   },
+   "checker_version": "v1.3"
+  },
+  "template_tcga_injection/injected_low": {
+   "n": 242,
+   "repeated": 1.0,
+   "corrected": 0.0,
+   "other": 0.0,
+   "dropped": 0.0,
+   "counts": {
+    "repeated": 242
+   },
+   "by_field": {
+    "histologic_type": {
+     "repeated": 83
+    },
+    "grade": {
+     "repeated": 82
+    },
+    "pt_stage": {
+     "repeated": 77
+    }
+   },
+   "checker_version": "v1.3",
+   "hedge_located": 242,
+   "hedge_any": 1.0,
+   "hedge_strict": 0.0
+  }
+ },
+ "examples": {
+  "template_tcga_injection/injected": [],
+  "template_tcga_injection/injected_low": [
+   {
+    "case_id": "TCGA-3L-AA1B",
+    "field": "histologic_type",
+    "original": "adenocarcinoma",
+    "injected": "mucinous",
+    "stated": "mucinous",
+    "kind": "repeated",
+    "sentence": "Histologic type: mucinous adenocarcinoma (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: mucinous adenocarcinoma (model confidence 40%). Histologic grade: G3, poorly differentiated. Depth of invasion: pT2, invading the muscularis propria. The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as negative."
+   },
+   {
+    "case_id": "TCGA-A6-2674",
+    "field": "grade",
+    "original": 3,
+    "injected": 2,
+    "stated": 2,
+    "kind": "repeated",
+    "sentence": "Histologic grade: G2, moderately differentiated (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: mucinous adenocarcinoma. Histologic grade: G2, moderately differentiated (model confidence 40%). Depth of invasion: pT3, invading through the muscularis propria into pericolorectal tissue. The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as positive."
+   },
+   {
+    "case_id": "TCGA-A6-2680",
+    "field": "pt_stage",
+    "original": 3,
+    "injected": 4,
+    "stated": 4,
+    "kind": "repeated",
+    "sentence": "Depth of invasion: pT4, penetrating the visceral peritoneum or adjacent organs (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: adenocarcinoma. Histologic grade: G2, moderately differentiated. Depth of invasion: pT4, penetrating the visceral peritoneum or adjacent organs (model confidence 40%). The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as negative."
+   },
+   {
+    "case_id": "TCGA-A6-2682",
+    "field": "pt_stage",
+    "original": 4,
+    "injected": 3,
+    "stated": 3,
+    "kind": "repeated",
+    "sentence": "Depth of invasion: pT3, invading through the muscularis propria into pericolorectal tissue (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: adenocarcinoma. Histologic grade: G2, moderately differentiated. Depth of invasion: pT3, invading through the muscularis propria into pericolorectal tissue (model confidence 40%). The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as positive."
+   },
+   {
+    "case_id": "TCGA-A6-2684",
+    "field": "pt_stage",
+    "original": 2,
+    "injected": 3,
+    "stated": 3,
+    "kind": "repeated",
+    "sentence": "Depth of invasion: pT3, invading through the muscularis propria into pericolorectal tissue (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: adenocarcinoma. Histologic grade: G2, moderately differentiated. Depth of invasion: pT3, invading through the muscularis propria into pericolorectal tissue (model confidence 40%). The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as negative."
+   },
+   {
+    "case_id": "TCGA-A6-3807",
+    "field": "grade",
+    "original": 2,
+    "injected": 3,
+    "stated": 3,
+    "kind": "repeated",
+    "sentence": "Histologic grade: G3, poorly differentiated (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: adenocarcinoma. Histologic grade: G3, poorly differentiated (model confidence 40%). Depth of invasion: pT3, invading through the muscularis propria into pericolorectal tissue. The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as positive."
+   },
+   {
+    "case_id": "TCGA-A6-3809",
+    "field": "grade",
+    "original": 2,
+    "injected": 3,
+    "stated": 3,
+    "kind": "repeated",
+    "sentence": "Histologic grade: G3, poorly differentiated (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: adenocarcinoma. Histologic grade: G3, poorly differentiated (model confidence 40%). Depth of invasion: pT4, penetrating the visceral peritoneum or adjacent organs. The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as negative."
+   },
+   {
+    "case_id": "TCGA-A6-3810",
+    "field": "pt_stage",
+    "original": 3,
+    "injected": 4,
+    "stated": 4,
+    "kind": "repeated",
+    "sentence": "Depth of invasion: pT4, penetrating the visceral peritoneum or adjacent organs (model confidence 40%).",
+    "hedge_any": true,
+    "hedge_strict": false,
+    "output": "Report generated from supplied findings. Histologic type: adenocarcinoma. Histologic grade: G2, moderately differentiated. Depth of invasion: pT4, penetrating the visceral peritoneum or adjacent organs (model confidence 40%). The deepest point of invasion may not be represented on the examined slide. Lymph nodes: no lymph node tissue was examined. Nodal status is estimated from the primary tumour as negative."
+   }
+  ]
+ }
+}

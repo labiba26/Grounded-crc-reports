@@ -1,0 +1,96 @@
+{
+ "n": 15,
+ "correct": 15,
+ "rows": [
+  {
+   "text": "The tumor invades through the muscularis propria into the pericolic adipose tissue.",
+   "expected": 3,
+   "got": 3,
+   "pass": true
+  },
+  {
+   "text": "Carcinoma invades the submucosa.",
+   "expected": 1,
+   "got": 1,
+   "pass": true
+  },
+  {
+   "text": "Tumour infiltrates into, but not through, the muscularis propria.",
+   "expected": 2,
+   "got": 2,
+   "pass": true
+  },
+  {
+   "text": "The neoplasm penetrates the visceral peritoneum.",
+   "expected": 4,
+   "got": 4,
+   "pass": true
+  },
+  {
+   "text": "Invasion extends into subserosal tissue.",
+   "expected": 3,
+   "got": 3,
+   "pass": true
+  },
+  {
+   "text": "The carcinoma directly invades the urinary bladder.",
+   "expected": 4,
+   "got": 4,
+   "pass": true
+  },
+  {
+   "text": "Tumour is confined to the submucosa.",
+   "expected": 1,
+   "got": 1,
+   "pass": true
+  },
+  {
+   "text": "Adenocarcinoma extending into the mesorectal fat.",
+   "expected": 3,
+   "got": 3,
+   "pass": true
+  },
+  {
+   "text": "Metastatic carcinoma involves two pericolic lymph nodes.",
+   "expected": null,
+   "got": null,
+   "pass": true
+  },
+  {
+   "text": "The muscularis propria is intact.",
+   "expected": null,
+   "got": null,
+   "pass": true
+  },
+  {
+   "text": "Tumour invades the muscularis propria (pT2).",
+   "expected": 2,
+   "got": 2,
+   "pass": true
+  },
+  {
+   "text": "The tumour reaches the serosal surface.",
+   "expected": 4,
+   "got": 4,
+   "pass": true
+  },
+  {
+   "text": "Depth of invasion: into pericolorectal tissue.",
+   "expected": 3,
+   "got": 3,
+   "pass": true
+  },
+  {
+   "text": "No tumour is seen in the submucosa.",
+   "expected": null,
+   "got": null,
+   "pass": true
+  },
+  {
+   "text": "Invasive adenocarcinoma, moderately differentiated.",
+   "expected": null,
+   "got": null,
+   "pass": true
+  }
+ ]
+}

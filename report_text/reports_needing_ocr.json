@@ -1,0 +1,716 @@
+[
+  {
+    "id": "944132da-1f72-4c24-bd13-af64d6cf8a83",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-A6-6651"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-A6-6651.93F31F79-8BBE-411C-9CCC-C7EA0A4D4937.PDF",
+    "file_id": "944132da-1f72-4c24-bd13-af64d6cf8a83",
+    "data_type": "Pathology Report",
+    "file_size": 22589
+  },
+  {
+    "id": "dca0da49-23c8-4c3a-ba06-4eaa82d6259a",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A280"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A280.EDE93B1A-2535-4D4B-9995-DD050CA8A5D7.PDF",
+    "file_id": "dca0da49-23c8-4c3a-ba06-4eaa82d6259a",
+    "data_type": "Pathology Report",
+    "file_size": 73247
+  },
+  {
+    "id": "1192234d-26a1-453b-a05d-ff073c88400b",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1D0"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1D0.6F6B3572-6437-4BAB-8DCB-91CE61567612.PDF",
+    "file_id": "1192234d-26a1-453b-a05d-ff073c88400b",
+    "data_type": "Pathology Report",
+    "file_size": 76131
+  },
+  {
+    "id": "992f6ce7-6d69-40af-b917-b18dc3728715",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1HA"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1HA.9E26E5F5-0FD1-4045-87F6-3C1362F5DF84.PDF",
+    "file_id": "992f6ce7-6d69-40af-b917-b18dc3728715",
+    "data_type": "Pathology Report",
+    "file_size": 71673
+  },
+  {
+    "id": "df986c6a-b9f3-4b46-9c60-feb93ff29b6e",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-5796"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-5796.8E2777E5-BA8D-4B4C-9C96-15F6355F1FDD.PDF",
+    "file_id": "df986c6a-b9f3-4b46-9c60-feb93ff29b6e",
+    "data_type": "Pathology Report",
+    "file_size": 455615
+  },
+  {
+    "id": "7245cede-7ed9-47c5-8571-8c99197feb08",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-NH-A8F7"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-NH-A8F7.4D9A2D24-529F-4CFE-8444-013FAAF696EC.PDF",
+    "file_id": "7245cede-7ed9-47c5-8571-8c99197feb08",
+    "data_type": "Pathology Report",
+    "file_size": 281237
+  },
+  {
+    "id": "0bb19aad-6073-4a46-81b3-9629f7294d34",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1D4"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1D4.98310DA6-E41D-4725-A634-D17B88A7CFE0.PDF",
+    "file_id": "0bb19aad-6073-4a46-81b3-9629f7294d34",
+    "data_type": "Pathology Report",
+    "file_size": 75432
+  },
+  {
+    "id": "9543fd41-1d60-46e9-92f6-eefc7c904664",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-AZ-6599"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-AZ-6599.6FF86694-0E1F-4119-9FA2-36789C237D74.PDF",
+    "file_id": "9543fd41-1d60-46e9-92f6-eefc7c904664",
+    "data_type": "Pathology Report",
+    "file_size": 46820
+  },
+  {
+    "id": "498af998-7ab5-4fb1-9d74-611a86cbc0fd",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-6716"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-6716.C0C68CB6-C411-42E9-A5BC-F05A58F101F3.PDF",
+    "file_id": "498af998-7ab5-4fb1-9d74-611a86cbc0fd",
+    "data_type": "Pathology Report",
+    "file_size": 408276
+  },
+  {
+    "id": "801a0d3b-d618-4b3c-906c-64fb1cef2711",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-AZ-6603"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-AZ-6603.7DB6364C-AF02-40BF-B276-76B8B901C0EC.PDF",
+    "file_id": "801a0d3b-d618-4b3c-906c-64fb1cef2711",
+    "data_type": "Pathology Report",
+    "file_size": 69954
+  },
+  {
+    "id": "43b2f4c1-d618-4eaf-a9fd-b62602615b84",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-NH-A8F7"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-NH-A8F7.0E9A48BA-AAE0-4D88-90E1-141483700759.PDF",
+    "file_id": "43b2f4c1-d618-4eaf-a9fd-b62602615b84",
+    "data_type": "Pathology Report",
+    "file_size": 276003
+  },
+  {
+    "id": "d678dfb6-8a85-486b-ad69-caa4bd9d2e70",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-NH-A6GC"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-NH-A6GC.1D9DC00B-044F-4304-8C27-077BB64A5C48.PDF",
+    "file_id": "d678dfb6-8a85-486b-ad69-caa4bd9d2e70",
+    "data_type": "Pathology Report",
+    "file_size": 242230
+  },
+  {
+    "id": "9a63e64d-6c46-45aa-9ec8-46298efaef2b",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-NH-A6GC"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-NH-A6GC.B4D412AD-FD5C-4397-B56E-62F39A375751.PDF",
+    "file_id": "9a63e64d-6c46-45aa-9ec8-46298efaef2b",
+    "data_type": "Pathology Report",
+    "file_size": 242086
+  },
+  {
+    "id": "79387e4e-9cc5-4b63-9b02-428cdd708b98",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-F5-6810"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-F5-6810.F1EFF0B9-E0C6-409E-BC3F-D2F5BFB57CEB.PDF",
+    "file_id": "79387e4e-9cc5-4b63-9b02-428cdd708b98",
+    "data_type": "Pathology Report",
+    "file_size": 88900
+  },
+  {
+    "id": "df1b7a3c-098f-4e64-9489-6a7eb1771ecc",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DT-5265"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DT-5265.C1E314D0-271B-411F-9BE8-6DB9C653A77A.PDF",
+    "file_id": "df1b7a3c-098f-4e64-9489-6a7eb1771ecc",
+    "data_type": "Pathology Report",
+    "file_size": 112700
+  },
+  {
+    "id": "d3e03407-364b-4681-a009-4cae786a7031",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-G5-6572"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-G5-6572.7414D641-9069-4255-ADE1-4D7A0EC72955.PDF",
+    "file_id": "d3e03407-364b-4681-a009-4cae786a7031",
+    "data_type": "Pathology Report",
+    "file_size": 94533
+  },
+  {
+    "id": "4e598a9a-86c9-4d96-98a5-762d11fe3a38",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DY-A1DC"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DY-A1DC.F55AE177-0D13-4120-B2BF-86068D961F6C.PDF",
+    "file_id": "4e598a9a-86c9-4d96-98a5-762d11fe3a38",
+    "data_type": "Pathology Report",
+    "file_size": 81855
+  },
+  {
+    "id": "ea7b0539-6f09-4668-8621-9b9441ea62b4",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DY-A1DG"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DY-A1DG.726DADA4-1C0E-46AF-B378-36DB1A3715B1.PDF",
+    "file_id": "ea7b0539-6f09-4668-8621-9b9441ea62b4",
+    "data_type": "Pathology Report",
+    "file_size": 129817
+  },
+  {
+    "id": "78400770-ef32-427e-b51e-6cd36325ff1b",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DY-A1DD"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DY-A1DD.9AE3E8E8-A78B-4571-B270-07AE2D92BEC4.PDF",
+    "file_id": "78400770-ef32-427e-b51e-6cd36325ff1b",
+    "data_type": "Pathology Report",
+    "file_size": 76840
+  },
+  {
+    "id": "c932b714-465f-4135-9b98-c7b0f0d86361",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DY-A1DE"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DY-A1DE.44B82141-2558-4805-8B58-B2E502768527.PDF",
+    "file_id": "c932b714-465f-4135-9b98-c7b0f0d86361",
+    "data_type": "Pathology Report",
+    "file_size": 88178
+  },
+  {
+    "id": "b2031878-267e-43f9-bf7e-19a06e38068f",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DY-A1DF"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DY-A1DF.71175614-327E-4309-85A3-016B0C779D3E.PDF",
+    "file_id": "b2031878-267e-43f9-bf7e-19a06e38068f",
+    "data_type": "Pathology Report",
+    "file_size": 80536
+  },
+  {
+    "id": "14f1d3fb-8418-4afd-88dc-ae73993adb97",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-G4-6317"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-G4-6317.83F2C05D-6A43-433C-A7BC-EC62F4B82E6D.PDF",
+    "file_id": "14f1d3fb-8418-4afd-88dc-ae73993adb97",
+    "data_type": "Pathology Report",
+    "file_size": 93239
+  },
+  {
+    "id": "d64f6c3d-9759-44da-b798-db11466e2cf8",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-5254"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-5254.3C13E71B-ABCB-4131-BDA1-4723F13F23EE.PDF",
+    "file_id": "d64f6c3d-9759-44da-b798-db11466e2cf8",
+    "data_type": "Pathology Report",
+    "file_size": 111280
+  },
+  {
+    "id": "65ea40ad-aea8-4487-821d-dc8078aca086",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A28M"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A28M.0A659279-BA92-44AF-9E93-80457ADEC729.PDF",
+    "file_id": "65ea40ad-aea8-4487-821d-dc8078aca086",
+    "data_type": "Pathology Report",
+    "file_size": 73246
+  },
+  {
+    "id": "19c8f8e8-c77e-4cc1-aed1-9a301a227032",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A288"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A288.EB32DBF8-FC70-4848-9595-45B295D698B5.PDF",
+    "file_id": "19c8f8e8-c77e-4cc1-aed1-9a301a227032",
+    "data_type": "Pathology Report",
+    "file_size": 77357
+  },
+  {
+    "id": "b0ca338a-31ab-4824-9919-1d39e390687a",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-6719"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-6719.833D9186-0E43-498F-A698-927A968DE5A1.PDF",
+    "file_id": "b0ca338a-31ab-4824-9919-1d39e390687a",
+    "data_type": "Pathology Report",
+    "file_size": 3329923
+  },
+  {
+    "id": "520dbc77-c326-4d0f-8591-5ca72899a358",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1DB"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1DB.71808664-82BA-4B65-B719-C54176F69ABF.PDF",
+    "file_id": "520dbc77-c326-4d0f-8591-5ca72899a358",
+    "data_type": "Pathology Report",
+    "file_size": 73183
+  },
+  {
+    "id": "b9475d9b-c8f8-49aa-b461-083c2606254f",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A282"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A282.F38C6493-9B5D-4BEC-81AB-B79CF6BD89A7.PDF",
+    "file_id": "b9475d9b-c8f8-49aa-b461-083c2606254f",
+    "data_type": "Pathology Report",
+    "file_size": 74445
+  },
+  {
+    "id": "fcdb4020-7ee9-4100-acbb-920bd87b2074",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1D9"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1D9.879D9864-FDFE-4D40-A90A-2D8694148298.PDF",
+    "file_id": "fcdb4020-7ee9-4100-acbb-920bd87b2074",
+    "data_type": "Pathology Report",
+    "file_size": 77379
+  },
+  {
+    "id": "46126923-d388-4c3d-b968-2347a619fd56",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A28F"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A28F.E6C435F8-1238-4113-A152-C7AF7620E748.PDF",
+    "file_id": "46126923-d388-4c3d-b968-2347a619fd56",
+    "data_type": "Pathology Report",
+    "file_size": 80173
+  },
+  {
+    "id": "b46452a0-d1c5-4d00-960e-0320b4c72122",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-5M-AAT5"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-5M-AAT5.AA3CF932-9666-4280-9F3E-5CFA523CEC4B.PDF",
+    "file_id": "b46452a0-d1c5-4d00-960e-0320b4c72122",
+    "data_type": "Pathology Report",
+    "file_size": 75681
+  },
+  {
+    "id": "c80f747d-9ad5-43ed-a69c-19e38f598472",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-5797"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-5797.2BDDA06B-BBAF-4DB3-995E-AB10CAD0E6E9.PDF",
+    "file_id": "c80f747d-9ad5-43ed-a69c-19e38f598472",
+    "data_type": "Pathology Report",
+    "file_size": 385255
+  },
+  {
+    "id": "dd1bc9a5-02ea-46ca-abcc-614fb00a3819",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1D8"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1D8.F078AE22-06A2-45CA-A82E-71F7AEFD0312.PDF",
+    "file_id": "dd1bc9a5-02ea-46ca-abcc-614fb00a3819",
+    "data_type": "Pathology Report",
+    "file_size": 73846
+  },
+  {
+    "id": "c64be79b-a70a-4c45-bddf-96e113c91802",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-5256"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-5256.88B57491-1B29-40E0-BB15-95ADBB9AEF9C.PDF",
+    "file_id": "c64be79b-a70a-4c45-bddf-96e113c91802",
+    "data_type": "Pathology Report",
+    "file_size": 176601
+  },
+  {
+    "id": "e7a1a3a5-a608-4dc1-923c-dc4595c894ac",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1D7"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1D7.73512C13-D2EB-4E6C-9A26-3759252F385A.PDF",
+    "file_id": "e7a1a3a5-a608-4dc1-923c-dc4595c894ac",
+    "data_type": "Pathology Report",
+    "file_size": 85215
+  },
+  {
+    "id": "48d7da2a-c230-4627-93bf-c291ef472ddc",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A28H"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A28H.9DA1FAC8-4D16-4F59-A283-6E5093034816.PDF",
+    "file_id": "48d7da2a-c230-4627-93bf-c291ef472ddc",
+    "data_type": "Pathology Report",
+    "file_size": 73833
+  },
+  {
+    "id": "09569053-67d9-4487-a464-44aabc552b73",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-6715"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-6715.7DEAB36C-4645-43FE-A82C-14858DD568D4.PDF",
+    "file_id": "09569053-67d9-4487-a464-44aabc552b73",
+    "data_type": "Pathology Report",
+    "file_size": 384810
+  },
+  {
+    "id": "afaba581-f4ec-4d33-a98c-fc062c879625",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-6718"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-6718.2693AE88-E1F4-4855-84FB-4E71EC58150E.PDF",
+    "file_id": "afaba581-f4ec-4d33-a98c-fc062c879625",
+    "data_type": "Pathology Report",
+    "file_size": 390391
+  },
+  {
+    "id": "222b0546-f84f-4839-a87c-458ba85c4fac",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A28E"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A28E.6BA78869-CE10-4755-82A8-9096731A069C.PDF",
+    "file_id": "222b0546-f84f-4839-a87c-458ba85c4fac",
+    "data_type": "Pathology Report",
+    "file_size": 70105
+  },
+  {
+    "id": "c6d69e34-f142-4425-8fd8-bed6ccf50eca",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1D6"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1D6.A73A51CC-5DDB-4D1D-ABDC-858856CC3B8D.PDF",
+    "file_id": "c6d69e34-f142-4425-8fd8-bed6ccf50eca",
+    "data_type": "Pathology Report",
+    "file_size": 81796
+  },
+  {
+    "id": "4e9fbc01-af94-4bf7-99b5-750655addfb5",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-AZ-6598"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-AZ-6598.7D5CE419-6678-4CD8-89A9-31E8BBB8406F.PDF",
+    "file_id": "4e9fbc01-af94-4bf7-99b5-750655addfb5",
+    "data_type": "Pathology Report",
+    "file_size": 52425
+  },
+  {
+    "id": "8ef76b35-e00a-4313-8aa5-24e2bb4e5d12",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A1DA"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A1DA.8DECB6DA-5F5F-4475-A601-5252BC4BD486.PDF",
+    "file_id": "8ef76b35-e00a-4313-8aa5-24e2bb4e5d12",
+    "data_type": "Pathology Report",
+    "file_size": 76540
+  },
+  {
+    "id": "2e8ec192-1c33-43a0-89eb-f52c925ef5f7",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A28G"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A28G.1CA5DFB2-8059-4D71-862C-638393435618.PDF",
+    "file_id": "2e8ec192-1c33-43a0-89eb-f52c925ef5f7",
+    "data_type": "Pathology Report",
+    "file_size": 68965
+  },
+  {
+    "id": "fb16b39c-f951-4bf1-92c7-3aa4cc4f8ec6",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-6717"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-6717.C742DF4B-4AEF-41CF-ABA3-64D67E942141.PDF",
+    "file_id": "fb16b39c-f951-4bf1-92c7-3aa4cc4f8ec6",
+    "data_type": "Pathology Report",
+    "file_size": 512942
+  },
+  {
+    "id": "4baa45cb-4ac7-4f9d-850c-8127001ff56b",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-G4-6317"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-G4-6317.852F4165-5450-4BA2-9042-1AC863F0CA90.PDF",
+    "file_id": "4baa45cb-4ac7-4f9d-850c-8127001ff56b",
+    "data_type": "Pathology Report",
+    "file_size": 30464
+  },
+  {
+    "id": "c2ee198f-a751-43c0-a422-ae41c02504f6",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A28A"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A28A.66BF2525-B76A-4BE5-8FDF-EAE8334F384E.PDF",
+    "file_id": "c2ee198f-a751-43c0-a422-ae41c02504f6",
+    "data_type": "Pathology Report",
+    "file_size": 77885
+  },
+  {
+    "id": "384fe6fb-18ca-4530-b0aa-2113a6b89e1f",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-AA-3521"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-AA-3521.C3B59AEA-87DD-4434-B915-8CF262ECA259.PDF",
+    "file_id": "384fe6fb-18ca-4530-b0aa-2113a6b89e1f",
+    "data_type": "Pathology Report",
+    "file_size": 8867
+  },
+  {
+    "id": "51a6084d-715b-45bb-832d-ff067dc2e2c5",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-CA-5255"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-CA-5255.2DE28701-8490-4460-83BC-5138572FBA09.PDF",
+    "file_id": "51a6084d-715b-45bb-832d-ff067dc2e2c5",
+    "data_type": "Pathology Report",
+    "file_size": 104531
+  },
+  {
+    "id": "5f40c5c0-c7c4-4887-8f99-7b4d576e4deb",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A285"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A285.1B9E9C45-C8A3-4CFA-AB47-965056517D4D.PDF",
+    "file_id": "5f40c5c0-c7c4-4887-8f99-7b4d576e4deb",
+    "data_type": "Pathology Report",
+    "file_size": 68608
+  },
+  {
+    "id": "d67fa203-7472-426a-977f-4ecb2368db6f",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-AZ-6601"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-AZ-6601.9F0F7A16-ACD5-46CC-9F83-B9F165380CA9.PDF",
+    "file_id": "d67fa203-7472-426a-977f-4ecb2368db6f",
+    "data_type": "Pathology Report",
+    "file_size": 46167
+  },
+  {
+    "id": "4d1c73fb-5901-49f7-a6aa-e8a7956339c3",
+    "data_format": "PDF",
+    "cases": [
+      {
+        "submitter_id": "TCGA-DM-A28K"
+      }
+    ],
+    "access": "open",
+    "file_name": "TCGA-DM-A28K.499EEF9A-F77A-4F0D-A575-CB52AAB54E9B.PDF",
+    "file_id": "4d1c73fb-5901-49f7-a6aa-e8a7956339c3",
+    "data_type": "Pathology Report",
+    "file_size": 74310
+  }
+]

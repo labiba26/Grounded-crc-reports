@@ -1,0 +1,2908 @@
+{
+ "note": [
+  "Reads stage2/outputs/<run>/<arm>.jsonl (written by stage2/generate.py; *_smoke runs are\nskipped unless --smoke) and re-runs the Stage 3 checker on every report, so the scores\nalways come from the current checker and never from numbers cached at generation time.",
+  "Two questions, kept apart (THESIS_LOG.md, Phase 11):",
+  "  FAITHFULNESS  does the report say what the generator was GIVEN, and nothing else?\n                per field: correct / contradicted / omitted vs the input; fields stated\n                without being given; extra claims (margins, LVI, size, node counts...);\n                node overclaims (only when node status was NOT given); node abstention.\n  CORRECTNESS   is the report right about the patient (vs the labels from the real report)?\n                BALANCED per field: the mean over reference classes of the share of\n                reports that state the right class (\"not stated\" counts as wrong). A\n                report that always says the common class scores 1/K, not the class\n                share - the Stage 1 lesson (accuracy vs balanced accuracy) applied to text.\n                Type is scored as mucinous (incl. signet-ring) vs not, as in Stage 1.\n                Node is reported separately: arms that abstain on it score 0 by design."
+ ],
+ "bootstrap": 2000,
+ "seed": 2026,
+ "scores": {
+  "Llama-3.1-8B-Instruct_cptac/extracted/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 46,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 1,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 1,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 47,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 47,
+   "node_status_faithful": 0.8936170212765957,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 5,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.894927536231884,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.10638297872340426,
+   "extra_claims_per_report": 0.10638297872340426,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.02127659574468085,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "pn_category": 5
+   },
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.02127659574468085,
+    0.2127659574468085
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_cptac/none/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 47,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.25,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.25,
+    0.25
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_cptac/none_free/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 47,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 47,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.25,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 2.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 47,
+    "perineural_invasion": 47
+   },
+   "visible_balanced_correct_ci95": [
+    0.25,
+    0.25
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_cptac/predicted/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 47,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 47,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 47,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.35882352941176476,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.4294117647058824,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.33258258258258255,
+    0.5365429763923308
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/extracted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 151,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 5,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 139,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 3,
+   "grade_balanced_correct": 1.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 127,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 139,
+   "node_status_faithful": 0.9784172661870504,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 3,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.9794520547945205,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.01282051282051282,
+   "extra_claims_per_report": 0.01282051282051282,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.11538461538461539,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "pn_category": 2
+   },
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.03205128205128205
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/extracted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 81,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 6,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 78,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 4,
+   "grade_balanced_correct": 1.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 72,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 77,
+   "node_status_faithful": 0.961038961038961,
+   "node_status_contradicted": 1,
+   "node_status_omitted": 2,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.9617208672086721,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.011494252873563218,
+   "extra_claims_per_report": 0.011494252873563218,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.16091954022988506,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "pn_category": 1
+   },
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.034482758620689655
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/none/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 156,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 36,
+   "grade_balanced_correct": 0.06956521739130435,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.18985507246376812,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.1818181818181818,
+    0.19827586206896552
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/none/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 87,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 30,
+   "grade_balanced_correct": 0.1111111111111111,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.20370370370370372,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.19135279347143752,
+    0.21701783459595955
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/none_free/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 156,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 156,
+   "grade_balanced_correct": 0.3333333333333333,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.27777777777777773,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 2.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 156,
+    "perineural_invasion": 156
+   },
+   "visible_balanced_correct_ci95": [
+    0.27777777777777773,
+    0.27777777777777773
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/none_free/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 87,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 87,
+   "grade_balanced_correct": 0.3333333333333333,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.27777777777777773,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 2.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 87,
+    "perineural_invasion": 87
+   },
+   "visible_balanced_correct_ci95": [
+    0.27777777777777773,
+    0.27777777777777773
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/predicted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 156,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.6858156028368794,
+   "histologic_type_n_classes": 2,
+   "grade_given": 156,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.4794813119755912,
+   "grade_n_classes": 3,
+   "pt_stage_given": 156,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.32430555555555557,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.49653415678934204,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.41407559719673653,
+    0.5857272935763057
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/predicted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 87,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.75,
+   "histologic_type_n_classes": 2,
+   "grade_given": 87,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.5,
+   "grade_n_classes": 3,
+   "pt_stage_given": 87,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.3957317073170732,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 1,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.5485772357723577,
+   "reports_with_extra_claim": 0.011494252873563218,
+   "extra_claims_per_report": 0.011494252873563218,
+   "node_overclaim_rate": 0.011494252873563218,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "pn_category": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.45643089790944263,
+    0.683843599314906
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.034482758620689655
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/retrieval/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 154,
+   "histologic_type_balanced_correct": 0.6287234042553191,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 143,
+   "grade_balanced_correct": 0.3163996948893974,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 74,
+   "pt_stage_balanced_correct": 0.11180555555555556,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 6,
+   "node_status_balanced_correct": 0.0136986301369863,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.35230955156675736,
+   "reports_with_extra_claim": 0.358974358974359,
+   "extra_claims_per_report": 0.4230769230769231,
+   "node_overclaim_rate": 0.038461538461538464,
+   "node_abstention_rate": 0.9166666666666666,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 23,
+    "margins": 20,
+    "tumour_site": 8,
+    "msi_mmr": 5,
+    "node_count": 4,
+    "perineural_invasion": 3,
+    "tumour_size": 2,
+    "pn_category": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.30122016802453283,
+    0.413010711979148
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.28205128205128205,
+    0.4358974358974359
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "Llama-3.1-8B-Instruct_tcga/retrieval/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 85,
+   "histologic_type_balanced_correct": 0.5633333333333334,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 83,
+   "grade_balanced_correct": 0.30687830687830686,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 44,
+   "pt_stage_balanced_correct": 0.1225609756097561,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 6,
+   "node_status_balanced_correct": 0.05386178861788618,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3309242052737988,
+   "reports_with_extra_claim": 0.3218390804597701,
+   "extra_claims_per_report": 0.5287356321839081,
+   "node_overclaim_rate": 0.05747126436781609,
+   "node_abstention_rate": 0.9080459770114943,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "margins": 16,
+    "lymphovascular_invasion": 11,
+    "tumour_site": 7,
+    "perineural_invasion": 5,
+    "tumour_size": 5,
+    "node_count": 1,
+    "msi_mmr": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.28032792404746365,
+    0.4099039485403293
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.2295977011494253,
+    0.42528735632183906
+   ],
+   "model": "meta-llama/Llama-3.1-8B-Instruct",
+   "git_commit": "d1754c4"
+  },
+  "copy_tcga/retrieval/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 147,
+   "histologic_type_balanced_correct": 0.6145390070921986,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 134,
+   "grade_balanced_correct": 0.301906941266209,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 135,
+   "pt_stage_balanced_correct": 0.21319444444444446,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 140,
+   "node_status_balanced_correct": 0.46803652968036524,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.37654679760095067,
+   "reports_with_extra_claim": 0.967948717948718,
+   "extra_claims_per_report": 4.532051282051282,
+   "node_overclaim_rate": 0.8782051282051282,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "pn_category": 118,
+    "margins": 115,
+    "lymphovascular_invasion": 111,
+    "tumour_size": 98,
+    "node_count": 95,
+    "tumour_site": 91,
+    "perineural_invasion": 28,
+    "other_staging": 15,
+    "msi_mmr": 12,
+    "tumour_budding": 11,
+    "distant_metastasis": 8,
+    "treatment_history": 5
+   },
+   "visible_balanced_correct_ci95": [
+    0.3189276611583786,
+    0.4402723747606177
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.9358974358974359,
+    0.9935897435897436
+   ],
+   "model": "copy",
+   "git_commit": "286ea35"
+  },
+  "copy_tcga/retrieval/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 79,
+   "histologic_type_balanced_correct": 0.5433333333333333,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 76,
+   "grade_balanced_correct": 0.291005291005291,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 76,
+   "pt_stage_balanced_correct": 0.2570121951219512,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 71,
+   "node_status_balanced_correct": 0.49220867208672087,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.36378360648685854,
+   "reports_with_extra_claim": 0.9310344827586207,
+   "extra_claims_per_report": 4.908045977011494,
+   "node_overclaim_rate": 0.8045977011494253,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 68,
+    "node_count": 65,
+    "margins": 64,
+    "tumour_size": 64,
+    "pn_category": 63,
+    "tumour_site": 52,
+    "perineural_invasion": 26,
+    "tumour_budding": 7,
+    "distant_metastasis": 6,
+    "msi_mmr": 5,
+    "treatment_history": 4,
+    "other_staging": 3
+   },
+   "visible_balanced_correct_ci95": [
+    0.3117911272136355,
+    0.4560564143307571
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.8735632183908046,
+    0.9770114942528736
+   ],
+   "model": "copy",
+   "git_commit": "286ea35"
+  },
+  "medgemma-1.5-4b-it_cptac/extracted/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 46,
+   "histologic_type_faithful": 0.8913043478260869,
+   "histologic_type_contradicted": 5,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 1,
+   "histologic_type_balanced_correct": 0.75,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 47,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 47,
+   "node_status_faithful": 0.2978723404255319,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 33,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.3016304347826087,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.875,
+   "reports_with_extra_claim": 0.0425531914893617,
+   "extra_claims_per_report": 0.0425531914893617,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "distant_metastasis": 2
+   },
+   "visible_balanced_correct_ci95": [
+    0.8,
+    0.9583333333333334
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.10638297872340426
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_cptac/none/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 47,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 47,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 47,
+   "pt_stage_balanced_correct": 0.3235294117647059,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.4117647058823529,
+   "reports_with_extra_claim": 0.44680851063829785,
+   "extra_claims_per_report": 0.44680851063829785,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 20,
+    "perineural_invasion": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.40053763440860213,
+    0.41666666666666663
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.2978723404255319,
+    0.574468085106383
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_cptac/none_free/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 47,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 47,
+   "pt_stage_balanced_correct": 0.3333333333333333,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 47,
+   "node_status_balanced_correct": 0.5,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.41666666666666663,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 3.0,
+   "node_overclaim_rate": 1.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "margins": 47,
+    "tumour_site": 47,
+    "tumour_size": 47
+   },
+   "visible_balanced_correct_ci95": [
+    0.41666666666666663,
+    0.41666666666666663
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_cptac/predicted/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 47,
+   "histologic_type_faithful": 0.8085106382978723,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 9,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.4027777777777778,
+   "histologic_type_n_classes": 2,
+   "grade_given": 47,
+   "grade_faithful": 0.8085106382978723,
+   "grade_contradicted": 0,
+   "grade_omitted": 9,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 47,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.35882352941176476,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3808006535947713,
+   "reports_with_extra_claim": 0.1702127659574468,
+   "extra_claims_per_report": 0.3191489361702128,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.8085106382978723,
+   "truncated": 9,
+   "extra_claim_kinds": {
+    "tumour_site": 8,
+    "margins": 7
+   },
+   "visible_balanced_correct_ci95": [
+    0.27557516526266523,
+    0.4964737984994441
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.06382978723404255,
+    0.2765957446808511
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/extracted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 151,
+   "histologic_type_faithful": 0.8278145695364238,
+   "histologic_type_contradicted": 3,
+   "histologic_type_omitted": 23,
+   "histologic_type_stated_not_given": 5,
+   "histologic_type_balanced_correct": 0.7684397163120567,
+   "histologic_type_n_classes": 2,
+   "grade_given": 139,
+   "grade_faithful": 0.9064748201438849,
+   "grade_contradicted": 1,
+   "grade_omitted": 12,
+   "grade_stated_not_given": 1,
+   "grade_balanced_correct": 0.9183829138062548,
+   "grade_n_classes": 3,
+   "pt_stage_given": 127,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 12,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 139,
+   "node_status_faithful": 0.31654676258992803,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 95,
+   "node_status_stated_not_given": 1,
+   "node_status_balanced_correct": 0.3013698630136986,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.8956075433727705,
+   "reports_with_extra_claim": 0.12179487179487179,
+   "extra_claims_per_report": 0.26282051282051283,
+   "node_overclaim_rate": 0.00641025641025641,
+   "node_abstention_rate": 0.08333333333333333,
+   "truncated": 12,
+   "extra_claim_kinds": {
+    "tumour_size": 10,
+    "tumour_site": 10,
+    "lymphovascular_invasion": 6,
+    "perineural_invasion": 4,
+    "msi_mmr": 3,
+    "tumour_budding": 3,
+    "margins": 3,
+    "distant_metastasis": 2
+   },
+   "visible_balanced_correct_ci95": [
+    0.8358500697627702,
+    0.9476687279019692
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.07051282051282051,
+    0.17307692307692307
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/extracted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 81,
+   "histologic_type_faithful": 0.8518518518518519,
+   "histologic_type_contradicted": 2,
+   "histologic_type_omitted": 10,
+   "histologic_type_stated_not_given": 4,
+   "histologic_type_balanced_correct": 0.7666666666666666,
+   "histologic_type_n_classes": 2,
+   "grade_given": 78,
+   "grade_faithful": 0.8589743589743589,
+   "grade_contradicted": 0,
+   "grade_omitted": 11,
+   "grade_stated_not_given": 1,
+   "grade_balanced_correct": 0.791005291005291,
+   "grade_n_classes": 3,
+   "pt_stage_given": 72,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 5,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 77,
+   "node_status_faithful": 0.3246753246753247,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 52,
+   "node_status_stated_not_given": 1,
+   "node_status_balanced_correct": 0.30995934959349597,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.8525573192239859,
+   "reports_with_extra_claim": 0.1839080459770115,
+   "extra_claims_per_report": 0.2988505747126437,
+   "node_overclaim_rate": 0.011494252873563218,
+   "node_abstention_rate": 0.034482758620689655,
+   "truncated": 11,
+   "extra_claim_kinds": {
+    "tumour_site": 14,
+    "margins": 4,
+    "tumour_size": 4,
+    "perineural_invasion": 2,
+    "distant_metastasis": 1,
+    "pn_category": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.7572649605116956,
+    0.9326024091724574
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.10344827586206896,
+    0.26436781609195403
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/none/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 156,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 156,
+   "grade_balanced_correct": 0.3333333333333333,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 156,
+   "pt_stage_balanced_correct": 0.2222222222222222,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3518518518518518,
+   "reports_with_extra_claim": 0.5897435897435898,
+   "extra_claims_per_report": 0.6025641025641025,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 87,
+    "perineural_invasion": 7
+   },
+   "visible_balanced_correct_ci95": [
+    0.34650377333063803,
+    0.35741039426523297
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.5126602564102564,
+    0.6666666666666666
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/none/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 87,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 87,
+   "grade_balanced_correct": 0.3333333333333333,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 87,
+   "pt_stage_balanced_correct": 0.25,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3611111111111111,
+   "reports_with_extra_claim": 0.1724137931034483,
+   "extra_claims_per_report": 0.19540229885057472,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 13,
+    "perineural_invasion": 3,
+    "tumour_budding": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.3611111111111111,
+    0.38888888888888884
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.09195402298850575,
+    0.25287356321839083
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/none_free/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 156,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 156,
+   "pt_stage_balanced_correct": 0.25,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 156,
+   "node_status_balanced_correct": 0.5,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.25,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 3.0064102564102564,
+   "node_overclaim_rate": 1.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "margins": 156,
+    "tumour_site": 156,
+    "tumour_size": 156,
+    "msi_mmr": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.25,
+    0.25
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/none_free/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 87,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 87,
+   "pt_stage_balanced_correct": 0.25,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 87,
+   "node_status_balanced_correct": 0.5,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.25,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 3.0,
+   "node_overclaim_rate": 1.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "margins": 87,
+    "tumour_site": 87,
+    "tumour_size": 87
+   },
+   "visible_balanced_correct_ci95": [
+    0.25,
+    0.27777777777777773
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/predicted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 156,
+   "histologic_type_faithful": 0.9166666666666666,
+   "histologic_type_contradicted": 2,
+   "histologic_type_omitted": 11,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.6539007092198581,
+   "histologic_type_n_classes": 2,
+   "grade_given": 156,
+   "grade_faithful": 0.9166666666666666,
+   "grade_contradicted": 0,
+   "grade_omitted": 13,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.4503432494279176,
+   "grade_n_classes": 3,
+   "pt_stage_given": 156,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.32430555555555557,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.47618317140111044,
+   "reports_with_extra_claim": 0.07692307692307693,
+   "extra_claims_per_report": 0.14743589743589744,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.8141025641025641,
+   "truncated": 12,
+   "extra_claim_kinds": {
+    "margins": 11,
+    "tumour_site": 11,
+    "perineural_invasion": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.39288633567418246,
+    0.5646685411483233
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.038461538461538464,
+    0.12179487179487179
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/predicted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 87,
+   "histologic_type_faithful": 0.9080459770114943,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 8,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.7033333333333334,
+   "histologic_type_n_classes": 2,
+   "grade_given": 87,
+   "grade_faithful": 0.896551724137931,
+   "grade_contradicted": 0,
+   "grade_omitted": 9,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.42857142857142855,
+   "grade_n_classes": 3,
+   "pt_stage_given": 87,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.3957317073170732,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.5092121564072783,
+   "reports_with_extra_claim": 0.09195402298850575,
+   "extra_claims_per_report": 0.1724137931034483,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.6896551724137931,
+   "truncated": 8,
+   "extra_claim_kinds": {
+    "tumour_site": 8,
+    "margins": 7
+   },
+   "visible_balanced_correct_ci95": [
+    0.4190697504967903,
+    0.6393714716943328
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.034482758620689655,
+    0.16091954022988506
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/retrieval/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 147,
+   "histologic_type_balanced_correct": 0.5645390070921986,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 114,
+   "grade_balanced_correct": 0.2611746758199847,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 114,
+   "pt_stage_balanced_correct": 0.13194444444444445,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 68,
+   "node_status_balanced_correct": 0.2567455375674554,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3192193757855426,
+   "reports_with_extra_claim": 0.7948717948717948,
+   "extra_claims_per_report": 2.1025641025641026,
+   "node_overclaim_rate": 0.4358974358974359,
+   "node_abstention_rate": 0.16666666666666666,
+   "truncated": 14,
+   "extra_claim_kinds": {
+    "margins": 82,
+    "lymphovascular_invasion": 51,
+    "tumour_site": 45,
+    "tumour_size": 45,
+    "pn_category": 31,
+    "node_count": 29,
+    "perineural_invasion": 23,
+    "tumour_budding": 12,
+    "msi_mmr": 6,
+    "distant_metastasis": 4
+   },
+   "visible_balanced_correct_ci95": [
+    0.27535639156735275,
+    0.3726418060414849
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.7307692307692307,
+    0.8589743589743589
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-1.5-4b-it_tcga/retrieval/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 81,
+   "histologic_type_balanced_correct": 0.5366666666666666,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 73,
+   "grade_balanced_correct": 0.291005291005291,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 67,
+   "pt_stage_balanced_correct": 0.17713414634146343,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 46,
+   "node_status_balanced_correct": 0.30962059620596205,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3349353680044737,
+   "reports_with_extra_claim": 0.8045977011494253,
+   "extra_claims_per_report": 2.8620689655172415,
+   "node_overclaim_rate": 0.5287356321839081,
+   "node_abstention_rate": 0.14942528735632185,
+   "truncated": 21,
+   "extra_claim_kinds": {
+    "margins": 52,
+    "tumour_size": 36,
+    "lymphovascular_invasion": 34,
+    "tumour_site": 34,
+    "node_count": 32,
+    "pn_category": 28,
+    "perineural_invasion": 23,
+    "tumour_budding": 7,
+    "msi_mmr": 2,
+    "treatment_history": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.28172179326858776,
+    0.4247591977359419
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.7126436781609196,
+    0.8850574712643678
+   ],
+   "model": "google/medgemma-1.5-4b-it",
+   "git_commit": "d1754c4"
+  },
+  "medgemma-27b-text-it_cptac/extracted/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 46,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 1,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 1,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 47,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 47,
+   "node_status_faithful": 0.46808510638297873,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 25,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.4592391304347826,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_cptac/none/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 47,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 3,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 3,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.25,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.25,
+    0.25
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_cptac/none_free/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 47,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 47,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 47,
+   "pt_stage_balanced_correct": 0.3333333333333333,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 47,
+   "node_status_balanced_correct": 0.5,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.41666666666666663,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 4.0,
+   "node_overclaim_rate": 1.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 47,
+    "margins": 47,
+    "node_count": 47,
+    "tumour_size": 47
+   },
+   "visible_balanced_correct_ci95": [
+    0.41666666666666663,
+    0.41666666666666663
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_cptac/predicted/cptac_tumour_slides": {
+   "n": 47,
+   "histologic_type_given": 47,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 47,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": null,
+   "grade_n_classes": 0,
+   "pt_stage_given": 47,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.35882352941176476,
+   "pt_stage_n_classes": 3,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.4294117647058824,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.32638087606837607,
+    0.5410511363636363
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/extracted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 151,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 5,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 139,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 1,
+   "grade_balanced_correct": 1.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 127,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 18,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 139,
+   "node_status_faithful": 0.6546762589928058,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 48,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.6676006641760066,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.10897435897435898,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/extracted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 81,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 5,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 78,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 1.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 72,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 6,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 77,
+   "node_status_faithful": 0.6623376623376623,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 26,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.6795392953929539,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.11494252873563218,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/none/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 156,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 31,
+   "grade_balanced_correct": 0.057971014492753624,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 31,
+   "pt_stage_balanced_correct": 0.05,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.2026570048309179,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.1792270531400966,
+    0.24352276277965249
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/none/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 87,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 21,
+   "grade_balanced_correct": 0.07936507936507936,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 21,
+   "pt_stage_balanced_correct": 0.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.1931216931216931,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.18205128205128207,
+    0.20609622744669218
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/none_free/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 156,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 156,
+   "grade_balanced_correct": 0.3333333333333333,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 156,
+   "pt_stage_balanced_correct": 0.25,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 156,
+   "node_status_balanced_correct": 0.5,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3611111111111111,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 4.0,
+   "node_overclaim_rate": 1.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 156,
+    "margins": 156,
+    "node_count": 156,
+    "tumour_size": 156
+   },
+   "visible_balanced_correct_ci95": [
+    0.3611111111111111,
+    0.3611111111111111
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/none_free/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 87,
+   "histologic_type_balanced_correct": 0.5,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 87,
+   "grade_balanced_correct": 0.3333333333333333,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 87,
+   "pt_stage_balanced_correct": 0.25,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 87,
+   "node_status_balanced_correct": 0.5,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.3611111111111111,
+   "reports_with_extra_claim": 1.0,
+   "extra_claims_per_report": 4.0,
+   "node_overclaim_rate": 1.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 87,
+    "margins": 87,
+    "node_count": 87,
+    "tumour_size": 87
+   },
+   "visible_balanced_correct_ci95": [
+    0.3611111111111111,
+    0.38888888888888884
+   ],
+   "reports_with_extra_claim_ci95": [
+    1.0,
+    1.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/predicted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 156,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.6858156028368794,
+   "histologic_type_n_classes": 2,
+   "grade_given": 156,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.4794813119755912,
+   "grade_n_classes": 3,
+   "pt_stage_given": 156,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.32430555555555557,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.49653415678934204,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.41435956535525714,
+    0.5873613934324744
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/predicted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 87,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.75,
+   "histologic_type_n_classes": 2,
+   "grade_given": 87,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.5,
+   "grade_n_classes": 3,
+   "pt_stage_given": 87,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.3957317073170732,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.5485772357723577,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.45545104501684386,
+    0.6845962605274962
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/retrieval/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 137,
+   "histologic_type_balanced_correct": 0.4326241134751773,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 84,
+   "grade_balanced_correct": 0.17421815408085428,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 20,
+   "pt_stage_balanced_correct": 0.030555555555555555,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 7,
+   "node_status_balanced_correct": 0.022727272727272728,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.21246594103719574,
+   "reports_with_extra_claim": 0.05128205128205128,
+   "extra_claims_per_report": 0.05128205128205128,
+   "node_overclaim_rate": 0.04487179487179487,
+   "node_abstention_rate": 0.9166666666666666,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 3,
+    "margins": 2,
+    "tumour_size": 2,
+    "pn_category": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.19099714685937524,
+    0.23655142260093787
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.019230769230769232,
+    0.08974358974358974
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "medgemma-27b-text-it_tcga/retrieval/test_coad": {
+   "n": 87,
+   "histologic_type_given": 0,
+   "histologic_type_faithful": null,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 65,
+   "histologic_type_balanced_correct": 0.38,
+   "histologic_type_n_classes": 2,
+   "grade_given": 0,
+   "grade_faithful": null,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 45,
+   "grade_balanced_correct": 0.21428571428571427,
+   "grade_n_classes": 3,
+   "pt_stage_given": 0,
+   "pt_stage_faithful": null,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 13,
+   "pt_stage_balanced_correct": 0.018292682926829267,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 3,
+   "node_status_balanced_correct": 0.013888888888888888,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.20419279907084786,
+   "reports_with_extra_claim": 0.09195402298850575,
+   "extra_claims_per_report": 0.12643678160919541,
+   "node_overclaim_rate": 0.034482758620689655,
+   "node_abstention_rate": 0.8850574712643678,
+   "truncated": 0,
+   "extra_claim_kinds": {
+    "lymphovascular_invasion": 4,
+    "node_count": 3,
+    "margins": 2,
+    "perineural_invasion": 1,
+    "tumour_size": 1
+   },
+   "visible_balanced_correct_ci95": [
+    0.16184919330576933,
+    0.26452924238217707
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.034482758620689655,
+    0.14942528735632185
+   ],
+   "model": "google/medgemma-27b-text-it",
+   "git_commit": "286ea35"
+  },
+  "template_tcga/extracted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 151,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 139,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 1.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 127,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 139,
+   "node_status_faithful": 1.0,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 1.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "template",
+   "git_commit": "286ea35"
+  },
+  "template_tcga/extracted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 81,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 1.0,
+   "histologic_type_n_classes": 2,
+   "grade_given": 78,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 1.0,
+   "grade_n_classes": 3,
+   "pt_stage_given": 72,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 1.0,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 77,
+   "node_status_faithful": 1.0,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 1.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 1.0,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 0.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    1.0,
+    1.0
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "template",
+   "git_commit": "286ea35"
+  },
+  "template_tcga/predicted/holdout_read": {
+   "n": 156,
+   "histologic_type_given": 156,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.6858156028368794,
+   "histologic_type_n_classes": 2,
+   "grade_given": 156,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.4794813119755912,
+   "grade_n_classes": 3,
+   "pt_stage_given": 156,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.32430555555555557,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.49653415678934204,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.4103125101124062,
+    0.5830352420686129
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "template",
+   "git_commit": "286ea35"
+  },
+  "template_tcga/predicted/test_coad": {
+   "n": 87,
+   "histologic_type_given": 87,
+   "histologic_type_faithful": 1.0,
+   "histologic_type_contradicted": 0,
+   "histologic_type_omitted": 0,
+   "histologic_type_stated_not_given": 0,
+   "histologic_type_balanced_correct": 0.75,
+   "histologic_type_n_classes": 2,
+   "grade_given": 87,
+   "grade_faithful": 1.0,
+   "grade_contradicted": 0,
+   "grade_omitted": 0,
+   "grade_stated_not_given": 0,
+   "grade_balanced_correct": 0.5,
+   "grade_n_classes": 3,
+   "pt_stage_given": 87,
+   "pt_stage_faithful": 1.0,
+   "pt_stage_contradicted": 0,
+   "pt_stage_omitted": 0,
+   "pt_stage_stated_not_given": 0,
+   "pt_stage_balanced_correct": 0.3957317073170732,
+   "pt_stage_n_classes": 4,
+   "node_status_given": 0,
+   "node_status_faithful": null,
+   "node_status_contradicted": 0,
+   "node_status_omitted": 0,
+   "node_status_stated_not_given": 0,
+   "node_status_balanced_correct": 0.0,
+   "node_status_n_classes": 2,
+   "visible_balanced_correct": 0.5485772357723577,
+   "reports_with_extra_claim": 0.0,
+   "extra_claims_per_report": 0.0,
+   "node_overclaim_rate": 0.0,
+   "node_abstention_rate": 1.0,
+   "truncated": 0,
+   "extra_claim_kinds": {},
+   "visible_balanced_correct_ci95": [
+    0.44912666157542336,
+    0.6807050516551229
+   ],
+   "reports_with_extra_claim_ci95": [
+    0.0,
+    0.0
+   ],
+   "model": "template",
+   "git_commit": "286ea35"
+  }
+ },
+ "paired_contrasts": {
+  "Llama-3.1-8B-Instruct_cptac/cptac_tumour_slides: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 47,
+    "diff": 0.17941176470588238,
+    "ci95": [
+     0.07885994087213599,
+     0.28070847617127104
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 47,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "Llama-3.1-8B-Instruct_cptac/cptac_tumour_slides: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 47,
+    "diff": 0.17941176470588238,
+    "ci95": [
+     0.08494208494208494,
+     0.28440300179211464
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 47,
+    "diff": -1.0,
+    "ci95": [
+     -1.0,
+     -1.0
+    ]
+   }
+  },
+  "Llama-3.1-8B-Instruct_tcga/holdout_read: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.3066790843255739,
+    "ci95": [
+     0.21804653742436175,
+     0.40034803369675737
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "Llama-3.1-8B-Instruct_tcga/holdout_read: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.2187563790115643,
+    "ci95": [
+     0.13774619906110888,
+     0.30329352328593673
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": -1.0,
+    "ci95": [
+     -1.0,
+     -1.0
+    ]
+   }
+  },
+  "Llama-3.1-8B-Instruct_tcga/holdout_read: predicted - retrieval": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.14422460522258468,
+    "ci95": [
+     0.04842782123647204,
+     0.24818087886151816
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": -0.358974358974359,
+    "ci95": [
+     -0.4358974358974359,
+     -0.28205128205128205
+    ]
+   }
+  },
+  "Llama-3.1-8B-Instruct_tcga/test_coad: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.344873532068654,
+    "ci95": [
+     0.24534922728149222,
+     0.4772181916418186
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": 0.011494252873563218,
+    "ci95": [
+     0.0,
+     0.034482758620689655
+    ]
+   }
+  },
+  "Llama-3.1-8B-Instruct_tcga/test_coad: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.27079945799458,
+    "ci95": [
+     0.17865433529907213,
+     0.3999351204889415
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": -0.9885057471264368,
+    "ci95": [
+     -1.0,
+     -0.9655172413793104
+    ]
+   }
+  },
+  "Llama-3.1-8B-Instruct_tcga/test_coad: predicted - retrieval": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.21765303049855894,
+    "ci95": [
+     0.12493449249482311,
+     0.3440271450619809
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": -0.3103448275862069,
+    "ci95": [
+     -0.41379310344827586,
+     -0.21839080459770116
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_cptac/cptac_tumour_slides: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 47,
+    "diff": -0.030964052287581645,
+    "ci95": [
+     -0.13325028719765558,
+     0.08041521360069746
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 47,
+    "diff": -0.276595744680851,
+    "ci95": [
+     -0.4468085106382979,
+     -0.08510638297872339
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_cptac/cptac_tumour_slides: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 47,
+    "diff": -0.03586601307189535,
+    "ci95": [
+     -0.13996794871794865,
+     0.08084209679604401
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 47,
+    "diff": -0.8297872340425532,
+    "ci95": [
+     -0.9361702127659575,
+     -0.7234042553191489
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_tcga/holdout_read: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.12433131954925863,
+    "ci95": [
+     0.04207457557352422,
+     0.21536114635109468
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": -0.5128205128205128,
+    "ci95": [
+     -0.6025641025641025,
+     -0.42307692307692313
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_tcga/holdout_read: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.22618317140111044,
+    "ci95": [
+     0.14625092935312778,
+     0.3165620329868218
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": -0.9230769230769231,
+    "ci95": [
+     -0.9615384615384616,
+     -0.8782051282051282
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_tcga/holdout_read: predicted - retrieval": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.15696379561556784,
+    "ci95": [
+     0.07399372702883021,
+     0.2453818776944926
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": -0.7179487179487178,
+    "ci95": [
+     -0.7948717948717948,
+     -0.641025641025641
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_tcga/test_coad: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.14810104529616724,
+    "ci95": [
+     0.049031945413237556,
+     0.26118290652558873
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": -0.08045977011494254,
+    "ci95": [
+     -0.1839080459770115,
+     0.011494252873563218
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_tcga/test_coad: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.25921215640727835,
+    "ci95": [
+     0.16484302678673227,
+     0.365846091058923
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": -0.9080459770114943,
+    "ci95": [
+     -0.9655172413793104,
+     -0.8390804597701149
+    ]
+   }
+  },
+  "medgemma-1.5-4b-it_tcga/test_coad: predicted - retrieval": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.17427678840280464,
+    "ci95": [
+     0.08091310033565474,
+     0.2973630980877357
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": -0.7126436781609196,
+    "ci95": [
+     -0.8160919540229885,
+     -0.6091954022988505
+    ]
+   }
+  },
+  "medgemma-27b-text-it_cptac/cptac_tumour_slides: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 47,
+    "diff": 0.17941176470588238,
+    "ci95": [
+     0.08237713675213677,
+     0.2841927083333333
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 47,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "medgemma-27b-text-it_cptac/cptac_tumour_slides: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 47,
+    "diff": 0.012745098039215752,
+    "ci95": [
+     -0.0904960317460317,
+     0.1228070175438597
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 47,
+    "diff": -1.0,
+    "ci95": [
+     -1.0,
+     -1.0
+    ]
+   }
+  },
+  "medgemma-27b-text-it_tcga/holdout_read: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.2938771519584241,
+    "ci95": [
+     0.203663961078841,
+     0.3953395136693274
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "medgemma-27b-text-it_tcga/holdout_read: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.13542304567823094,
+    "ci95": [
+     0.05607308385653894,
+     0.22258847655130581
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": -1.0,
+    "ci95": [
+     -1.0,
+     -1.0
+    ]
+   }
+  },
+  "medgemma-27b-text-it_tcga/holdout_read: predicted - retrieval": {
+   "visible_balanced_correct": {
+    "n_cases": 156,
+    "diff": 0.2840682157521463,
+    "ci95": [
+     0.20613100055969671,
+     0.3707438430223856
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 156,
+    "diff": -0.05128205128205128,
+    "ci95": [
+     -0.08974358974358974,
+     -0.019230769230769232
+    ]
+   }
+  },
+  "medgemma-27b-text-it_tcga/test_coad: predicted - none": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.3554555426506646,
+    "ci95": [
+     0.2542531032592755,
+     0.48524296883671864
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "medgemma-27b-text-it_tcga/test_coad: predicted - none_free": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.18746612466124662,
+    "ci95": [
+     0.08318930816675929,
+     0.30255634668319
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": -1.0,
+    "ci95": [
+     -1.0,
+     -1.0
+    ]
+   }
+  },
+  "medgemma-27b-text-it_tcga/test_coad: predicted - retrieval": {
+   "visible_balanced_correct": {
+    "n_cases": 87,
+    "diff": 0.34438443670150987,
+    "ci95": [
+     0.24732041725330425,
+     0.47988992294613414
+    ]
+   },
+   "reports_with_extra_claim": {
+    "n_cases": 87,
+    "diff": -0.09195402298850575,
+    "ci95": [
+     -0.16091954022988506,
+     -0.034482758620689655
+    ]
+   }
+  }
+ }
+}

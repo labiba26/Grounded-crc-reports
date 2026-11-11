@@ -1,0 +1,132 @@
+{
+ "n": 18,
+ "correct": 17,
+ "rows": [
+  {
+   "kind": "grade",
+   "text": "Adenocarcinoma with moderate differentiation.",
+   "expected": 2,
+   "got": 2,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "The carcinoma shows poor differentiation.",
+   "expected": 3,
+   "got": 3,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "Invasive adenocarcinoma with good differentiation.",
+   "expected": 1,
+   "got": 1,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "Adenocarcinoma, moderately differentiated.",
+   "expected": 2,
+   "got": 2,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "The tumour is well-differentiated.",
+   "expected": 1,
+   "got": 1,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "Poorly-differentiated adenocarcinoma.",
+   "expected": 3,
+   "got": 3,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "Differentiation: moderate.",
+   "expected": 2,
+   "got": 2,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "There is no poorly differentiated component.",
+   "expected": null,
+   "got": 3,
+   "pass": false
+  },
+  {
+   "kind": "grade",
+   "text": "Invasive adenocarcinoma.",
+   "expected": null,
+   "got": null,
+   "pass": true
+  },
+  {
+   "kind": "grade",
+   "text": "Moderate lymphocytic infiltration is seen.",
+   "expected": null,
+   "got": null,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "The tumour involves the lateral margin.",
+   "expected": true,
+   "got": true,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "Tumour extends to the radial resection margin.",
+   "expected": true,
+   "got": true,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "Carcinoma reaches the circumferential margin.",
+   "expected": true,
+   "got": true,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "The margins are free of tumour.",
+   "expected": true,
+   "got": true,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "The tumour does not involve the distal margin.",
+   "expected": true,
+   "got": true,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "Margins cannot be assessed.",
+   "expected": false,
+   "got": false,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "The tumour invades the muscularis propria.",
+   "expected": false,
+   "got": false,
+   "pass": true
+  },
+  {
+   "kind": "margins",
+   "text": "Lymph nodes are negative.",
+   "expected": false,
+   "got": false,
+   "pass": true
+  }
+ ]
+}

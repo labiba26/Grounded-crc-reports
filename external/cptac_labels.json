@@ -1,0 +1,4752 @@
+{
+ "note": [
+  "Label mapping to the Stage 1 targets (decided BEFORE any model is run on CPTAC):\n  mucinous       HISTOLOGY \"Mucinous\" -> True, \"Not Mucinous\" -> False, missing -> None\n  pt_stage       T2 -> 2, T3 -> 3, T4a/T4b -> 4 (CPTAC has no T1)\n  node_positive  N0 -> False; N1, N1a, N1b, N2a, N2b -> True\n  grade          not available in CPTAC -> None (grade is NOT externally tested)",
+  "Slide selections (also fixed before running):\n  tumour_slides  PRIMARY. Patients with >= 1 slide the IDC index calls \"Neoplasm, Primary\";\n                 the bag is those slides only.\n  all_slides     SENSITIVITY. Every cBioPortal patient; the bag is every slide of the patient,\n                 as in TCGA where the bag is the case. Includes \"Normal\" and unlabelled slides.\nEach patient also gets a `slide_group` so all_slides results can be broken down."
+ ],
+ "summary": {
+  "tumour_slides": {
+   "patients": 47,
+   "slides": 82,
+   "mucinous": {
+    "False": 36,
+    "True": 10,
+    "None": 1
+   },
+   "pt_stage": {
+    "3": 34,
+    "4": 8,
+    "2": 5
+   },
+   "node_positive": {
+    "False": 23,
+    "True": 24
+   }
+  },
+  "all_slides": {
+   "patients": 110,
+   "slides": 233,
+   "mucinous": {
+    "True": 21,
+    "False": 88,
+    "None": 1
+   },
+   "pt_stage": {
+    "4": 14,
+    "3": 80,
+    "2": 16
+   },
+   "node_positive": {
+    "True": 54,
+    "False": 56
+   }
+  },
+  "slide_groups": {
+   "normal_and_unlabelled_only": 56,
+   "has_tumour_slide": 47,
+   "unlabelled_only": 7
+  },
+  "idc_patients_without_cbioportal_labels": 68
+ },
+ "problems": [],
+ "selections": {
+  "tumour_slides": {
+   "01CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO005-59891744-2db3-4541-a86a-7f911f.h5"
+   ],
+   "05CO004": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO004-1fb8f92a-d046-4dab-b701-115b55.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO004-9fb0c084-16fd-4d54-ab60-d94303.h5"
+   ],
+   "05CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO007-9899e1ad-62e1-4cc2-91fc-49b85c.h5"
+   ],
+   "05CO020": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO020-803736b3-9ca9-4f9f-bdfe-8783e3.h5"
+   ],
+   "05CO033": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO033-2f8b02e4-1848-4abc-a95e-dd9eb5.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO033-a4ae882e-5378-4acb-bd16-ddd4e8.h5"
+   ],
+   "05CO034": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO034-42216d99-e8ff-43c9-b6db-28c3a6.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO034-2815cb64-9b6e-49fc-bad2-7837f0.h5"
+   ],
+   "05CO037": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-f7c447bb-def9-4962-83d0-00c663.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-5a007558-764c-463b-a788-fdbccb.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-e2e83b72-b14b-4b06-9461-1115d6.h5"
+   ],
+   "05CO039": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-278e5a61-9d85-4b78-ac5d-e89ff6.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-66b57abc-0d49-46bb-a390-0e11a9.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-c952715e-35ca-4e18-ad6f-dd4e39.h5"
+   ],
+   "05CO041": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-b4dd4a04-5eda-43dd-8298-215b07.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-fbe48b23-a4e7-4cb2-9767-9473ac.h5"
+   ],
+   "05CO044": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO044-8af80ae9-2088-4124-91fb-8d6c17.h5"
+   ],
+   "05CO045": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO045-92c1ebb5-ac1d-4bf5-a14f-516e1d.h5"
+   ],
+   "05CO047": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-f6173181-0993-4a5f-a4cd-5f30b1.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-01bf1906-9bdc-41c3-89a0-b89ef6.h5"
+   ],
+   "05CO048": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO048-92f7419c-c57a-4b50-bdc9-4d09ca.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO048-4976cbf9-cad4-48ce-b234-622c70.h5"
+   ],
+   "09CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-c41e39fe-c26c-4421-ac9f-8a536a.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-f37310af-e89b-4114-a95e-a1616f.h5"
+   ],
+   "09CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-c2c53076-b5db-4b7d-983c-a35740.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-dfffd5bb-b7c7-4918-ab28-fd3167.h5"
+   ],
+   "09CO011": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO011-1425a1a1-c835-47a2-a9b9-4db5d0.h5"
+   ],
+   "09CO013": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO013-dffcac99-9eac-4717-aeb6-f4a2e7.h5"
+   ],
+   "09CO018": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO018-743c74e4-cd76-4f38-8cb4-3c9107.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO018-372c900a-fced-4eef-9dc4-7282ec.h5"
+   ],
+   "09CO022": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-f69deaeb-6b6f-4c61-8900-fd0f26.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-2ffe77b8-5e6b-42b3-9f02-4c6a20.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-c89c1638-e666-45fb-aa0d-b35d8d.h5"
+   ],
+   "11CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO007-c7c71492-d281-4cc3-bab2-d7c0aa.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO007-799893aa-d523-4a08-9ea7-611cca.h5"
+   ],
+   "11CO018": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO018-3d797911-d476-436f-9cce-33e20c.h5"
+   ],
+   "11CO021": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO021-cf795cd2-317b-4897-a35e-390001.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO021-642fc6c3-8d4a-4e3d-ad0a-cc088a.h5"
+   ],
+   "11CO027": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO027-1435c3d6-a697-422f-9a8b-2cceef.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO027-5da00abd-5fa7-4deb-95f1-7982e0.h5"
+   ],
+   "11CO032": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO032-01d1ffca-4235-4dfe-bf62-56f71d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO032-615a007c-8d19-4e95-b246-43f9a0.h5"
+   ],
+   "11CO033": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO033-9c034adf-d6be-4525-84c3-552d3c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO033-8960a27e-69d8-4ec8-a795-c6cf8a.h5"
+   ],
+   "11CO037": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO037-1563ef63-d2e6-406f-adc1-255949.h5"
+   ],
+   "11CO039": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO039-e295a7d1-a0d0-4b0b-bdc2-729a0d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO039-d6584b4a-ca99-4a2a-8b4e-c8b22e.h5"
+   ],
+   "11CO043": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO043-90cfa6ba-f874-48b5-9cd0-f65426.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO043-591fb460-703a-437d-8d9a-ff2a35.h5"
+   ],
+   "11CO044": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO044-7e3d5ae0-3dcc-4207-8dd2-59ab4b.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO044-b605fafc-f7dd-44cc-9c86-da04e3.h5"
+   ],
+   "11CO045": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO045-f4bccfe4-98d0-466b-a6d7-44341b.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO045-d097d43a-af93-4c15-8c16-eb8d7e.h5"
+   ],
+   "11CO047": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO047-3ca0ab23-70ae-4083-bd7d-9f71d8.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO047-cd6a4013-2958-44b9-a4f1-45c9e4.h5"
+   ],
+   "11CO057": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO057-e515eb5c-8005-416a-9b42-59de9d.h5"
+   ],
+   "11CO058": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO058-d3078fa8-0692-411f-8441-0c7c48.h5"
+   ],
+   "11CO061": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO061-8c73f3a5-fea8-4942-90c0-966f66.h5"
+   ],
+   "11CO062": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO062-e8faa3a7-9fc7-428e-9334-a0afd0.h5"
+   ],
+   "11CO070": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO070-c8694e31-2c8f-4eb6-a7ef-a137d9.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO070-f383abb4-131c-4dff-865f-ef7e43.h5"
+   ],
+   "13CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/13CO001-d91f20f5-f59f-421d-9164-e5fd19.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/13CO001-5b0860a3-3ad7-4f59-bdfb-29f6cf.h5"
+   ],
+   "14CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO001-90572025-0173-4a1a-9385-12a5dd.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO001-85930155-5a70-4aab-97e3-e9c5a9.h5"
+   ],
+   "14CO003": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-ea6df59d-5240-4927-b19d-d44590.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-fca55a75-883a-40fe-859d-fbc72e.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-fd4edc52-09ef-4b01-be7c-f23f05.h5"
+   ],
+   "16CO002": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-6f5853a3-1d47-4a54-94dc-970c1c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-491b5c1f-745b-43ed-b5b8-73ae8c.h5"
+   ],
+   "16CO003": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO003-526c3664-5b9b-4a2b-a00e-a14623.h5"
+   ],
+   "16CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-d90e784a-b818-4aeb-ad47-6d3419.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-4bb08fad-fa5e-471e-978b-6b09ab.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-97423edb-6f19-4b41-a7cb-af1635.h5"
+   ],
+   "20CO003": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO003-2d266d2d-4bb3-436c-a3e7-06acb2.h5"
+   ],
+   "20CO004": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO004-e196a0b4-2a05-43de-bb30-ceb761.h5"
+   ],
+   "20CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO007-0065bfd9-e1b9-43a8-9379-9658ba.h5"
+   ],
+   "21CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/21CO007-e98cdedc-c426-44c1-84b0-dcaf52.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/21CO007-a467b905-fc0b-427b-8753-6d38dd.h5"
+   ],
+   "27CO004": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/27CO004-6cf8ca7a-35ff-4227-a084-623349.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/27CO004-d0511ea6-43c3-4c61-b08e-cf49b7.h5"
+   ]
+  },
+  "all_slides": {
+   "01CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO001-760f15d2-444c-4deb-b133-62f3ca.h5"
+   ],
+   "01CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO005-59891744-2db3-4541-a86a-7f911f.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO005-900134d7-7100-4189-aa08-f3b009.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO005-05a33362-82bb-48ac-8feb-ad2ea1.h5"
+   ],
+   "01CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO006-f9d6fb1b-988e-4d28-9272-cc672f.h5"
+   ],
+   "01CO008": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO008-8cc7e656-0152-4359-8566-0581c3.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO008-9452572f-e3ec-4063-a82e-43ac90.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO008-dd3d1ffd-139e-42b4-b09a-591802.h5"
+   ],
+   "01CO013": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO013-7fa5c56a-2345-4a8c-b60b-36bddc.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO013-c7aeb685-31b3-445e-8177-a3e729.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO013-08071b2d-89b8-4e5a-8ee7-11719b.h5"
+   ],
+   "01CO014": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO014-c9730cb4-b52c-4ca8-9652-4509d0.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO014-be2d5946-3452-4003-880a-e0372e.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO014-a8b2aca2-6450-46b4-be95-f4ead8.h5"
+   ],
+   "01CO015": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO015-34c25790-b5bf-4dff-9e40-dea366.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO015-b873f54a-5a86-4dca-90f9-715820.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO015-6e20c8e9-ab75-4996-9296-445b00.h5"
+   ],
+   "01CO019": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO019-573048dd-2502-40e0-8e8c-c41bb8.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO019-b734774e-f790-46ad-9064-fe1d59.h5"
+   ],
+   "01CO022": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-7a0266b4-b07c-41dc-8ddd-350e1b.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-eb519615-41c6-403e-bc8e-e7622c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-b4e91300-405e-4239-b8da-5e1a42.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-927faf80-de47-424f-966d-eb0cc4.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-525b8739-5c19-4ea1-986e-792581.h5"
+   ],
+   "05CO002": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO002-7e32b2a3-29af-49f3-90d3-d56590.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO002-159c49fd-40ff-4616-b6b6-be21a6.h5"
+   ],
+   "05CO003": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO003-7cc7f69f-99f5-4b23-a9e0-ba0dc8.h5"
+   ],
+   "05CO004": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO004-1fb8f92a-d046-4dab-b701-115b55.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO004-9fb0c084-16fd-4d54-ab60-d94303.h5"
+   ],
+   "05CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO005-50f754a6-119b-4624-a6dc-763283.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO005-21880d70-69eb-4f09-bea9-8de3e6.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO005-a23ef085-a2a1-4ffc-9d1a-56c0f0.h5"
+   ],
+   "05CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO006-caf7d236-16ed-40c7-a1e1-ca01ad.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO006-37219a7c-6fe2-4684-a494-d0be08.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO006-a8955d38-7a72-4f9d-9c70-5c0f08.h5"
+   ],
+   "05CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO007-9899e1ad-62e1-4cc2-91fc-49b85c.h5"
+   ],
+   "05CO011": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO011-c1b66358-d103-493c-b8ec-92c43b.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO011-8495cc54-eb88-40ab-b03f-363edf.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO011-e2eb3672-3727-4c54-adfc-3ab198.h5"
+   ],
+   "05CO014": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO014-124cee7c-1854-47d9-b803-fb3f49.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO014-9bba0a92-9eb5-42ba-8c0f-865141.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO014-6968a80f-fd06-4669-b4bd-9a5cb5.h5"
+   ],
+   "05CO015": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO015-416bb805-e4cd-4ca6-8fdd-1eec2d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO015-0aef1fe8-ca61-4113-81d0-d82ee7.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO015-4d32d48d-90f8-4aa9-a70d-93fbc1.h5"
+   ],
+   "05CO020": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO020-803736b3-9ca9-4f9f-bdfe-8783e3.h5"
+   ],
+   "05CO026": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO026-41ee934e-f7a3-4ef5-8a83-e2ac56.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO026-b2615b47-5ac2-4775-9205-50990d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO026-2606ea3f-cf02-4b20-8c88-4e7168.h5"
+   ],
+   "05CO028": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO028-e0068ac5-f557-443a-bd4b-bdfcef.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO028-b33d1f76-2405-4ae3-ba20-37fc71.h5"
+   ],
+   "05CO029": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO029-58a92726-4d1f-4e44-8938-52b97d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO029-b80b976c-8496-4604-8f16-2ec2fa.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO029-fab6245c-89d9-469f-bf59-5ac2b9.h5"
+   ],
+   "05CO032": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO032-695b0b00-a86b-43c0-a6c8-50a840.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO032-7075cf34-0429-47d1-b7de-922165.h5"
+   ],
+   "05CO033": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO033-2f8b02e4-1848-4abc-a95e-dd9eb5.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO033-a4ae882e-5378-4acb-bd16-ddd4e8.h5"
+   ],
+   "05CO034": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO034-42216d99-e8ff-43c9-b6db-28c3a6.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO034-2815cb64-9b6e-49fc-bad2-7837f0.h5"
+   ],
+   "05CO035": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO035-0f6ef7cd-ecc2-410d-b838-9430fc.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO035-1312a0e0-5025-433e-9670-0595bb.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO035-dfdf03a6-c324-4d8c-a909-ea7345.h5"
+   ],
+   "05CO037": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-f7c447bb-def9-4962-83d0-00c663.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-5a007558-764c-463b-a788-fdbccb.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-e2e83b72-b14b-4b06-9461-1115d6.h5"
+   ],
+   "05CO039": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-278e5a61-9d85-4b78-ac5d-e89ff6.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-66b57abc-0d49-46bb-a390-0e11a9.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-c952715e-35ca-4e18-ad6f-dd4e39.h5"
+   ],
+   "05CO041": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-ce47b803-bd11-473f-b4a2-f99643.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-b4dd4a04-5eda-43dd-8298-215b07.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-fbe48b23-a4e7-4cb2-9767-9473ac.h5"
+   ],
+   "05CO044": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO044-8af80ae9-2088-4124-91fb-8d6c17.h5"
+   ],
+   "05CO045": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO045-92c1ebb5-ac1d-4bf5-a14f-516e1d.h5"
+   ],
+   "05CO047": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-f6173181-0993-4a5f-a4cd-5f30b1.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-506131e8-6460-472f-9e25-71f8b1.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-01bf1906-9bdc-41c3-89a0-b89ef6.h5"
+   ],
+   "05CO048": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO048-92f7419c-c57a-4b50-bdc9-4d09ca.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO048-4976cbf9-cad4-48ce-b234-622c70.h5"
+   ],
+   "05CO049": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO049-56b6be96-9ee4-45ce-8e68-f448f4.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO049-d7608884-a0d6-4e9e-aac7-6cd813.h5"
+   ],
+   "05CO050": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO050-b1cc5c9c-4bd6-44ef-9ae0-f91e78.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO050-17cd2121-d347-431c-9cc7-fbab14.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO050-5271982c-5de1-4d6e-b414-b1f3ef.h5"
+   ],
+   "05CO053": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO053-c40de11e-c220-4f04-9ba1-083786.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO053-66b829db-1cdd-460d-b2f3-0e9ca9.h5"
+   ],
+   "05CO054": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO054-43192517-085e-450e-9481-0a6713.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO054-e57f0b7a-b96c-4ee5-838a-80f338.h5"
+   ],
+   "05CO055": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/05CO055-ccaab7e8-e841-4397-80aa-370b58.h5"
+   ],
+   "06CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/06CO001-87408d9e-4029-4e8f-b14c-8efc04.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/06CO001-23252883-0253-41f0-85c5-f8b43e.h5"
+   ],
+   "06CO002": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/06CO002-da69a576-c1e8-4051-86dd-df6b7f.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/06CO002-4b263734-430f-41dc-a296-8691f0.h5"
+   ],
+   "09CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-c41e39fe-c26c-4421-ac9f-8a536a.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-ec9afcc4-ccf7-4226-b0e8-d6897d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-f37310af-e89b-4114-a95e-a1616f.h5"
+   ],
+   "09CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-c2c53076-b5db-4b7d-983c-a35740.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-46f8ee83-175d-4f90-a596-de67ac.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-dfffd5bb-b7c7-4918-ab28-fd3167.h5"
+   ],
+   "09CO008": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO008-dbb83659-09df-4024-81ef-ad6ac7.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO008-aa0f5b40-3290-4255-8f4d-f45d4e.h5"
+   ],
+   "09CO011": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO011-1425a1a1-c835-47a2-a9b9-4db5d0.h5"
+   ],
+   "09CO013": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO013-dffcac99-9eac-4717-aeb6-f4a2e7.h5"
+   ],
+   "09CO014": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO014-31e0ccb0-2756-4d35-b89c-e2dec4.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO014-8b9e4266-7754-4f2c-ac9e-329905.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO014-1ea1d7ee-e382-4a68-8e7c-74e833.h5"
+   ],
+   "09CO015": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO015-7fd01ffe-59ae-46b2-a458-41e9d4.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO015-1ab06c24-ffc0-4323-a0cc-e9f5c5.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO015-d068de5f-8394-46bc-b03a-c6dc9c.h5"
+   ],
+   "09CO018": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO018-743c74e4-cd76-4f38-8cb4-3c9107.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO018-372c900a-fced-4eef-9dc4-7282ec.h5"
+   ],
+   "09CO019": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO019-b913f361-c5c2-4e49-91ca-719bd8.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO019-981d8993-e8aa-4f87-ae32-283ad3.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO019-79097be1-cd36-4a23-99d1-3d744f.h5"
+   ],
+   "09CO022": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-f69deaeb-6b6f-4c61-8900-fd0f26.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-2ffe77b8-5e6b-42b3-9f02-4c6a20.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-c89c1638-e666-45fb-aa0d-b35d8d.h5"
+   ],
+   "11CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO005-eaa1aff9-f90d-4351-8993-feb76b.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO005-bc574f73-89ba-44d7-992e-82622c.h5"
+   ],
+   "11CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO007-c7c71492-d281-4cc3-bab2-d7c0aa.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO007-799893aa-d523-4a08-9ea7-611cca.h5"
+   ],
+   "11CO008": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO008-de439530-464e-481b-91ab-0685b9.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO008-98742d96-cc2f-43f0-9de2-bc7afe.h5"
+   ],
+   "11CO010": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO010-0f757044-9bc8-4ed4-90f3-e0a49a.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO010-ae11951c-a14f-4dea-8b82-35aec6.h5"
+   ],
+   "11CO018": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO018-3d797911-d476-436f-9cce-33e20c.h5"
+   ],
+   "11CO019": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO019-722378ea-d1a7-4cfc-aca5-ba45f9.h5"
+   ],
+   "11CO020": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO020-52d61ab1-5781-4b47-8e88-37c2ea.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO020-321fb3b2-ebb6-4ea5-b737-081264.h5"
+   ],
+   "11CO021": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO021-cf795cd2-317b-4897-a35e-390001.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO021-642fc6c3-8d4a-4e3d-ad0a-cc088a.h5"
+   ],
+   "11CO022": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO022-21c6f56a-8881-421b-81fa-c354cb.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO022-2b810478-7956-4a8b-870d-184859.h5"
+   ],
+   "11CO027": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO027-1435c3d6-a697-422f-9a8b-2cceef.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO027-5da00abd-5fa7-4deb-95f1-7982e0.h5"
+   ],
+   "11CO030": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO030-ab01157f-21d9-491d-8cad-167f21.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO030-4cdeecb5-19fb-493c-91f5-eb0efc.h5"
+   ],
+   "11CO031": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO031-c6ae57a7-65a0-438e-bae2-97b1c8.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO031-255fbb3b-890c-458b-afe9-217a5d.h5"
+   ],
+   "11CO032": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO032-01d1ffca-4235-4dfe-bf62-56f71d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO032-615a007c-8d19-4e95-b246-43f9a0.h5"
+   ],
+   "11CO033": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO033-9c034adf-d6be-4525-84c3-552d3c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO033-8960a27e-69d8-4ec8-a795-c6cf8a.h5"
+   ],
+   "11CO036": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO036-2739ad00-dcb2-4485-ac9b-b77851.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO036-21cab01c-e968-42cc-9651-1e53c0.h5"
+   ],
+   "11CO037": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO037-1563ef63-d2e6-406f-adc1-255949.h5"
+   ],
+   "11CO039": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO039-e295a7d1-a0d0-4b0b-bdc2-729a0d.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO039-d6584b4a-ca99-4a2a-8b4e-c8b22e.h5"
+   ],
+   "11CO042": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO042-2167c594-c33f-4795-b95b-69bd07.h5"
+   ],
+   "11CO043": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO043-90cfa6ba-f874-48b5-9cd0-f65426.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO043-591fb460-703a-437d-8d9a-ff2a35.h5"
+   ],
+   "11CO044": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO044-7e3d5ae0-3dcc-4207-8dd2-59ab4b.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO044-b605fafc-f7dd-44cc-9c86-da04e3.h5"
+   ],
+   "11CO045": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO045-f4bccfe4-98d0-466b-a6d7-44341b.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO045-d097d43a-af93-4c15-8c16-eb8d7e.h5"
+   ],
+   "11CO047": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO047-3ca0ab23-70ae-4083-bd7d-9f71d8.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO047-cd6a4013-2958-44b9-a4f1-45c9e4.h5"
+   ],
+   "11CO048": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO048-43e0432b-343d-4e12-817f-21281c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO048-cfb4831f-e9ee-4e11-80fb-958f6f.h5"
+   ],
+   "11CO051": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO051-f2a13f8d-b129-4567-beae-049b15.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO051-f6b1079b-9d67-4c63-b3d0-d562b5.h5"
+   ],
+   "11CO052": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO052-0630ecb0-b664-4e75-bb3c-fb62ee.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO052-b97ac2ac-804d-4a14-966b-21b10d.h5"
+   ],
+   "11CO053": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO053-ecf1ca92-c8b7-470f-baf4-81cf73.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO053-092c5a37-325b-4181-b230-2d8fff.h5"
+   ],
+   "11CO054": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO054-9bf309bc-0fb6-4060-aba2-888eb3.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO054-f6a7f764-2495-4a1d-89a2-e12f51.h5"
+   ],
+   "11CO057": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO057-e515eb5c-8005-416a-9b42-59de9d.h5"
+   ],
+   "11CO058": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO058-d3078fa8-0692-411f-8441-0c7c48.h5"
+   ],
+   "11CO059": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO059-d4afb9cf-2f90-44b9-bd60-d03069.h5"
+   ],
+   "11CO060": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO060-fe4b3b1c-9f7f-4109-8a76-ca1d6f.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO060-be619b8a-e19c-4bad-9530-5cd380.h5"
+   ],
+   "11CO061": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO061-8c73f3a5-fea8-4942-90c0-966f66.h5"
+   ],
+   "11CO062": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO062-e8faa3a7-9fc7-428e-9334-a0afd0.h5"
+   ],
+   "11CO070": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO070-c8694e31-2c8f-4eb6-a7ef-a137d9.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO070-f383abb4-131c-4dff-865f-ef7e43.h5"
+   ],
+   "11CO072": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO072-0f238226-864c-4de0-8c61-01e729.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO072-64b606d7-d40f-41ae-b220-a66324.h5"
+   ],
+   "11CO077": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO077-dbec2531-96e2-4ba5-bde0-b6ba5a.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO077-5557e478-3e6f-475b-8acc-1b4159.h5"
+   ],
+   "11CO079": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO079-f6afe41c-111d-4818-8485-fe95e0.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/11CO079-77c493b1-34ba-4efc-8def-987116.h5"
+   ],
+   "13CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/13CO001-d91f20f5-f59f-421d-9164-e5fd19.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/13CO001-5b0860a3-3ad7-4f59-bdfb-29f6cf.h5"
+   ],
+   "14CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO001-90572025-0173-4a1a-9385-12a5dd.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO001-85930155-5a70-4aab-97e3-e9c5a9.h5"
+   ],
+   "14CO002": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO002-5a85e6e7-35ab-4ca9-ab62-707e77.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO002-9efa91b4-1ad3-4758-83f9-c2fc25.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO002-7884aa97-6fc9-4b94-a6d3-c96edb.h5"
+   ],
+   "14CO003": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-ea6df59d-5240-4927-b19d-d44590.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-fca55a75-883a-40fe-859d-fbc72e.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-fd4edc52-09ef-4b01-be7c-f23f05.h5"
+   ],
+   "14CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO005-db3f5ad9-d14d-4126-a3e7-d80faa.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/14CO005-ec35366b-9add-42c6-8e02-b467e2.h5"
+   ],
+   "15CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/15CO001-c2db7236-990c-42b6-9ffb-2ad150.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/15CO001-cd89ffbb-574a-4052-bd9a-00c890.h5"
+   ],
+   "15CO002": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/15CO002-c65afd57-530c-4366-b2c8-463a46.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/15CO002-74f7759a-279c-4098-b080-358900.h5"
+   ],
+   "16CO002": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-6f5853a3-1d47-4a54-94dc-970c1c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-491b5c1f-745b-43ed-b5b8-73ae8c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-820a3f08-5bb1-44b3-a133-ee167e.h5"
+   ],
+   "16CO003": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO003-526c3664-5b9b-4a2b-a00e-a14623.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO003-47b9deba-dea0-4e0c-8b0a-4864c3.h5"
+   ],
+   "16CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-d90e784a-b818-4aeb-ad47-6d3419.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-4bb08fad-fa5e-471e-978b-6b09ab.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-d7a1d7b7-a6a1-4cc8-b6a2-343515.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-97423edb-6f19-4b41-a7cb-af1635.h5"
+   ],
+   "16CO011": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO011-7782134d-02db-44ee-adfa-fc1372.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO011-a90eb718-6a8f-4cbf-89c1-f9e9bd.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO011-c5e9fc3f-27a8-4b53-8591-6b648a.h5"
+   ],
+   "16CO012": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO012-ca6d1f65-9ff2-4b02-828d-4dee4a.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/16CO012-6a9a1d66-d666-44df-a68e-ddc58d.h5"
+   ],
+   "20CO001": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO001-b2400046-1d25-429d-a821-6040a6.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO001-d8345fa1-f692-4025-bc82-bfaec6.h5"
+   ],
+   "20CO003": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO003-87802c46-f41e-4baf-9d30-a6330c.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO003-2d266d2d-4bb3-436c-a3e7-06acb2.h5"
+   ],
+   "20CO004": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO004-e6381203-174e-47d4-a400-a50631.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO004-e196a0b4-2a05-43de-bb30-ceb761.h5"
+   ],
+   "20CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-1e451f20-718d-458e-abeb-93f1d8.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-9a6879b1-4f78-4ac6-9fca-dad049.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-c04e6c21-605c-4ab4-92c5-7dc206.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-6e93fe5d-0360-4c12-ba41-b4cb4f.h5"
+   ],
+   "20CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/20CO007-0065bfd9-e1b9-43a8-9379-9658ba.h5"
+   ],
+   "21CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/21CO006-5f823547-ee16-45b7-a6a0-ef25d6.h5"
+   ],
+   "21CO007": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/21CO007-e98cdedc-c426-44c1-84b0-dcaf52.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/21CO007-a467b905-fc0b-427b-8753-6d38dd.h5"
+   ],
+   "22CO004": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/22CO004-a2f03d85-5f1a-4b3e-9dbf-74e67e.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/22CO004-03b36559-7cf4-4c07-bd5c-8eaeab.h5"
+   ],
+   "22CO006": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/22CO006-e1cd3d70-132b-452f-ba10-026721.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/22CO006-4d86cf19-8d5b-46b5-ab4c-ace0b2.h5"
+   ],
+   "24CO005": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/24CO005-b75e68fd-cfa1-4e9e-b4c1-a57ad8.h5"
+   ],
+   "27CO004": [
+    "UNI2_h_features/CPTAC/CPTAC-COAD/27CO004-6cf8ca7a-35ff-4227-a084-623349.h5",
+    "UNI2_h_features/CPTAC/CPTAC-COAD/27CO004-d0511ea6-43c3-4c61-b08e-cf49b7.h5"
+   ]
+  }
+ },
+ "cases": {
+  "01CO001": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N2b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO001-760f15d2-444c-4deb-b133-62f3ca",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO001-760f15d2-444c-4deb-b133-62f3ca.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO005": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "01CO005-59891744-2db3-4541-a86a-7f911f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO005-59891744-2db3-4541-a86a-7f911f.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO005-900134d7-7100-4189-aa08-f3b009",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO005-900134d7-7100-4189-aa08-f3b009.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO005-05a33362-82bb-48ac-8feb-ad2ea1",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO005-05a33362-82bb-48ac-8feb-ad2ea1.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO006": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N2b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO006-f9d6fb1b-988e-4d28-9272-cc672f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO006-f9d6fb1b-988e-4d28-9272-cc672f.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO008": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO008-8cc7e656-0152-4359-8566-0581c3",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO008-8cc7e656-0152-4359-8566-0581c3.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO008-9452572f-e3ec-4063-a82e-43ac90",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO008-9452572f-e3ec-4063-a82e-43ac90.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO008-dd3d1ffd-139e-42b4-b09a-591802",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO008-dd3d1ffd-139e-42b4-b09a-591802.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO013": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO013-7fa5c56a-2345-4a8c-b60b-36bddc",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO013-7fa5c56a-2345-4a8c-b60b-36bddc.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO013-c7aeb685-31b3-445e-8177-a3e729",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO013-c7aeb685-31b3-445e-8177-a3e729.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO013-08071b2d-89b8-4e5a-8ee7-11719b",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO013-08071b2d-89b8-4e5a-8ee7-11719b.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO014": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Hepatix Flexure",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO014-c9730cb4-b52c-4ca8-9652-4509d0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO014-c9730cb4-b52c-4ca8-9652-4509d0.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO014-be2d5946-3452-4003-880a-e0372e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO014-be2d5946-3452-4003-880a-e0372e.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO014-a8b2aca2-6450-46b4-be95-f4ead8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO014-a8b2aca2-6450-46b4-be95-f4ead8.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO015": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO015-34c25790-b5bf-4dff-9e40-dea366",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO015-34c25790-b5bf-4dff-9e40-dea366.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO015-b873f54a-5a86-4dca-90f9-715820",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO015-b873f54a-5a86-4dca-90f9-715820.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO015-6e20c8e9-ab75-4996-9296-445b00",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO015-6e20c8e9-ab75-4996-9296-445b00.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO019": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO019-573048dd-2502-40e0-8e8c-c41bb8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO019-573048dd-2502-40e0-8e8c-c41bb8.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO019-b734774e-f790-46ad-9064-fe1d59",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO019-b734774e-f790-46ad-9064-fe1d59.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "01CO022": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "01CO022-7a0266b4-b07c-41dc-8ddd-350e1b",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-7a0266b4-b07c-41dc-8ddd-350e1b.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO022-eb519615-41c6-403e-bc8e-e7622c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-eb519615-41c6-403e-bc8e-e7622c.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO022-b4e91300-405e-4239-b8da-5e1a42",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-b4e91300-405e-4239-b8da-5e1a42.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO022-927faf80-de47-424f-966d-eb0cc4",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-927faf80-de47-424f-966d-eb0cc4.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "01CO022-525b8739-5c19-4ea1-986e-792581",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/01CO022-525b8739-5c19-4ea1-986e-792581.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO002": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO002-7e32b2a3-29af-49f3-90d3-d56590",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO002-7e32b2a3-29af-49f3-90d3-d56590.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO002-159c49fd-40ff-4616-b6b6-be21a6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO002-159c49fd-40ff-4616-b6b6-be21a6.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO003": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO003-7cc7f69f-99f5-4b23-a9e0-ba0dc8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO003-7cc7f69f-99f5-4b23-a9e0-ba0dc8.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO004": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": null,
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO004-1fb8f92a-d046-4dab-b701-115b55",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO004-1fb8f92a-d046-4dab-b701-115b55.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO004-9fb0c084-16fd-4d54-ab60-d94303",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO004-9fb0c084-16fd-4d54-ab60-d94303.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO005": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": null
+   },
+   "slide_group": "unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO005-50f754a6-119b-4624-a6dc-763283",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO005-50f754a6-119b-4624-a6dc-763283.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO005-21880d70-69eb-4f09-bea9-8de3e6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO005-21880d70-69eb-4f09-bea9-8de3e6.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO005-a23ef085-a2a1-4ffc-9d1a-56c0f0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO005-a23ef085-a2a1-4ffc-9d1a-56c0f0.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO006": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO006-caf7d236-16ed-40c7-a1e1-ca01ad",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO006-caf7d236-16ed-40c7-a1e1-ca01ad.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO006-37219a7c-6fe2-4684-a494-d0be08",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO006-37219a7c-6fe2-4684-a494-d0be08.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO006-a8955d38-7a72-4f9d-9c70-5c0f08",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO006-a8955d38-7a72-4f9d-9c70-5c0f08.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO007": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N2b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO007-9899e1ad-62e1-4cc2-91fc-49b85c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO007-9899e1ad-62e1-4cc2-91fc-49b85c.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO011": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO011-c1b66358-d103-493c-b8ec-92c43b",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO011-c1b66358-d103-493c-b8ec-92c43b.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO011-8495cc54-eb88-40ab-b03f-363edf",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO011-8495cc54-eb88-40ab-b03f-363edf.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO011-e2eb3672-3727-4c54-adfc-3ab198",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO011-e2eb3672-3727-4c54-adfc-3ab198.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO014": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": null,
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": null
+   },
+   "slide_group": "unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO014-124cee7c-1854-47d9-b803-fb3f49",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO014-124cee7c-1854-47d9-b803-fb3f49.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO014-9bba0a92-9eb5-42ba-8c0f-865141",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO014-9bba0a92-9eb5-42ba-8c0f-865141.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO014-6968a80f-fd06-4669-b4bd-9a5cb5",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO014-6968a80f-fd06-4669-b4bd-9a5cb5.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO015": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO015-416bb805-e4cd-4ca6-8fdd-1eec2d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO015-416bb805-e4cd-4ca6-8fdd-1eec2d.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO015-0aef1fe8-ca61-4113-81d0-d82ee7",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO015-0aef1fe8-ca61-4113-81d0-d82ee7.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO015-4d32d48d-90f8-4aa9-a70d-93fbc1",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO015-4d32d48d-90f8-4aa9-a70d-93fbc1.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO020": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO020-803736b3-9ca9-4f9f-bdfe-8783e3",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO020-803736b3-9ca9-4f9f-bdfe-8783e3.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO026": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Splenic Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO026-41ee934e-f7a3-4ef5-8a83-e2ac56",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO026-41ee934e-f7a3-4ef5-8a83-e2ac56.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO026-b2615b47-5ac2-4775-9205-50990d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO026-b2615b47-5ac2-4775-9205-50990d.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO026-2606ea3f-cf02-4b20-8c88-4e7168",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO026-2606ea3f-cf02-4b20-8c88-4e7168.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO028": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO028-e0068ac5-f557-443a-bd4b-bdfcef",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO028-e0068ac5-f557-443a-bd4b-bdfcef.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO028-b33d1f76-2405-4ae3-ba20-37fc71",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO028-b33d1f76-2405-4ae3-ba20-37fc71.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO029": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Hepatix Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO029-58a92726-4d1f-4e44-8938-52b97d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO029-58a92726-4d1f-4e44-8938-52b97d.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO029-b80b976c-8496-4604-8f16-2ec2fa",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO029-b80b976c-8496-4604-8f16-2ec2fa.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO029-fab6245c-89d9-469f-bf59-5ac2b9",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO029-fab6245c-89d9-469f-bf59-5ac2b9.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO032": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO032-695b0b00-a86b-43c0-a6c8-50a840",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO032-695b0b00-a86b-43c0-a6c8-50a840.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO032-7075cf34-0429-47d1-b7de-922165",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO032-7075cf34-0429-47d1-b7de-922165.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO033": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 2,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO033-2f8b02e4-1848-4abc-a95e-dd9eb5",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO033-2f8b02e4-1848-4abc-a95e-dd9eb5.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO033-a4ae882e-5378-4acb-bd16-ddd4e8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO033-a4ae882e-5378-4acb-bd16-ddd4e8.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO034": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO034-42216d99-e8ff-43c9-b6db-28c3a6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO034-42216d99-e8ff-43c9-b6db-28c3a6.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO034-2815cb64-9b6e-49fc-bad2-7837f0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO034-2815cb64-9b6e-49fc-bad2-7837f0.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO035": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO035-0f6ef7cd-ecc2-410d-b838-9430fc",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO035-0f6ef7cd-ecc2-410d-b838-9430fc.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO035-1312a0e0-5025-433e-9670-0595bb",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO035-1312a0e0-5025-433e-9670-0595bb.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO035-dfdf03a6-c324-4d8c-a909-ea7345",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO035-dfdf03a6-c324-4d8c-a909-ea7345.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO037": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO037-f7c447bb-def9-4962-83d0-00c663",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-f7c447bb-def9-4962-83d0-00c663.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO037-5a007558-764c-463b-a788-fdbccb",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-5a007558-764c-463b-a788-fdbccb.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO037-e2e83b72-b14b-4b06-9461-1115d6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO037-e2e83b72-b14b-4b06-9461-1115d6.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO039": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 4,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO039-278e5a61-9d85-4b78-ac5d-e89ff6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-278e5a61-9d85-4b78-ac5d-e89ff6.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO039-66b57abc-0d49-46bb-a390-0e11a9",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-66b57abc-0d49-46bb-a390-0e11a9.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO039-c952715e-35ca-4e18-ad6f-dd4e39",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO039-c952715e-35ca-4e18-ad6f-dd4e39.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO041": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO041-ce47b803-bd11-473f-b4a2-f99643",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-ce47b803-bd11-473f-b4a2-f99643.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO041-b4dd4a04-5eda-43dd-8298-215b07",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-b4dd4a04-5eda-43dd-8298-215b07.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO041-fbe48b23-a4e7-4cb2-9767-9473ac",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO041-fbe48b23-a4e7-4cb2-9767-9473ac.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO044": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 4,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO044-8af80ae9-2088-4124-91fb-8d6c17",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO044-8af80ae9-2088-4124-91fb-8d6c17.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO045": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO045-92c1ebb5-ac1d-4bf5-a14f-516e1d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO045-92c1ebb5-ac1d-4bf5-a14f-516e1d.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO047": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO047-f6173181-0993-4a5f-a4cd-5f30b1",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-f6173181-0993-4a5f-a4cd-5f30b1.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO047-506131e8-6460-472f-9e25-71f8b1",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-506131e8-6460-472f-9e25-71f8b1.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO047-01bf1906-9bdc-41c3-89a0-b89ef6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO047-01bf1906-9bdc-41c3-89a0-b89ef6.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO048": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T4b",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "05CO048-92f7419c-c57a-4b50-bdc9-4d09ca",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO048-92f7419c-c57a-4b50-bdc9-4d09ca.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO048-4976cbf9-cad4-48ce-b234-622c70",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO048-4976cbf9-cad4-48ce-b234-622c70.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO049": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Hepatix Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO049-56b6be96-9ee4-45ce-8e68-f448f4",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO049-56b6be96-9ee4-45ce-8e68-f448f4.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO049-d7608884-a0d6-4e9e-aac7-6cd813",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO049-d7608884-a0d6-4e9e-aac7-6cd813.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO050": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO050-b1cc5c9c-4bd6-44ef-9ae0-f91e78",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO050-b1cc5c9c-4bd6-44ef-9ae0-f91e78.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO050-17cd2121-d347-431c-9cc7-fbab14",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO050-17cd2121-d347-431c-9cc7-fbab14.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO050-5271982c-5de1-4d6e-b414-b1f3ef",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO050-5271982c-5de1-4d6e-b414-b1f3ef.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO053": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO053-c40de11e-c220-4f04-9ba1-083786",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO053-c40de11e-c220-4f04-9ba1-083786.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO053-66b829db-1cdd-460d-b2f3-0e9ca9",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO053-66b829db-1cdd-460d-b2f3-0e9ca9.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO054": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO054-43192517-085e-450e-9481-0a6713",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO054-43192517-085e-450e-9481-0a6713.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "05CO054-e57f0b7a-b96c-4ee5-838a-80f338",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO054-e57f0b7a-b96c-4ee5-838a-80f338.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "05CO055": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N2b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": null
+   },
+   "slide_group": "unlabelled_only",
+   "slides": [
+    {
+     "slide": "05CO055-ccaab7e8-e841-4397-80aa-370b58",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/05CO055-ccaab7e8-e841-4397-80aa-370b58.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "06CO001": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "06CO001-87408d9e-4029-4e8f-b14c-8efc04",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/06CO001-87408d9e-4029-4e8f-b14c-8efc04.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "06CO001-23252883-0253-41f0-85c5-f8b43e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/06CO001-23252883-0253-41f0-85c5-f8b43e.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "06CO002": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "06CO002-da69a576-c1e8-4051-86dd-df6b7f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/06CO002-da69a576-c1e8-4051-86dd-df6b7f.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "06CO002-4b263734-430f-41dc-a296-8691f0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/06CO002-4b263734-430f-41dc-a296-8691f0.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO005": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "09CO005-c41e39fe-c26c-4421-ac9f-8a536a",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-c41e39fe-c26c-4421-ac9f-8a536a.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO005-ec9afcc4-ccf7-4226-b0e8-d6897d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-ec9afcc4-ccf7-4226-b0e8-d6897d.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO005-f37310af-e89b-4114-a95e-a1616f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO005-f37310af-e89b-4114-a95e-a1616f.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO006": {
+   "labels": {
+    "mucinous": null,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": null,
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "09CO006-c2c53076-b5db-4b7d-983c-a35740",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-c2c53076-b5db-4b7d-983c-a35740.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO006-46f8ee83-175d-4f90-a596-de67ac",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-46f8ee83-175d-4f90-a596-de67ac.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO006-dfffd5bb-b7c7-4918-ab28-fd3167",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO006-dfffd5bb-b7c7-4918-ab28-fd3167.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO008": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "09CO008-dbb83659-09df-4024-81ef-ad6ac7",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO008-dbb83659-09df-4024-81ef-ad6ac7.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO008-aa0f5b40-3290-4255-8f4d-f45d4e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO008-aa0f5b40-3290-4255-8f4d-f45d4e.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO011": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "09CO011-1425a1a1-c835-47a2-a9b9-4db5d0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO011-1425a1a1-c835-47a2-a9b9-4db5d0.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO013": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "09CO013-dffcac99-9eac-4717-aeb6-f4a2e7",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO013-dffcac99-9eac-4717-aeb6-f4a2e7.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO014": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "09CO014-31e0ccb0-2756-4d35-b89c-e2dec4",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO014-31e0ccb0-2756-4d35-b89c-e2dec4.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO014-8b9e4266-7754-4f2c-ac9e-329905",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO014-8b9e4266-7754-4f2c-ac9e-329905.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO014-1ea1d7ee-e382-4a68-8e7c-74e833",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO014-1ea1d7ee-e382-4a68-8e7c-74e833.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO015": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "09CO015-7fd01ffe-59ae-46b2-a458-41e9d4",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO015-7fd01ffe-59ae-46b2-a458-41e9d4.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO015-1ab06c24-ffc0-4323-a0cc-e9f5c5",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO015-1ab06c24-ffc0-4323-a0cc-e9f5c5.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO015-d068de5f-8394-46bc-b03a-c6dc9c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO015-d068de5f-8394-46bc-b03a-c6dc9c.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO018": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "09CO018-743c74e4-cd76-4f38-8cb4-3c9107",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO018-743c74e4-cd76-4f38-8cb4-3c9107.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO018-372c900a-fced-4eef-9dc4-7282ec",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO018-372c900a-fced-4eef-9dc4-7282ec.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO019": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Hepatix Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "09CO019-b913f361-c5c2-4e49-91ca-719bd8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO019-b913f361-c5c2-4e49-91ca-719bd8.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO019-981d8993-e8aa-4f87-ae32-283ad3",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO019-981d8993-e8aa-4f87-ae32-283ad3.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO019-79097be1-cd36-4a23-99d1-3d744f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO019-79097be1-cd36-4a23-99d1-3d744f.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "09CO022": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 4,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "09CO022-f69deaeb-6b6f-4c61-8900-fd0f26",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-f69deaeb-6b6f-4c61-8900-fd0f26.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO022-2ffe77b8-5e6b-42b3-9f02-4c6a20",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-2ffe77b8-5e6b-42b3-9f02-4c6a20.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "09CO022-c89c1638-e666-45fb-aa0d-b35d8d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/09CO022-c89c1638-e666-45fb-aa0d-b35d8d.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO005": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO005-eaa1aff9-f90d-4351-8993-feb76b",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO005-eaa1aff9-f90d-4351-8993-feb76b.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO005-bc574f73-89ba-44d7-992e-82622c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO005-bc574f73-89ba-44d7-992e-82622c.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO007": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO007-c7c71492-d281-4cc3-bab2-d7c0aa",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO007-c7c71492-d281-4cc3-bab2-d7c0aa.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO007-799893aa-d523-4a08-9ea7-611cca",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO007-799893aa-d523-4a08-9ea7-611cca.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO008": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO008-de439530-464e-481b-91ab-0685b9",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO008-de439530-464e-481b-91ab-0685b9.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO008-98742d96-cc2f-43f0-9de2-bc7afe",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO008-98742d96-cc2f-43f0-9de2-bc7afe.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO010": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO010-0f757044-9bc8-4ed4-90f3-e0a49a",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO010-0f757044-9bc8-4ed4-90f3-e0a49a.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO010-ae11951c-a14f-4dea-8b82-35aec6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO010-ae11951c-a14f-4dea-8b82-35aec6.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO018": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Hepatix Flexure",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO018-3d797911-d476-436f-9cce-33e20c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO018-3d797911-d476-436f-9cce-33e20c.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO019": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO019-722378ea-d1a7-4cfc-aca5-ba45f9",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO019-722378ea-d1a7-4cfc-aca5-ba45f9.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO020": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO020-52d61ab1-5781-4b47-8e88-37c2ea",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO020-52d61ab1-5781-4b47-8e88-37c2ea.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO020-321fb3b2-ebb6-4ea5-b737-081264",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO020-321fb3b2-ebb6-4ea5-b737-081264.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO021": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO021-cf795cd2-317b-4897-a35e-390001",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO021-cf795cd2-317b-4897-a35e-390001.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO021-642fc6c3-8d4a-4e3d-ad0a-cc088a",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO021-642fc6c3-8d4a-4e3d-ad0a-cc088a.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO022": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 4,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T4b",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO022-21c6f56a-8881-421b-81fa-c354cb",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO022-21c6f56a-8881-421b-81fa-c354cb.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO022-2b810478-7956-4a8b-870d-184859",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO022-2b810478-7956-4a8b-870d-184859.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO027": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO027-1435c3d6-a697-422f-9a8b-2cceef",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO027-1435c3d6-a697-422f-9a8b-2cceef.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO027-5da00abd-5fa7-4deb-95f1-7982e0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO027-5da00abd-5fa7-4deb-95f1-7982e0.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO030": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO030-ab01157f-21d9-491d-8cad-167f21",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO030-ab01157f-21d9-491d-8cad-167f21.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO030-4cdeecb5-19fb-493c-91f5-eb0efc",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO030-4cdeecb5-19fb-493c-91f5-eb0efc.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO031": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO031-c6ae57a7-65a0-438e-bae2-97b1c8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO031-c6ae57a7-65a0-438e-bae2-97b1c8.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO031-255fbb3b-890c-458b-afe9-217a5d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO031-255fbb3b-890c-458b-afe9-217a5d.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO032": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO032-01d1ffca-4235-4dfe-bf62-56f71d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO032-01d1ffca-4235-4dfe-bf62-56f71d.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO032-615a007c-8d19-4e95-b246-43f9a0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO032-615a007c-8d19-4e95-b246-43f9a0.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO033": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO033-9c034adf-d6be-4525-84c3-552d3c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO033-9c034adf-d6be-4525-84c3-552d3c.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO033-8960a27e-69d8-4ec8-a795-c6cf8a",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO033-8960a27e-69d8-4ec8-a795-c6cf8a.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO036": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO036-2739ad00-dcb2-4485-ac9b-b77851",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO036-2739ad00-dcb2-4485-ac9b-b77851.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO036-21cab01c-e968-42cc-9651-1e53c0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO036-21cab01c-e968-42cc-9651-1e53c0.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO037": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO037-1563ef63-d2e6-406f-adc1-255949",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO037-1563ef63-d2e6-406f-adc1-255949.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO039": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO039-e295a7d1-a0d0-4b0b-bdc2-729a0d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO039-e295a7d1-a0d0-4b0b-bdc2-729a0d.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO039-d6584b4a-ca99-4a2a-8b4e-c8b22e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO039-d6584b4a-ca99-4a2a-8b4e-c8b22e.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO042": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Splenic Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO042-2167c594-c33f-4795-b95b-69bd07",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO042-2167c594-c33f-4795-b95b-69bd07.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO043": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO043-90cfa6ba-f874-48b5-9cd0-f65426",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO043-90cfa6ba-f874-48b5-9cd0-f65426.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO043-591fb460-703a-437d-8d9a-ff2a35",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO043-591fb460-703a-437d-8d9a-ff2a35.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO044": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO044-7e3d5ae0-3dcc-4207-8dd2-59ab4b",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO044-7e3d5ae0-3dcc-4207-8dd2-59ab4b.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO044-b605fafc-f7dd-44cc-9c86-da04e3",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO044-b605fafc-f7dd-44cc-9c86-da04e3.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO045": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO045-f4bccfe4-98d0-466b-a6d7-44341b",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO045-f4bccfe4-98d0-466b-a6d7-44341b.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO045-d097d43a-af93-4c15-8c16-eb8d7e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO045-d097d43a-af93-4c15-8c16-eb8d7e.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO047": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO047-3ca0ab23-70ae-4083-bd7d-9f71d8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO047-3ca0ab23-70ae-4083-bd7d-9f71d8.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO047-cd6a4013-2958-44b9-a4f1-45c9e4",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO047-cd6a4013-2958-44b9-a4f1-45c9e4.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO048": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO048-43e0432b-343d-4e12-817f-21281c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO048-43e0432b-343d-4e12-817f-21281c.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO048-cfb4831f-e9ee-4e11-80fb-958f6f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO048-cfb4831f-e9ee-4e11-80fb-958f6f.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO051": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO051-f2a13f8d-b129-4567-beae-049b15",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO051-f2a13f8d-b129-4567-beae-049b15.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO051-f6b1079b-9d67-4c63-b3d0-d562b5",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO051-f6b1079b-9d67-4c63-b3d0-d562b5.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO052": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO052-0630ecb0-b664-4e75-bb3c-fb62ee",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO052-0630ecb0-b664-4e75-bb3c-fb62ee.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO052-b97ac2ac-804d-4a14-966b-21b10d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO052-b97ac2ac-804d-4a14-966b-21b10d.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO053": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO053-ecf1ca92-c8b7-470f-baf4-81cf73",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO053-ecf1ca92-c8b7-470f-baf4-81cf73.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO053-092c5a37-325b-4181-b230-2d8fff",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO053-092c5a37-325b-4181-b230-2d8fff.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO054": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO054-9bf309bc-0fb6-4060-aba2-888eb3",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO054-9bf309bc-0fb6-4060-aba2-888eb3.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO054-f6a7f764-2495-4a1d-89a2-e12f51",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO054-f6a7f764-2495-4a1d-89a2-e12f51.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO057": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO057-e515eb5c-8005-416a-9b42-59de9d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO057-e515eb5c-8005-416a-9b42-59de9d.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO058": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO058-d3078fa8-0692-411f-8441-0c7c48",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO058-d3078fa8-0692-411f-8441-0c7c48.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO059": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": null
+   },
+   "slide_group": "unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO059-d4afb9cf-2f90-44b9-bd60-d03069",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO059-d4afb9cf-2f90-44b9-bd60-d03069.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO060": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO060-fe4b3b1c-9f7f-4109-8a76-ca1d6f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO060-fe4b3b1c-9f7f-4109-8a76-ca1d6f.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO060-be619b8a-e19c-4bad-9530-5cd380",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO060-be619b8a-e19c-4bad-9530-5cd380.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO061": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO061-8c73f3a5-fea8-4942-90c0-966f66",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO061-8c73f3a5-fea8-4942-90c0-966f66.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO062": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO062-e8faa3a7-9fc7-428e-9334-a0afd0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO062-e8faa3a7-9fc7-428e-9334-a0afd0.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO070": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": null,
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "11CO070-c8694e31-2c8f-4eb6-a7ef-a137d9",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO070-c8694e31-2c8f-4eb6-a7ef-a137d9.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO070-f383abb4-131c-4dff-865f-ef7e43",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO070-f383abb4-131c-4dff-865f-ef7e43.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO072": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO072-0f238226-864c-4de0-8c61-01e729",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO072-0f238226-864c-4de0-8c61-01e729.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO072-64b606d7-d40f-41ae-b220-a66324",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO072-64b606d7-d40f-41ae-b220-a66324.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO077": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO077-dbec2531-96e2-4ba5-bde0-b6ba5a",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO077-dbec2531-96e2-4ba5-bde0-b6ba5a.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO077-5557e478-3e6f-475b-8acc-1b4159",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO077-5557e478-3e6f-475b-8acc-1b4159.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "11CO079": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "11CO079-f6afe41c-111d-4818-8485-fe95e0",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO079-f6afe41c-111d-4818-8485-fe95e0.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "11CO079-77c493b1-34ba-4efc-8def-987116",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/11CO079-77c493b1-34ba-4efc-8def-987116.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "13CO001": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": null,
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "13CO001-d91f20f5-f59f-421d-9164-e5fd19",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/13CO001-d91f20f5-f59f-421d-9164-e5fd19.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "13CO001-5b0860a3-3ad7-4f59-bdfb-29f6cf",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/13CO001-5b0860a3-3ad7-4f59-bdfb-29f6cf.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "14CO001": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": null,
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "14CO001-90572025-0173-4a1a-9385-12a5dd",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO001-90572025-0173-4a1a-9385-12a5dd.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "14CO001-85930155-5a70-4aab-97e3-e9c5a9",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO001-85930155-5a70-4aab-97e3-e9c5a9.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "14CO002": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "14CO002-5a85e6e7-35ab-4ca9-ab62-707e77",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO002-5a85e6e7-35ab-4ca9-ab62-707e77.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "14CO002-9efa91b4-1ad3-4758-83f9-c2fc25",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO002-9efa91b4-1ad3-4758-83f9-c2fc25.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "14CO002-7884aa97-6fc9-4b94-a6d3-c96edb",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO002-7884aa97-6fc9-4b94-a6d3-c96edb.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "14CO003": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N2b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Tranverse Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "14CO003-ea6df59d-5240-4927-b19d-d44590",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-ea6df59d-5240-4927-b19d-d44590.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "14CO003-fca55a75-883a-40fe-859d-fbc72e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-fca55a75-883a-40fe-859d-fbc72e.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "14CO003-fd4edc52-09ef-4b01-be7c-f23f05",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO003-fd4edc52-09ef-4b01-be7c-f23f05.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "14CO005": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "14CO005-db3f5ad9-d14d-4126-a3e7-d80faa",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO005-db3f5ad9-d14d-4126-a3e7-d80faa.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "14CO005-ec35366b-9add-42c6-8e02-b467e2",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/14CO005-ec35366b-9add-42c6-8e02-b467e2.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "15CO001": {
+   "labels": {
+    "mucinous": true,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "15CO001-c2db7236-990c-42b6-9ffb-2ad150",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/15CO001-c2db7236-990c-42b6-9ffb-2ad150.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "15CO001-cd89ffbb-574a-4052-bd9a-00c890",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/15CO001-cd89ffbb-574a-4052-bd9a-00c890.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "15CO002": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 4,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Hepatix Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "15CO002-c65afd57-530c-4366-b2c8-463a46",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/15CO002-c65afd57-530c-4366-b2c8-463a46.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "15CO002-74f7759a-279c-4098-b080-358900",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/15CO002-74f7759a-279c-4098-b080-358900.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "16CO002": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Splenic Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "16CO002-6f5853a3-1d47-4a54-94dc-970c1c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-6f5853a3-1d47-4a54-94dc-970c1c.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO002-491b5c1f-745b-43ed-b5b8-73ae8c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-491b5c1f-745b-43ed-b5b8-73ae8c.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO002-820a3f08-5bb1-44b3-a133-ee167e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO002-820a3f08-5bb1-44b3-a133-ee167e.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "16CO003": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "16CO003-526c3664-5b9b-4a2b-a00e-a14623",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO003-526c3664-5b9b-4a2b-a00e-a14623.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO003-47b9deba-dea0-4e0c-8b0a-4864c3",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO003-47b9deba-dea0-4e0c-8b0a-4864c3.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "16CO006": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Hepatix Flexure",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "16CO006-d90e784a-b818-4aeb-ad47-6d3419",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-d90e784a-b818-4aeb-ad47-6d3419.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO006-4bb08fad-fa5e-471e-978b-6b09ab",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-4bb08fad-fa5e-471e-978b-6b09ab.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO006-d7a1d7b7-a6a1-4cc8-b6a2-343515",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-d7a1d7b7-a6a1-4cc8-b6a2-343515.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO006-97423edb-6f19-4b41-a7cb-af1635",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO006-97423edb-6f19-4b41-a7cb-af1635.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "16CO011": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "16CO011-7782134d-02db-44ee-adfa-fc1372",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO011-7782134d-02db-44ee-adfa-fc1372.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO011-a90eb718-6a8f-4cbf-89c1-f9e9bd",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO011-a90eb718-6a8f-4cbf-89c1-f9e9bd.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO011-c5e9fc3f-27a8-4b53-8591-6b648a",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO011-c5e9fc3f-27a8-4b53-8591-6b648a.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "16CO012": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": null
+   },
+   "slide_group": "unlabelled_only",
+   "slides": [
+    {
+     "slide": "16CO012-ca6d1f65-9ff2-4b02-828d-4dee4a",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO012-ca6d1f65-9ff2-4b02-828d-4dee4a.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "16CO012-6a9a1d66-d666-44df-a68e-ddc58d",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/16CO012-6a9a1d66-d666-44df-a68e-ddc58d.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "20CO001": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "20CO001-b2400046-1d25-429d-a821-6040a6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO001-b2400046-1d25-429d-a821-6040a6.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "20CO001-d8345fa1-f692-4025-bc82-bfaec6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO001-d8345fa1-f692-4025-bc82-bfaec6.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "20CO003": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "20CO003-87802c46-f41e-4baf-9d30-a6330c",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO003-87802c46-f41e-4baf-9d30-a6330c.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "20CO003-2d266d2d-4bb3-436c-a3e7-06acb2",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO003-2d266d2d-4bb3-436c-a3e7-06acb2.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "20CO004": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N2b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "20CO004-e6381203-174e-47d4-a400-a50631",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO004-e6381203-174e-47d4-a400-a50631.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "20CO004-e196a0b4-2a05-43de-bb30-ceb761",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO004-e196a0b4-2a05-43de-bb30-ceb761.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "20CO006": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N1a",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": null,
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "20CO006-1e451f20-718d-458e-abeb-93f1d8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-1e451f20-718d-458e-abeb-93f1d8.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "20CO006-9a6879b1-4f78-4ac6-9fca-dad049",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-9a6879b1-4f78-4ac6-9fca-dad049.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "20CO006-c04e6c21-605c-4ab4-92c5-7dc206",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-c04e6c21-605c-4ab4-92c5-7dc206.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "20CO006-6e93fe5d-0360-4c12-ba41-b4cb4f",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO006-6e93fe5d-0360-4c12-ba41-b4cb4f.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "20CO007": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Descending Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "20CO007-0065bfd9-e1b9-43a8-9379-9658ba",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/20CO007-0065bfd9-e1b9-43a8-9379-9658ba.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "21CO006": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage I",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "21CO006-5f823547-ee16-45b7-a6a0-ef25d6",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/21CO006-5f823547-ee16-45b7-a6a0-ef25d6.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "21CO007": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 4,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T4a",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage IV",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "21CO007-e98cdedc-c426-44c1-84b0-dcaf52",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/21CO007-e98cdedc-c426-44c1-84b0-dcaf52.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "21CO007-a467b905-fc0b-427b-8753-6d38dd",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/21CO007-a467b905-fc0b-427b-8753-6d38dd.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "22CO004": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": false,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N0",
+    "STAGE": "Stage II",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "22CO004-a2f03d85-5f1a-4b3e-9dbf-74e67e",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/22CO004-a2f03d85-5f1a-4b3e-9dbf-74e67e.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "22CO004-03b36559-7cf4-4c07-bd5c-8eaeab",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/22CO004-03b36559-7cf4-4c07-bd5c-8eaeab.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "22CO006": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N2b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Ascending Colon",
+    "MSI_STATUS": "MSI-H",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "normal_and_unlabelled_only",
+   "slides": [
+    {
+     "slide": "22CO006-e1cd3d70-132b-452f-ba10-026721",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/22CO006-e1cd3d70-132b-452f-ba10-026721.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "22CO006-4d86cf19-8d5b-46b5-ab4c-ace0b2",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/22CO006-4d86cf19-8d5b-46b5-ab4c-ace0b2.h5",
+     "exists": true,
+     "tissue": "normal",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "24CO005": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 2,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T2",
+    "PATHOLOGY_N_STAGE": "N1b",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Sigmoid Colon",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": null
+   },
+   "slide_group": "unlabelled_only",
+   "slides": [
+    {
+     "slide": "24CO005-b75e68fd-cfa1-4e9e-b4c1-a57ad8",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/24CO005-b75e68fd-cfa1-4e9e-b4c1-a57ad8.h5",
+     "exists": true,
+     "tissue": "unlabelled",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  },
+  "27CO004": {
+   "labels": {
+    "mucinous": false,
+    "pt_stage": 3,
+    "node_positive": true,
+    "grade": null
+   },
+   "raw": {
+    "HISTOLOGY": "Not Mucinous",
+    "PATHOLOGY_T_STAGE": "T3",
+    "PATHOLOGY_N_STAGE": "N2a",
+    "STAGE": "Stage III",
+    "TUMOR_SITE": "Cecum",
+    "MSI_STATUS": "MSS",
+    "SPECIMEN_PRESERVATION": "Frozen Tissue"
+   },
+   "slide_group": "has_tumour_slide",
+   "slides": [
+    {
+     "slide": "27CO004-6cf8ca7a-35ff-4227-a084-623349",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/27CO004-6cf8ca7a-35ff-4227-a084-623349.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    },
+    {
+     "slide": "27CO004-d0511ea6-43c3-4c61-b08e-cf49b7",
+     "path": "UNI2_h_features/CPTAC/CPTAC-COAD/27CO004-d0511ea6-43c3-4c61-b08e-cf49b7.h5",
+     "exists": true,
+     "tissue": "tumour",
+     "um_per_px": 0.25,
+     "objective": "40"
+    }
+   ]
+  }
+ }
+}
